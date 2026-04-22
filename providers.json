@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-04-22T04:59:23.274465+00:00",
+  "generated_at": "2026-04-22T13:16:05.260600+00:00",
   "taxonomy": {
     "master_categories": [
       {
@@ -36,7 +36,7 @@
       {
         "name": "Home & Community Health",
         "slug": "home-community-health",
-        "count": 12
+        "count": 13
       },
       {
         "name": "Massage & Bodywork",
@@ -2999,6 +2999,32 @@
       "tier": "Listed",
       "is_featured": false,
       "service_tags": []
+    },
+    {
+      "name": "Kore Cares",
+      "slug": "kore-cares",
+      "master_category": "Home & Community Health",
+      "category_slug": "home-community-health",
+      "blog_category": "Other",
+      "subcategory": "Home Care / Caregiving Agency",
+      "market": "Sioux Falls, SD",
+      "market_label": "Sioux Falls",
+      "service_area": "Sioux Falls metro",
+      "address": "6000 W 41st St Ste 200, Sioux Falls, SD 57106",
+      "phone": "(605) 322-1542",
+      "website": "https://www.korecares.com",
+      "profile_url": "/providers/kore-cares",
+      "google_rating": 4.9,
+      "reviews": null,
+      "tier": "Featured",
+      "is_featured": true,
+      "service_tags": [
+        "home care",
+        "caregiving",
+        "senior care",
+        "companion care",
+        "in-home assistance"
+      ]
     },
     {
       "name": "Avera Medical Group Pulmonary & Sleep",
