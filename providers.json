@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-04-22T13:16:05.260600+00:00",
+  "generated_at": "2026-04-23T20:15:02.940625+00:00",
   "taxonomy": {
     "master_categories": [
       {
@@ -71,7 +71,7 @@
       {
         "name": "Performance, Optimization & Biohacking",
         "slug": "performance-optimization-biohacking",
-        "count": 37
+        "count": 34
       },
       {
         "name": "Pharmacy & Compounding",
@@ -91,7 +91,7 @@
       {
         "name": "Specialty Medical",
         "slug": "specialty-medical",
-        "count": 24
+        "count": 27
       },
       {
         "name": "Spiritual Health & Sacred Wellness",
@@ -3549,8 +3549,8 @@
     {
       "name": "Midwest Hyperbarics",
       "slug": "midwest-hyperbarics",
-      "master_category": "Performance, Optimization & Biohacking",
-      "category_slug": "performance-optimization-biohacking",
+      "master_category": "Specialty Medical",
+      "category_slug": "specialty-medical",
       "blog_category": "Hyperbaric & Longevity",
       "subcategory": "HBOT Specialty Clinic",
       "market": "Sioux Falls, SD",
@@ -6236,8 +6236,8 @@
     {
       "name": "Divinity HBOT",
       "slug": "divinity-hbot",
-      "master_category": "Performance, Optimization & Biohacking",
-      "category_slug": "performance-optimization-biohacking",
+      "master_category": "Specialty Medical",
+      "category_slug": "specialty-medical",
       "blog_category": "Hyperbaric & Longevity",
       "subcategory": "Hyperbaric Oxygen",
       "market": "Sioux Falls, SD",
@@ -6256,8 +6256,8 @@
     {
       "name": "Divinity Wellness Center (HBOT)",
       "slug": "divinity-wellness-center-hbot",
-      "master_category": "Performance, Optimization & Biohacking",
-      "category_slug": "performance-optimization-biohacking",
+      "master_category": "Specialty Medical",
+      "category_slug": "specialty-medical",
       "blog_category": "Hyperbaric & Longevity",
       "subcategory": "HBOT + Ozone",
       "market": "Sioux Falls, SD",
@@ -9115,7 +9115,7 @@
       "profile_url": "https://www.vitalitygrowthlabs.com/directory/functional-medicine/jen-oknin-midlife-modern-woman",
       "google_rating": null,
       "reviews": null,
-      "tier": "Listed",
+      "tier": "Activated",
       "is_featured": false,
       "service_tags": [
         "hormones",
