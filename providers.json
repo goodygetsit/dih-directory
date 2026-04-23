@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-04-23T20:15:02.940625+00:00",
+  "generated_at": "2026-04-23T23:23:01.333181+00:00",
   "taxonomy": {
     "master_categories": [
       {
@@ -3013,7 +3013,7 @@
       "address": "6000 W 41st St Ste 200, Sioux Falls, SD 57106",
       "phone": "(605) 322-1542",
       "website": "https://www.korecares.com",
-      "profile_url": "/providers/kore-cares",
+      "profile_url": "https://www.dialedin.health/providers/kore-cares",
       "google_rating": 4.9,
       "reviews": null,
       "tier": "Featured",
@@ -3559,7 +3559,7 @@
       "address": "6300 S Lyncrest Ave, Sioux Falls, SD 57108",
       "phone": null,
       "website": "midwesthyperbarics.com",
-      "profile_url": "/providers/hyperbaric-oxygen-therapy/midwest-hyperbarics",
+      "profile_url": "https://www.dialedin.health/providers/hyperbaric-oxygen-therapy/midwest-hyperbarics",
       "google_rating": null,
       "reviews": null,
       "tier": "Featured",
@@ -6406,7 +6406,7 @@
       "address": "4928 E Rosa Parks Pl, Sioux Falls, SD 57110",
       "phone": "(605) 604-0200",
       "website": null,
-      "profile_url": "/providers/functional-medicine/radiant-health-and-hormone-therapy",
+      "profile_url": "https://www.dialedin.health/providers/functional-medicine/radiant-health-and-hormone-therapy",
       "google_rating": 5,
       "reviews": 9,
       "tier": "Featured",
@@ -9078,7 +9078,7 @@
       "address": "Mapleton, MN + Mankato, MN (2 locations)",
       "phone": null,
       "website": "https://www.stenzelchiropractic.com/",
-      "profile_url": "/providers/physical-therapy/stenzel-chiropractic-clinic",
+      "profile_url": "https://www.dialedin.health/providers/physical-therapy/stenzel-chiropractic-clinic",
       "google_rating": null,
       "reviews": null,
       "tier": "Featured",
