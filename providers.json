@@ -11182,6 +11182,41 @@
         "health system"
       ],
       "description": "Nonsurgical spine care: neck/back pain, herniated disc, spinal stenosis, radiculopathy. Epidural steroid, facet joint, and sacroiliac joint injections."
+    },
+    {
+      "name": "Victory Ink Studio",
+      "slug": "victory-ink-studio",
+      "master_category": "Hair Restoration & PMU",
+      "category_slug": "hair-restoration-pmu",
+      "blog_category": "Hair Restoration & PMU",
+      "subcategory": "Permanent Makeup / Microblading / Nano Brows / Lip Blush",
+      "market": "Sioux Falls",
+      "market_label": "Sioux Falls",
+      "additional_market_labels": [],
+      "service_area": "Sioux Falls metro / regional",
+      "address": "701 N Phillips Ave, Suite 145, Sioux Falls, SD",
+      "phone": "(419) 902-4241",
+      "website": "https://victoryinkstudio.com/",
+      "profile_url": "https://www.dialedin.health/providers/hair-restoration-pmu#victory-ink-studio",
+      "google_rating": null,
+      "reviews": null,
+      "tier": "Listed",
+      "is_featured": false,
+      "service_tags": [
+        "pmu",
+        "permanent makeup",
+        "microblading",
+        "nano brows",
+        "ombre brows",
+        "powder brows",
+        "lip blush",
+        "lashline enhancement",
+        "cosmetic tattoo",
+        "non-laser pigment removal",
+        "faux freckles",
+        "board certified pmu"
+      ],
+      "description": "Luxury PMU studio downtown at The Cascade. Microblading, nano brows, ombré/powder brows, lip blushing, lashline enhancement, faux freckles, non-laser pigment removal. Owner Rachel Lemons is board-certified by the American Academy of Micropigmentation."
     }
   ]
 }
