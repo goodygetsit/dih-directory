@@ -3194,6 +3194,9 @@
         "senior care",
         "companion care",
         "in-home assistance"
+      ],
+      "featured_markets": [
+        "sioux-falls"
       ]
     },
     {
@@ -3768,6 +3771,9 @@
         "concussion",
         "inflammation",
         "regenerative"
+      ],
+      "featured_markets": [
+        "sioux-falls"
       ]
     },
     {
@@ -6718,7 +6724,7 @@
       "blog_category": "Functional Medicine",
       "subcategory": "Hormone / Thyroid / Gut / Acupuncture / Aesthetics",
       "market": "Sioux Falls, SD",
-      "market_label": "Sioux Falls",
+      "market_label": "Sioux Falls + Virtual (SD)",
       "additional_market_labels": [
         "Virtual"
       ],
@@ -6747,6 +6753,13 @@
         "EMSCULPT",
         "EMFACE",
         "body sculpting"
+      ],
+      "markets": [
+        "sioux-falls",
+        "virtual-services"
+      ],
+      "featured_markets": [
+        "sioux-falls"
       ]
     },
     {
@@ -7964,13 +7977,9 @@
         "sioux-falls",
         "virtual-services"
       ],
-      "telehealth": {
-        "offered": true,
-        "states": [
-          "SD",
-          "MN"
-        ]
-      }
+      "featured_markets": [
+        "sioux-falls"
+      ]
     },
     {
       "name": "Pro Active Physical Therapy",
@@ -9613,6 +9622,9 @@
         "sports injury",
         "knee pain",
         "shoulder pain"
+      ],
+      "featured_markets": [
+        "mankato"
       ]
     },
     {
