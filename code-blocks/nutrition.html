@@ -1,0 +1,273 @@
+<!--
+  DIH Category Page: Nutrition
+  Squarespace Page URL: /providers/nutrition
+-->
+<div class="dih-directory"
+     data-category-slug="nutrition"
+     data-title="Nutrition"
+     data-subtitle="Dietitians, nutritionists, weight loss, GLP-1, and metabolic care">
+  <div class="dih-loading" style="padding:3rem 1rem;text-align:center;color:#6b7280;">Loading providers&hellip;</div>
+</div>
+<style>
+.dih-directory { --teal:#00bfb2; --dark:#1a1a1a; --muted:#6b7280; --border:#e5e7eb; --bg-soft:#f9fafb; font-family:'DM Sans',sans-serif; color:var(--dark); max-width:1200px; margin:0 auto; padding:2rem 1rem; }
+.dih-directory * { box-sizing:border-box; }
+.dih-directory .dih-bc { font-size:.85rem; color:var(--muted); margin-bottom:.5rem; font-family:'DM Mono',monospace; letter-spacing:.05em; }
+.dih-directory .dih-bc a { color:var(--teal); text-decoration:none; }
+.dih-directory .dih-bc a:hover { text-decoration:underline; }
+.dih-directory h1.dih-page-title { font-family:'Playfair Display',Georgia,serif; font-size:clamp(2rem,5vw,3rem); font-weight:700; margin:0 0 .5rem; letter-spacing:-.02em; }
+.dih-directory p.dih-subtitle { font-size:1.1rem; color:var(--muted); margin:0 0 1.5rem; max-width:700px; }
+.dih-directory .dih-search { width:100%; max-width:560px; padding:.75rem 1rem; border:1px solid var(--border); border-radius:8px; font-size:1rem; font-family:inherit; margin-bottom:1.5rem; box-sizing:border-box; }
+.dih-directory .dih-search:focus { outline:none; border-color:var(--teal); box-shadow:0 0 0 3px rgba(0,191,178,.15); }
+.dih-directory .dih-filters { display:flex; flex-wrap:wrap; gap:.5rem; margin:0 0 2rem; padding-bottom:1rem; border-bottom:1px solid var(--border); }
+.dih-directory .dih-chip { border:1px solid var(--border); background:#fff; color:var(--dark); padding:.5rem 1rem; border-radius:999px; font-size:.9rem; font-weight:500; cursor:pointer; transition:all .15s; font-family:inherit; }
+.dih-directory .dih-chip:hover { border-color:var(--teal); color:var(--teal); }
+.dih-directory .dih-chip.is-active { background:var(--dark); color:#fff; border-color:var(--dark); }
+.dih-directory .dih-section { margin-bottom:2rem; }
+.dih-directory .dih-section-title { font-family:'Playfair Display',Georgia,serif; font-size:1.5rem; font-weight:700; margin:1.5rem 0 1rem; }
+.dih-directory .dih-count { display:inline-block; font-family:'DM Mono',monospace; font-size:.8rem; color:var(--muted); margin-left:.5rem; font-weight:400; vertical-align:middle; }
+.dih-directory .dih-grid { display:grid; grid-template-columns:repeat(auto-fill, minmax(280px, 1fr)); gap:1.25rem; }
+.dih-directory .dih-card { display:flex; flex-direction:column; background:#fff; border:1px solid var(--border); border-radius:12px; padding:1.25rem; text-decoration:none; color:inherit; transition:transform .15s, box-shadow .15s, border-color .15s; cursor:pointer; }
+.dih-directory .dih-card:hover { transform:translateY(-2px); box-shadow:0 10px 25px rgba(0,0,0,.08); border-color:var(--teal); }
+.dih-directory .dih-card:focus { outline:2px solid var(--teal); outline-offset:2px; }
+.dih-directory .dih-card.is-featured { border:2px solid var(--teal); box-shadow:0 4px 14px rgba(0,191,178,.15); }
+.dih-directory .dih-card.is-select { border-left:4px solid var(--teal); }
+.dih-directory .dih-card.is-open { background:var(--bg-soft); }
+.dih-directory .dih-card-details { display:none; margin-top:1rem; padding-top:1rem; border-top:1px solid var(--border); }
+.dih-directory .dih-card.is-open .dih-card-details { display:block; }
+.dih-directory .dih-card.is-open .dih-card-footer .dih-link { display:none; }
+.dih-directory .dih-badge { display:inline-block; font-family:'DM Mono',monospace; font-weight:700; font-size:.7rem; letter-spacing:.08em; padding:.25rem .6rem; border-radius:999px; margin-bottom:.75rem; text-transform:uppercase; }
+.dih-directory .dih-badge.featured { background:var(--teal); color:#fff; }
+.dih-directory .dih-badge.select { background:var(--dark); color:var(--teal); }
+.dih-directory .dih-name { font-family:'Playfair Display',Georgia,serif; font-size:1.2rem; font-weight:700; margin:0 0 .35rem; line-height:1.25; }
+.dih-directory .dih-sub { font-size:.85rem; color:var(--muted); margin:0 0 .75rem; }
+.dih-directory .dih-meta { font-size:.85rem; color:var(--muted); margin:.25rem 0; }
+.dih-directory .dih-meta strong { color:var(--dark); font-weight:600; }
+.dih-directory .dih-rating { color:#f59e0b; font-weight:600; }
+.dih-directory .dih-reviews { color:var(--muted); }
+.dih-directory .dih-tags { margin:.5rem 0; }
+.dih-directory .dih-tag { display:inline-block; background:#fff; border:1px solid var(--border); color:var(--muted); font-size:.75rem; padding:.2rem .55rem; border-radius:999px; margin:.15rem .15rem 0 0; }
+.dih-directory .dih-card-footer { margin-top:auto; padding-top:.75rem; display:flex; gap:.5rem; flex-wrap:wrap; align-items:center; }
+.dih-directory .dih-link, .dih-directory .dih-ext { color:var(--teal); font-weight:600; font-size:.85rem; text-decoration:none; background:none; border:none; cursor:pointer; padding:0; font-family:inherit; }
+.dih-directory .dih-link:hover, .dih-directory .dih-ext:hover { text-decoration:underline; }
+.dih-directory .dih-empty { grid-column:1/-1; padding:3rem 1rem; text-align:center; color:var(--muted); background:var(--bg-soft); border-radius:12px; }
+.dih-directory .dih-empty strong { display:block; color:var(--dark); margin-bottom:.5rem; }
+.dih-directory .dih-error { padding:1.5rem; background:#fef2f2; border:1px solid #fecaca; border-radius:8px; color:#991b1b; }
+@media (max-width:640px) { .dih-directory{padding:1.5rem .5rem;} .dih-directory .dih-grid{grid-template-columns:1fr;} }
+</style>
+<script>
+(function () {
+  var DATA_URL = "https://cdn.jsdelivr.net/gh/goodygetsit/dih-directory@main/providers.json";
+  var FEATURED_BASE = "/providers";
+  var MARKET_CHIPS = ["All Locations","Sioux Falls","Omaha","Minneapolis","Virtual Services"];
+  var SLUG_FALLBACKS = {
+    "chiropractic-care":[{slug:"physical-rehabilitation-movement",subInclude:["chiro"]}],
+    "physical-therapy":[{slug:"physical-rehabilitation-movement",subExclude:["chiro"]}],
+    "sports-medicine":[{slug:"performance-optimization-biohacking",subInclude:["sports","performance","cryo","red light","ice","cold plunge","fitness","athlet","recovery"]}],
+    "fitness-studios":["fitness-movement-studios"],
+    "mental-health":[{slug:"mental-behavioral-health",subExclude:["addiction","substance","behavioral","aa","alcohol","drug","ketamine","detox","rehab","suboxone"]}],
+    "behavioral-health":[{slug:"mental-behavioral-health",subInclude:["addiction","substance","behavioral","aa","alcohol","drug","ketamine","detox","rehab","suboxone"]}],
+    "functional-medicine":[{slug:"functional-integrative-naturopathic-medicine",subInclude:["functional"]}],
+    "integrative-naturopathic":[{slug:"functional-integrative-naturopathic-medicine",subExclude:["functional"]}],
+    "pediatric-wellness":["pediatric-family-wellness"],
+    "dermatology":[{slug:"medical-aesthetics-skin",subInclude:["medical dermatology","dermatologist","dermatology"],subExclude:["medspa","med spa","plastic surgery","hair restoration","tattoo"]}],
+    "medical-aesthetics":[{slug:"medical-aesthetics-skin",subInclude:["medspa","med spa","aesthetic","injectable","botox","filler","sculpting","cosmetic derm"],subExclude:["plastic surgery","hair restoration","tattoo removal","iv ","infusion","drip","vascular","vein"]}],
+    "plastic-surgery":[{slug:"medical-aesthetics-skin",subInclude:["plastic surgery"]}],
+    "hair-restoration-pmu":[{slug:"medical-aesthetics-skin",subInclude:["hair restoration","tattoo","pmu","permanent makeup","cosmetic tattoo"]}],
+    "dental":["dental-oral-health"],
+    "vision":[{slug:"vision-hearing",subInclude:["vision","optomet","ophthalm","eye"]}],
+    "ent-allergy":[{slug:"specialty-medical",subInclude:["ent","allergy","sinus","sleep","apnea","asthma","ear","nose","throat","audiolog","hearing"]},{slug:"vision-hearing",subInclude:["audiolog","hearing"]}],
+    "orthopedic":[{slug:"specialty-medical",subInclude:["ortho","podiat","joint","spine"]}],
+    "womens-health":[{slug:"specialty-medical",subInclude:["women","ob-gyn","obgyn","gynec","obstet","pelvic","midwif","menopause","perimenopause"]}],
+    "hyperbaric-therapy":[{slug:"performance-optimization-biohacking",subInclude:["hyperbaric","hbot"]}],
+    "iv-therapy":[{slug:"performance-optimization-biohacking",subInclude:["iv ","infusion","drip","nad","ozone"]},{slug:"medical-aesthetics-skin",subInclude:["iv ","infusion","drip","hydration"]}],
+    "hormone-therapy":[{slug:"performance-optimization-biohacking",subInclude:["hormone","hrt","trt","testosterone","estrogen","pellet","peptide"]}],
+    "nutrition":["nutrition-weight-metabolic-health"],
+    "wellness-coaching":["mind-body-wellness-lifestyle","spiritual-health-sacred-wellness","energy-medicine-alternative-healing"],
+    "supplements":[{slug:"pharmacy-compounding",subInclude:["supplement","vitamin","natural health","nutrition center"]}],
+    "herbal-apothecary":[{slug:"pharmacy-compounding",subInclude:["herbal","apothecary","cannabis","botanical"]}],
+    "non-toxic-home":[],
+    "pharmacy":[{slug:"pharmacy-compounding",subInclude:["pharmacy","compounding"]}],
+    "massage":["massage-bodywork",{slug:"spas-beauty-wellness",subExclude:["salon","barber","groom"]}],
+    "beauty-grooming":[{slug:"spas-beauty-wellness",subInclude:["salon","barber","groom"]}],
+    "home-health-caregiving":["home-community-health"],
+    "animal-health":["animal-health-wellness"],
+    "public-health":[]
+  };
+  var TAG_TRIGGERS = {
+    "chiropractic-care":["chiropractic","chiropractor","chiro"],
+    "physical-therapy":["physical therapy","manual therapy","rehabilitation","dry needling"],
+    "sports-medicine":["sports medicine","performance","athletic","cryo","red light","cold plunge","recovery"],
+    "fitness-studios":["gym","yoga","pilates","crossfit","personal training","strength training","group fitness"],
+    "mental-health":["counseling","psychotherapy","therapist","psychologist","mental health","emdr","cbt"],
+    "behavioral-health":["addiction","substance use","mat","ketamine","suboxone"],
+    "neurofeedback":["neurofeedback","tms","brain training","neurology"],
+    "functional-medicine":["functional medicine","root cause","advanced labs"],
+    "integrative-naturopathic":["naturopathic","integrative","acupuncture","herbalism","chinese medicine"],
+    "primary-care":["primary care","family medicine","internist","direct primary care","dpc"],
+    "pediatric-wellness":["pediatric","pediatrics","well-child","family wellness"],
+    "public-health":["street medicine","harm reduction","free clinic","community health"],
+    "dermatology":["dermatology","dermatologist","medical dermatology"],
+    "medical-aesthetics":["medspa","med spa","aesthetic","injectable","botox","filler","laser","body sculpting","emsculpt","emsella","emface","biote","prp","microneedling","hydrafacial","cosmetic derm"],
+    "plastic-surgery":["plastic surgery","plastic surgeon","reconstructive"],
+    "hair-restoration-pmu":["hair restoration","pmu","permanent makeup","cosmetic tattoo","medical tattoo","tattoo removal","scalp micropigmentation","microblading"],
+    "dental":["dental","dentist","orthodontist","invisalign"],
+    "vision":["optometry","ophthalmology","vision","eye exam"],
+    "ent-allergy":["ent","allergy","sinus","sleep apnea","audiology","hearing"],
+    "orthopedic":["orthopedic","podiatry","joint replacement","spine"],
+    "womens-health":["ob-gyn","obgyn","women\'s health","pelvic","midwifery","menopause","perimenopause"],
+    "hyperbaric-therapy":["hyperbaric","hbot"],
+    "iv-therapy":["iv therapy","iv hydration","nad","ozone","infusion","iv vitamin"],
+    "hormone-therapy":["hormone","hrt","trt","bhrt","pellet","peptide therapy","hormone optimization","bioidentical","biote"],
+    "pain-management":["pain management","spine injection","nerve block","epidural","facet injection"],
+    "nutrition":["nutrition","dietitian","nutritionist","weight loss","glp-1","semaglutide","tirzepatide","metabolic"],
+    "wellness-coaching":["life coach","wellness coach","breathwork","meditation","energy work","reiki","spiritual","mind body","sound healing","ceremony"],
+    "supplements":["supplements","vitamins","third-party tested","natural foods","nutrition center"],
+    "herbal-apothecary":["herbs","herbal","apothecary","tinctures","botanical","cannabis","medical cannabis"],
+    "non-toxic-home":["non-toxic","clean cleaning","plant-based","green cleaning","eco-friendly","natural cleaning"],
+    "pharmacy":["compounding","pharmacy","independent pharmacy","specialty pharmacy"],
+    "massage":["massage","deep tissue","lymphatic","day spa","float"],
+    "beauty-grooming":["hair salon","barber","men\'s grooming","salon"],
+    "home-health-caregiving":["home health","in-home care","hospice","caregiving"],
+    "animal-health":["veterinary","vet","animal care","pet wellness"]
+  };
+  var container = document.querySelector(".dih-directory");
+  if (!container) return;
+  var cfg = {categorySlug:container.dataset.categorySlug||"",title:container.dataset.title||"Directory",subtitle:container.dataset.subtitle||""};
+  var state = {market:"All Locations", q:"", data:null};
+  function esc(s){if(s==null)return"";return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;").replace(/'/g,"&#39;");}
+  function categoryMatches(p){
+    if(p.category_slug===cfg.categorySlug) return true;
+    var fb = SLUG_FALLBACKS[cfg.categorySlug] || [];
+    for(var i=0;i<fb.length;i++){
+      var rule = fb[i];
+      if(typeof rule === "string"){ if(p.category_slug===rule) return true; continue; }
+      if(p.category_slug !== rule.slug) continue;
+      var sub = (p.subcategory||"").toLowerCase();
+      if(rule.subInclude){
+        var match = false;
+        for(var j=0;j<rule.subInclude.length;j++){ if(sub.indexOf(rule.subInclude[j].toLowerCase())!==-1){match=true;break;} }
+        if(!match) continue;
+      }
+      if(rule.subExclude){
+        var excluded = false;
+        for(var k=0;k<rule.subExclude.length;k++){ if(sub.indexOf(rule.subExclude[k].toLowerCase())!==-1){excluded=true;break;} }
+        if(excluded) continue;
+      }
+      return true;
+    }
+    var triggers = TAG_TRIGGERS[cfg.categorySlug] || [];
+    if(triggers.length && p.service_tags && p.service_tags.length){
+      var tags = p.service_tags.map(function(t){return String(t).toLowerCase();});
+      for(var ti=0;ti<triggers.length;ti++){
+        var trig = triggers[ti].toLowerCase();
+        for(var tj=0;tj<tags.length;tj++){ if(tags[tj]===trig || tags[tj].indexOf(trig)!==-1) return true; }
+      }
+    }
+    return false;
+  }
+  function isPrimary(p){return p.category_slug===cfg.categorySlug;}
+  function tierOf(p){
+    if(p.is_featured && isPrimary(p)) return "featured";
+    if((p.tier==="Select" || p.tier==="Activated") && isPrimary(p)) return "select";
+    return "listed";
+  }
+  function reviewScore(p){
+    var r = (typeof p.google_rating==="number") ? p.google_rating : 0;
+    var n = (typeof p.reviews==="number") ? p.reviews : 0;
+    return r * Math.log10(n + 1);
+  }
+  function sortByScore(a, b){ return reviewScore(b) - reviewScore(a); }
+  function featuredHref(p){
+    if(p.profile_url && p.profile_url.indexOf("/providers/")===0 && p.profile_url.indexOf("#")===-1) return p.profile_url;
+    return FEATURED_BASE + "/" + cfg.categorySlug + "/" + p.slug;
+  }
+  function matchesMarket(p){
+    if(state.market==="All Locations") return true;
+    if(state.market==="Virtual Services") return p.market==="Virtual Services" || (p.additional_market_labels||[]).indexOf("Virtual Services")!==-1;
+    return p.market_label===state.market || (p.additional_market_labels||[]).indexOf(state.market)!==-1 || (p.market||"").indexOf(state.market)===0;
+  }
+  function matchesQuery(p){
+    if(!state.q) return true;
+    var q = state.q.toLowerCase();
+    var hay = [p.name, p.subcategory, p.master_category, (p.service_tags||[]).join(" "), p.description||""].join(" ").toLowerCase();
+    return hay.indexOf(q) !== -1;
+  }
+  function fetchData(){
+    fetch(DATA_URL,{cache:"no-store"})
+      .then(function(r){if(!r.ok)throw new Error("HTTP "+r.status);return r.json();})
+      .then(function(json){state.data=json;render();expandFromHash();})
+      .catch(function(e){container.innerHTML='<div class="dih-error">Unable to load directory data. '+esc(e.message)+'</div>';});
+  }
+  function render(){
+    var cat = state.data.providers.filter(categoryMatches).filter(matchesMarket).filter(matchesQuery);
+    var featured = cat.filter(function(p){return tierOf(p)==="featured";}).sort(sortByScore);
+    var select = cat.filter(function(p){return tierOf(p)==="select";}).sort(sortByScore);
+    var listed = cat.filter(function(p){return tierOf(p)==="listed";}).sort(sortByScore);
+    var H = '';
+    H += '<header class="dih-head">';
+    H += '<nav class="dih-bc" aria-label="Breadcrumb"><a href="/">Home</a> &rsaquo; <a href="/the-directory">The Directory</a> &rsaquo; <span>'+esc(cfg.title)+'</span></nav>';
+    H += '<h1 class="dih-page-title">'+esc(cfg.title)+'</h1>';
+    if (cfg.subtitle) H += '<p class="dih-subtitle">'+esc(cfg.subtitle)+'</p>';
+    H += '<input type="search" class="dih-search" placeholder="Search providers, treatments, conditions..." value="'+esc(state.q)+'" aria-label="Search this category">';
+    H += '<div class="dih-filters" role="tablist" aria-label="Filter by market">';
+    MARKET_CHIPS.forEach(function(m){
+      H += '<button class="dih-chip'+(m===state.market?' is-active':'')+'" data-market="'+esc(m)+'" type="button" role="tab" aria-selected="'+(m===state.market?'true':'false')+'">'+esc(m)+'</button>';
+    });
+    H += '</div></header>';
+    if (featured.length){
+      H += '<section class="dih-section"><h2 class="dih-section-title">Featured Provider <span class="dih-count">'+featured.length+'</span></h2>';
+      H += '<div class="dih-grid">'+featured.map(renderCard).join('')+'</div></section>';
+    }
+    if (select.length){
+      H += '<section class="dih-section"><h2 class="dih-section-title">Select Providers <span class="dih-count">'+select.length+'</span></h2>';
+      H += '<div class="dih-grid">'+select.map(renderCard).join('')+'</div></section>';
+    }
+    if (listed.length){
+      var label = (featured.length || select.length) ? 'All Providers' : 'Providers';
+      H += '<section class="dih-section"><h2 class="dih-section-title">'+label+' <span class="dih-count">'+listed.length+'</span></h2>';
+      H += '<div class="dih-grid">'+listed.map(renderCard).join('')+'</div></section>';
+    } else if (!featured.length && !select.length){
+      H += '<div class="dih-empty"><strong>No providers match.</strong>Try a different search or filter, or <a href="/be-a-guest">apply to be the first listed in this category</a>.</div>';
+    }
+    container.innerHTML = H;
+    var search = container.querySelector(".dih-search");
+    if (search){
+      search.addEventListener("input", function(e){ state.q = e.target.value; render(); search.focus(); });
+    }
+    container.querySelectorAll(".dih-chip").forEach(function(b){b.addEventListener("click",function(){state.market=b.dataset.market;render();});});
+
+  }
+  function expandFromHash(){}
+  function renderCard(p){
+    var t = tierOf(p);
+    var clazz = 'dih-card is-' + t;
+    var rating = (typeof p.google_rating==="number") ? '<span class="dih-rating">'+'★'.repeat(Math.round(p.google_rating))+' '+p.google_rating.toFixed(1)+'</span>' : '';
+    var reviews = (typeof p.reviews==="number" && p.reviews>0) ? ' <span class="dih-reviews">('+p.reviews+' reviews)</span>' : '';
+    var market = esc(p.market_label || p.market || '');
+    var addtl = (p.additional_market_labels||[]).filter(Boolean);
+    var marketsExtra = addtl.length ? ' &middot; <em>also '+addtl.map(esc).join(', ')+'</em>' : '';
+    var phone = p.phone ? '<a class="dih-ext" href="tel:'+esc(p.phone.replace(/[^0-9+]/g,''))+'">'+esc(p.phone)+'</a>' : '';
+    var addr  = esc(p.address||'');
+    var website = p.website ? '<a class="dih-ext" href="'+esc(p.website)+'" target="_blank" rel="noopener">Visit website &rsaquo;</a>' : '';
+    var tags = (p.service_tags||[]).map(function(t){return '<span class="dih-tag">'+esc(t)+'</span>';}).join('');
+    var sub = esc(p.subcategory||'');
+    var summary = (
+      (t==='featured' ? '<span class="dih-badge featured">★ Featured Provider</span>' : '') +
+      (t==='select' ? '<span class="dih-badge select">Select Provider</span>' : '') +
+      '<h3 class="dih-name">'+esc(p.name)+'</h3>' +
+      (sub ? '<p class="dih-sub">'+sub+'</p>' : '') +
+      (market ? '<p class="dih-meta"><strong>Location:</strong> '+market+marketsExtra+'</p>' : '') +
+      (rating ? '<p class="dih-meta">'+rating+reviews+'</p>' : '')
+    );
+    if (t==='featured'){
+      return '<a class="'+clazz+'" href="'+featuredHref(p)+'" data-slug="'+esc(p.slug)+'">'+summary+
+        '<div class="dih-card-footer"><span class="dih-link">View Featured Profile &rsaquo;</span></div></a>';
+    }
+    return '<a class="'+clazz+'" href="/providers/listing?slug='+encodeURIComponent(p.slug)+'" data-slug="'+esc(p.slug)+'">' +
+        summary +
+        '<div class="dih-card-footer"><span class="dih-link">View profile &rsaquo;</span></div>' +
+      '</a>';
+  }
+  fetchData();
+})();
+</script>
