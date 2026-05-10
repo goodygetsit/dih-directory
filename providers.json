@@ -7931,7 +7931,7 @@
       "blog_category": "Primary Care & Family Medicine",
       "subcategory": "MD-Led Functional Medicine + Direct Primary Care + Chiropractic",
       "market": "Sioux Falls, SD",
-      "market_label": "Sioux Falls",
+      "market_label": "Sioux Falls + Virtual (SD, MN)",
       "additional_market_labels": [],
       "service_area": null,
       "address": "2333 W 57th St Ste 103, Sioux Falls, SD",
@@ -7959,7 +7959,18 @@
         "perimenopause",
         "obgyn"
       ],
-      "description": "MD-led functional medicine + direct primary care + chiropractic + birth doula. Dr. Jessica Pearson (MD, OB/GYN-trained) leads functional medicine & women's health; Dr. Cheryl (DC, certified functional medicine) and Dr. Sarah (DC) lead chiropractic; Sam (FNP) supports primary care."
+      "description": "MD-led functional medicine + direct primary care + chiropractic + birth doula. Dr. Jessica Pearson (MD, OB/GYN-trained) leads functional medicine & women's health; Dr. Cheryl (DC, certified functional medicine) and Dr. Sarah (DC) lead chiropractic; Sam (FNP) supports primary care.",
+      "markets": [
+        "sioux-falls",
+        "virtual-services"
+      ],
+      "telehealth": {
+        "offered": true,
+        "states": [
+          "SD",
+          "MN"
+        ]
+      }
     },
     {
       "name": "Pro Active Physical Therapy",
