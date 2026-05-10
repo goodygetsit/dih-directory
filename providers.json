@@ -6726,7 +6726,7 @@
       "market": "Sioux Falls, SD",
       "market_label": "Sioux Falls + Virtual (SD)",
       "additional_market_labels": [
-        "Virtual"
+        "Virtual Services"
       ],
       "service_area": null,
       "address": "4928 E Rosa Parks Pl, Sioux Falls, SD 57110",
@@ -7945,7 +7945,9 @@
       "subcategory": "MD-Led Functional Medicine + Direct Primary Care + Chiropractic",
       "market": "Sioux Falls, SD",
       "market_label": "Sioux Falls + Virtual (SD, MN)",
-      "additional_market_labels": [],
+      "additional_market_labels": [
+        "Virtual Services"
+      ],
       "service_area": null,
       "address": "2333 W 57th St Ste 103, Sioux Falls, SD",
       "phone": "(605) 271-5640",
