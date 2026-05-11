@@ -2,13 +2,13 @@ name: Weekly Directory Query Analysis
 
 on:
   schedule:
-    # Every Sunday at 6:00 AM UTC (midnight Central time)
     - cron: '0 6 * * 0'
-  workflow_dispatch: {}  # also allow manual trigger from GitHub UI
+  workflow_dispatch: {}
 
 permissions:
   contents: write
   pull-requests: write
+  id-token: write
 
 jobs:
   analyze:
@@ -17,20 +17,24 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
 
+      - name: Authenticate to GCP via WIF
+        uses: google-github-actions/auth@v2
+        with:
+          workload_identity_provider: ${{ secrets.GCP_WORKLOAD_IDENTITY_PROVIDER }}
+          service_account: ${{ secrets.GCP_SERVICE_ACCOUNT_EMAIL }}
+
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
 
       - name: Install dependencies
-        run: |
-          pip install --quiet anthropic google-cloud-bigquery google-auth
+        run: pip install --quiet anthropic google-cloud-bigquery google-auth
 
       - name: Run weekly analyzer
         env:
           GA4_BIGQUERY_PROJECT: ${{ secrets.GA4_BIGQUERY_PROJECT }}
           GA4_BIGQUERY_DATASET: ${{ secrets.GA4_BIGQUERY_DATASET }}
-          GCP_SERVICE_ACCOUNT_JSON: ${{ secrets.GCP_SERVICE_ACCOUNT_JSON }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           NOTIFY_EMAIL: ${{ secrets.NOTIFY_EMAIL }}
         run: python scripts/weekly_analyzer.py
@@ -38,13 +42,13 @@ jobs:
       - name: Check for changes
         id: changes
         run: |
-          git config user.name "DIH Bot"
-          git config user.email "bot@dialedin.health"
-          git add data/click_signals.json data/popular_queries.json data/synonyms.json data/weekly_summary.md
+          git config user.name 'DIH Bot'
+          git config user.email 'bot@dialedin.health'
+          git add data/click_signals.json data/popular_queries.json data/synonyms.json data/weekly_summary.md 2>/dev/null || true
           if git diff --cached --quiet; then
-            echo "has_changes=false" >> $GITHUB_OUTPUT
+            echo 'has_changes=false' >> $GITHUB_OUTPUT
           else
-            echo "has_changes=true" >> $GITHUB_OUTPUT
+            echo 'has_changes=true' >> $GITHUB_OUTPUT
           fi
 
       - name: Create Pull Request
@@ -52,8 +56,8 @@ jobs:
         uses: peter-evans/create-pull-request@v6
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          commit-message: "Weekly analysis: ranking signals + synonym proposals"
-          title: "Weekly DIH analysis · ${{ github.run_number }}"
+          commit-message: 'Weekly analysis: ranking signals + synonym proposals'
+          title: 'Weekly DIH analysis'
           body-path: data/weekly_summary.md
           branch: weekly-analysis-${{ github.run_number }}
           delete-branch: true
