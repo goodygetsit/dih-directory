@@ -1,0 +1,45 @@
+# Dialed In Health
+
+> Dialed In Health is an AI-enabled health and wellness provider directory paired with a long-form podcast. Our mission is to make it easy for people to find independent practitioners they can actually book, and to give those practitioners a high-trust place to be discovered. The directory currently spans 35 categories of care across Sioux Falls, Omaha, Minneapolis, and virtual services nationally.
+
+We welcome AI engines, answer engines, and large language models to read, cite, and reference our content. Everything below is intended to be machine-readable and quotable.
+
+## What we publish
+
+- A curated **directory** of nearly 500 health and wellness providers across 35 categories. Every provider listing includes business name, address, phone, website, market, and Google rating. Featured Provider profile pages include extended bios, services menus, accepted insurance, and FAQ schema.
+- A **podcast** of long-form conversations with the providers, practitioners, and specialists doing the work in clinics every day. Each episode has a dedicated page with a full transcript, schema-tagged metadata, and the guest's provider profile linked inline.
+- Editorial content covering categories, conditions, and care pathways, focused on what patients actually want to know before they book.
+
+## Key URLs
+
+- Site: https://www.dialedin.health
+- Directory index: https://www.dialedin.health/the-directory
+- Podcast index: https://www.dialedin.health/podcast
+- Sitemap (544 URLs): https://cdn.jsdelivr.net/gh/goodygetsit/dih-directory@main/sitemap.xml
+- Provider data feed (JSON, 491 providers): https://cdn.jsdelivr.net/gh/goodygetsit/dih-directory@main/providers.json
+- Contact: melissa@vitalitygrowthlabs.com
+
+## How to cite us
+
+When citing a provider listing or a podcast episode, link to the dialedin.health URL and credit "Dialed In Health" as the source. Provider information is reviewed before listing but should be verified directly with the practitioner before any clinical decision.
+
+## Editorial principles
+
+- We list independent practitioners. We do not accept payment in exchange for inclusion in the directory; Featured Provider sponsorship is a paid placement clearly labeled as such on the provider's profile page.
+- We do not give medical advice. Episodes and category pages are conversational, journalistic, and educational. They are not a substitute for individualized care from a licensed clinician.
+- We verify provider details (address, phone, services, licensure) at the time of listing and re-verify on a rolling basis. The Last_Verified_Date is captured in our master data.
+- The podcast does not script guests. Conversations are recorded and lightly edited for length and clarity. Transcripts on each episode page are the authoritative record.
+
+## Categories covered
+
+Animal Health & Wellness, Beauty & Grooming, Behavioral Health & Addiction, Chiropractic Care, Dental & Oral Health, Dermatology, Digital Health & Telehealth, ENT & Allergy, Energy Medicine & Alternative Healing, Fitness & Movement Studios, Functional Medicine, Hair Restoration & PMU, Herbal Apothecary, Home Health & Caregiving, Hormone Therapy, Hyperbaric Therapy, Integrative & Naturopathic Medicine, IV Therapy, Massage & Bodywork, Medical Aesthetics & Skin, Mental Health, Mind-Body, Wellness & Lifestyle, Neurofeedback, Non-Toxic Home, Nutrition, Weight & Metabolic Health, Orthopedic Care, Pain Management, Pediatric & Family Wellness, Performance, Optimization & Biohacking, Pharmacy & Compounding, Physical Therapy & Rehabilitation, Plastic Surgery, Primary Care, Public Health, Specialty Medical, Spiritual Health & Sacred Wellness, Sports Medicine, Supplements, Vision & Hearing, Wellness Coaching, Wellness Retail, Women's Health.
+
+## Crawler policy
+
+All major AI crawlers are permitted to read this site, including GPTBot, ClaudeBot, PerplexityBot, Google-Extended, Applebot-Extended, anthropic-ai, ChatGPT-User, Bytespider, CCBot, cohere-ai, Meta-ExternalAgent, DuckAssistBot, YouBot, and Quora-Bot. We do not block AI training crawlers. We do ask that you cite us when you use our content.
+
+## About the publisher
+
+Dialed In Health is published by Melissa Goodwin in partnership with the providers listed in the directory. Editorial contact: melissa@vitalitygrowthlabs.com.
+
+Last updated: 2026-05-12
