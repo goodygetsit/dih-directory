@@ -1,0 +1,232 @@
+/*
+ * DIH Directory Loader — styles
+ * Hosted at: https://cdn.jsdelivr.net/gh/goodygetsit/dih-directory@main/loader.css
+ *
+ * Update workflow:
+ * 1. Edit this file in /Users/melissagoodwin/Documents/Claude/Projects/Vitality Growth/directory-2026-05-09/directory-loader/squarespace/loader-v2/
+ * 2. Copy to /Users/melissagoodwin/Documents/GitHub/dih-directory/loader.css
+ * 3. git commit && git push
+ * 4. Purge jsDelivr cache (or wait ~12h)
+ */
+
+.dih-directory {
+  --teal: #00bfb2;
+  --dark: #1a1a1a;
+  --muted: #6b7280;
+  --border: #e5e7eb;
+  --bg-soft: #f9fafb;
+  --skeleton-bg: #f3f4f6;
+  --skeleton-shine: #ffffff;
+  font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  color: var(--dark);
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+.dih-directory * { box-sizing: border-box; }
+
+/* --- Skeleton placeholder (visible until JS data arrives) --- */
+.dih-skeleton {
+  animation: dih-skeleton-fade-in .15s ease-out;
+}
+.dih-sk-title,
+.dih-sk-subtitle,
+.dih-sk-card {
+  background: linear-gradient(
+    90deg,
+    var(--skeleton-bg) 0%,
+    var(--skeleton-shine) 50%,
+    var(--skeleton-bg) 100%
+  );
+  background-size: 200% 100%;
+  animation: dih-shimmer 1.6s ease-in-out infinite;
+  border-radius: 8px;
+}
+.dih-sk-title {
+  height: 3rem;
+  width: 60%;
+  margin: 0 0 .75rem;
+}
+.dih-sk-subtitle {
+  height: 1.25rem;
+  width: 75%;
+  margin: 0 0 2rem;
+  border-radius: 4px;
+}
+.dih-sk-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.25rem;
+}
+.dih-sk-card {
+  height: 210px;
+  border-radius: 12px;
+}
+@keyframes dih-shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+@keyframes dih-skeleton-fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* --- Rendered directory --- */
+.dih-directory h2.dih-page-title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 700;
+  margin: 0 0 .5rem;
+  color: var(--dark);
+  letter-spacing: -0.02em;
+}
+.dih-directory p.dih-subtitle {
+  font-size: 1.1rem;
+  color: var(--muted);
+  margin: 0 0 1.5rem;
+}
+.dih-directory .dih-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  margin: 0 0 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border);
+}
+.dih-directory .dih-chip {
+  border: 1px solid var(--border);
+  background: #fff;
+  color: var(--dark);
+  padding: .5rem 1rem;
+  border-radius: 999px;
+  font-size: .9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all .15s;
+}
+.dih-directory .dih-chip:hover { border-color: var(--teal); color: var(--teal); }
+.dih-directory .dih-chip.is-active {
+  background: var(--dark);
+  color: #fff;
+  border-color: var(--dark);
+}
+.dih-directory .dih-section-title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 2rem 0 1rem;
+  color: var(--dark);
+}
+.dih-directory .dih-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.25rem;
+}
+.dih-directory .dih-card {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.25rem;
+  text-decoration: none;
+  color: inherit;
+  transition: transform .15s, box-shadow .15s, border-color .15s;
+}
+.dih-directory .dih-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0,0,0,.08);
+  border-color: var(--teal);
+}
+.dih-directory .dih-card.is-featured {
+  border: 2px solid var(--teal);
+  background: #fff;
+  box-shadow: 0 4px 14px rgba(0,191,178,.15);
+}
+.dih-directory .dih-card.is-activated {
+  border-left: 4px solid var(--teal);
+}
+.dih-directory .dih-badge {
+  display: inline-block;
+  background: var(--teal);
+  color: var(--dark);
+  font-weight: 800;
+  font-size: .72rem;
+  letter-spacing: .08em;
+  padding: .25rem .6rem;
+  border-radius: 999px;
+  margin-bottom: .75rem;
+  text-transform: uppercase;
+}
+.dih-directory .dih-badge.guest {
+  background: var(--dark);
+  color: var(--teal);
+  margin-left: .4rem;
+}
+.dih-directory .dih-name {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 0 0 .35rem;
+  line-height: 1.25;
+}
+.dih-directory .dih-sub {
+  font-size: .85rem;
+  color: var(--muted);
+  margin: 0 0 .75rem;
+}
+.dih-directory .dih-meta {
+  font-size: .85rem;
+  color: var(--muted);
+  margin: .25rem 0;
+  display: flex;
+  gap: .35rem;
+  align-items: center;
+}
+.dih-directory .dih-meta strong { color: var(--dark); font-weight: 600; }
+.dih-directory .dih-card-footer {
+  margin-top: auto;
+  padding-top: .75rem;
+  display: flex;
+  gap: .5rem;
+  flex-wrap: wrap;
+}
+.dih-directory .dih-link {
+  color: var(--teal);
+  font-weight: 600;
+  font-size: .85rem;
+  text-decoration: none;
+}
+.dih-directory .dih-link:hover { text-decoration: underline; }
+.dih-directory .dih-empty {
+  grid-column: 1 / -1;
+  padding: 3rem 1rem;
+  text-align: center;
+  color: var(--muted);
+  font-style: italic;
+  background: var(--bg-soft);
+  border-radius: 12px;
+}
+.dih-directory .dih-error {
+  padding: 1.5rem;
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  border-radius: 8px;
+  color: #991b1b;
+  font-size: .9rem;
+}
+.dih-directory .dih-rating {
+  color: #f59e0b;
+  font-weight: 600;
+}
+.dih-directory .dih-count {
+  font-size: .9rem;
+  color: var(--muted);
+  margin-left: .5rem;
+  font-weight: 400;
+}
+@media (max-width: 640px) {
+  .dih-directory { padding: 1.5rem .5rem; }
+  .dih-directory .dih-grid,
+  .dih-directory .dih-sk-grid { grid-template-columns: 1fr; }
+}
