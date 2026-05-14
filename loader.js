@@ -76,8 +76,35 @@
     return CATEGORY_URL_OVERRIDE[slug] || slug;
   }
   function featuredUrl(p) {
-    if (p.profile_url && p.profile_url.indexOf("/providers/") === 0) return p.profile_url;
-    return FEATURED_PAGE_BASE + "/" + p.slug;
+    // If we have a full profile_url, use it directly (handles both absolute and relative)
+    if (p.profile_url) {
+      // Strip site origin so relative URLs stay relative (better for Squarespace's <a> handling)
+      if (p.profile_url.indexOf(SITE_ORIGIN) === 0) return p.profile_url.substring(SITE_ORIGIN.length);
+      if (p.profile_url.indexOf("/providers/") === 0) return p.profile_url;
+      if (p.profile_url.indexOf("http") === 0) return p.profile_url;
+    }
+    // Fall back to category-scoped slug pattern
+    return FEATURED_PAGE_BASE + "/" + (CATEGORY_URL_OVERRIDE[p.category_slug] || p.category_slug) + "/" + p.slug;
+  }
+
+  function cardHref(p) {
+    // Featured tier: link to the dedicated /providers/[category]/[slug] profile page
+    if (p.is_featured) return featuredUrl(p);
+    // Activated/Listed tier: link to the provider's own website if we have one
+    if (p.website) return p.website;
+    // Last resort: anchor within the same category page
+    if (p.profile_url) {
+      if (p.profile_url.indexOf(SITE_ORIGIN) === 0) return p.profile_url.substring(SITE_ORIGIN.length);
+      return p.profile_url;
+    }
+    return "#";
+  }
+
+  function cardTarget(p) {
+    // Open external websites in a new tab; keep DIH-internal links in same tab
+    if (p.is_featured) return "";
+    if (p.website) return ' target="_blank" rel="noopener noreferrer"';
+    return "";
   }
   function matchesCategory(p) {
     if (config.categorySlug && p.category_slug === config.categorySlug) return true;
@@ -255,11 +282,10 @@
   }
 
   function renderCard(p, tierClass, isUpgrade) {
-    var href = p.is_featured
-      ? featuredUrl(p)
-      : LISTING_PAGE_BASE + "?slug=" + encodeURIComponent(p.slug);
+    var href = cardHref(p);
+    var target = cardTarget(p);
     var cls = 'dih-card is-' + tierClass;
-    var html = '<a class="' + cls + '" href="' + escapeHtml(href) + '">';
+    var html = '<a class="' + cls + '" href="' + escapeHtml(href) + '"' + target + '>';
     if (p.is_featured) {
       html += '<span class="dih-badge">★ Top Provider</span>';
     } else if (p.tier === "Activated") {
