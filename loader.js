@@ -17,7 +17,7 @@
   // === Configuration ===
   var DATA_URL = "https://cdn.jsdelivr.net/gh/goodygetsit/dih-directory@main/providers.json";
   var FEATURED_PAGE_BASE = "/providers";
-  var LISTING_PAGE_BASE  = "/listing";
+  var LISTING_PAGE_BASE  = "/providers/listing";  // matches the existing Squarespace listing page
   var SITE_ORIGIN = "https://www.dialedin.health";
   var MARKET_CHIPS = ["All Locations", "Sioux Falls", "Minneapolis", "Omaha", "Virtual"];
 
@@ -90,20 +90,13 @@
   function cardHref(p) {
     // Featured tier: link to the dedicated /providers/[category]/[slug] profile page
     if (p.is_featured) return featuredUrl(p);
-    // Activated/Listed tier: link to the provider's own website if we have one
-    if (p.website) return p.website;
-    // Last resort: anchor within the same category page
-    if (p.profile_url) {
-      if (p.profile_url.indexOf(SITE_ORIGIN) === 0) return p.profile_url.substring(SITE_ORIGIN.length);
-      return p.profile_url;
-    }
-    return "#";
+    // Activated/Listed tier: link to the dynamic listing page at /listing?slug=...
+    // The /listing page reads ?slug= and renders provider info from providers.json.
+    return LISTING_PAGE_BASE + "?slug=" + encodeURIComponent(p.slug);
   }
 
   function cardTarget(p) {
-    // Open external websites in a new tab; keep DIH-internal links in same tab
-    if (p.is_featured) return "";
-    if (p.website) return ' target="_blank" rel="noopener noreferrer"';
+    // All cards link to DIH-internal pages — keep them in the same tab.
     return "";
   }
   function matchesCategory(p) {
@@ -244,7 +237,7 @@
     html += '</div>';
 
     if (featured.length) {
-      html += '<div class="dih-section-title">Top Provider<span class="dih-count">' + featured.length + '</span></div>';
+      html += '<div class="dih-section-title">Featured<span class="dih-count">' + featured.length + '</span></div>';
       html += '<div class="dih-grid">';
       featured.forEach(function (p) { html += renderCard(p, 'featured'); });
       html += '</div>';
@@ -262,7 +255,7 @@
     }
 
     if (upgrade.length) {
-      html += '<div class="dih-section-title">Related Top Providers<span class="dih-count">' + upgrade.length + '</span></div>';
+      html += '<div class="dih-section-title">Also Featured in Dialed In Health<span class="dih-count">' + upgrade.length + '</span></div>';
       html += '<div class="dih-grid">';
       upgrade.forEach(function (p) { html += renderCard(p, 'featured', true); });
       html += '</div>';
@@ -287,9 +280,9 @@
     var cls = 'dih-card is-' + tierClass;
     var html = '<a class="' + cls + '" href="' + escapeHtml(href) + '"' + target + '>';
     if (p.is_featured) {
-      html += '<span class="dih-badge">★ Top Provider</span>';
-    } else if (p.tier === "Activated") {
-      html += '<span class="dih-badge" style="background:#1a1a1a;color:#00bfb2;">Activated</span>';
+      html += '<span class="dih-badge">★ Featured</span>';
+    } else if (p.tier === "Select" || p.tier === "Activated") {
+      html += '<span class="dih-badge" style="background:#1a1a1a;color:#00bfb2;">Select</span>';
     }
     html += '<h3 class="dih-name">' + escapeHtml(p.name) + '</h3>';
     if (p.subcategory) html += '<p class="dih-sub">' + escapeHtml(p.subcategory) + '</p>';
