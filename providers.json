@@ -10539,26 +10539,31 @@
       ]
     },
     {
-      "name": "MoonFarma",
+      "name": "MoonFarma Herbal Apothecary",
       "slug": "moonfarma",
       "master_category": "Herbal & Apothecary",
       "category_slug": "herbal-apothecary",
       "blog_category": "Herbal & Apothecary",
-      "subcategory": "Herbal Apothecary / Retail",
+      "subcategory": "Herbal Apothecary, Botanical Skincare, Non-Toxic Home",
       "market": "Sioux Falls, SD",
-      "market_label": "Sioux Falls",
+      "market_label": "Sioux Falls + Virtual (Nationwide)",
       "additional_market_labels": [
         "Virtual Services"
       ],
-      "service_area": "Sioux Falls metro + Online",
-      "address": "Sioux Falls, SD",
-      "phone": null,
-      "website": "https://moonfarma.com",
-      "profile_url": "https://www.dialedin.health/providers/herbal-apothecary#moonfarma",
+      "featured_markets": [
+        "sioux-falls",
+        "virtual"
+      ],
+      "service_area": "Sioux Falls metro plus nationwide via online shop",
+      "address": "Sioux Falls, SD 57108",
+      "phone": "(415) 579-8544",
+      "website": "https://www.moonfarmaherbalapothecary.com",
+      "profile_url": "https://www.dialedin.health/providers/herbal-apothecary/moonfarma",
       "google_rating": null,
       "reviews": null,
-      "tier": "Listed",
-      "is_featured": false,
+      "tier": "Featured",
+      "is_featured": true,
+      "is_guest": false,
       "service_tags": [
         "herbalism",
         "apothecary",
@@ -10566,6 +10571,10 @@
         "herbal products",
         "natural products",
         "custom formulation",
+        "botanical skincare",
+        "herbal education",
+        "non-toxic home",
+        "low-tox lifestyle",
         "retail"
       ]
     },
