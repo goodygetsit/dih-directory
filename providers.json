@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-04-24T01:52:07.534850+00:00",
+  "generated_at": "2026-05-22T00:00:00+00:00",
   "taxonomy": {
     "master_categories": [
       {
@@ -84,7 +84,7 @@
       {
         "name": "Vision",
         "slug": "vision",
-        "count": 23,
+        "count": 13,
         "group": "Specialty & Surgical"
       },
       {
@@ -216,6 +216,12 @@
       {
         "name": "Spiritual Health & Sacred Wellness",
         "slug": "spiritual-health-sacred-wellness"
+      },
+      {
+        "name": "Hearing & Audiology",
+        "slug": "hearing",
+        "count": 10,
+        "group": "Specialty & Surgical"
       }
     ],
     "markets": [
@@ -3264,9 +3270,9 @@
     {
       "name": "Beltone Hearing",
       "slug": "beltone-hearing",
-      "master_category": "Vision",
-      "category_slug": "vision",
-      "blog_category": "Vision",
+      "master_category": "Hearing & Audiology",
+      "category_slug": "hearing",
+      "blog_category": "Hearing & Audiology",
       "subcategory": "Hearing Aids",
       "market": "Sioux Falls, SD",
       "market_label": "Sioux Falls",
@@ -3275,12 +3281,15 @@
       "address": "1208 E 57th St",
       "phone": "(605) 610-0174",
       "website": "https://www.beltone.com/",
-      "profile_url": "https://www.dialedin.health/providers/vision#beltone-hearing",
+      "profile_url": "https://www.dialedin.health/providers/listing?slug=beltone-hearing",
       "google_rating": 4.5,
       "reviews": null,
       "tier": "Listed",
       "is_featured": false,
-      "service_tags": []
+      "service_tags": [
+        "hearing aids",
+        "hearing tests"
+      ]
     },
     {
       "name": "Blake Blowers D.Ac.",
@@ -3799,9 +3808,9 @@
     {
       "name": "Miracle-Ear East",
       "slug": "miracle-ear-east",
-      "master_category": "Vision",
-      "category_slug": "vision",
-      "blog_category": "Vision",
+      "master_category": "Hearing & Audiology",
+      "category_slug": "hearing",
+      "blog_category": "Hearing & Audiology",
       "subcategory": "Hearing Aids",
       "market": "Sioux Falls, SD",
       "market_label": "Sioux Falls",
@@ -3810,19 +3819,22 @@
       "address": "3009 E 10th St",
       "phone": "(605) 275-9775",
       "website": "https://www.miracle-ear.com/stores-near-me/hearing-aids-sioux-falls-sd",
-      "profile_url": "https://www.dialedin.health/providers/vision#miracle-ear-east",
+      "profile_url": "https://www.dialedin.health/providers/listing?slug=miracle-ear-east",
       "google_rating": 4.5,
       "reviews": null,
       "tier": "Listed",
       "is_featured": false,
-      "service_tags": []
+      "service_tags": [
+        "hearing aids",
+        "hearing tests"
+      ]
     },
     {
       "name": "Miracle-Ear West",
       "slug": "miracle-ear-west",
-      "master_category": "Vision",
-      "category_slug": "vision",
-      "blog_category": "Vision",
+      "master_category": "Hearing & Audiology",
+      "category_slug": "hearing",
+      "blog_category": "Hearing & Audiology",
       "subcategory": "Hearing Aids",
       "market": "Sioux Falls, SD",
       "market_label": "Sioux Falls",
@@ -3831,12 +3843,15 @@
       "address": "2101 W 41st St Ste 11",
       "phone": "(605) 275-9775",
       "website": "https://www.miracle-ear.com/stores-near-me/hearing-aids-sioux-falls-sd",
-      "profile_url": "https://www.dialedin.health/providers/vision#miracle-ear-west",
+      "profile_url": "https://www.dialedin.health/providers/listing?slug=miracle-ear-west",
       "google_rating": 4.5,
       "reviews": null,
       "tier": "Listed",
       "is_featured": false,
-      "service_tags": []
+      "service_tags": [
+        "hearing aids",
+        "hearing tests"
+      ]
     },
     {
       "name": "Natural Arts Chiropractic",
@@ -9161,9 +9176,9 @@
     {
       "name": "Audiology Specialty Clinic",
       "slug": "audiology-specialty-clinic",
-      "master_category": "Vision",
-      "category_slug": "vision",
-      "blog_category": "Vision",
+      "master_category": "Hearing & Audiology",
+      "category_slug": "hearing",
+      "blog_category": "Hearing & Audiology",
       "subcategory": "Audiology + APD + Music IEMs",
       "market": "Sioux Falls, SD",
       "market_label": "Sioux Falls",
@@ -9172,19 +9187,24 @@
       "address": "5124 S Western Ave #4, Sioux Falls, SD 57108",
       "phone": "(605) 250-0539",
       "website": null,
-      "profile_url": "https://www.dialedin.health/providers/vision#audiology-specialty-clinic",
+      "profile_url": "https://www.dialedin.health/providers/listing?slug=audiology-specialty-clinic",
       "google_rating": 5,
       "reviews": 151,
       "tier": "Listed",
       "is_featured": false,
-      "service_tags": []
+      "service_tags": [
+        "audiology",
+        "auditory processing",
+        "musician earplugs",
+        "in-ear monitors"
+      ]
     },
     {
       "name": "Baker Audiology & Hearing Aids",
       "slug": "baker-audiology-hearing-aids",
-      "master_category": "Vision",
-      "category_slug": "vision",
-      "blog_category": "Vision",
+      "master_category": "Hearing & Audiology",
+      "category_slug": "hearing",
+      "blog_category": "Hearing & Audiology",
       "subcategory": "Audiology + Hearing Aids",
       "market": "Sioux Falls, SD",
       "market_label": "Sioux Falls",
@@ -9193,12 +9213,17 @@
       "address": "429 W 69th St, Sioux Falls, SD 57108",
       "phone": "(605) 789-5226",
       "website": null,
-      "profile_url": "https://www.dialedin.health/providers/vision#baker-audiology-hearing-aids",
+      "profile_url": "https://www.dialedin.health/providers/listing?slug=baker-audiology-hearing-aids",
       "google_rating": 5,
       "reviews": 542,
       "tier": "Listed",
       "is_featured": false,
-      "service_tags": []
+      "service_tags": [
+        "audiology",
+        "hearing aids",
+        "hearing tests",
+        "tinnitus"
+      ]
     },
     {
       "name": "Dakota Vision Center",
@@ -9245,9 +9270,9 @@
     {
       "name": "High Tone Hearing",
       "slug": "high-tone-hearing",
-      "master_category": "Vision",
-      "category_slug": "vision",
-      "blog_category": "Vision",
+      "master_category": "Hearing & Audiology",
+      "category_slug": "hearing",
+      "blog_category": "Hearing & Audiology",
       "subcategory": "Audiology + APD + VA Exams",
       "market": "Sioux Falls, SD",
       "market_label": "Sioux Falls",
@@ -9256,12 +9281,17 @@
       "address": "4904 E Rosa Parks Pl, Sioux Falls, SD 57110",
       "phone": "(605) 250-2962",
       "website": null,
-      "profile_url": "https://www.dialedin.health/providers/vision#high-tone-hearing",
+      "profile_url": "https://www.dialedin.health/providers/listing?slug=high-tone-hearing",
       "google_rating": 5,
       "reviews": 38,
       "tier": "Listed",
       "is_featured": false,
-      "service_tags": []
+      "service_tags": [
+        "audiology",
+        "auditory processing",
+        "VA hearing exams",
+        "hearing aids"
+      ]
     },
     {
       "name": "InSight Eye Care Professionals",
@@ -9371,9 +9401,9 @@
     {
       "name": "Sioux Falls Audiology Associates",
       "slug": "sioux-falls-audiology-associates",
-      "master_category": "Vision",
-      "category_slug": "vision",
-      "blog_category": "Vision",
+      "master_category": "Hearing & Audiology",
+      "category_slug": "hearing",
+      "blog_category": "Hearing & Audiology",
       "subcategory": "Audiology + Hearing Aids",
       "market": "Sioux Falls, SD",
       "market_label": "Sioux Falls",
@@ -9382,12 +9412,16 @@
       "address": "4948 E 57th St, Sioux Falls, SD 57108",
       "phone": "(605) 306-3050",
       "website": null,
-      "profile_url": "https://www.dialedin.health/providers/vision#sioux-falls-audiology-associates",
+      "profile_url": "https://www.dialedin.health/providers/listing?slug=sioux-falls-audiology-associates",
       "google_rating": 5,
       "reviews": 148,
       "tier": "Listed",
       "is_featured": false,
-      "service_tags": []
+      "service_tags": [
+        "audiology",
+        "hearing aids",
+        "hearing tests"
+      ]
     },
     {
       "name": "Sioux Falls Family Vision",
@@ -9413,9 +9447,9 @@
     {
       "name": "Sioux Falls Hearing Aids",
       "slug": "sioux-falls-hearing-aids",
-      "master_category": "Vision",
-      "category_slug": "vision",
-      "blog_category": "Vision",
+      "master_category": "Hearing & Audiology",
+      "category_slug": "hearing",
+      "blog_category": "Hearing & Audiology",
       "subcategory": "Audiology + Hearing Aids",
       "market": "Sioux Falls, SD",
       "market_label": "Sioux Falls",
@@ -9424,19 +9458,22 @@
       "address": "1208 E 57th St, Sioux Falls, SD 57108",
       "phone": "(605) 610-0174",
       "website": null,
-      "profile_url": "https://www.dialedin.health/providers/vision#sioux-falls-hearing-aids",
+      "profile_url": "https://www.dialedin.health/providers/listing?slug=sioux-falls-hearing-aids",
       "google_rating": null,
       "reviews": null,
       "tier": "Listed",
       "is_featured": false,
-      "service_tags": []
+      "service_tags": [
+        "hearing aids",
+        "hearing tests"
+      ]
     },
     {
       "name": "Sound Decision Hearing",
       "slug": "sound-decision-hearing",
-      "master_category": "Vision",
-      "category_slug": "vision",
-      "blog_category": "Vision",
+      "master_category": "Hearing & Audiology",
+      "category_slug": "hearing",
+      "blog_category": "Hearing & Audiology",
       "subcategory": "Audiology + Hearing Aids",
       "market": "Sioux Falls, SD",
       "market_label": "Sioux Falls",
@@ -9445,19 +9482,23 @@
       "address": "5120 S Western Ave Ste 103, Sioux Falls, SD 57108",
       "phone": "(605) 413-1085",
       "website": null,
-      "profile_url": "https://www.dialedin.health/providers/vision#sound-decision-hearing",
+      "profile_url": "https://www.dialedin.health/providers/listing?slug=sound-decision-hearing",
       "google_rating": 4.9,
       "reviews": 177,
       "tier": "Listed",
       "is_featured": false,
-      "service_tags": []
+      "service_tags": [
+        "audiology",
+        "hearing aids",
+        "hearing tests"
+      ]
     },
     {
       "name": "Stanford Hearing Aids",
       "slug": "stanford-hearing-aids",
-      "master_category": "Vision",
-      "category_slug": "vision",
-      "blog_category": "Vision",
+      "master_category": "Hearing & Audiology",
+      "category_slug": "hearing",
+      "blog_category": "Hearing & Audiology",
       "subcategory": "Audiology + Hearing Aids",
       "market": "Sioux Falls, SD",
       "market_label": "Sioux Falls",
@@ -9466,12 +9507,16 @@
       "address": "301 W 14th St, Sioux Falls, SD 57104",
       "phone": "(605) 305-1060",
       "website": null,
-      "profile_url": "https://www.dialedin.health/providers/vision#stanford-hearing-aids",
+      "profile_url": "https://www.dialedin.health/providers/listing?slug=stanford-hearing-aids",
       "google_rating": 5,
       "reviews": 173,
       "tier": "Listed",
       "is_featured": false,
-      "service_tags": []
+      "service_tags": [
+        "audiology",
+        "hearing aids",
+        "hearing tests"
+      ]
     },
     {
       "name": "The Eye Doctors PC",
