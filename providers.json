@@ -10673,6 +10673,36 @@
       ]
     },
     {
+      "name": "MB Wellness",
+      "slug": "mb-wellness",
+      "master_category": "Fitness Studios",
+      "category_slug": "fitness-studios",
+      "blog_category": "Fitness & Gyms",
+      "subcategory": "Functional Fitness + Massage + Breathwork",
+      "market": "Sioux Falls, SD",
+      "market_label": "Sioux Falls",
+      "additional_market_labels": [],
+      "service_area": null,
+      "address": "3001 E 10th St, Sioux Falls, SD 57105",
+      "phone": "(507) 401-7290",
+      "website": "https://mymbwellness.com",
+      "profile_url": "https://www.dialedin.health/providers/fitness-studios#mb-wellness",
+      "google_rating": null,
+      "reviews": null,
+      "tier": "Listed",
+      "is_featured": false,
+      "service_tags": [
+        "functional fitness",
+        "personal training",
+        "massage therapy",
+        "breathwork",
+        "fitness over 40",
+        "small group training",
+        "mobility"
+      ],
+      "description": "Functional fitness, massage, and breathwork for adults over 40 in Sioux Falls. Owner Will Sturgeon is an exercise scientist and licensed massage therapist who blends strength training with massage and breathwork in small group sessions. Featured on Dialed In Health."
+    },
+    {
       "name": "MegaStrong",
       "slug": "megastrong",
       "master_category": "Fitness Studios",
