@@ -41,6 +41,7 @@ jobs:
 
       - name: Email the weekly summary
         if: always()
+        continue-on-error: true
         env:
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
           NOTIFY_EMAIL: ${{ secrets.NOTIFY_EMAIL }}

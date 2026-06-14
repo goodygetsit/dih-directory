@@ -33,7 +33,7 @@ def main():
     )
 
     payload = {
-        "from": "Dialed In Health <onboarding@resend.dev>",
+        "from": "Dialed In Health <reports@dialedin.health>",
         "to": [os.environ["NOTIFY_EMAIL"]],
         "subject": "DIH Weekly Directory Query Summary - " + datetime.date.today().isoformat(),
         "html": html,
