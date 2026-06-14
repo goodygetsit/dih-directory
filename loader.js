@@ -15,7 +15,11 @@
   "use strict";
 
   // === Configuration ===
-  var DATA_URL = "https://cdn.jsdelivr.net/gh/goodygetsit/dih-directory@main/providers.json";
+  // Read provider data straight from GitHub raw (reflects main within ~5 min)
+  // instead of jsDelivr @main, which caches the branch for up to ~12h and made
+  // new providers take hours to appear. raw sends permissive CORS and a short
+  // max-age, so updates show up fast without a manual cache purge.
+  var DATA_URL = "https://raw.githubusercontent.com/goodygetsit/dih-directory/main/providers.json";
   var FEATURED_PAGE_BASE = "/providers";
   var LISTING_PAGE_BASE  = "/providers/listing";  // matches the existing Squarespace listing page
   var SITE_ORIGIN = "https://www.dialedin.health";
