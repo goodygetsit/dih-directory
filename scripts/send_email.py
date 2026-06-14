@@ -45,6 +45,7 @@ def main():
         headers={
             "Authorization": "Bearer " + os.environ["RESEND_API_KEY"],
             "Content-Type": "application/json",
+            "User-Agent": "dih-weekly-digest/1.0",
         },
     )
     try:
