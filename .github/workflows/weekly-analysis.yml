@@ -39,6 +39,13 @@ jobs:
           NOTIFY_EMAIL: ${{ secrets.NOTIFY_EMAIL }}
         run: python scripts/weekly_analyzer.py
 
+      - name: Email the weekly summary
+        if: always()
+        env:
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          NOTIFY_EMAIL: ${{ secrets.NOTIFY_EMAIL }}
+        run: python scripts/send_email.py
+
       - name: Check for changes
         id: changes
         run: |
