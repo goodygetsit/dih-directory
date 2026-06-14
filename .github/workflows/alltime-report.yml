@@ -2,6 +2,9 @@ name: All-Time Directory Query Report
 
 on:
   workflow_dispatch: {}
+  schedule:
+    # Monthly on the 19th at 13:00 UTC (8:00am US Central). First run: Fri Jun 19, 2026.
+    - cron: '0 13 19 * *'
 
 permissions:
   contents: read
