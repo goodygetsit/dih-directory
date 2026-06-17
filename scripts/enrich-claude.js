@@ -124,6 +124,7 @@ function buildPrompt(provider, current) {
 Use ONLY the facts provided below. Do not invent clinicians, certifications, insurance, outcomes, hours, awards, review quotes, or specific treatments not implied by the category/subcategory/tags.
 
 The text should be useful for search and provider matching, not marketing fluff. It should sound natural, plain, and specific enough for a health directory.
+Accuracy is more important than coverage. If the provided facts are too thin to support a useful sentence or paragraph, return a shorter value or an empty array item set instead of guessing. It is better to write nothing than to hallucinate.
 
 Return ONLY valid JSON with exactly these keys:
 {
@@ -135,6 +136,9 @@ Return ONLY valid JSON with exactly these keys:
 }
 
 Rules:
+- Never hallucinate. Do not add claims that cannot be traced to the provided provider facts or clearly implied category/subcategory/search tags.
+- If you are uncertain whether a claim is supported, omit it.
+- Do not infer specific services from the provider name alone unless the category/subcategory/tags also support them.
 - If reviewCount/rating exist, you may mention them as listing metadata, but never say what reviewers praised.
 - If address is missing, do not imply a physical clinic.
 - Keep tags and services as strings, no objects.
