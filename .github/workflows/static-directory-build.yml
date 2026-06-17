@@ -1,0 +1,59 @@
+name: Static Directory Build
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'providers.json'
+      - 'data/enriched.json'
+      - 'scripts/generate-static.js'
+      - 'loader.css'
+      - 'loader.js'
+  workflow_dispatch:
+    inputs:
+      upload_to_cloudflare:
+        description: "Upload generated KV entries to Cloudflare"
+        required: true
+        default: "false"
+        type: choice
+        options:
+          - "false"
+          - "true"
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Build static directory
+        env:
+          DIH_SITE_ORIGIN: https://www.dialedin.health
+          DIH_DIRECTORY_BASE: /directory
+        run: npm run build:static
+
+      - name: Dry-run KV upload
+        run: npm run upload:kv:dry
+
+      - name: Upload build artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: dih-production-directory
+          path: dist-kv
+
+      - name: Upload to Cloudflare KV
+        if: ${{ github.event_name == 'push' || github.event.inputs.upload_to_cloudflare == 'true' }}
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_KV_NAMESPACE_ID: ${{ secrets.DIH_PROD_KV_NAMESPACE_ID }}
+        run: npm run upload:kv
