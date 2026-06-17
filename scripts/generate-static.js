@@ -589,8 +589,10 @@ function renderProviderPage(provider) {
   };
   const pagePath = providerPath(provider);
   const enriched = enrichedFor(provider);
+  const about = enrichedAbout(enriched);
+  const aboutLead = about.find((paragraph) => paragraph.includes(provider.name)) || about[0] || "";
   const title = `${provider.name} | ${category.name} | Dialed In Health`;
-  const description = enrichedDescription(enriched) || provider.description || providerAbout(provider, category);
+  const description = aboutLead || enrichedDescription(enriched) || provider.description || providerAbout(provider, category);
   const faq = providerFaq(provider, category);
   const tags = mergeUnique(enrichedList(enriched, "specialtyTags"), provider.service_tags || []);
   const services = enrichedList(enriched, "services");
@@ -617,7 +619,7 @@ function renderProviderPage(provider) {
         ${ratingText(provider) ? `<p class="dih-detail-rating"><strong>${esc(String(provider.google_rating))}</strong> &#9733;${provider.reviews ? ` &middot; ${esc(String(provider.reviews))} reviews` : ""}</p>` : ""}
         <div class="dih-detail-grid">
           <div>
-            <p class="dih-detail-about">${esc(description)}</p>
+            ${about.length ? renderAboutSection(about) : `<p class="dih-detail-about">${esc(description)}</p>`}
             ${services.length ? `<div class="dih-detail-section"><h2>What they offer</h2><ul class="dih-tags">${services.map((t) => `<li>${esc(t)}</li>`).join("")}</ul></div>` : ""}
             ${tags.length ? `<div class="dih-detail-section"><h2>Services &amp; Focus</h2><ul class="dih-tags">${tags.map((t) => `<li>${esc(t)}</li>`).join("")}</ul></div>` : ""}
             <div class="dih-detail-section dih-faq">
@@ -672,6 +674,16 @@ function layout({ title, description, canonicalPath, body, schema = [], ogImage 
   <div class="dih-hub">${body}</div>
 </body>
 </html>`;
+}
+
+function renderAboutSection(paragraphs) {
+  return `
+            <div class="dih-detail-section dih-about-section">
+              <h2>About</h2>
+              <div class="dih-about-copy">
+                ${paragraphs.map((paragraph) => `<p>${esc(paragraph)}</p>`).join("")}
+              </div>
+            </div>`;
 }
 
 function renderNav() {
@@ -836,7 +848,10 @@ function renderDihCss() {
 .dih-hub .dih-detail-rating strong{color:#0e0e0e}
 .dih-hub .dih-detail-about{font-size:1.05rem;color:#3a382f;line-height:1.7;margin:1.5rem 0 0}
 .dih-hub .dih-detail-section{border-top:1px solid #e5e1d8;padding-top:1.5rem;margin-top:2rem}
+.dih-hub .dih-about-section{border-top:0;padding-top:0;margin-top:1.5rem}
 .dih-hub .dih-detail-section h2{font-family:'Playfair Display',Georgia,serif;font-weight:600;font-size:1.5rem;margin:0 0 1rem;color:#0e0e0e}
+.dih-hub .dih-about-copy p{font-size:1.02rem;color:#3a382f;line-height:1.7;margin:0 0 1rem}
+.dih-hub .dih-about-copy p:last-child{margin-bottom:0}
 .dih-hub .dih-tags{display:flex;flex-wrap:wrap;gap:.5rem;list-style:none;padding:0;margin:0}
 .dih-hub .dih-tags li{background:#fff;border:1px solid #e5e1d8;border-radius:999px;padding:.4rem .8rem;font-size:.85rem;color:#5e5a51}
 .dih-hub .dih-side{background:#fff;border:1px solid #e5e1d8;border-radius:8px;padding:1.5rem;position:sticky;top:96px}
@@ -1114,6 +1129,12 @@ function enrichedDescription(enriched) {
   return enriched && enriched.practice && typeof enriched.practice.description === "string"
     ? enriched.practice.description.trim()
     : "";
+}
+
+function enrichedAbout(enriched) {
+  return Array.isArray(enriched && enriched.practice && enriched.practice.about)
+    ? enriched.practice.about.filter((item) => typeof item === "string" && item.trim()).map((item) => item.trim())
+    : [];
 }
 
 function enrichedList(enriched, key) {
