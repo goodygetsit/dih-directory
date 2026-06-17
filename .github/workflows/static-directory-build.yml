@@ -7,6 +7,18 @@ on:
       - 'providers.json'
   workflow_dispatch:
     inputs:
+      enrich_missing_about:
+        description: "Generate missing provider About text with Claude before build"
+        required: true
+        default: "true"
+        type: choice
+        options:
+          - "true"
+          - "false"
+      enrich_limit:
+        description: "Maximum providers to enrich in this run"
+        required: true
+        default: "5"
       upload_to_cloudflare:
         description: "Upload generated KV entries to Cloudflare"
         required: true
@@ -17,7 +29,7 @@ on:
           - "true"
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   build:
@@ -25,11 +37,33 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Set up Node
         uses: actions/setup-node@v4
         with:
           node-version: "20"
+
+      - name: Enrich missing About text
+        if: ${{ github.event_name == 'push' || github.event.inputs.enrich_missing_about == 'true' }}
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          ENRICH_LIMIT: ${{ github.event.inputs.enrich_limit || '5' }}
+        run: npm run enrich:claude -- --missing-about --limit "$ENRICH_LIMIT"
+
+      - name: Commit enrichment
+        if: ${{ github.event_name == 'push' || github.event.inputs.enrich_missing_about == 'true' }}
+        run: |
+          if git diff --quiet -- data/enriched.json; then
+            echo "No enrichment changes to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/enriched.json
+          git commit -m "Enrich missing provider About text"
+          git push
 
       - name: Build static directory
         env:
