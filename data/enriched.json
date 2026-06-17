@@ -114,23 +114,33 @@
     "google": {
       "rating": 4.8,
       "reviewCount": 624,
-      "description": "Best Care Pet Hospital. Specializing in General Practice + Same-Day Urgent. Listed under Animal Health & Wellness. Located at 1102 E 10th St, Sioux Falls, SD 57103. Phone: (605) 334-2412. 4.8 Google rating across 624 reviews."
+      "description": "Best Care Pet Hospital is a veterinary practice in Sioux Falls offering general practice and same-day urgent care, with a 4.8 Google rating from 624 reviews."
     },
     "practice": {
-      "description": "Best Care Pet Hospital is listed in the Dialed In Health directory for general practice + same-day urgent in Sioux Falls. This listing is useful for people looking for veterinary care, pet wellness, and animal health support. Common search matches include general Practice + Same-Day Urgent, veterinary exams, pet wellness visits, and preventive care. The listing currently shows a 4.8 Google rating across 624 reviews.",
-      "newPatients": true
+      "description": "Best Care Pet Hospital specializes in General Practice + Same-Day Urgent care in Sioux Falls. Located at 1102 E 10th St, the hospital provides veterinary exams, pet wellness visits, and preventive care. Phone: (605) 334-2412. 4.8 Google rating across 624 reviews.",
+      "newPatients": true,
+      "about": [
+        "Best Care Pet Hospital is a veterinary practice in Sioux Falls offering general practice and same-day urgent care services for pets.",
+        "The hospital provides veterinary exams and wellness visits as part of routine pet health care.",
+        "Same-day urgent care services are available for pets requiring immediate attention.",
+        "Preventive care and pet wellness support are core services offered at the practice.",
+        "The hospital is located at 1102 E 10th St, Sioux Falls, SD 57103 and can be reached at (605) 334-2412."
+      ]
     },
     "specialtyTags": [
-      "General Practice + Same-Day Urgent",
-      "Veterinary Care",
+      "Veterinarian",
+      "General Practice",
+      "Same-Day Urgent Care",
       "Pet Wellness",
-      "Animal Health"
+      "Veterinary Exams",
+      "Animal Health",
+      "Pet Care"
     ],
     "services": [
-      "General Practice + Same-Day Urgent",
       "Veterinary exams",
       "Pet wellness visits",
-      "Preventive care"
+      "Preventive care",
+      "Same-day urgent care"
     ],
     "contact": {
       "phone": "(605) 334-2412",
@@ -139,12 +149,16 @@
     },
     "profileUrl": "https://www.dialedin.health/directory/animal-health/best-care-pet-hospital",
     "_enrichment": {
-      "status": "locally_generated",
-      "source": "local-provider-template",
+      "status": "claude_generated",
+      "source": "claude-provider-facts-no-google-api",
       "matchType": null,
       "sourceSlug": null,
-      "generatedAt": "2026-06-16T16:34:46.114Z",
-      "note": "Generated without Google Places or Claude; replace with API-assisted enrichment when available."
+      "generatedAt": "2026-06-17T16:39:33.838Z",
+      "note": "Generated without Google Places or Claude; replace with API-assisted enrichment when available.",
+      "model": "claude-haiku-4-5-20251001",
+      "previousStatus": "locally_generated",
+      "aboutSource": "claude-provider-facts-no-google-api",
+      "aboutSyncedAt": "2026-06-17T16:39:33.838Z"
     },
     "provider": null,
     "episode": null
