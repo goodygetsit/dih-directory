@@ -5,10 +5,6 @@ on:
     branches: [main]
     paths:
       - 'providers.json'
-      - 'data/enriched.json'
-      - 'scripts/generate-static.js'
-      - 'loader.css'
-      - 'loader.js'
   workflow_dispatch:
     inputs:
       upload_to_cloudflare:
