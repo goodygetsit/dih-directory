@@ -3154,6 +3154,31 @@
       "service_tags": []
     },
     {
+      "name": "vedratest",
+      "slug": "vedratest",
+      "master_category": "Chiropractic Care",
+      "category_slug": "chiropractic-care",
+      "blog_category": "Physical Therapy & Rehab",
+      "subcategory": "Test Chiropractic Listing",
+      "market": "Sioux Falls, SD",
+      "market_label": "Sioux Falls",
+      "additional_market_labels": [],
+      "service_area": null,
+      "address": "123 Test Chiropractic Ave, Sioux Falls, SD 57108",
+      "phone": "(605) 555-0100",
+      "website": "https://example.com/vedratest",
+      "profile_url": "https://www.dialedin.health/providers/chiropractic-care#vedratest",
+      "google_rating": 4.9,
+      "reviews": 12,
+      "tier": "Listed",
+      "is_featured": false,
+      "service_tags": [
+        "test listing",
+        "chiropractic",
+        "pipeline test"
+      ]
+    },
+    {
       "name": "Allen Unruh Chiropractic",
       "slug": "allen-unruh-chiropractic",
       "master_category": "Chiropractic Care",
