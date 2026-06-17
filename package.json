@@ -1,0 +1,19 @@
+{
+  "name": "dih-directory",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Dialed In Health directory data and static Cloudflare KV generator",
+  "type": "commonjs",
+  "scripts": {
+    "build:static": "node scripts/generate-static.js",
+    "enrich:claude": "node scripts/enrich-claude.js",
+    "enrich:claude:dry": "node scripts/enrich-claude.js --dry-run --limit 1",
+    "enrich:local": "node scripts/enrich-local.js",
+    "test:redirects": "node scripts/test-redirects.js",
+    "upload:kv:dry": "node scripts/upload-kv.js --dry-run",
+    "upload:kv": "node scripts/upload-kv.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
