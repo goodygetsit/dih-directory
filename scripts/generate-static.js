@@ -6,6 +6,7 @@ const path = require("path");
 
 const REPO_ROOT = path.resolve(__dirname, "..");
 const PROVIDERS_PATH = path.join(REPO_ROOT, "providers.json");
+const ENRICHED_PATH = path.join(REPO_ROOT, "data", "enriched.json");
 const OUT_DIR = path.resolve(process.env.DIH_STATIC_OUT || path.join(REPO_ROOT, "dist-kv"));
 const SITE_ORIGIN = (process.env.DIH_SITE_ORIGIN || "https://www.dialedin.health").replace(/\/$/, "");
 const DIRECTORY_BASE = normalizeBase(process.env.DIH_DIRECTORY_BASE || "/directory");
@@ -13,6 +14,7 @@ const GENERATED_AT = new Date().toISOString();
 
 const data = readJson(PROVIDERS_PATH);
 const providers = Array.isArray(data) ? data : data.providers || [];
+const enrichedProviders = readOptionalJson(ENRICHED_PATH) || {};
 const taxonomy = (data.taxonomy && data.taxonomy.master_categories) || [];
 const marketChips = (data.taxonomy && data.taxonomy.market_chip_order) || [
   "All Locations",
@@ -30,30 +32,30 @@ const OLD_CATEGORY_ALIASES = {
   "spiritual-wellness": "spiritual-health-sacred-wellness",
 };
 const CATEGORY_META = {
-  "chiropractic-care": { icon: "🙌", description: "Find trusted chiropractors and spinal health specialists in Sioux Falls." },
-  "physical-therapy": { icon: "🏃", description: "Physical therapists, rehab clinics, and movement specialists." },
-  "sports-medicine": { icon: "⚡", description: "Sports medicine providers, athletic trainers, and performance coaches." },
-  "mental-health": { icon: "🧠", description: "Therapists, counselors, and mental health professionals." },
-  "behavioral-health": { icon: "💬", description: "Addiction counselors, behavioral health services, and recovery support." },
-  "neurofeedback": { icon: "🔬", description: "Neurofeedback providers, brain mapping, and cognitive optimization." },
-  "functional-medicine": { icon: "🔎", description: "Functional medicine practitioners focused on root-cause healing." },
-  "integrative-naturopathic": { icon: "🌿", description: "Integrative, naturopathic, holistic, and alternative medicine providers." },
-  "primary-care": { icon: "🏥", description: "Primary care physicians, family medicine, and urgent care clinics." },
-  "pediatric-wellness": { icon: "👶", description: "Pediatricians, family wellness, and child health specialists." },
-  "dermatology": { icon: "✨", description: "Dermatologists, skin care specialists, and medical aesthetics." },
-  "dental": { icon: "🦷", description: "Dentists, orthodontists, and oral health providers." },
-  "vision": { icon: "👁️", description: "Optometrists, ophthalmologists, and vision care providers." },
-  "ent-allergy": { icon: "👂", description: "Ear, nose, and throat specialists, allergy and immunology providers." },
-  "orthopedic": { icon: "🦿", description: "Orthopedic surgeons, joint specialists, and musculoskeletal care." },
-  "womens-health": { icon: "♀️", description: "Women's health, OB/GYN, fertility, midwifery, and reproductive care." },
-  "hyperbaric-therapy": { icon: "🫁", description: "Hyperbaric oxygen therapy clinics and wound care centers." },
-  "iv-therapy": { icon: "💉", description: "IV vitamin drips, NAD+, ozone therapy, and regenerative treatments." },
-  "hormone-therapy": { icon: "⚗️", description: "Hormone replacement, testosterone, thyroid, and endocrine optimization." },
-  "pain-management": { icon: "🩹", description: "Pain management clinics, cryotherapy, float therapy, and recovery services." },
-  "nutrition": { icon: "🥗", description: "Registered dietitians, nutritionists, and meal planning services." },
-  "weight-metabolic": { icon: "⚖️", description: "Medical weight loss, GLP-1 programs, and metabolic health." },
-  "wellness-coaching": { icon: "🧘", description: "Wellness coaches, yoga studios, meditation, fitness, and lifestyle providers." },
-  "wellness-retail": { icon: "🛒", description: "Health stores, supplement shops, pharmacies, and wellness retail." },
+  "chiropractic-care": { name: "Chiropractic Care", icon: "🙌", description: "Find trusted chiropractors and spinal health specialists in Sioux Falls." },
+  "physical-therapy": { name: "Physical Therapy & Rehabilitation", icon: "🏃", description: "Physical therapists, rehab clinics, and movement specialists." },
+  "sports-medicine": { name: "Sports Medicine & Performance", icon: "⚡", description: "Sports medicine providers, athletic trainers, and performance coaches." },
+  "mental-health": { name: "Mental Health & Counseling", icon: "🧠", description: "Therapists, counselors, and mental health professionals." },
+  "behavioral-health": { name: "Behavioral Health & Addiction", icon: "💬", description: "Addiction counselors, behavioral health services, and recovery support." },
+  "neurofeedback": { name: "Neurofeedback & Brain Health", icon: "🔬", description: "Neurofeedback providers, brain mapping, and cognitive optimization." },
+  "functional-medicine": { name: "Functional Medicine", icon: "🔎", description: "Functional medicine practitioners focused on root-cause healing." },
+  "integrative-naturopathic": { name: "Integrative & Naturopathic Medicine", icon: "🌿", description: "Integrative, naturopathic, holistic, and alternative medicine providers." },
+  "primary-care": { name: "Primary Care & Family Medicine", icon: "🏥", description: "Primary care physicians, family medicine, and urgent care clinics." },
+  "pediatric-wellness": { name: "Pediatric & Family Wellness", icon: "👶", description: "Pediatricians, family wellness, and child health specialists." },
+  "dermatology": { name: "Dermatology & Skin Health", icon: "✨", description: "Dermatologists, skin care specialists, and medical aesthetics." },
+  "dental": { name: "Dental & Oral Health", icon: "🦷", description: "Dentists, orthodontists, and oral health providers." },
+  "vision": { name: "Vision & Eye Care", icon: "👁️", description: "Optometrists, ophthalmologists, and vision care providers." },
+  "ent-allergy": { name: "ENT & Allergy", icon: "👂", description: "Ear, nose, and throat specialists, allergy and immunology providers." },
+  "orthopedic": { name: "Orthopedic & Joint Care", icon: "🦿", description: "Orthopedic surgeons, joint specialists, and musculoskeletal care." },
+  "womens-health": { name: "Women's Health & Fertility", icon: "♀️", description: "Women's health, OB/GYN, fertility, midwifery, and reproductive care." },
+  "hyperbaric-therapy": { name: "Hyperbaric Therapy (HBOT)", icon: "🫁", description: "Hyperbaric oxygen therapy clinics and wound care centers." },
+  "iv-therapy": { name: "IV Therapy & Regenerative Medicine", icon: "💉", description: "IV vitamin drips, NAD+, ozone therapy, and regenerative treatments." },
+  "hormone-therapy": { name: "Hormone Therapy & Optimization", icon: "⚗️", description: "Hormone replacement, testosterone, thyroid, and endocrine optimization." },
+  "pain-management": { name: "Pain Management & Recovery", icon: "🩹", description: "Pain management clinics, cryotherapy, float therapy, and recovery services." },
+  "nutrition": { name: "Nutrition & Dietetics", icon: "🥗", description: "Registered dietitians, nutritionists, and meal planning services." },
+  "weight-metabolic": { name: "Weight & Metabolic Health", icon: "⚖️", description: "Medical weight loss, GLP-1 programs, and metabolic health." },
+  "wellness-coaching": { name: "Health & Wellness Coaching", icon: "🧘", description: "Wellness coaches, yoga studios, meditation, fitness, and lifestyle providers." },
+  "wellness-retail": { name: "Health & Wellness Retail", icon: "🛒", description: "Health stores, supplement shops, pharmacies, and wellness retail." },
   "public-health": { icon: "🏛️", description: "Community health resources, prevention programs, and public health services." },
   "animal-health": { icon: "🐾", description: "Veterinary, pet wellness, and animal health providers." },
   "massage": { icon: "🤲", description: "Massage therapists, bodywork providers, and hands-on recovery services." },
@@ -166,11 +168,12 @@ function buildCategories() {
   const bySlug = new Map();
   for (const cat of taxonomy) {
     if (!cat.slug) continue;
+    const meta = categoryMeta(cat.slug);
     bySlug.set(cat.slug, {
       slug: cat.slug,
-      name: cat.name || titleize(cat.slug),
+      ...meta,
+      name: meta.name || cat.name || titleize(cat.slug),
       group: cat.group || "Other",
-      ...categoryMeta(cat.slug),
       providers: [],
     });
   }
@@ -178,11 +181,12 @@ function buildCategories() {
   for (const p of providers) {
     const slug = p.category_slug || slugify(p.master_category || "other");
     if (!bySlug.has(slug)) {
+      const meta = categoryMeta(slug);
       bySlug.set(slug, {
         slug,
-        name: p.master_category || titleize(slug),
+        ...meta,
+        name: meta.name || p.master_category || titleize(slug),
         group: "Other",
-        ...categoryMeta(slug),
         providers: [],
       });
     }
@@ -203,6 +207,7 @@ function buildCategories() {
 function categoryMeta(slug) {
   const meta = CATEGORY_META[slug] || {};
   return {
+    name: meta.name || "",
     icon: meta.icon || "✚",
     description: meta.description || "",
   };
@@ -322,6 +327,7 @@ function renderDirectoryIndex() {
                 <div class="hub-section-grid">
                   ${cats.map((cat) => `
                     <a class="hub-cat-card" href="${esc(`${DIRECTORY_BASE}/${cat.slug}`)}">
+                      <div class="hub-cat-icon" aria-hidden="true">${esc(cat.icon || "✚")}</div>
                       <div class="hub-cat-name">${esc(cat.name)}</div>
                       <p class="hub-cat-count"><strong>${cat.providers.length}</strong> provider${cat.providers.length === 1 ? "" : "s"}</p>
                     </a>`).join("")}
@@ -539,6 +545,7 @@ function renderCategoryPage(category) {
       <div class="hub-hero is-page">
         <div class="hub-hero-inner">
           <div class="crumbs"><a href="/">Home</a> &rsaquo; <a href="${esc(DIRECTORY_BASE)}/">The Directory</a> &rsaquo; ${esc(category.name)}</div>
+          <div class="hub-page-icon" aria-hidden="true">${esc(category.icon || "✚")}</div>
           <p class="hub-eyebrow">${esc(category.group)}</p>
           <h1 class="hub-title">${esc(category.name)}</h1>
           <p class="hub-subtitle">${esc(description)}</p>
@@ -581,10 +588,12 @@ function renderProviderPage(provider) {
     description: "",
   };
   const pagePath = providerPath(provider);
+  const enriched = enrichedFor(provider);
   const title = `${provider.name} | ${category.name} | Dialed In Health`;
-  const description = provider.description || providerAbout(provider, category);
+  const description = enrichedDescription(enriched) || provider.description || providerAbout(provider, category);
   const faq = providerFaq(provider, category);
-  const tags = provider.service_tags || [];
+  const tags = mergeUnique(enrichedList(enriched, "specialtyTags"), provider.service_tags || []);
+  const services = enrichedList(enriched, "services");
   return layout({
     title,
     description,
@@ -609,6 +618,7 @@ function renderProviderPage(provider) {
         <div class="dih-detail-grid">
           <div>
             <p class="dih-detail-about">${esc(description)}</p>
+            ${services.length ? `<div class="dih-detail-section"><h2>What they offer</h2><ul class="dih-tags">${services.map((t) => `<li>${esc(t)}</li>`).join("")}</ul></div>` : ""}
             ${tags.length ? `<div class="dih-detail-section"><h2>Services &amp; Focus</h2><ul class="dih-tags">${tags.map((t) => `<li>${esc(t)}</li>`).join("")}</ul></div>` : ""}
             <div class="dih-detail-section dih-faq">
               <h2>Frequently asked</h2>
@@ -775,6 +785,7 @@ function renderDihCss() {
 .dih-hub .hub-cat-card { display:block; padding:1.75rem 1.75rem 1.5rem; background:#fff; border:1px solid #e5e1d8; border-radius:8px; text-decoration:none !important; color:#0e0e0e !important; min-height:120px; transition:border-color .2s, transform .2s; }
 .dih-hub .hub-cat-card:hover { border-color:var(--teal); transform:translateY(-2px); }
 .dih-hub .hub-cat-card.is-empty { opacity:.5; }
+.dih-hub .hub-cat-icon { font-size:1.65rem; line-height:1; margin-bottom:.9rem; }
 .dih-hub .hub-cat-name { font-family:'Playfair Display',Georgia,serif; font-weight:600; font-size:1.2rem; margin:0 0 .625rem; color:#0e0e0e !important; line-height:1.25; letter-spacing:-.01em; }
 .dih-hub .hub-cat-count { font-family:'DM Sans',sans-serif; font-size:.78rem; color:#7a7569; margin:0; font-weight:500; }
 .dih-hub .hub-cat-count strong { color:var(--teal); font-weight:600; }
@@ -812,6 +823,7 @@ function renderDihCss() {
 .dih-hub .crumbs a:hover{color:var(--teal)!important}
 .dih-hub .hub-hero.is-page{padding:4.5rem 2rem 3rem;text-align:left}
 .dih-hub .hub-hero.is-page .hub-hero-inner{max-width:1180px;margin:0 auto}
+.dih-hub .hub-page-icon{font-size:2.4rem;line-height:1;margin:0 0 1rem}
 .dih-hub .hub-hero.is-page .hub-title{font-size:clamp(2.5rem,6vw,4rem)}
 .dih-hub .hub-hero.is-page .hub-subtitle{margin:1rem 0 0;max-width:680px}
 .dih-hub .hub-result-rating span{color:#a39d8f}
@@ -880,8 +892,9 @@ The directory contains provider category pages and individual provider pages wit
 }
 
 function buildEnrichedProviders() {
-  const out = {};
+  const out = { ...enrichedProviders };
   for (const provider of providers) {
+    if (out[provider.slug]) continue;
     out[provider.slug] = {
       name: provider.name,
       slug: provider.slug,
@@ -964,12 +977,14 @@ function webPageSchema(name, description, urlPath) {
 }
 
 function localBusinessSchema(provider, urlPath) {
+  const enriched = enrichedFor(provider);
+  const category = categories.find((cat) => cat.slug === provider.category_slug) || {};
   const schema = {
     "@context": "https://schema.org",
     "@type": ["LocalBusiness", "MedicalBusiness"],
     name: provider.name,
     url: abs(urlPath),
-    description: provider.description || provider.subcategory || provider.master_category || undefined,
+    description: enrichedDescription(enriched) || provider.description || providerAbout(provider, category) || provider.subcategory || provider.master_category || undefined,
     telephone: provider.phone || undefined,
     sameAs: provider.website ? [normalizeWebsite(provider.website)] : undefined,
     areaServed: provider.service_area || provider.market || provider.market_label || undefined,
@@ -1084,6 +1099,40 @@ function keyToFile(key) {
 
 function readJson(file) {
   return JSON.parse(fs.readFileSync(file, "utf8"));
+}
+
+function readOptionalJson(file) {
+  if (!fs.existsSync(file)) return null;
+  return readJson(file);
+}
+
+function enrichedFor(provider) {
+  return enrichedProviders[provider.slug] || {};
+}
+
+function enrichedDescription(enriched) {
+  return enriched && enriched.practice && typeof enriched.practice.description === "string"
+    ? enriched.practice.description.trim()
+    : "";
+}
+
+function enrichedList(enriched, key) {
+  return Array.isArray(enriched && enriched[key])
+    ? enriched[key].filter((item) => typeof item === "string" && item.trim()).map((item) => item.trim())
+    : [];
+}
+
+function mergeUnique(...lists) {
+  const seen = new Set();
+  const out = [];
+  for (const item of lists.flat()) {
+    const value = String(item || "").trim();
+    const key = value.toLowerCase();
+    if (!value || seen.has(key)) continue;
+    seen.add(key);
+    out.push(value);
+  }
+  return out;
 }
 
 function normalizeBase(base) {
