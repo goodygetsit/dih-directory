@@ -212,6 +212,19 @@
 
   // === Render ===
   function render() {
+    // --- DIH: set meta description on category hub pages if missing (Bolt, Jul 2026) ---
+    try {
+      var _desc = (config.subtitle && config.subtitle.length > 40)
+        ? config.subtitle
+        : ((config.title || "Wellness") + " providers in the Dialed In Health directory \u2014 compare ratings, services, and locations across the Sioux Falls region and book directly.");
+      if (_desc.length > 160) _desc = _desc.slice(0, 157).replace(/\s+\S*$/, "") + "\u2026";
+      var _md = document.querySelector('meta[name="description"]');
+      if (!_md) { _md = document.createElement("meta"); _md.setAttribute("name", "description"); document.head.appendChild(_md); }
+      var _cur = _md.getAttribute("content") || "";
+      if (_cur.length < 20) _md.setAttribute("content", _desc);
+      var _og = document.querySelector('meta[property="og:description"]');
+      if (_og && (_og.getAttribute("content") || "").length < 20) _og.setAttribute("content", _desc);
+    } catch (e) {}
     var all = state.data.providers.filter(matchesCategory);
     var featured  = all.filter(function (p) { return p.is_featured && matchesMarket(p); });
     var activated = all.filter(function (p) { return p.tier === "Activated" && matchesMarket(p); });
