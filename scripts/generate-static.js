@@ -352,6 +352,12 @@ function renderHubSearchScript() {
       var results = document.getElementById('dih-hub-results');
       var browse = document.getElementById('dih-hub-browse');
       var INDEX=null, loading=false, pending=null;
+      /* --- GA4 event tracking (via GTM dataLayer) --- */
+      var lastQ='', qt;
+      function track(name, params){ try{ window.dataLayer = window.dataLayer || []; var e={event:name}; for(var k in params){ if(Object.prototype.hasOwnProperty.call(params,k)) e[k]=params[k]; } window.dataLayer.push(e); }catch(err){} }
+      function trackQuery(q,cats,provs){ if(!q || q===lastQ) return; lastQ=q;
+        var feat=0; for(var i=0;i<provs.length;i++){ if(provs[i].p && provs[i].p.tier==='Featured') feat++; }
+        track('dih_chat_query',{ query_text:q, results_count:provs.length, matched_categories:cats.map(function(o){return o.c.name;}).join(','), featured_count:feat }); }
       function load(cb){ if(INDEX){cb();return;} if(loading){pending=cb;return;} loading=true;
         fetch(BASE+'/search-index.json').then(function(r){return r.json();}).then(function(d){INDEX=d;loading=false;cb();if(pending){var p=pending;pending=null;p();}}).catch(function(){loading=false;}); }
       function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
@@ -376,7 +382,8 @@ function renderHubSearchScript() {
         load(function(){ if(!INDEX){return;} var terms=tokenize(q); if(!terms.length){results.hidden=true;setBrowse(true);return;}
           var cats=INDEX.categories.map(function(c){ if(!c._h){c._h=tokenize(c.kw);c._n=tokenize(c.name);} var s=score(c._h,c._n,terms); return s>0?{c:c,s:s}:null; }).filter(Boolean).sort(function(a,b){return b.s-a.s;}).slice(0,6);
           var provs=INDEX.providers.map(function(p){ if(!p._h){p._h=tokenize(p.h);p._n=tokenize(p.n);} var s=score(p._h,p._n,terms); if(s>0){var tb=p.tier==='Featured'?2:(p.tier==='Select'?1:0);return {p:p,s:s*10+tb};} return null; }).filter(Boolean).sort(function(a,b){return b.s-a.s;}).slice(0,30);
-          render(q,cats,provs); });
+          render(q,cats,provs);
+          clearTimeout(qt); qt=setTimeout(function(){ trackQuery(q,cats,provs); }, 1200); });
       }
       function sync(){ clearBtn.style.display = input.value ? 'block' : 'none'; }
       var t;
@@ -384,6 +391,10 @@ function renderHubSearchScript() {
       input.addEventListener('input', function(){ sync(); clearTimeout(t); t=setTimeout(function(){ run(input.value); }, 140); });
       clearBtn.addEventListener('click', function(){ input.value=''; sync(); run(''); input.focus(); });
       document.querySelectorAll('.hub-chip').forEach(function(ch){ ch.addEventListener('click', function(){ input.value=ch.getAttribute('data-q'); sync(); run(input.value); input.focus(); }); });
+      results.addEventListener('click', function(e){ var a = e.target && e.target.closest ? e.target.closest('a.hub-result-card') : null; if(!a) return;
+        var cards = results.querySelectorAll('a.hub-result-card'); var pos = Array.prototype.indexOf.call(cards, a) + 1;
+        var href = a.getAttribute('href') || ''; var slug = href.split('?')[0].split('/').filter(Boolean).pop() || '';
+        track('dih_chat_result_click',{ query_text: lastQ || (input.value||'').trim(), clicked_provider_slug: slug, clicked_position: pos }); });
       var qp=new URLSearchParams(location.search).get('q'); if(qp){ input.value=qp; sync(); run(qp); }
     })();
     </script>
