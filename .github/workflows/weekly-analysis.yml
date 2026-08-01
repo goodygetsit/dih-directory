@@ -52,7 +52,7 @@ jobs:
         run: |
           git config user.name 'DIH Bot'
           git config user.email 'bot@dialedin.health'
-          git add data/click_signals.json data/popular_queries.json data/synonyms.json data/weekly_summary.md 2>/dev/null || true
+          git add data/click_signals.json data/popular_queries.json data/synonyms.json data/weekly_summary.md data/listing_stats.json 2>/dev/null || true
           if git diff --cached --quiet; then
             echo 'has_changes=false' >> $GITHUB_OUTPUT
           else
@@ -74,3 +74,4 @@ jobs:
             data/popular_queries.json
             data/synonyms.json
             data/weekly_summary.md
+            data/listing_stats.json
