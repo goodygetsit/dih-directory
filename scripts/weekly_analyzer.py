@@ -34,6 +34,7 @@ PROVIDERS_JSON = REPO_ROOT / "providers.json"
 CLICK_SIGNALS = REPO_ROOT / "data" / "click_signals.json"
 POPULAR_QUERIES = REPO_ROOT / "data" / "popular_queries.json"
 SYNONYMS_JSON = REPO_ROOT / "data" / "synonyms.json"
+LISTING_STATS = REPO_ROOT / "data" / "listing_stats.json"
 
 
 def bq_client():
@@ -91,6 +92,122 @@ def pull_weekly_queries(client):
     """
     rows = list(client.query(sql).result())
     return [dict(r.items()) for r in rows]
+
+
+WEEK_FILTER = """_TABLE_SUFFIX BETWEEN FORMAT_DATE('%Y%m%d', DATE_SUB(CURRENT_DATE(), INTERVAL 7 DAY))
+                              AND FORMAT_DATE('%Y%m%d', CURRENT_DATE())"""
+
+
+def pull_site_traffic(client):
+    """Site-wide traffic for the last 7 days from the GA4 export (page_view etc. are auto-collected)."""
+    totals_sql = f"""
+    SELECT
+      COUNT(DISTINCT user_pseudo_id) AS users,
+      COUNTIF(event_name = 'first_visit') AS new_users,
+      COUNTIF(event_name = 'session_start') AS sessions,
+      COUNTIF(event_name = 'page_view') AS page_views
+    FROM `{PROJECT}.{DATASET}.events_*`
+    WHERE {WEEK_FILTER}
+    """
+    totals = dict(list(client.query(totals_sql).result())[0].items())
+
+    pages_sql = f"""
+    SELECT
+      REGEXP_REPLACE(REGEXP_REPLACE(
+        (SELECT value.string_value FROM UNNEST(event_params) WHERE key = 'page_location'),
+        r'[?#].*$', ''), r'^https?://[^/]+', '') AS page_path,
+      COUNT(*) AS views
+    FROM `{PROJECT}.{DATASET}.events_*`
+    WHERE event_name = 'page_view' AND {WEEK_FILTER}
+    GROUP BY page_path
+    HAVING page_path IS NOT NULL AND page_path != ''
+    ORDER BY views DESC
+    LIMIT 10
+    """
+    top_pages = [dict(r.items()) for r in client.query(pages_sql).result()]
+
+    sources_sql = f"""
+    SELECT
+      COALESCE(traffic_source.source, '(direct)') AS source,
+      COALESCE(traffic_source.medium, '(none)') AS medium,
+      COUNT(DISTINCT user_pseudo_id) AS new_users
+    FROM `{PROJECT}.{DATASET}.events_*`
+    WHERE event_name = 'first_visit' AND {WEEK_FILTER}
+    GROUP BY source, medium
+    ORDER BY new_users DESC
+    LIMIT 8
+    """
+    sources = [dict(r.items()) for r in client.query(sources_sql).result()]
+    return {"totals": totals, "top_pages": top_pages, "sources": sources}
+
+
+def pull_listing_views(client, providers):
+    """Per-provider listing page views for the last 7 days, matched by provider slug."""
+    slug_info = {p.get("slug"): {"name": p.get("name"), "tier": p.get("tier")}
+                 for p in providers if p.get("slug")}
+    sql = f"""
+    SELECT
+      REGEXP_EXTRACT(REGEXP_REPLACE(
+        (SELECT value.string_value FROM UNNEST(event_params) WHERE key = 'page_location'),
+        r'[?#].*$', ''), r'/([^/]+)/?$') AS last_segment,
+      COUNT(*) AS views,
+      COUNT(DISTINCT user_pseudo_id) AS visitors
+    FROM `{PROJECT}.{DATASET}.events_*`
+    WHERE event_name = 'page_view' AND {WEEK_FILTER}
+    GROUP BY last_segment
+    HAVING last_segment IS NOT NULL
+    """
+    stats = {}
+    for r in client.query(sql).result():
+        row = dict(r.items())
+        slug = row.get("last_segment")
+        if slug in slug_info:
+            stats[slug] = {
+                "name": slug_info[slug]["name"],
+                "tier": slug_info[slug]["tier"],
+                "views": int(row.get("views") or 0),
+                "visitors": int(row.get("visitors") or 0),
+            }
+    return stats
+
+
+def build_traffic_section(traffic):
+    t = traffic["totals"]
+    lines = [
+        "",
+        "## Site traffic (last 7 days)",
+        f"- Visitors: {t.get('users', 0)} ({t.get('new_users', 0)} new)",
+        f"- Sessions: {t.get('sessions', 0)}",
+        f"- Page views: {t.get('page_views', 0)}",
+        "",
+        "### Top pages",
+    ]
+    for p in traffic["top_pages"]:
+        lines.append(f"- {p['page_path']} — {p['views']} views")
+    lines.extend(["", "### New visitors by source"])
+    for s in traffic["sources"]:
+        lines.append(f"- {s['source']} / {s['medium']} — {s['new_users']}")
+    return "\n".join(lines)
+
+
+def build_listing_section(listing_stats):
+    lines = ["", "## Listing views (last 7 days)"]
+    featured = sorted((s for s in listing_stats.values() if s.get("tier") == "Featured"),
+                      key=lambda s: -s["views"])
+    others = sorted((s for s in listing_stats.values() if s.get("tier") != "Featured"),
+                    key=lambda s: -s["views"])[:10]
+    lines.append("### Featured listings")
+    if featured:
+        for s in featured:
+            lines.append(f"- {s['name']} — {s['views']} views, {s['visitors']} visitors")
+    else:
+        lines.append("- No Featured listing views recorded this week.")
+    if others:
+        lines.append("")
+        lines.append("### Top other listings")
+        for s in others:
+            lines.append(f"- {s['name']} ({s.get('tier')}) — {s['views']} views, {s['visitors']} visitors")
+    return "\n".join(lines)
 
 
 def calculate_ctr_signals(queries):
@@ -258,8 +375,33 @@ def main():
     # Write everything to repo
     write_signals(signals, popular, synonym_suggestions)
 
+    # Site traffic + per-listing views (auto-collected GA4 data — works even before
+    # the custom search events flow). Never let these kill the core run.
+    traffic = None
+    listing_stats = {}
+    try:
+        traffic = pull_site_traffic(client)
+        print(f"[weekly_analyzer] Traffic: {traffic['totals']}")
+    except Exception as e:
+        print(f"[weekly_analyzer] Traffic pull failed (non-fatal): {e}")
+    try:
+        listing_stats = pull_listing_views(client, providers)
+        print(f"[weekly_analyzer] Listing views for {len(listing_stats)} providers")
+        LISTING_STATS.parent.mkdir(parents=True, exist_ok=True)
+        LISTING_STATS.write_text(json.dumps({
+            "updated": dt.datetime.utcnow().isoformat() + "Z",
+            "window_days": 7,
+            "listings": listing_stats
+        }, indent=2))
+    except Exception as e:
+        print(f"[weekly_analyzer] Listing views pull failed (non-fatal): {e}")
+
     # Build human-readable summary for email + PR description
     summary = build_summary(queries, signals, synonym_suggestions)
+    if traffic:
+        summary += "\n" + build_traffic_section(traffic)
+    if listing_stats:
+        summary += "\n" + build_listing_section(listing_stats)
     Path("data/weekly_summary.md").write_text(summary)
     print("[weekly_analyzer] Summary written to data/weekly_summary.md")
 
