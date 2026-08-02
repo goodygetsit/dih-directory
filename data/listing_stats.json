@@ -1,0 +1,24 @@
+{
+  "updated": "2026-08-02T08:32:01.906326Z",
+  "window_days": 7,
+  "listings": {
+    "prairie-roots-health": {
+      "name": "Prairie Roots Health",
+      "tier": "Featured",
+      "views": 2,
+      "visitors": 2
+    },
+    "stenzel-chiropractic-clinic": {
+      "name": "Stenzel Chiropractic Clinic",
+      "tier": "Featured",
+      "views": 2,
+      "visitors": 1
+    },
+    "moonfarma": {
+      "name": "MoonFarma Herbal Apothecary",
+      "tier": "Featured",
+      "views": 1,
+      "visitors": 1
+    }
+  }
+}
