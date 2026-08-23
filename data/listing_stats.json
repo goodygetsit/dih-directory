@@ -1,0 +1,24 @@
+{
+  "updated": "2026-08-23T06:51:28.801630Z",
+  "window_days": 7,
+  "listings": {
+    "stenzel-chiropractic-clinic": {
+      "name": "Stenzel Chiropractic Clinic",
+      "tier": "Featured",
+      "views": 1,
+      "visitors": 1
+    },
+    "prairie-roots-health": {
+      "name": "Prairie Roots Health",
+      "tier": "Featured",
+      "views": 1,
+      "visitors": 1
+    },
+    "radiant-health-and-hormone-therapy": {
+      "name": "Radiant Health and Hormone Therapy",
+      "tier": "Featured",
+      "views": 1,
+      "visitors": 1
+    }
+  }
+}
