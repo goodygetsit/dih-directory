@@ -1,5 +1,5 @@
 # DIH Weekly Query Summary
-Period: last 7 days ending 2026-05-17
+Period: last 7 days ending 2026-06-14
 
 ## Headline numbers
 - Total queries: 0
