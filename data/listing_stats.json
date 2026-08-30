@@ -1,0 +1,24 @@
+{
+  "updated": "2026-08-30T11:42:45.911752Z",
+  "window_days": 7,
+  "listings": {
+    "prairie-roots-health": {
+      "name": "Prairie Roots Health",
+      "tier": "Featured",
+      "views": 32,
+      "visitors": 4
+    },
+    "radiant-health-and-hormone-therapy": {
+      "name": "Radiant Health and Hormone Therapy",
+      "tier": "Featured",
+      "views": 2,
+      "visitors": 1
+    },
+    "midwest-hyperbarics": {
+      "name": "Midwest Hyperbarics",
+      "tier": "Featured",
+      "views": 6,
+      "visitors": 2
+    }
+  }
+}
