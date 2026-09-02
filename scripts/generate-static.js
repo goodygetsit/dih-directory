@@ -67,6 +67,7 @@ const CATEGORY_META = {
   "hair-restoration-pmu": { icon: "✍️", description: "Hair restoration, permanent makeup, and cosmetic tattoo services." },
   "supplements": { icon: "💊", description: "Supplement brands, wellness products, and targeted nutrition support." },
   "herbal-apothecary": { icon: "🌱", description: "Herbal medicine, apothecary products, teas, tinctures, and natural remedies." },
+  "functional-beverages": { name: "Functional Beverages", icon: "🥤", description: "Functional beverage brands: THC, CBD, CBG, adaptogens, and nootropics." },
   "non-toxic-home": { icon: "🧼", description: "Non-toxic home products, clean living supplies, and safer household goods." },
   "pharmacy": { icon: "⚕️", description: "Pharmacies, compounding services, and medication support." },
   "natural-grocery": { icon: "🛍️", description: "Natural grocery, specialty foods, and better-for-you local shopping." },
