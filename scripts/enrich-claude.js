@@ -59,11 +59,34 @@ async function main() {
       continue;
     }
 
-    const generated = await callClaude(prompt);
-    const normalized = normalizeGenerated(generated, provider);
-    enriched[provider.slug] = mergeEntry(provider, current, normalized);
-    results.push({ slug: provider.slug, status: "claude_generated" });
-    console.log(`enriched ${provider.slug}`);
+    // Enrichment is optional decoration. A provider Claude cannot write well is
+    // skipped and reported, never fatal: this step runs ahead of the build and
+    // the Cloudflare upload, so throwing here used to take the whole deploy down
+    // with it (run #8, "too few about paragraphs for sioux-nation-pet-clinic").
+    try {
+      const generated = await callClaude(prompt);
+      const normalized = normalizeGenerated(generated, provider);
+      enriched[provider.slug] = mergeEntry(provider, current, normalized);
+      results.push({ slug: provider.slug, status: "claude_generated" });
+      console.log(`enriched ${provider.slug}`);
+    } catch (error) {
+      const reason = error && error.message ? error.message : String(error);
+      results.push({ slug: provider.slug, status: "skipped", reason });
+      console.warn(`SKIPPED ${provider.slug}: ${reason}`);
+    }
+  }
+
+  const skipped = results.filter((r) => r.status === "skipped");
+  if (skipped.length) {
+    console.warn(
+      `\n${skipped.length} of ${results.length} provider(s) skipped and left unenriched:`
+    );
+    for (const s of skipped) console.warn(`  - ${s.slug}: ${s.reason}`);
+    console.warn(
+      "These keep their existing text. The build continues. If every provider " +
+      "was skipped with the same error, treat that as a real failure (bad API " +
+      "key, rate limit, model change) rather than a content problem.\n"
+    );
   }
 
   if (!dryRun) {
@@ -83,7 +106,8 @@ async function main() {
     dryRun,
     model,
     candidates: candidates.length,
-    updated: dryRun ? 0 : results.length,
+    updated: dryRun ? 0 : results.filter((r) => r.status === "claude_generated").length,
+    skipped: dryRun ? 0 : skipped.length,
     summaryPath: path.relative(root, summaryPath),
     samplePrompt: dryRun ? results[0]?.prompt : undefined,
   }, null, 2));
