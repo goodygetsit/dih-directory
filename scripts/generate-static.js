@@ -1087,6 +1087,13 @@ function renderSitemapIndex() {
 }
 
 function renderLlmsTxt() {
+  // A hand-authored llms.txt at the repo root is the canonical version: it
+  // covers the podcast, the mission and the directory, where the generated
+  // fallback below only describes the directory. Serve it verbatim so the
+  // site's own domain returns it instead of redirecting to a CDN copy.
+  const authored = readOptionalText(path.join(REPO_ROOT, "llms.txt"));
+  if (authored && authored.trim()) return authored;
+
   return `# Dialed In Health Directory
 
 > Static, crawlable health and wellness provider directory generated from providers.json.
