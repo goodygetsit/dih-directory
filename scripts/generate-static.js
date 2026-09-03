@@ -3,10 +3,14 @@
 
 const fs = require("fs");
 const path = require("path");
+const vm = require("vm");
 
 const REPO_ROOT = path.resolve(__dirname, "..");
 const PROVIDERS_PATH = path.join(REPO_ROOT, "providers.json");
 const ENRICHED_PATH = path.join(REPO_ROOT, "data", "enriched.json");
+const FEATURED_PATH = path.join(REPO_ROOT, "data", "featured-providers.json");
+const FEATURED_CSS_PATH = path.join(REPO_ROOT, "assets", "featured-provider.css");
+const FEATURED_JS_PATH = path.join(REPO_ROOT, "assets", "featured-provider.js");
 const OUT_DIR = path.resolve(process.env.DIH_STATIC_OUT || path.join(REPO_ROOT, "dist-kv"));
 const SITE_ORIGIN = (process.env.DIH_SITE_ORIGIN || "https://www.dialedin.health").replace(/\/$/, "");
 const DIRECTORY_BASE = normalizeBase(process.env.DIH_DIRECTORY_BASE || "/directory");
@@ -15,6 +19,90 @@ const GENERATED_AT = new Date().toISOString();
 const data = readJson(PROVIDERS_PATH);
 const providers = Array.isArray(data) ? data : data.providers || [];
 const enrichedProviders = readOptionalJson(ENRICHED_PATH) || {};
+
+// Featured-tier premium page data and template.
+// The data was hand-authored on the old Squarespace /providers/ pages and lived
+// nowhere else; it is now versioned here. The CSS and builder script are the
+// same ones those pages used, so the design carries over unchanged.
+const featuredData = readOptionalJson(FEATURED_PATH) || {};
+const featuredCss = readOptionalText(FEATURED_CSS_PATH) || "";
+const featuredJs = readOptionalText(FEATURED_JS_PATH) || "";
+// Run the premium template's builder at BUILD time and capture the markup it
+// produces, so the page ships as real HTML. Previously this ran in the visitor's
+// browser, which meant the page was empty to anything that does not execute
+// JavaScript - including a fair share of crawlers.
+function prerenderFeaturedMarkup(pageData) {
+  let captured = null;
+  const rootStub = {
+    get innerHTML() { return captured; },
+    set innerHTML(value) { captured = value; },
+    querySelectorAll: () => [],
+    addEventListener: () => {},
+  };
+  const sandbox = {
+    window: { DIH_PROVIDER: pageData, DIH_CP_POOL: [] },
+    document: {
+      getElementById: (id) => (id === "dih-fp-root" ? rootStub : null),
+      querySelectorAll: () => [],
+      addEventListener: () => {},
+    },
+    fetch: () => ({ then() { return this; }, catch() { return this; } }),
+    console: { log() {}, warn() {}, error() {} },
+  };
+  sandbox.window.document = sandbox.document;
+  sandbox.self = sandbox.window;
+  try {
+    vm.runInNewContext(featuredJs, sandbox, { timeout: 10000 });
+  } catch (error) {
+    // The builder wires up click handlers after writing innerHTML; those calls
+    // fail against the stub and are irrelevant here. Only a missing capture is
+    // a real failure.
+  }
+  return captured;
+}
+
+// Assemble the finished page body: prerendered markup, cross-promo cards filled
+// in, and one small script for the FAQ accordion. No client-side rendering.
+function featuredBody(pageData, pool, provider) {
+  let markup = prerenderFeaturedMarkup(pageData);
+  if (!markup) {
+    throw new Error(`Featured prerender produced no markup for ${provider.slug}`);
+  }
+  markup = markup.replace(
+    /(<div class="cross-promo-grid"[^>]*>)[\s\S]*?(<\/div>)(?=\s*<\/(?:div|section)>)/,
+    (match, open, close) => `${open}${renderCrossPromoCards(pool)}${close}`
+  );
+  return `
+      <style>${featuredCss}</style>
+      <div class="dih-fp" id="dih-fp-root">${markup}</div>
+      <script>
+(function(){
+  document.querySelectorAll(".faq-item").forEach(function(item){
+    var q = item.querySelector(".faq-q");
+    if (q) q.addEventListener("click", function(){ item.classList.toggle("open"); });
+  });
+})();
+      </script>`;
+}
+
+function renderCrossPromoCards(pool) {
+  return pool.slice(0, 3).map((item) => `
+      <a class="cp-card featured" href="${esc(item.profile_url)}">
+        <div class="specialty">${esc(item.master_category || "")}${item.market_label ? ` &middot; ${esc(item.market_label)}` : ""}</div>
+        <h4>${esc(item.name)}</h4>
+        ${item.subcategory ? `<p class="practitioner">${esc(item.subcategory)}</p>` : ""}
+        <span class="badge-mini">&#9733; Featured Provider</span>
+      </a>`).join("");
+}
+
+function featuredDataFor(provider) {
+  if (!provider || !provider.slug) return null;
+  if (!(provider.is_featured || provider.tier === "Featured")) return null;
+  const record = featuredData[provider.slug];
+  if (!record || !record.name) return null;
+  if (!featuredCss || !featuredJs) return null;
+  return record;
+}
 const taxonomy = (data.taxonomy && data.taxonomy.master_categories) || [];
 const marketChips = (data.taxonomy && data.taxonomy.market_chip_order) || [
   "All Locations",
@@ -141,8 +229,13 @@ for (const category of categories) {
   writeKey(`${DIRECTORY_BASE}/${category.slug}`, renderCategoryPage(category), "text/html; charset=utf-8");
 }
 
+let featuredPagesWritten = 0;
 for (const provider of providers) {
-  writeKey(providerPath(provider), renderProviderPage(provider), "text/html; charset=utf-8");
+  const featured = featuredDataFor(provider);
+  const html = featured
+    ? (featuredPagesWritten++, renderFeaturedProviderPage(provider, featured))
+    : renderProviderPage(provider);
+  writeKey(providerPath(provider), html, "text/html; charset=utf-8");
 }
 
 writeKey(`${DIRECTORY_BASE}/search-index.json`, JSON.stringify(buildSearchIndex()), "application/json; charset=utf-8");
@@ -591,6 +684,96 @@ function renderProviderCard(provider, categorySlug) {
       <div class="hub-result-cat">${esc(provider.subcategory || provider.master_category || "")}</div>
     </a>
   `;
+}
+
+// Featured tier: the premium page, rendered inside the directory rather than as
+// a hand-built page on a separate URL. Same markup and CSS the old /providers/
+// pages used; the data is inlined at build time so the page needs no network
+// call to render.
+function renderFeaturedProviderPage(provider, record) {
+  const category = categories.find((cat) => cat.slug === provider.category_slug) || {
+    name: provider.master_category || titleize(provider.category_slug || "directory"),
+    slug: provider.category_slug || "directory",
+  };
+  const pagePath = providerPath(provider);
+  const categoryPath = `${DIRECTORY_BASE}/${category.slug}`;
+
+  // Point the template's internal links at the directory, never the retired
+  // /providers/ addresses.
+  const pageData = Object.assign({}, record, {
+    slug: provider.slug,
+    category_slug: category.slug,
+    category_name: record.category_name || category.name,
+    master_category_url: categoryPath,
+  });
+
+  // Cross-promo pool, inlined. profile_url is set to the directory path so the
+  // cards never link back to the old addresses.
+  const pool = providers
+    .filter((other) => other.slug !== provider.slug && (other.is_featured || other.tier === "Featured"))
+    .map((other) => ({
+      slug: other.slug,
+      name: other.name,
+      master_category: other.master_category || "",
+      market_label: other.market_label || other.market || "",
+      subcategory: other.subcategory || "",
+      is_featured: true,
+      google_rating: other.google_rating || 0,
+      reviews: other.reviews || 0,
+      profile_url: providerPath(other),
+    }));
+
+  const faq = (record.faqs || [])
+    .map((item) => ({ q: item.question || item.q || "", a: item.answer || item.a || "" }))
+    .filter((item) => item.q && item.a);
+
+  const description =
+    (Array.isArray(record.about) ? record.about[0] : record.about) ||
+    record.tagline ||
+    `${provider.name} in the Dialed In Health directory.`;
+
+  const videoSchema = (record.videos || [])
+    .filter((video) => video.youtube_id)
+    .map((video) => ({
+      "@context": "https://schema.org",
+      "@type": "VideoObject",
+      name: video.title || provider.name,
+      description: video.description || description,
+      thumbnailUrl: `https://img.youtube.com/vi/${video.youtube_id}/maxresdefault.jpg`,
+      contentUrl: `https://www.youtube.com/watch?v=${video.youtube_id}`,
+      embedUrl: `https://www.youtube.com/embed/${video.youtube_id}`,
+      publisher: { "@type": "Organization", name: "Dialed In Health", url: SITE_ORIGIN },
+    }));
+
+  const personSchema = record.practitioner && record.practitioner.name
+    ? [{
+        "@context": "https://schema.org",
+        "@type": "Person",
+        name: record.practitioner.name,
+        jobTitle: record.practitioner.credential || undefined,
+        worksFor: { "@type": "Organization", name: provider.name, url: abs(pagePath) },
+      }]
+    : [];
+
+  return layout({
+    title: `${provider.name} | ${pageData.category_name} | Dialed In Health`,
+    description: String(description).slice(0, 300),
+    canonicalPath: pagePath,
+    ogImage: null,
+    schema: [
+      localBusinessSchema(provider, pagePath),
+      breadcrumbSchema([
+        ["Home", "/"],
+        ["Directory", DIRECTORY_BASE],
+        [pageData.category_name, categoryPath],
+        [provider.name, pagePath],
+      ]),
+      faq.length ? faqSchema(faq) : null,
+      ...videoSchema,
+      ...personSchema,
+    ],
+    body: featuredBody(pageData, pool, provider),
+  });
 }
 
 function renderProviderPage(provider) {
@@ -1131,6 +1314,11 @@ function readJson(file) {
 function readOptionalJson(file) {
   if (!fs.existsSync(file)) return null;
   return readJson(file);
+}
+
+function readOptionalText(file) {
+  if (!fs.existsSync(file)) return null;
+  return fs.readFileSync(file, "utf8");
 }
 
 function enrichedFor(provider) {
