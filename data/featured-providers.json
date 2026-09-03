@@ -1,0 +1,1079 @@
+{
+  "stenzel-chiropractic-clinic": {
+    "name": "Stenzel Chiropractic Clinic",
+    "slug": "stenzel-chiropractic-clinic",
+    "category_name": "Chiropractic Care",
+    "category_slug": "chiropractic-care",
+    "master_category_url": "/providers/chiropractic-care",
+    "cross_promo_pool": [
+      "midwest-hyperbarics",
+      "kore-cares",
+      "radiant-health-and-hormone-therapy"
+    ],
+    "city": "Mapleton + Mankato, MN",
+    "service_area": "Mapleton and Mankato plus surrounding south-central MN: Amboy, Good Thunder, New Ulm, Eagle Lake, Blue Earth, Wells, Delavan, Janesville, St. Clair, Winnebago, Minnesota Lake, Easton",
+    "rating": null,
+    "reviews": null,
+    "practitioner": {
+      "name": "Dr. Jordan Stenzel",
+      "credential": "DC"
+    },
+    "tagline": "Reverse peripheral neuropathy by addressing the six things your nerves need to heal \u2014 without gabapentin.",
+    "tags": [
+      "Chiropractic",
+      "Peripheral Neuropathy",
+      "Shockwave Therapy",
+      "Cold Laser",
+      "Red Light Therapy",
+      "TMJ",
+      "Headaches",
+      "Sciatica",
+      "Pregnancy Chiropractic"
+    ],
+    "about": [
+      "Stenzel Chiropractic Clinic is a two-location practice serving Mapleton, Mankato, and surrounding south-central Minnesota communities. The clinic combines traditional chiropractic care with a dedicated peripheral neuropathy program built on advanced regenerative therapies.",
+      "Dr. Jordan Stenzel, DC is the lead practitioner and the author of \"Healing the Hidden Nerves,\" a book outlining his approach to peripheral neuropathy. The clinic's neuropathy program integrates chiropractic adjustments, shockwave therapy, cold laser, and red light therapy to address nerve dysfunction at its source rather than masking symptoms with medication.",
+      "Beyond the neuropathy program, the clinic provides full-scope chiropractic care for headaches, TMJ, sciatica, sports injuries, knee and shoulder pain, and pregnancy support. Two convenient locations and a coordinated care model serve patients across the Mankato metro and the surrounding rural communities."
+    ],
+    "services": [
+      "Chiropractic Adjustments",
+      "Peripheral Neuropathy Program",
+      "Shockwave Therapy",
+      "Cold Laser Therapy",
+      "Red Light Therapy",
+      "TMJ and Jaw Pain Treatment",
+      "Headache and Migraine Care",
+      "Sciatica and Disc Care",
+      "Pregnancy Chiropractic",
+      "Sports Injury Recovery"
+    ],
+    "service_details": {
+      "location": "Mapleton + Mankato, MN (2 locations)",
+      "focus_areas": "Peripheral neuropathy, chiropractic adjustments, regenerative laser and shockwave therapies, sports and pregnancy chiropractic",
+      "specialties": "Diabetic neuropathy, chemo-induced neuropathy, idiopathic neuropathy, TMJ, chronic headaches, sciatica, sports injuries",
+      "approach": "Root-cause neuropathy program combining chiropractic, shockwave, and laser therapies; coordinated care across two locations",
+      "accepting_new": "Accepting"
+    },
+    "videos": [
+      {
+        "youtube_id": "bp_z8qcFV6M",
+        "title": "Reverse Peripheral Neuropathy: 6 Things Your Nerves Need to Heal (That Gabapentin Misses)",
+        "badge": "DIALED IN HEALTH \u00b7 EP 17",
+        "description": "Dr. Jordan Stenzel, DC on the six requirements a nerve needs to live, grow, and thrive \u2014 and why the standard-of-care drug (gabapentin) addresses none of them.",
+        "watch_url": "https://www.youtube.com/watch?v=bp_z8qcFV6M",
+        "episode_url": "https://www.dialedin.health/podcast/episode-17-stenzel-chiropractic",
+        "chapters": [
+          {
+            "time": "01:00",
+            "title": "Stenzel Chiropractic Clinic \u2014 Mapleton + Mankato origin"
+          },
+          {
+            "time": "03:30",
+            "title": "What peripheral neuropathy actually is"
+          },
+          {
+            "time": "10:00",
+            "title": "The six requirements for a nerve to live, grow, and thrive"
+          },
+          {
+            "time": "17:00",
+            "title": "Why gabapentin treats the symptom, not the nerve"
+          },
+          {
+            "time": "23:30",
+            "title": "Metformin and the B12 connection"
+          },
+          {
+            "time": "27:00",
+            "title": "GLP-1s and emerging nerve risk"
+          },
+          {
+            "time": "30:00",
+            "title": "The 3-month MitoNAD+ Protocol"
+          },
+          {
+            "time": "40:00",
+            "title": "Myth Busters: neuropathy edition"
+          },
+          {
+            "time": "46:00",
+            "title": "How to find Stenzel Chiropractic Clinic"
+          }
+        ]
+      }
+    ],
+    "articles": [],
+    "faqs": [
+      {
+        "question": "What is the peripheral neuropathy program at Stenzel Chiropractic?",
+        "answer": "An integrated treatment plan combining chiropractic care, shockwave therapy, cold laser, and red light therapy to address peripheral neuropathy at its source. The program is designed for patients with diabetic neuropathy, chemo-induced neuropathy, and idiopathic nerve pain who have not found relief through medication alone."
+      },
+      {
+        "question": "Where are the Stenzel Chiropractic locations?",
+        "answer": "Two locations in south-central Minnesota: Mapleton and Mankato. Both serve patients throughout the broader region, including Amboy, Good Thunder, New Ulm, Eagle Lake, Blue Earth, Wells, Delavan, Janesville, St. Clair, Winnebago, Minnesota Lake, and Easton."
+      },
+      {
+        "question": "What conditions does the clinic treat beyond chiropractic adjustments?",
+        "answer": "TMJ and jaw pain, chronic headaches and migraines, sciatica, knee and shoulder pain, sports injuries, and pregnancy-related back and pelvic pain. The neuropathy program is a specialty service offered alongside general chiropractic care."
+      },
+      {
+        "question": "What is shockwave therapy and how is it different from cold laser?",
+        "answer": "Shockwave therapy uses acoustic pressure waves to stimulate tissue healing and break up scar tissue. Cold laser uses specific light wavelengths to reduce inflammation and accelerate cellular repair. Both are non-invasive and complement chiropractic care, especially for peripheral neuropathy."
+      },
+      {
+        "question": "Is chiropractic safe during pregnancy?",
+        "answer": "Yes. Chiropractic care during pregnancy is widely used to address back and pelvic pain, support proper fetal positioning, and ease delivery. Stenzel Chiropractic uses techniques and tables designed for pregnancy."
+      },
+      {
+        "question": "Does the clinic accept insurance?",
+        "answer": "Coverage varies by carrier and plan. Contact the clinic directly to confirm in-network status and out-of-pocket costs for chiropractic adjustments, neuropathy treatment, and adjunct therapies."
+      }
+    ],
+    "contact": {
+      "phone": "",
+      "address": "Mapleton, MN + Mankato, MN (2 locations)",
+      "website": "https://www.stenzelchiropractic.com",
+      "hours": "",
+      "booking_url": "https://www.stenzelchiropractic.com",
+      "quiz_url": "",
+      "new_patients": "Accepting"
+    },
+    "related_on_dih": [
+      {
+        "kicker": "Podcast Episode 17",
+        "title": "Reverse Peripheral Neuropathy: 6 Things Your Nerves Need to Heal",
+        "description": "Dr. Jordan Stenzel, DC on the six-requirements framework and why gabapentin only mutes the symptom.",
+        "url": "https://www.dialedin.health/podcast/episode-17-stenzel-chiropractic"
+      },
+      {
+        "kicker": "Browse Category",
+        "title": "Chiropractic Care in South-Central MN",
+        "description": "All chiropractic providers in the Dialed In Health directory.",
+        "url": "https://www.dialedin.health/providers/chiropractic-care"
+      },
+      {
+        "kicker": "Podcast Episode 01",
+        "title": "What HBOT Actually Does \u2014 and Who It's Really For",
+        "description": "Companion topic \u2014 hyperbaric oxygen therapy, another regenerative therapy that supports nerve recovery.",
+        "url": "https://www.dialedin.health/podcast/episode-01-midwest-hyperbarics"
+      }
+    ]
+  },
+  "radiant-health-and-hormone-therapy": {
+    "name": "Radiant Health and Hormone Therapy",
+    "slug": "radiant-health-and-hormone-therapy",
+    "category_name": "Functional Medicine",
+    "category_slug": "functional-medicine",
+    "master_category_url": "/providers/functional-medicine",
+    "cross_promo_pool": [
+      "midwest-hyperbarics",
+      "kore-cares",
+      "stenzel-chiropractic-clinic"
+    ],
+    "city": "Sioux Falls, SD",
+    "service_area": "Sioux Falls metro and surrounding areas",
+    "rating": 4.9,
+    "reviews": 87,
+    "practitioner": {
+      "name": "Jessica Morrell",
+      "credential": "NP"
+    },
+    "tags": [
+      "Hormone Replacement Therapy",
+      "Functional Medicine",
+      "Acupuncture",
+      "Functional Aesthetics",
+      "Weight Loss",
+      "Peptide Therapy",
+      "Thyroid Optimization"
+    ],
+    "about": [
+      "Radiant Health and Hormone Therapy is Sioux Falls' dedicated center for functional medicine and hormone optimization. We specialize in identifying and treating the root causes of symptoms that affect quality of life, including fatigue, weight gain, mood swings, brain fog, and low libido.",
+      "Rather than masking symptoms with temporary fixes, we take a comprehensive approach to understand your unique health picture. We combine advanced lab testing, personalized hormone optimization, nutritional guidance, and peptide therapy to help you achieve lasting wellness and vitality.",
+      "Whether you are a woman navigating menopause, a man seeking to optimize testosterone, or anyone interested in functional medicine that goes beyond conventional care, our team is committed to helping you feel your best at every stage of life."
+    ],
+    "services": [
+      "Hormone Replacement Therapy (BHRT)",
+      "Hormone Therapy and Optimization",
+      "Acupuncture",
+      "Functional Aesthetics",
+      "Weight Loss Programs",
+      "Peptide Therapy",
+      "Thyroid Optimization",
+      "Nutritional Guidance"
+    ],
+    "service_details": {
+      "location": "Sioux Falls, SD",
+      "focus_areas": "Hormone optimization, functional medicine, acupuncture, functional aesthetics, age management",
+      "specialties": "Women and men, menopause, andropause, metabolic health, whole-body aesthetic care",
+      "approach": "Root cause analysis, comprehensive testing, personalized treatment",
+      "virtual": "Yes, licensed in SD"
+    },
+    "videos": [
+      {
+        "youtube_id": "OVpgXncV8CE",
+        "title": "It Might Not Be Your Hormones. It Might Be the Plastics.",
+        "badge": "DIALED IN HEALTH \u00b7 EP 10",
+        "description": "Jessica on endocrine disruptors, hormone receptors, and why hormone therapy sometimes stops working until you address the plastics.",
+        "watch_url": "https://www.youtube.com/watch?v=OVpgXncV8CE",
+        "episode_url": "https://www.dialedin.health/podcast/episode-10-radiant-hormones"
+      },
+      {
+        "youtube_id": "5Q3w5l-rthA",
+        "title": "Radiant Health on Spotlight Sioux Falls",
+        "badge": "SPOTLIGHT SIOUX FALLS \u00b7 FEATURE",
+        "description": "Jessica Morrell, NP and the Radiant Health team featured on Spotlight Sioux Falls.",
+        "watch_url": "https://www.youtube.com/watch?v=5Q3w5l-rthA"
+      },
+      {
+        "youtube_id": "IYmuanK2ppE",
+        "title": "Radiant Health on Spotlight Sioux Falls \u2014 Continued",
+        "badge": "SPOTLIGHT SIOUX FALLS \u00b7 SEGMENT",
+        "description": "Additional Spotlight Sioux Falls segment featuring Radiant Health.",
+        "watch_url": "https://www.youtube.com/watch?v=IYmuanK2ppE"
+      },
+      {
+        "youtube_id": "yQqFmPWe_o8",
+        "title": "Radiant Health on Spotlight Sioux Falls \u2014 Extended",
+        "badge": "SPOTLIGHT SIOUX FALLS \u00b7 SEGMENT",
+        "description": "Extended Spotlight Sioux Falls feature on Radiant Health and Hormone Therapy.",
+        "watch_url": "https://www.youtube.com/watch?v=yQqFmPWe_o8"
+      }
+    ],
+    "related_on_dih": [
+      {
+        "kicker": "Browse Category",
+        "title": "Functional Medicine in Sioux Falls",
+        "description": "All functional medicine providers in the Dialed In Health directory.",
+        "url": "https://www.dialedin.health/providers/functional-medicine"
+      }
+    ],
+    "articles": [],
+    "faqs": [
+      {
+        "question": "What is bioidentical hormone replacement therapy?",
+        "answer": "Bioidentical hormone replacement therapy uses hormones that are structurally identical to those your body produces naturally. Unlike synthetic hormones, BHRT is customized to your individual needs and often results in fewer side effects with better symptom relief."
+      },
+      {
+        "question": "Who is a good candidate for hormone replacement therapy?",
+        "answer": "Women experiencing menopause or perimenopause symptoms, men with low testosterone, and anyone with diagnosed hormone deficiencies may benefit from hormone optimization. A comprehensive evaluation determines your candidacy."
+      },
+      {
+        "question": "Is hormone therapy covered by insurance?",
+        "answer": "Many hormone therapy services may be considered preventive or wellness-focused and may not be covered by insurance. We work with patients to understand their coverage and provide transparent pricing for all services."
+      },
+      {
+        "question": "How is functional medicine different from conventional primary care?",
+        "answer": "Functional medicine seeks to identify and address the root causes of disease rather than just treating symptoms. We take time to understand your unique health history, genetics, and lifestyle to create a personalized treatment plan."
+      },
+      {
+        "question": "What does the first appointment look like?",
+        "answer": "Your first appointment includes a comprehensive health history, physical examination, and specialized lab testing. This allows us to assess your current hormone levels and overall health status before recommending a treatment plan."
+      },
+      {
+        "question": "How long until I feel a difference?",
+        "answer": "Most patients notice improvements in energy, mood, and sleep within 2 to 4 weeks. Full optimization typically takes 3 to 6 months as we fine-tune your dosages based on how you feel and your lab work."
+      },
+      {
+        "question": "Do you work with men as well as women?",
+        "answer": "Yes. We work with both men and women. Men often benefit from testosterone optimization, which can improve energy, mood, muscle mass, and overall vitality."
+      },
+      {
+        "question": "What are peptides and how do they help?",
+        "answer": "Peptides are short chains of amino acids that can improve hormone production, accelerate healing, enhance muscle growth, and support metabolic function. They represent the future of regenerative and optimization medicine."
+      }
+    ],
+    "contact": {
+      "phone": "",
+      "address": "Sioux Falls, SD",
+      "website": "https://radiantht.com",
+      "hours": "Monday \u2013 Friday, 8:00 AM \u2013 5:00 PM",
+      "booking_url": "https://www.optimantra.com/optimus/patient/patientaccess/servicesall?pid=aW16Y1U3d21vR2JHeVFZajN3K0MxUT09&lid=YTNJUk1QWXpvdFF4RWQ1cEsvZGZOUT09",
+      "quiz_url": "https://radianthealthandhormonesiouxfalls.scoreapp.com/",
+      "new_patients": "Accepting"
+    }
+  },
+  "moonfarma": {
+    "name": "MoonFarma Herbal Apothecary",
+    "slug": "moonfarma",
+    "category_name": "Herbal & Apothecary",
+    "category_slug": "herbal-apothecary",
+    "master_category_url": "/providers/herbal-apothecary",
+    "is_guest": false,
+    "logo_url": "/dev-deploy-2026-05-09/featured-profile-v2/assets/moonfarma-logo.avif",
+    "cross_promo_pool": [
+      "prairie-roots-health",
+      "kore-cares",
+      "midwest-hyperbarics"
+    ],
+    "city": "Sioux Falls, SD \u00b7 In-person + Virtual / Online Shop",
+    "service_area": "Sioux Falls metro and nationwide via online shop",
+    "rating": null,
+    "reviews": null,
+    "tagline": "Herbal wisdom. Non-toxic living. Community care.",
+    "practitioner": {
+      "name": "Ashton Blaha",
+      "credential": "CPH, CNHP \u00b7 Founder"
+    },
+    "tags": [
+      "Herbal Medicine",
+      "Plant-Based Wellness",
+      "Non-Toxic Living",
+      "Holistic Living",
+      "Medicinal Plants",
+      "Herbal Education",
+      "Sustainable Wellness",
+      "Natural Remedies"
+    ],
+    "about": [
+      "MoonFarma was born out of a simple frustration: the wellness industry was loud, expensive, and full of ingredients that did more harm than good. The more founder Ashton Blaha learned about herbal medicine and non-toxic living, the harder it became to ignore how inaccessible that knowledge was for most people and most communities. MoonFarma was built to close that gap, with products you can trust, wisdom you can actually use, and a community rooted in real care.",
+      "At MoonFarma, the team meets people where they are, offering handcrafted herbal remedies, botanical skincare, and plant-based wellness products built around what your body actually needs. Every formula is rooted in herbal tradition, made with non-toxic, transparently sourced ingredients you can pronounce and trust.",
+      "Dialed In Health readers get 20% off any order at MoonFarma with code DIALEDIN at checkout through June 30, 2026."
+    ],
+    "three_promises": [
+      {
+        "title": "Products made with the earth in mind",
+        "body": "Non-toxic, transparently sourced, plant-based formulas in every batch."
+      },
+      {
+        "title": "Knowledge that empowers you beyond the purchase",
+        "body": "Education is built into every product label, workshop, and resource."
+      },
+      {
+        "title": "Care that extends to your whole community",
+        "body": "Accessible programming and community gatherings, not just transactions."
+      }
+    ],
+    "services": [
+      {
+        "title": "Botanical Skincare",
+        "description": "Plant-derived, non-toxic skincare made with clean, earth-derived ingredients."
+      },
+      {
+        "title": "Herbal Tinctures",
+        "description": "Custom and ready-made liquid extracts formulated to support hormones, sleep, stress, cycle health, libido, and more. Made in small batches at a 1:5 ratio in a menstruum of alcohol, vegetable glycerin, and water."
+      },
+      {
+        "title": "Handcrafted Soap & Bath",
+        "description": "Small-batch soaps and bath products made with clean, earth-derived ingredients."
+      },
+      {
+        "title": "Non-Toxic Home & Body",
+        "description": "Candles, home goods, and personal care products free from harmful chemicals and synthetic additives."
+      },
+      {
+        "title": "Herbal Education & Community Programs",
+        "description": "Accessible workshops, resources, and community gatherings for anyone interested in plant medicine, regardless of background or budget."
+      },
+      {
+        "title": "The Low-Tox Life Audit",
+        "description": "MoonFarma's signature wellness experience: a personalized deep-dive into the products, habits, and exposures shaping your health, followed by a custom roadmap of plant-based, non-toxic alternatives tailored to your life."
+      }
+    ],
+    "symptoms": [
+      "Stress and anxiety",
+      "Poor sleep",
+      "Menstrual support",
+      "Headaches and migraines",
+      "Muscle tension",
+      "Aches and pains",
+      "Toxic load and detox support",
+      "Skin irritation and inflammation"
+    ],
+    "conditions_treated": [
+      "Hormonal imbalance",
+      "Stress and adrenal load",
+      "Sleep dysregulation",
+      "Cycle irregularity",
+      "Chronic skin issues",
+      "Digestive concerns",
+      "Toxic exposure recovery"
+    ],
+    "team_members": [
+      {
+        "name": "Ashton Blaha",
+        "credentials": "CPH \u00b7 CNHP",
+        "role": "Founder, Certified Professional Herbalist, Certified Natural Holistic Practitioner",
+        "bio": "Ashton Blaha is a Certified Natural Holistic Practitioner (CNHP), Certified Professional Herbalist, and the creative force behind MoonFarma Herbal Apothecary. Her deep love for plant medicine has guided her journey into the magical realms of flower essences, sacred woods, and the folklore woven through the natural world. Ashton trained through the East West School of Planetary Herbology and the Trinity School of Health, and brings ten years of herbal practice to every formula MoonFarma releases."
+      }
+    ],
+    "team_extras": "",
+    "service_details": {
+      "location": "Sioux Falls, SD 57108",
+      "focus_areas": "Herbal medicine, botanical skincare, non-toxic home and body, herbal education, plant-based wellness",
+      "specialties": "Custom tinctures, flower essences, low-tox lifestyle coaching, herbal community programming",
+      "approach": "Cash-pay only. Small-batch, transparently sourced formulas with built-in education at every step.",
+      "founded": "2016",
+      "payment": "Cash-pay only",
+      "virtual": "Yes, nationwide via online shop. Virtual consults available.",
+      "languages": "English",
+      "accepting_new": "Yes, currently accepting"
+    },
+    "videos": [],
+    "related_on_dih": [
+      {
+        "kicker": "Browse Category",
+        "title": "Herbal & Apothecary in Sioux Falls",
+        "description": "The full Dialed In Health directory of herbal apothecaries and plant-based wellness providers.",
+        "url": "https://www.dialedin.health/providers/herbal-apothecary"
+      },
+      {
+        "kicker": "Browse the Directory",
+        "title": "Wellness Retail on Dialed In Health",
+        "description": "Supplements, herbal apothecaries, non-toxic home goods, and pharmacy partners we trust.",
+        "url": "https://www.dialedin.health/the-directory"
+      },
+      {
+        "kicker": "Be a Guest",
+        "title": "Get featured on Dialed In Health",
+        "description": "Long-form podcast plus directory listing for wellness practitioners and product makers building rooted, plant-based businesses.",
+        "url": "https://www.dialedin.health/be-a-guest"
+      }
+    ],
+    "articles": [],
+    "faqs": [
+      {
+        "question": "What is MoonFarma?",
+        "answer": "MoonFarma is a handcrafted herbal apothecary based in Sioux Falls, South Dakota. The team makes small-batch, plant-based remedies, botanical skincare, herbal teas, and non-toxic home and body products rooted in herbal tradition and made with transparently sourced, earth-derived ingredients."
+      },
+      {
+        "question": "Who does MoonFarma serve?",
+        "answer": "MoonFarma serves anyone looking to live with less toxicity and more intention, from people managing chronic symptoms like hormonal imbalance, stress, and digestive issues, to those simply wanting cleaner products for their home and body. The community includes individuals, families, and organizations across South Dakota and nationwide through the online shop."
+      },
+      {
+        "question": "Do I need to know anything about herbalism to shop with you?",
+        "answer": "Not at all. Every product is labeled with its purpose and key ingredients, and education is built into everything MoonFarma does so you can shop with confidence even if you are completely new to plant medicine."
+      },
+      {
+        "question": "Where are you located and do you ship?",
+        "answer": "MoonFarma is based in Sioux Falls, South Dakota and ships nationwide through the online shop. Local customers can also connect with the team through community events."
+      },
+      {
+        "question": "Are your products safe?",
+        "answer": "Yes. Every MoonFarma product is formulated with non-toxic, organic plant-derived or mineral-derived ingredients. The team prioritizes EWG highly rated ingredients, avoids synthetic chemicals and known harmful additives, and is transparent about everything used so you can make informed decisions for your body."
+      },
+      {
+        "question": "What is in your tinctures?",
+        "answer": "Tinctures are made in small batches using dried herbs at a 1:5 ratio in a menstruum of alcohol, vegetable glycerin, and water. The team uses high-quality botanicals chosen for their traditional and evidence-informed therapeutic applications."
+      },
+      {
+        "question": "Do your products interact with medications?",
+        "answer": "Some herbs can interact with certain medications, particularly blood thinners, thyroid medications, and hormonal contraceptives. MoonFarma always recommends consulting with your healthcare provider before adding herbal supplements to your routine."
+      },
+      {
+        "question": "What is the Low-Tox Life Audit?",
+        "answer": "The Low-Tox Life Audit is MoonFarma's signature wellness experience. It is a personalized deep-dive into the products, habits, and exposures shaping your health, followed by a custom roadmap of plant-based, non-toxic alternatives tailored to your life. It covers what you are putting on your body, in your body, and into your home."
+      },
+      {
+        "question": "Do you offer subscriptions?",
+        "answer": "Yes. Subscription boxes deliver curated herbal and apothecary products on a regular basis, making it easy to stay stocked and supported in your wellness routine."
+      },
+      {
+        "question": "Do you offer herbal education or workshops?",
+        "answer": "Yes. MoonFarma offers community programming, workshops, and resources designed to make herbal knowledge accessible to everyone regardless of background or budget."
+      },
+      {
+        "question": "Is there a discount for Dialed In Health readers?",
+        "answer": "Yes. Through June 30, 2026, Dialed In Health readers get 20% off any order at MoonFarma with code DIALEDIN at checkout."
+      }
+    ],
+    "contact": {
+      "phone": "(415) 579-8544",
+      "email": "moonfarmaha@gmail.com",
+      "address": "Sioux Falls, SD 57108",
+      "website": "https://www.moonfarmaherbalapothecary.com",
+      "hours": "Mon\u2013Fri",
+      "contact_url": "https://www.moonfarmaherbalapothecary.com/pages/how-to-find-us-wholesale",
+      "new_patients": "Yes, currently accepting"
+    }
+  },
+  "prairie-roots-health": {
+    "name": "Prairie Roots Health",
+    "slug": "prairie-roots-health",
+    "category_name": "Functional Medicine",
+    "category_slug": "functional-medicine",
+    "master_category_url": "/providers/functional-medicine",
+    "cross_promo_pool": [
+      "midwest-hyperbarics",
+      "kore-cares",
+      "stenzel-chiropractic-clinic"
+    ],
+    "city": "Sioux Falls, SD \u00b7 In-person + Virtual (SD & MN)",
+    "service_area": "Sioux Falls in-person plus virtual care licensed in SD and MN",
+    "rating": null,
+    "reviews": null,
+    "tagline": "Empowering Wellness from the Ground Up",
+    "practitioner": {
+      "name": "Dr. Cheryl Bones, DC FMCP and Dr. Jessica Pearson, MD FMCP-M",
+      "credential": "Co-owners"
+    },
+    "tags": [
+      "Functional Medicine",
+      "Hormone Replacement Therapy",
+      "Direct Primary Care",
+      "Chiropractic",
+      "Cupping",
+      "Health Coaching",
+      "Thyroid Management",
+      "Stress Management"
+    ],
+    "about": [
+      "Prairie Roots Health was founded in 2024 by Dr. Cheryl Bones (DC, FMCP) and Dr. Jessica Pearson (MD, FMCP-M) to bridge the gap between traditional and alternative medicine. Friends and colleagues, they wanted to bring patients a more collaborative, holistic approach to care.",
+      "The team provides functional medicine designed to address the root causes of illness, not just the symptoms. Every patient is treated as an active partner in their wellness journey. The approach is personalized and whole-person, integrating functional medicine, lifestyle-based therapies, and chiropractic care to support healing, balance, and long-term vitality.",
+      "Prairie Roots Health is a Featured Provider on Dialed In Health."
+    ],
+    "three_promises": [
+      {
+        "title": "We partner with you",
+        "body": "Your voice matters \u2014 we build your care plan together."
+      },
+      {
+        "title": "We see the whole you",
+        "body": "You are heard, respected, and cared for with empathy."
+      },
+      {
+        "title": "We believe in better for you",
+        "body": "We guide you forward with clarity and hope."
+      }
+    ],
+    "services": [
+      {
+        "title": "Bio-identical Hormone Therapy",
+        "description": "Cream and compounded protocols for women and men. Hormone therapy designed around your specific labs and symptoms, not a one-size-fits-all approach."
+      },
+      {
+        "title": "Functional Medicine",
+        "description": "Root-cause work-ups with advanced labs. Comprehensive panels that uncover what conventional testing misses, plus a personalized plan to address what we find."
+      },
+      {
+        "title": "Chiropractic Care",
+        "description": "Adjustments, muscle and fascial work, cranial therapy. Care for adults and pediatrics. Pregnancy and postpartum support is a specialty area."
+      },
+      {
+        "title": "Primary Care",
+        "description": "Routine screenings, women's health, and management of chronic illness inside a Direct Primary Care model. More time per visit, real continuity of care."
+      }
+    ],
+    "symptoms": [
+      "Hormone imbalance",
+      "Low libido",
+      "Gut health issues",
+      "Fatigue",
+      "Hair loss",
+      "Anxiety",
+      "Joint pain",
+      "Poor sleep",
+      "Hot flashes",
+      "Menopause",
+      "Abnormal menses",
+      "Thyroid issues",
+      "Weight gain"
+    ],
+    "conditions_treated": [
+      "Thyroid disease",
+      "PCOS",
+      "Adrenal fatigue",
+      "Perimenopause",
+      "Diabetes",
+      "Endometriosis",
+      "Fertility",
+      "Gut health"
+    ],
+    "team_members": [
+      {
+        "name": "Dr. Jessica Pearson",
+        "credentials": "MD \u00b7 FMCP-M \u00b7 Board-Certified OB/GYN",
+        "role": "Co-owner, Gynecologist, Functional Medicine Physician",
+        "photo": "https://cdn.jsdelivr.net/gh/goodygetsit/dih-directory@main/images/providers/prairie-roots-health/dr-jessica-pearson.jpg",
+        "bio": "Dr. Jess combines her background in traditional medicine with her passion for holistic, whole-body care. Born and raised in South Dakota, she completed her medical degree at USD and her OB/GYN residency in Georgia before serving in the U.S. Air Force. There, she became Medical Director of Women's Health and later Associate Program Director of an OB/GYN residency program. Along the way, Dr. Jess discovered functional medicine and fell in love with its ability to uncover the why behind health struggles rather than just treat symptoms. Today, she specializes in women's health, hormone balance, and supporting strong, healthy pregnancies. With additional training in perinatal fitness, she empowers women at every stage of fertility, pregnancy, and motherhood. Outside the clinic, you will find her doing CrossFit, triathlons, or hiking with her rescue pup, Zora. Patients describe Dr. Jess as both knowledgeable and approachable, someone who listens deeply, explains clearly, and helps women feel truly cared for."
+      },
+      {
+        "name": "Dr. Cheryl Bones",
+        "credentials": "DC \u00b7 FMCP",
+        "role": "Founder, Chiropractor, Functional Medicine Practitioner",
+        "photo": "https://cdn.jsdelivr.net/gh/goodygetsit/dih-directory@main/images/providers/prairie-roots-health/dr-cheryl-bones.jpg",
+        "bio": "For Dr. Cheryl, chiropractic and functional medicine are personal. Growing up, she faced her own GI struggles and injuries that conventional care could not resolve. Everything changed when she worked with a chiropractor and functional medicine doctor who finally gave her hope and lasting relief. Inspired, she set out to do the same for others. Dr. Cheryl earned her Doctorate of Chiropractic at Northwestern Health Sciences University and is certified in functional medicine through the Institute for Functional Medicine. She works with patients of all ages, blending chiropractic care, muscle and fascial work, cranial therapy, and functional medicine to address concerns ranging from GI dysfunction and skin issues to sinus problems, POTS, and pediatric care. She grew up on a farm near Tripp, SD, and now lives near Parker with her husband Dan (a farmer and retired Air Force Guard member) and their three children. Patients appreciate Dr. Cheryl's ability to uncover root causes and create individualized plans that bring real, lasting improvements."
+      },
+      {
+        "name": "Sam Niewenhuis",
+        "credentials": "CNP \u00b7 Functional Medicine Trained",
+        "role": "Nurse Practitioner",
+        "photo": "https://cdn.jsdelivr.net/gh/goodygetsit/dih-directory@main/images/providers/prairie-roots-health/sam-niewenhuis.jpg",
+        "bio": "Sam brings both professional expertise and personal experience to his work in primary care and functional medicine. After earning his nursing degree and Family Nurse Practitioner degree from SDSU, he gained extensive experience in emergency medicine, internal medicine, and urgent care across Sioux Falls health systems. When his own family faced health challenges that conventional medicine could not solve, Sam sought alternative answers and discovered functional medicine \u2014 and it transformed not only his family's health but also his approach to patient care. At Prairie Roots, Sam helps men, women, and children get to the root of health concerns with a focus on practical, whole-person solutions. He is passionate about guiding patients out of the system and into care that is personalized, thoughtful, and truly patient-centered. Outside of work, Sam is a devoted husband and father to four children. He enjoys spending time outdoors, gardening, and tending to his backyard chickens. Patients value Sam's down-to-earth approach, relatability, and commitment to providing high-quality care outside the traditional system."
+      },
+      {
+        "name": "Dr. Sarah Tadlock",
+        "credentials": "DC \u00b7 Doula",
+        "role": "Chiropractor and Doula",
+        "photo": "https://cdn.jsdelivr.net/gh/goodygetsit/dih-directory@main/images/providers/prairie-roots-health/dr-sarah-tadlock.jpg",
+        "bio": "Born and raised in Sioux Falls, Dr. Sarah has always been passionate about movement and performance \u2014 from her early days as a competitive soccer player and gymnast to her career as an athletic trainer. Eventually, her love for helping people heal and thrive led her to chiropractic care. After earning her doctorate at Northwestern Health Sciences University, Dr. Sarah worked in Minnesota before moving home to Sioux Falls. She has a special focus on moms and babies, bringing together her chiropractic expertise and training as a doula to support women through pregnancy, birth, and postpartum recovery. When she is not at Prairie Roots Health, Dr. Sarah is coaching at CrossFit KOTA, cheering people on as they grow stronger inside and out. Patients often describe Dr. Sarah as compassionate, encouraging, and uniquely skilled at supporting both mamas and their little ones as well as athletes."
+      }
+    ],
+    "team_extras": "Plus Kendra Poulter (Health Coach and Operations Director) and Bekah Tiernan (Phlebotomist).",
+    "team_photo": "https://cdn.jsdelivr.net/gh/goodygetsit/dih-directory@main/images/providers/prairie-roots-health/team.jpg",
+    "team_photo_alt": "The Prairie Roots Health team",
+    "service_details": {
+      "location": "5010 S Broadband Lane, Suite 110, Sioux Falls, SD 57108",
+      "focus_areas": "Hormone therapy, functional medicine, chiropractic, primary care, women's health, pediatric care, lifestyle medicine",
+      "specialties": "Thyroid disease, PCOS, adrenal fatigue, perimenopause, diabetes, endometriosis, fertility, gut health",
+      "approach": "Cash-pay with extended visits, advanced lab testing, integrated team-based care",
+      "founded": "2024",
+      "payment": "Cash-pay only \u00b7 HSA / FSA accepted",
+      "virtual": "Yes, licensed in SD and MN",
+      "languages": "English",
+      "accepting_new": "Yes, currently accepting"
+    },
+    "videos": [
+      {
+        "youtube_id": "twuEEWr9904",
+        "title": "Your Provider Will Text You Now",
+        "badge": "DIALED IN HEALTH \u00b7 EP 33",
+        "description": "Sam Niewenhuis, NP on what a flat monthly fee actually buys, why he caps his panel at 200 to 400, and what coverage you should keep alongside it.",
+        "watch_url": "https://youtu.be/twuEEWr9904",
+        "episode_url": "https://www.dialedin.health/podcast/episode-33-direct-primary-care"
+      },
+      {
+        "youtube_id": "oxEGiZ-ivFU",
+        "title": "Why Stress Is Silently Wrecking Your Health",
+        "badge": "DIALED IN HEALTH \u00b7 EP 06",
+        "description": "Dr. Jessica Pearson on cortisol, the steroidogenesis pathway, and why your normal labs may not be telling the whole story.",
+        "watch_url": "https://youtu.be/oxEGiZ-ivFU",
+        "episode_url": "https://www.dialedin.health/podcast/episode-06-cortisol-stress"
+      }
+    ],
+    "related_on_dih": [
+      {
+        "kicker": "Podcast Episode 33",
+        "title": "Direct Primary Care, Explained",
+        "description": "Sam Niewenhuis, NP on what a flat monthly fee actually buys, why he caps his panel at 200 to 400, and what coverage you should keep alongside it.",
+        "url": "https://www.dialedin.health/podcast/episode-33-direct-primary-care"
+      },
+      {
+        "kicker": "Podcast Episode 06",
+        "title": "Why Stress Is Silently Wrecking Your Health",
+        "description": "Dr. Jessica Pearson on cortisol, the steroidogenesis pathway, and why your normal labs may not be telling the whole story.",
+        "url": "https://www.dialedin.health/podcast/episode-06-cortisol-stress"
+      },
+      {
+        "kicker": "Browse Category",
+        "title": "Functional Medicine in Sioux Falls",
+        "description": "The full Dialed In Health directory of functional medicine providers across Sioux Falls and the upper Midwest.",
+        "url": "https://www.dialedin.health/providers/functional-medicine"
+      },
+      {
+        "kicker": "Podcast Episode 10",
+        "title": "Endocrine Disruptors and the Receptor Problem",
+        "description": "Jessica Morrell, NP at Radiant Health and Hormone Therapy on why hormone therapy sometimes stops working.",
+        "url": "https://www.dialedin.health/podcast/episode-10-radiant-hormones"
+      }
+    ],
+    "articles": [],
+    "faqs": [
+      {
+        "question": "What is functional medicine and how is it different from conventional primary care?",
+        "answer": "Functional medicine looks for the root cause of illness rather than only managing symptoms. At Prairie Roots Health, that means longer first visits, advanced lab testing, and a personalized plan that integrates functional medicine, chiropractic care, hormone therapy, and lifestyle-based work. Conventional primary care is built for acute issues; functional medicine is built for the chronic ones, especially when standard labs come back normal but you still do not feel well."
+      },
+      {
+        "question": "What conditions and symptoms does Prairie Roots Health treat?",
+        "answer": "Prairie Roots actively treats thyroid disease, PCOS, adrenal fatigue, perimenopause, diabetes, endometriosis, fertility concerns, and gut health issues. Common symptoms patients come in with include hormone imbalance, low libido, fatigue, hair loss, anxiety, joint pain, poor sleep, hot flashes, menopause, abnormal menses, thyroid dysregulation, and weight gain that will not respond to diet alone."
+      },
+      {
+        "question": "Who are the providers at Prairie Roots Health?",
+        "answer": "Four providers: Dr. Jessica Pearson (MD, FMCP-M, OB/GYN and functional medicine physician), Dr. Cheryl Bones (DC, FMCP, founder, chiropractor and functional medicine practitioner), Sam Niewenhuis (CNP, family nurse practitioner with functional medicine training), and Dr. Sarah Tadlock (DC, chiropractor and doula). Kendra Poulter is the health coach and operations director, and Bekah Tiernan is the phlebotomist."
+      },
+      {
+        "question": "Does Prairie Roots Health offer telehealth or virtual visits?",
+        "answer": "Yes. Prairie Roots offers both in-person and virtual care. Telehealth is available for patients in South Dakota and Minnesota, where the providers are licensed. Virtual visits are a strong fit for functional medicine follow-ups, lab reviews, and ongoing care planning."
+      },
+      {
+        "question": "Does Prairie Roots Health accept insurance?",
+        "answer": "No. Prairie Roots is cash-pay only. HSA and FSA funds are accepted. The cash-pay model lets the team spend more time per visit (60 to 90 minutes for a first visit) and order the kind of comprehensive labs that insurance typically will not cover for functional medicine work-ups."
+      },
+      {
+        "question": "What services does Prairie Roots Health offer?",
+        "answer": "Bio-identical hormone therapy (cream and compounded protocols for women and men), functional medicine root-cause work-ups with advanced labs, chiropractic care including adjustments and muscle work, primary care including routine screenings and management of chronic illness, plus health coaching, cupping, and stress management."
+      },
+      {
+        "question": "Is Prairie Roots Health accepting new patients?",
+        "answer": "Yes, currently accepting new patients. Call 605-307-5737 or email hello@prairierootshealth.com to schedule a consult or set up a discovery call."
+      },
+      {
+        "question": "How long until I feel a difference at Prairie Roots Health?",
+        "answer": "Most patients notice meaningful change within 8 to 12 weeks of starting a personalized plan, though some changes happen sooner. Hormone optimization, gut healing, and adrenal work each move on different timelines. The first visit walks through your full health history, sets expectations on what to look for and when, and orders the labs that drive the plan."
+      },
+      {
+        "question": "Where is Prairie Roots Health located?",
+        "answer": "Prairie Roots Health is located at 5010 S Broadband Lane, Suite 110, Sioux Falls, SD 57108. Phone: 605-307-5737. Email: hello@prairierootshealth.com. Website: prairierootshealth.com."
+      }
+    ],
+    "contact": {
+      "phone": "(605) 307-5737",
+      "email": "hello@prairierootshealth.com",
+      "address": "5010 S Broadband Lane, Suite 110, Sioux Falls, SD 57108",
+      "website": "https://prairierootshealth.com",
+      "hours": "",
+      "booking_url": "https://prairierootshealth.com",
+      "quiz_url": "",
+      "new_patients": "Yes, currently accepting"
+    }
+  },
+  "midwest-hyperbarics": {
+    "name": "Midwest Hyperbarics",
+    "slug": "midwest-hyperbarics",
+    "category_name": "Hyperbaric Therapy",
+    "category_slug": "hyperbaric-therapy",
+    "master_category_url": "/providers/hyperbaric-therapy",
+    "cross_promo_pool": [
+      "kore-cares",
+      "radiant-health-and-hormone-therapy",
+      "stenzel-chiropractic-clinic"
+    ],
+    "city": "Sioux Falls, SD",
+    "service_area": "Sioux Falls metro including Brandon, Harrisburg, Tea, Dell Rapids, and Canton",
+    "rating": 5.0,
+    "reviews": 24,
+    "practitioner": {
+      "name": "Jada Hieb",
+      "credential": "NP"
+    },
+    "tags": [
+      "Hyperbaric Specialist",
+      "Hyperbaric Oxygen Therapy",
+      "Wound Healing",
+      "Concussion Recovery",
+      "Inflammation",
+      "Hyperbaric Medicine"
+    ],
+    "about": [
+      "Midwest Hyperbarics is Sioux Falls' first dedicated HBOT specialty clinic. Under the guidance of Jada Hieb, NP, the clinic brings hard-shell hyperbaric oxygen therapy protocols to the region for recovery, chronic conditions, and performance optimization.",
+      "HBOT is one of the most exciting frontiers in regenerative medicine, with applications ranging from wound healing and concussion recovery to anti-aging and athletic performance optimization. Hard-shell hyperbaric chambers deliver treatments at 1.5-3.0 ATA (atmospheres absolute), providing significantly greater oxygen delivery than soft-shell or mild chambers, with protocols tailored to each patient's condition.",
+      "Oxygen is the body's primary healing agent. By dramatically increasing tissue oxygen levels, HBOT activates over 8,000 genes involved in healing, growth, and repair, making it one of the most powerful regenerative therapies available. Emerging research shows HBOT benefits for neurological conditions, autoimmune disorders, Lyme disease, chronic fatigue syndrome, and age-related cognitive decline. Athletes use HBOT to accelerate recovery between training sessions.",
+      "New patients at Midwest Hyperbarics will find a professional, patient-centered environment designed to put you at ease from the moment you walk in. The team takes time to listen to your concerns, answer your questions, and explain recommended approaches to care."
+    ],
+    "services": [
+      "Hard-Shell HBOT Chamber Sessions",
+      "Protocol-Based Treatment Plans",
+      "Post-Surgery and Injury Recovery",
+      "Athletic Recovery and Performance",
+      "Chronic Condition Support Protocols",
+      "Consultation and Suitability Evaluation"
+    ],
+    "service_details": {
+      "location": "6300 S Lyncrest Ave, Sioux Falls, SD 57108",
+      "focus_areas": "Wound healing, concussion and TBI recovery, inflammatory and autoimmune support, athletic recovery, longevity protocols",
+      "specialties": "Hard-shell chamber HBOT at 1.5-3.0 ATA, protocol-based treatment plans, suitability evaluation",
+      "approach": "Medical-grade hard-shell chambers, individualized protocols, patient-centered care"
+    },
+    "videos": [
+      {
+        "youtube_id": "JCfdU-lgM7c",
+        "title": "What Hyperbaric Oxygen Therapy Actually Does \u2014 and Who It's Really For",
+        "badge": "DIALED IN HEALTH \u00b7 EP 01",
+        "description": "Jada Hieb on hard-shell vs soft-shell chambers, what HBOT can and can't do, and who actually benefits.",
+        "watch_url": "https://www.youtube.com/watch?v=JCfdU-lgM7c",
+        "episode_url": "https://www.dialedin.health/podcast/episode-01-midwest-hyperbarics"
+      }
+    ],
+    "related_on_dih": [
+      {
+        "kicker": "Podcast Episode 01",
+        "title": "What Hyperbaric Oxygen Therapy Actually Does",
+        "description": "Jada Hieb, NP on hard-shell vs soft-shell chambers and who actually benefits from HBOT.",
+        "url": "https://www.dialedin.health/podcast/episode-01-midwest-hyperbarics"
+      },
+      {
+        "kicker": "Browse Category",
+        "title": "Hyperbaric Therapy in Sioux Falls",
+        "description": "All hyperbaric therapy providers in the Dialed In Health directory.",
+        "url": "https://www.dialedin.health/providers/hyperbaric-therapy"
+      },
+      {
+        "kicker": "Podcast Episode 04",
+        "title": "Peptide Therapy: What It Is and What It Isn't",
+        "description": "Companion topic \u2014 emerging regenerative therapies and how they fit alongside HBOT.",
+        "url": "https://www.dialedin.health/podcast/episode-04-peptide-therapy"
+      }
+    ],
+    "articles": [],
+    "faqs": [
+      {
+        "question": "What is hyperbaric oxygen therapy (HBOT)?",
+        "answer": "Hyperbaric oxygen therapy involves breathing pure oxygen inside a pressurized chamber. The increased pressure allows your lungs to take in significantly more oxygen, which supports healing, reduces inflammation, and drives cellular repair."
+      },
+      {
+        "question": "What's the difference between hard-shell and soft-shell HBOT chambers?",
+        "answer": "Hard-shell chambers operate at higher pressures (up to 2.0 ATA or more) and deliver medical-grade protocols. Soft-shell chambers operate at lower pressures (typically 1.3 ATA). Midwest Hyperbarics is a dedicated hard-shell specialty clinic."
+      },
+      {
+        "question": "What conditions can HBOT help with?",
+        "answer": "HBOT supports recovery from post-surgical healing, traumatic brain injury, stroke recovery, chronic wounds, inflammatory conditions, persistent fatigue, athletic recovery, and general performance optimization."
+      },
+      {
+        "question": "How long is a typical HBOT session?",
+        "answer": "A single session runs 60 to 90 minutes, plus pressurization and depressurization time. Most protocols involve 10 to 40 sessions over several weeks."
+      },
+      {
+        "question": "Does insurance cover HBOT?",
+        "answer": "Coverage varies by condition and carrier. Some FDA-approved indications may be covered, but most wellness and optimization protocols are self-pay. Contact the clinic for details."
+      },
+      {
+        "question": "Do I need a referral to start HBOT?",
+        "answer": "No referral is required. New clients begin with a suitability evaluation to determine whether HBOT is a good fit."
+      }
+    ],
+    "contact": {
+      "phone": "(605) 743-0402",
+      "address": "6300 S Lyncrest Ave, Sioux Falls, SD 57108",
+      "website": "https://midwesthyperbarics.com",
+      "hours": "Monday \u2013 Friday, 8:00 AM \u2013 5:00 PM",
+      "booking_url": "https://midwesthyperbarics.com",
+      "quiz_url": "",
+      "new_patients": "Accepting"
+    }
+  },
+  "kore-cares": {
+    "name": "Kore Cares",
+    "slug": "kore-cares",
+    "category_name": "Home Health & Caregiving",
+    "category_slug": "home-health-caregiving",
+    "master_category_url": "/providers/home-health-caregiving",
+    "cross_promo_pool": [
+      "midwest-hyperbarics",
+      "radiant-health-and-hormone-therapy",
+      "stenzel-chiropractic-clinic"
+    ],
+    "city": "Sioux Falls, SD",
+    "service_area": "43 counties, 111 cities across South Dakota",
+    "rating": 5.0,
+    "reviews": 89,
+    "practitioner": {
+      "name": "Gabrielle Hoing",
+      "credential": "Founder"
+    },
+    "tags": [
+      "Personal Care",
+      "Companion Care",
+      "Skilled Nursing",
+      "Care Connection",
+      "Statewide SD"
+    ],
+    "about": [
+      "Kore Cares has been helping South Dakotans live safely at home for the past 10 years. Founded by Gabrielle Hoing, who spent more than two decades in geriatric care and helped build 11 private duty agencies across 8 states, Kore Cares brings deep expertise and compassionate service to families navigating one of life's biggest transitions.",
+      "What started as a mission to bring professional, trustworthy in-home care to South Dakota has grown into a statewide agency serving 43 counties and 111 cities. Whether your parent needs help after surgery, your family member is managing dementia, you're supporting a veteran, or you're not sure yet what level of care is needed, Kore Cares meets families where they are.",
+      "The team is built on three promises: trained, vetted caregivers who show up; transparent communication so families always know what's happening; and the flexibility to adjust care as life changes. Carly King, Agency Manager, and her team handle everything from initial assessment through ongoing coordination, so your family can focus on what matters."
+    ],
+    "services": [
+      "Personal Care",
+      "Companion Care",
+      "Skilled Nursing",
+      "Care Connection Intake",
+      "Dementia Care",
+      "Post-Surgical Recovery Support",
+      "Veteran Home Care",
+      "Long-Term Care Coordination"
+    ],
+    "service_details": {
+      "location": "Sioux Falls, SD (Headquarters)",
+      "focus_areas": "In-home personal care, companion care, skilled nursing, dementia care, post-surgical recovery, veteran home care",
+      "specialties": "Anyone 18+, seniors, post-surgical recovery, people with disabilities, chronic illness, pediatric case-by-case",
+      "approach": "Trained, vetted caregivers; transparent communication; flexible care plans that adjust as life changes"
+    },
+    "videos": [
+      {
+        "youtube_id": "ztsHYJTbHVY",
+        "title": "When Is It Time for Home Care? The Conversation Families Keep Putting Off",
+        "badge": "DIALED IN HEALTH \u00b7 EP 09",
+        "description": "Gabrielle on when to call, what Medicare actually covers, agency vs private hire liability, and how to talk to a parent who refuses help.",
+        "watch_url": "https://www.youtube.com/watch?v=ztsHYJTbHVY",
+        "episode_url": "https://www.dialedin.health/podcast/episode-09-kore-cares-homecare",
+        "chapters": [
+          {
+            "time": "00:00",
+            "title": "Signs Your Loved One Needs Help"
+          },
+          {
+            "time": "00:31",
+            "title": "Welcome to Dialed In Health"
+          },
+          {
+            "time": "01:00",
+            "title": "Who is Gabrielle Hoing and what is Kore Cares"
+          },
+          {
+            "time": "01:32",
+            "title": "What phone call do families usually make first"
+          },
+          {
+            "time": "03:04",
+            "title": "What are the signs someone needs in-home care"
+          },
+          {
+            "time": "05:36",
+            "title": "What is the difference between home care and home health care"
+          },
+          {
+            "time": "07:08",
+            "title": "Is in-home care only for seniors"
+          },
+          {
+            "time": "08:11",
+            "title": "What is a care plan in home care"
+          },
+          {
+            "time": "09:12",
+            "title": "Does Medicare cover in-home care"
+          },
+          {
+            "time": "11:15",
+            "title": "How do Medicaid, the VA, and long-term care insurance pay for home care"
+          },
+          {
+            "time": "12:46",
+            "title": "How do I choose a trustworthy home care agency"
+          },
+          {
+            "time": "15:17",
+            "title": "How Kore Cares vets and trains its caregivers"
+          },
+          {
+            "time": "16:48",
+            "title": "Red flags when hiring a home care agency"
+          },
+          {
+            "time": "17:49",
+            "title": "How do I talk to my parent about needing a caregiver"
+          },
+          {
+            "time": "20:54",
+            "title": "What to do when siblings disagree about care"
+          },
+          {
+            "time": "22:26",
+            "title": "How getting help protects the relationship with your parent"
+          },
+          {
+            "time": "23:26",
+            "title": "The biggest myth about in-home care"
+          },
+          {
+            "time": "24:28",
+            "title": "Where Kore Cares serves and how to reach them"
+          },
+          {
+            "time": "25:29",
+            "title": "What keeps Gabrielle in this work after 10 years"
+          },
+          {
+            "time": "27:01",
+            "title": "A lesson from a client that stuck with her"
+          },
+          {
+            "time": "29:33",
+            "title": "Episode close"
+          }
+        ]
+      },
+      {
+        "youtube_id": "hzaISL8HXu8",
+        "title": "A Marine, 22 Surgeries, and the Power of Asking for Help",
+        "badge": "DIALED IN HEALTH \u00b7 EP 02",
+        "description": "Earlier appearance featuring a Kore Cares client story.",
+        "watch_url": "https://www.youtube.com/watch?v=hzaISL8HXu8",
+        "episode_url": "https://www.dialedin.health/podcast/episode-02-kore-cares"
+      }
+    ],
+    "events_title": "Celebrating 10 Years",
+    "events_intro": "Kore Cares is celebrating a decade of supporting South Dakotans. Join the team at open house events across the state.",
+    "events": [
+      {
+        "city": "Sioux Falls",
+        "when": "Wed, Apr 22, 12:00 \u2013 2:00 PM"
+      },
+      {
+        "city": "Yankton",
+        "when": "Thu, Apr 23, 11:30 AM \u2013 1:30 PM"
+      },
+      {
+        "city": "Brookings",
+        "when": "Mon, Apr 27, 4:00 \u2013 6:00 PM",
+        "where": "Brookings Activity Center"
+      },
+      {
+        "city": "Watertown",
+        "when": "Fri, May 9, 10:00 AM \u2013 12:00 PM"
+      }
+    ],
+    "related_on_dih": [
+      {
+        "kicker": "Podcast Episode 09",
+        "title": "When Is It Time for Home Care?",
+        "description": "Gabrielle Hoing on when to call, what Medicare covers, and how to talk to a parent who refuses help.",
+        "url": "https://www.dialedin.health/podcast/episode-09-kore-cares-homecare"
+      },
+      {
+        "kicker": "Podcast Episode 02",
+        "title": "A Marine, 22 Surgeries, and the Power of Asking for Help",
+        "description": "Earlier Kore Cares appearance featuring a client story.",
+        "url": "https://www.dialedin.health/podcast/episode-02-kore-cares"
+      },
+      {
+        "kicker": "Browse Category",
+        "title": "Home Health & Caregiving in Sioux Falls",
+        "description": "The full Dialed In Health directory of home health and caregiving providers across South Dakota.",
+        "url": "https://www.dialedin.health/providers/home-health-caregiving"
+      }
+    ],
+    "articles": [],
+    "faqs": [
+      {
+        "question": "What are the signs someone needs in-home care?",
+        "answer": "Common early behaviors include exhaustion after light housework, avoiding the shower for fear of falling, skipping physician visits to avoid a care recommendation, unexplained weight loss, and driving changes. Many families wait until a crisis, such as a fall, stroke, or hospital stay, forces the call."
+      },
+      {
+        "question": "What is the difference between home care and home health care?",
+        "answer": "Home health care is typically Medicare-covered, tied to a physician order, and focused on skilled therapy after an illness or hospital stay. Home care is non-medical daily support: bathing, dressing, meal prep, laundry, medication setups, companionship, and ongoing nursing services. Kore Cares offers both."
+      },
+      {
+        "question": "Does Medicare cover in-home care?",
+        "answer": "Medicare covers short-term skilled services such as physical, occupational, and speech therapy after a qualifying hospital stay. Medicare does not cover custodial or personal care at home. For non-medical home care, payer options are Medicaid, the VA, long-term care insurance, or private pay."
+      },
+      {
+        "question": "How do Medicaid, the VA, and long-term care insurance pay for home care?",
+        "answer": "Medicaid covers qualifying non-medical home care for eligible South Dakota residents. The VA has multiple programs covering home care for veterans. Long-term care insurance policies pay out based on the individual policy terms. Kore Cares helps families navigate all three."
+      },
+      {
+        "question": "How do I choose a trustworthy home care agency?",
+        "answer": "Ask about mission and ownership, caregiver training process, CPR and dementia certifications, background-check practices, quality assurance systems, and how the agency handles backup coverage when a caregiver calls out. South Dakota does not currently regulate private-pay home care, which makes these questions essential."
+      },
+      {
+        "question": "What are red flags when hiring a home care agency?",
+        "answer": "Watch for vague answers about training, no dementia certification, no documented quality assurance process, no plan for caregiver no-shows, unclear ownership, or inability to produce background-check records for the specific caregiver being assigned."
+      },
+      {
+        "question": "How do I talk to my parent about getting a caregiver?",
+        "answer": "Start with observations rather than conclusions. Frame the ask around yourself if needed. Give them time. Most people come around when they think about the impact their health has on the people around them."
+      },
+      {
+        "question": "Is in-home care only for seniors?",
+        "answer": "No. Kore Cares serves anyone 18 and older, plus pediatric cases on a case-by-case basis. Clients include people recovering from surgery or injury, people living with disabilities, and people managing chronic illness."
+      },
+      {
+        "question": "What is a care plan in home care?",
+        "answer": "A written plan that defines what the caregiver will help with each visit, customized to the client's physical needs, cognitive status, home environment, and family preferences. Care plans are updated as needs change."
+      },
+      {
+        "question": "What is Care Connection?",
+        "answer": "Kore Cares' intake service for families who know they need help but are not sure what kind. A care coordinator meets with the family, assesses the situation, and maps the options."
+      }
+    ],
+    "contact": {
+      "phone": "(605) 275-2344",
+      "address": "Sioux Falls, SD",
+      "website": "https://www.korecares.com",
+      "hours": "",
+      "booking_url": "https://www.korecares.com",
+      "quiz_url": "",
+      "new_patients": "Accepting"
+    }
+  }
+}
