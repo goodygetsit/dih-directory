@@ -1,0 +1,30 @@
+{
+  "updated": "2026-09-06T10:42:17.529228Z",
+  "window_days": 7,
+  "listings": {
+    "prairie-roots-health": {
+      "name": "Prairie Roots Health",
+      "tier": "Featured",
+      "views": 1000,
+      "visitors": 747
+    },
+    "radiant-health-and-hormone-therapy": {
+      "name": "Radiant Health and Hormone Therapy",
+      "tier": "Featured",
+      "views": 1,
+      "visitors": 1
+    },
+    "midwest-hyperbarics": {
+      "name": "Midwest Hyperbarics",
+      "tier": "Featured",
+      "views": 1,
+      "visitors": 1
+    },
+    "moonfarma": {
+      "name": "MoonFarma Herbal Apothecary",
+      "tier": "Featured",
+      "views": 1,
+      "visitors": 1
+    }
+  }
+}
