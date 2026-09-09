@@ -11587,6 +11587,88 @@
       "markets": [
         "virtual"
       ]
+    },
+    {
+      "name": "BeeWell Functional Wellness",
+      "slug": "beewell-functional-wellness",
+      "master_category": "Functional Medicine",
+      "category_slug": "functional-medicine",
+      "blog_category": "Functional Medicine",
+      "subcategory": "Methylation, MTHFR + Functional Wellness",
+      "market": "Remote",
+      "market_label": "Virtual (Nationwide)",
+      "additional_market_labels": [
+        "Virtual Services"
+      ],
+      "service_area": "Virtual nationwide; brick and mortar clinic in The Woodlands, TX",
+      "address": null,
+      "phone": null,
+      "website": "https://beewellwoodlands.com",
+      "profile_url": "https://www.dialedin.health/directory/functional-medicine/beewell-functional-wellness",
+      "google_rating": null,
+      "reviews": null,
+      "tier": "Listed",
+      "is_featured": false,
+      "is_guest": true,
+      "service_tags": [
+        "mthfr",
+        "methylation",
+        "methylfolate",
+        "functional medicine",
+        "functional wellness",
+        "folate",
+        "b12",
+        "homocysteine",
+        "brain fog",
+        "anxiety",
+        "fatigue",
+        "nutrition",
+        "lab testing"
+      ],
+      "description": "Kristine Cassar is the owner and operator of BeeWell Functional Wellness, working with people on methylation, MTHFR gene variants, folate and B vitamin status, and the lab work underneath them. She carries two copies of the MTHFR variant herself. Brick and mortar clinic in The Woodlands, Texas, plus a virtual practice serving people nationwide. Functional wellness practitioner, not a prescriber.",
+      "markets": [
+        "virtual"
+      ]
+    },
+    {
+      "name": "Well Balanced Physical Therapy",
+      "slug": "well-balanced-physical-therapy",
+      "master_category": "Physical Therapy & Rehabilitation",
+      "category_slug": "physical-therapy",
+      "blog_category": "Physical Therapy & Rehab",
+      "subcategory": "Pelvic Floor + Orthopedic Physical Therapy",
+      "market": "Sioux Falls, SD",
+      "market_label": "Sioux Falls",
+      "additional_market_labels": [],
+      "service_area": "Sioux Falls metro. No referral needed in South Dakota, direct access.",
+      "address": "7000 S Lyncrest Place, Floor 1, Sioux Falls, SD 57108",
+      "phone": "(605) 610-8220",
+      "website": "https://wellbalancedphysicaltherapy.com",
+      "profile_url": "https://www.dialedin.health/directory/physical-therapy/well-balanced-physical-therapy",
+      "google_rating": null,
+      "reviews": null,
+      "tier": "Listed",
+      "is_featured": false,
+      "is_guest": true,
+      "service_tags": [
+        "pelvic floor therapy",
+        "pelvic floor",
+        "kegels",
+        "diastasis recti",
+        "prenatal",
+        "postpartum",
+        "incontinence",
+        "pelvic pain",
+        "orthopedic physical therapy",
+        "dry needling",
+        "women's health",
+        "strength training",
+        "direct access"
+      ],
+      "description": "Ember Smith, PT, DPT treats pelvic floor and orthopedics together at Well Balanced Physical Therapy in Sioux Falls. Pelvic floor dysfunction, prenatal and postpartum care, diastasis recti, incontinence and pelvic pain, alongside general orthopedic physical therapy and dry needling. She holds two pelvic health certifications, including training that evaluates people in standing rather than only lying down. No referral needed in South Dakota.",
+      "markets": [
+        "sioux-falls"
+      ]
     }
   ]
 }
