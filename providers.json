@@ -11669,6 +11669,48 @@
       "markets": [
         "sioux-falls"
       ]
+    },
+    {
+      "name": "Let's Reach New Heights Nutrition",
+      "slug": "lrnh-nutrition",
+      "master_category": "Nutrition",
+      "category_slug": "nutrition",
+      "blog_category": "Nutrition",
+      "subcategory": "Nutrition Coaching",
+      "market": "Remote",
+      "market_label": "Virtual (Nationwide)",
+      "additional_market_labels": [
+        "Virtual Services"
+      ],
+      "service_area": "Virtual coaching; in person in Wagner, SD",
+      "address": "Wagner, SD",
+      "phone": null,
+      "website": "https://www.lrnhnutrition.com",
+      "profile_url": "https://www.dialedin.health/directory/nutrition/lrnh-nutrition",
+      "google_rating": null,
+      "reviews": null,
+      "tier": "Listed",
+      "is_featured": false,
+      "is_guest": true,
+      "service_tags": [
+        "nutrition coaching",
+        "high protein",
+        "protein",
+        "under eating",
+        "perimenopause",
+        "postpartum",
+        "building muscle",
+        "strength training nutrition",
+        "GLP-1 nutrition",
+        "food noise",
+        "fiber",
+        "meal prep",
+        "weight loss for women"
+      ],
+      "description": "Sydney St Clair is a certified nutrition coach and the owner of Let's Reach New Heights Nutrition. She works with women through perimenopause, postpartum and building muscle, and starts by logging a full week of what a client actually eats before she changes anything. Many of her clients need to eat more, not less, and she adds food slowly so energy comes back. Virtual coaching, plus in person in Wagner, South Dakota. Nutrition coach, not a prescriber.",
+      "markets": [
+        "virtual"
+      ]
     }
   ]
 }
