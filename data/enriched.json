@@ -2588,21 +2588,29 @@
     "google": {
       "rating": 4.9,
       "reviewCount": 0,
-      "description": "Radiance Day Spa (energy services). specializing in Spinal Energetics + Shamanic + Reiki. in the Energy Medicine & Alternative Healing category. located at 6209 S Pinnacle Pl, Sioux Falls, SD 57108. Phone: (605) 275-9535. Spinal energetics; shamanic; Ayurveda"
+      "description": "Radiance Day Spa (energy services) specializes in Spinal Energetics, Shamanic healing, and Reiki in Sioux Falls, SD with a 4.9 rating."
     },
     "practice": {
-      "description": "Radiance Day Spa (energy services). specializing in Spinal Energetics + Shamanic + Reiki. in the Energy Medicine & Alternative Healing category. located at 6209 S Pinnacle Pl, Sioux Falls, SD 57108. Phone: (605) 275-9535. Spinal energetics; shamanic; Ayurveda",
-      "newPatients": true
+      "description": "Radiance Day Spa (energy services) specializes in Spinal Energetics, Shamanic healing, and Reiki in the Energy Medicine & Alternative Healing category. Located at 6209 S Pinnacle Pl, Sioux Falls, SD 57108.",
+      "newPatients": true,
+      "about": [
+        "Radiance Day Spa offers energy medicine services including Spinal Energetics, Shamanic healing, and Reiki practices.",
+        "The practice is located in Sioux Falls, SD and can be reached at (605) 275-9535 or through radiance-dayspa.com.",
+        "Services focus on energy-based healing modalities within the alternative healing framework."
+      ]
     },
     "specialtyTags": [
       "Energy Healer",
       "Spinal Energetics",
       "Shamanic Healing",
       "Reiki",
-      "Energy Medicine & Alternative Healing",
-      "Spinal Energetics + Shamanic + Reiki"
+      "Energy Medicine & Alternative Healing"
     ],
-    "services": [],
+    "services": [
+      "Spinal Energetics",
+      "Shamanic healing",
+      "Reiki"
+    ],
     "provider": null,
     "episode": null,
     "contact": {
@@ -2612,11 +2620,15 @@
     },
     "profileUrl": "https://www.dialedin.health/directory/energy-medicine-alternative-healing/radiance-day-spa-energy-services",
     "_enrichment": {
-      "status": "matched",
-      "source": "vgl-enriched_providers",
+      "status": "claude_generated",
+      "source": "claude-provider-facts-no-google-api",
       "matchType": "slug",
       "sourceSlug": "radiance-day-spa-energy-services",
-      "generatedAt": "2026-06-16T15:54:20.259Z"
+      "generatedAt": "2026-09-23T02:41:15.968Z",
+      "model": "claude-haiku-4-5-20251001",
+      "previousStatus": "matched",
+      "aboutSource": "claude-provider-facts-no-google-api",
+      "aboutSyncedAt": "2026-09-23T02:41:15.968Z"
     }
   },
   "simply-soul-care": {
