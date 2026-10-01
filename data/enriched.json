@@ -2646,21 +2646,32 @@
     "google": {
       "rating": 0,
       "reviewCount": 0,
-      "description": "Simply Soul Care. specializing in Reiki / Faith-Based. in the Energy Medicine & Alternative Healing category. located at Sioux Falls. Faith-based Reiki + singing bowl + essential oils"
+      "description": "Simply Soul Care provides faith-based Reiki and energy healing services in Sioux Falls, SD."
     },
     "practice": {
-      "description": "Simply Soul Care. specializing in Reiki / Faith-Based. in the Energy Medicine & Alternative Healing category. located at Sioux Falls. Faith-based Reiki + singing bowl + essential oils",
-      "newPatients": true
+      "description": "Simply Soul Care specializes in faith-based Reiki and energy healing in Sioux Falls. Services include Reiki, singing bowl therapy, and essential oils.",
+      "newPatients": true,
+      "about": [
+        "Simply Soul Care offers Reiki and faith-based energy healing services in Sioux Falls, SD.",
+        "The practice incorporates singing bowl therapy and essential oils as part of their energy healing approach.",
+        "Services are grounded in both Reiki tradition and faith-based principles."
+      ]
     },
     "specialtyTags": [
       "Reiki Practitioner",
       "Energy Healer",
       "Reiki",
       "Energy Healing",
+      "Faith-Based Healing",
       "Stress",
       "Emotional Healing"
     ],
-    "services": [],
+    "services": [
+      "Reiki",
+      "Singing bowl therapy",
+      "Essential oils",
+      "Energy healing"
+    ],
     "provider": null,
     "episode": null,
     "contact": {
@@ -2670,11 +2681,15 @@
     },
     "profileUrl": "https://www.dialedin.health/directory/energy-medicine-alternative-healing/simply-soul-care",
     "_enrichment": {
-      "status": "matched",
-      "source": "vgl-enriched_providers",
+      "status": "claude_generated",
+      "source": "claude-provider-facts-no-google-api",
       "matchType": "slug",
       "sourceSlug": "simply-soul-care",
-      "generatedAt": "2026-06-16T15:54:20.259Z"
+      "generatedAt": "2026-10-01T16:57:52.072Z",
+      "model": "claude-haiku-4-5-20251001",
+      "previousStatus": "matched",
+      "aboutSource": "claude-provider-facts-no-google-api",
+      "aboutSyncedAt": "2026-10-01T16:57:52.072Z"
     }
   },
   "soul-sanctuary": {
