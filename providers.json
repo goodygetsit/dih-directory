@@ -11711,6 +11711,45 @@
       "markets": [
         "virtual"
       ]
+    },
+    {
+      "name": "Jada Dobesh Healing",
+      "slug": "jada-dobesh-healing",
+      "master_category": "Spiritual Health & Sacred Wellness",
+      "category_slug": "spiritual-health-sacred-wellness",
+      "blog_category": "Spiritual Health & Sacred Wellness",
+      "subcategory": "Spiritual Direction + Reiki",
+      "market": "Sioux Falls, SD",
+      "market_label": "Sioux Falls",
+      "additional_market_labels": [],
+      "service_area": "Sioux Falls, SD, at Selah Space",
+      "address": "117 W 39th St, Sioux Falls, SD 57105",
+      "phone": null,
+      "website": "https://jadadobeshhealing.com",
+      "profile_url": "https://www.dialedin.health/directory/spiritual-health-sacred-wellness/jada-dobesh-healing",
+      "google_rating": null,
+      "reviews": null,
+      "tier": "Listed",
+      "is_featured": false,
+      "is_guest": true,
+      "service_tags": [
+        "spiritual direction",
+        "spiritual director",
+        "reiki",
+        "holy fire reiki",
+        "brainspotting",
+        "somatic healing",
+        "survival mode",
+        "nervous system regulation",
+        "daughter wound",
+        "mother wound",
+        "women's healing",
+        "emotional release"
+      ],
+      "description": "Jada Dobesh is a certified spiritual director and the owner of Jada Dobesh Healing and Selah Space in Sioux Falls. She works with women carrying the weight of everyone else, using spiritual direction, Holy Fire Reiki and Brainspotting to help them feel safe in their bodies again. One on one and group work at Selah Space, 117 W 39th St. Spiritual director and Reiki practitioner, not a licensed therapist.",
+      "markets": [
+        "sioux-falls"
+      ]
     }
   ]
 }
