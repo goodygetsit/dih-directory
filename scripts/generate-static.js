@@ -1265,7 +1265,7 @@ function providerFaq(provider, category) {
       a: `${provider.name} is listed under ${category.name} in the Dialed In Health directory.`,
     },
     {
-      q: `Where does ${provider.name} serve patients or clients?`,
+      q: `Where does ${provider.name} serve clients?`,
       a: provider.service_area || provider.market_label || provider.market || "Contact the provider for current service area details.",
     },
     {
@@ -1277,7 +1277,7 @@ function providerFaq(provider, category) {
 
 function providerAbout(provider, category) {
   const parts = [];
-  const categoryDescription = category.description || `${category.name} providers support patients and clients across the region.`;
+  const categoryDescription = category.description || `${category.name} providers support clients across the region.`;
   parts.push(`${provider.name} is a ${category.name.toLowerCase()} provider in the Dialed In Health directory.`);
   if (provider.subcategory) {
     parts.push(`Their listing is tagged as ${provider.subcategory}.`);

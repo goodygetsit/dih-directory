@@ -26445,5 +26445,64 @@
     },
     "provider": null,
     "episode": null
+  },
+  "healing-hearts-with-horses": {
+    "name": "Healing Hearts with Horses",
+    "slug": "healing-hearts-with-horses",
+    "tier": "listed",
+    "category": "wellness-coaching",
+    "categoryName": "Wellness Coaching",
+    "location": {
+      "city": "Whitewood",
+      "state": "SD",
+      "zip": "57793",
+      "virtual": false
+    },
+    "google": {
+      "rating": null,
+      "reviewCount": null,
+      "description": "Healing Hearts with Horses. Equine-assisted coaching with Dr. Kimberly Ammerman, PharmD, in Whitewood, SD, in the Black Hills."
+    },
+    "practice": {
+      "description": "Healing Hearts with Horses offers equine-assisted coaching with Dr. Kimberly Ammerman, PharmD, on 100 acres near Whitewood, South Dakota, in the Black Hills.",
+      "about": [
+        "Dr. Kimberly Ammerman is a practicing pharmacist, a lifelong horsewoman and a coach. She keeps 17 horses on 100 acres near Whitewood, close to Deadwood.",
+        "Everything is done on the ground. Nobody rides. A session can be as simple as grooming a horse while she asks questions, watches and gives space.",
+        "She offers two, three and five day retreats, private sessions, and a three-level practitioner training program for people who want to do this work themselves.",
+        "No horse experience is needed, and people who are afraid of horses are welcome. Closed-toe shoes are the one requirement.",
+        "Healing Hearts with Horses offers coaching and personal development. It is not psychotherapy, counseling or medical care."
+      ]
+    },
+    "specialtyTags": [
+      "Equine-Assisted Coaching",
+      "equine-assisted coaching",
+      "healing with horses",
+      "horse coaching",
+      "personal development",
+      "retreats",
+      "private coaching",
+      "practitioner training"
+    ],
+    "services": [
+      "Retreats",
+      "Private coaching",
+      "Practitioner training",
+      "Equine-assisted coaching"
+    ],
+    "contact": {
+      "phone": null,
+      "website": "https://healingheartswithhorses.com",
+      "profileUrl": "https://www.dialedin.health/directory/wellness-coaching/healing-hearts-with-horses"
+    },
+    "profileUrl": "https://www.dialedin.health/directory/wellness-coaching/healing-hearts-with-horses",
+    "provider": {
+      "name": "Dr. Kimberly Ammerman",
+      "credential": "PharmD"
+    },
+    "episode": {
+      "number": 41,
+      "title": "Healing With Horses: What a Horse Sees in You That You Miss",
+      "url": "https://dialedin.health/podcast/episode-41-healing-with-horses"
+    }
   }
 }

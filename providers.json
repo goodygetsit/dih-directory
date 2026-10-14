@@ -138,7 +138,7 @@
       {
         "name": "Wellness Coaching",
         "slug": "wellness-coaching",
-        "count": 32,
+        "count": 33,
         "group": "Nutrition & Lifestyle"
       },
       {
@@ -253,6 +253,10 @@
       {
         "internal": "Multi-Market",
         "label": "Multi-Market"
+      },
+      {
+        "internal": "Black Hills, SD",
+        "label": "Black Hills"
       }
     ],
     "market_chip_order": [
@@ -6188,6 +6192,38 @@
       "tier": "Listed",
       "is_featured": false,
       "service_tags": []
+    },
+    {
+      "name": "Healing Hearts with Horses",
+      "slug": "healing-hearts-with-horses",
+      "master_category": "Wellness Coaching",
+      "category_slug": "wellness-coaching",
+      "blog_category": "Wellness Coaching",
+      "subcategory": "Equine-Assisted Coaching",
+      "market": "Black Hills, SD",
+      "market_label": "Black Hills",
+      "additional_market_labels": [],
+      "service_area": "Whitewood, SD, near Deadwood in the Black Hills. Retreats and private sessions on site; practitioner training welcomes students from across the US and abroad.",
+      "address": "11864 Crook City Rd, Whitewood, SD 57793",
+      "phone": null,
+      "website": "https://healingheartswithhorses.com",
+      "profile_url": "https://www.dialedin.health/directory/wellness-coaching/healing-hearts-with-horses",
+      "google_rating": null,
+      "reviews": null,
+      "tier": "Listed",
+      "is_featured": false,
+      "service_tags": [
+        "equine-assisted coaching",
+        "healing with horses",
+        "horse coaching",
+        "personal development",
+        "retreats",
+        "private coaching",
+        "practitioner training",
+        "feeling stuck",
+        "stress",
+        "grief"
+      ]
     },
     {
       "name": "Wounded Healer Recovery",
