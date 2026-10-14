@@ -1,0 +1,705 @@
+<!-- DIH EPISODE PAGE | Episode 41 | https://dialedin.health/podcast/episode-41-healing-with-horses | built from CANONICAL TEMPLATE v2026-09-02 -->
+<style>
+:root{--forest:#222222;--forest-dk:#1a1a1a;--forest-lt:rgba(0,191,178,.08);--forest-bd:rgba(0,191,178,.4);--lime:#00bfb2;--white:#fff;--bg:#f6f3ee;--border:#ddd7cd;--text:#1a1612;--muted:#6b6054;--dim:#a89880;}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}body{background:var(--bg);font-family:'DM Sans',sans-serif;color:var(--text);}a{text-decoration:none;color:inherit;}
+.ephero{background:var(--forest-dk);padding:60px 48px 52px;}
+.ephero-i{max-width:1100px;margin:0 auto;}
+.htag{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.24em;text-transform:uppercase;color:var(--lime);margin-bottom:18px;display:flex;align-items:center;gap:10px;}
+.htag::before{content:'';width:28px;height:1px;background:var(--lime);}
+.eph1{font-family:'Playfair Display',serif;font-size:clamp(28px,3.4vw,44px);color:#fff;line-height:1.1;margin-bottom:16px;letter-spacing:-.02em;}
+.eph1 em{font-style:italic;color:#a3d4bc;}
+.epsub{font-size:14px;color:rgba(255,255,255,.52);line-height:1.7;max-width:640px;margin-bottom:18px;}
+.eptags{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px;}
+.tag{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:#fff;background:var(--forest);padding:3px 9px;border-radius:3px;border:1px solid rgba(255,255,255,.18);}
+.epbyline{font-size:12px;color:rgba(255,255,255,.5);}
+.dih-pl{background:#fff;border-top:1px solid #ddd7cd;border-bottom:1px solid #ddd7cd;padding:22px 18px;display:flex;flex-wrap:wrap;gap:14px 20px;align-items:center;justify-content:center;}
+.dih-pl-label{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:#6b6054;font-weight:600;}
+.dih-pl-btns{display:flex;flex-wrap:wrap;gap:10px 12px;justify-content:center;}
+.dih-pl a{color:#1a1612;font-size:14px;font-weight:600;padding:9px 18px;border:1px solid #1a1612;border-radius:999px;}
+.dih-pl a:hover{background:#00bfb2;border-color:#00bfb2;color:#fff;}
+.body{max-width:1100px;margin:0 auto;padding:52px 48px 80px;display:grid;grid-template-columns:1fr 280px;gap:48px;align-items:start;}
+.sh{font-family:'Playfair Display',serif;font-size:22px;color:var(--text);margin:34px 0 18px;}.sh em{font-style:italic;color:var(--forest);}
+.sh:first-child{margin-top:0;}
+.answer{background:var(--forest-lt);border-left:3px solid var(--lime);border-radius:0 8px 8px 0;padding:20px 22px;font-size:15px;line-height:1.75;color:var(--text);margin-bottom:30px;}
+.vwrap{position:relative;aspect-ratio:16/9;border-radius:12px;overflow:hidden;background:var(--forest-dk);margin-bottom:22px;}
+.vwrap iframe{position:absolute;inset:0;width:100%;height:100%;border:0;}
+.spot{border-radius:12px;overflow:hidden;margin-bottom:8px;}
+.chapters{list-style:none;display:grid;gap:2px;}
+.chapters li a{display:flex;gap:12px;padding:8px 10px;border-radius:6px;font-size:13.5px;color:var(--text);line-height:1.5;}
+.chapters li a:hover{background:var(--forest-lt);}
+.chapters .t{font-family:'DM Mono',monospace;font-size:11.5px;color:var(--forest);min-width:48px;font-weight:700;}
+.klist{list-style:none;display:grid;gap:10px;}
+.klist li{position:relative;padding-left:22px;font-size:14px;line-height:1.7;color:var(--text);}
+.klist li::before{content:'';position:absolute;left:0;top:9px;width:8px;height:8px;border-radius:2px;background:var(--lime);}
+.qa{background:var(--white);border:1.5px solid var(--border);border-radius:10px;padding:20px 22px;margin-bottom:12px;}
+.qa h3{font-family:'Playfair Display',serif;font-size:17px;color:var(--text);margin-bottom:8px;line-height:1.35;}
+.qa p{font-size:14px;color:var(--muted);line-height:1.72;}
+.myth{background:var(--white);border:1.5px solid var(--border);border-left:3px solid var(--lime);border-radius:0 10px 10px 0;padding:16px 20px;margin-bottom:10px;}
+.myth-q{font-size:13px;font-weight:700;color:var(--forest);margin-bottom:5px;}
+.myth-a{font-size:14px;color:var(--muted);line-height:1.7;}
+.prose p{font-size:14.5px;line-height:1.8;color:var(--text);margin-bottom:16px;}
+.prose h3{font-family:'Playfair Display',serif;font-size:18px;color:var(--text);margin:26px 0 10px;line-height:1.35;}
+.tr{background:var(--white);border:1.5px solid var(--border);border-radius:10px;padding:24px;max-height:620px;overflow-y:auto;}
+.tr p{font-size:13.5px;line-height:1.78;color:var(--muted);margin-bottom:14px;}
+.tr .ts{font-family:'DM Mono',monospace;font-size:11px;color:var(--forest);font-weight:700;margin-right:6px;}
+.crisis{background:var(--forest-lt);border:1.5px solid var(--forest-bd);border-radius:10px;padding:20px 22px;margin-top:26px;}
+.crisis p{font-size:13.5px;line-height:1.7;color:var(--text);margin-bottom:8px;}
+.disc{font-size:12px;color:var(--dim);line-height:1.7;margin-top:26px;font-style:italic;}
+.sb-card{background:var(--white);border:1.5px solid var(--border);border-radius:12px;padding:24px;margin-bottom:20px;}
+.sb-eyebrow{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:var(--dim);margin-bottom:8px;}
+.sb-h{font-family:'Playfair Display',serif;font-size:17px;color:var(--text);margin-bottom:8px;line-height:1.3;}
+.sb-p{font-size:12px;color:var(--muted);line-height:1.65;margin-bottom:14px;}
+.sb-btn{display:block;width:100%;padding:12px;background:var(--forest);color:#fff;border-radius:4px;text-align:center;font-size:12px;font-weight:700;}
+.email-in{width:100%;padding:10px 13px;border:1.5px solid var(--border);border-radius:4px;font-size:13px;background:var(--bg);margin-bottom:8px;display:block;}
+.prov-dark{background:var(--forest-dk);border:1.5px solid var(--forest);border-radius:12px;padding:24px;margin-bottom:20px;}
+.prov-tag{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:var(--lime);margin-bottom:10px;}
+.prov-h{font-family:'Playfair Display',serif;font-size:18px;color:#fff;margin-bottom:8px;}
+.prov-p{font-size:12px;color:rgba(255,255,255,.45);line-height:1.65;margin-bottom:16px;}
+.prov-btn{display:block;width:100%;padding:12px;background:var(--lime);color:var(--forest-dk);border-radius:4px;text-align:center;font-size:11.5px;font-weight:800;}
+.dir-card{background:var(--forest-lt);border:1.5px solid var(--forest-bd);border-radius:12px;padding:22px;margin-bottom:20px;}
+.dir-h{font-family:'Playfair Display',serif;font-size:17px;color:var(--forest);margin-bottom:6px;}
+.dir-p{font-size:12px;color:var(--muted);line-height:1.6;margin-bottom:14px;}
+.dir-btn{display:block;width:100%;padding:11px;background:var(--forest);color:#fff;border-radius:4px;text-align:center;font-size:11.5px;font-weight:700;}
+@media(max-width:860px){.body{grid-template-columns:1fr!important;padding:32px 20px 56px!important;}.ephero{padding:36px 20px!important;}.tr{max-height:none;}}
+html,body{overflow-x:hidden;}
+.bcrumb{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:20px;}
+.bcrumb a{color:var(--forest);font-weight:700;}
+.bcrumb span{color:var(--dim);margin:0 6px;}
+
+</style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "PodcastEpisode",
+ "@id": "https://dialedin.health/podcast/episode-41-healing-with-horses#episode",
+ "url": "https://dialedin.health/podcast/episode-41-healing-with-horses",
+ "name": "Healing With Horses: What a Horse Sees in You That You Miss",
+ "episodeNumber": 41,
+ "datePublished": "2026-10-14",
+ "duration": "PT33M7S",
+ "timeRequired": "PT33M7S",
+ "description": "What do horses pick up on that people miss? Dr. Kimberly Ammerman of Healing Hearts with Horses explains equine-assisted coaching and who it is for.",
+ "inLanguage": "en-US",
+ "image": "https://img.youtube.com/vi/E08O9wKDdTA/maxresdefault.jpg",
+ "thumbnailUrl": "https://img.youtube.com/vi/E08O9wKDdTA/maxresdefault.jpg",
+ "partOfSeries": {
+  "@type": "PodcastSeries",
+  "name": "Dialed In Health",
+  "url": "https://dialedin.health/podcast",
+  "author": {
+   "@id": "https://dialedin.health/#melissa-goodwin"
+  }
+ },
+ "associatedMedia": {
+  "@type": "AudioObject",
+  "contentUrl": "https://traffic.libsyn.com/secure/51d69b27-5ec5-4ebb-8595-fd5f6bbeae36/Healing_Hearts_with_Horses_Main_Audio_UPDATED.mp3?dest-id=5338270",
+  "encodingFormat": "audio/mpeg",
+  "duration": "PT33M7S"
+ },
+ "audio": {
+  "@type": "AudioObject",
+  "contentUrl": "https://traffic.libsyn.com/secure/51d69b27-5ec5-4ebb-8595-fd5f6bbeae36/Healing_Hearts_with_Horses_Main_Audio_UPDATED.mp3?dest-id=5338270",
+  "encodingFormat": "audio/mpeg",
+  "duration": "PT33M7S"
+ },
+ "author": {
+  "@id": "https://dialedin.health/#melissa-goodwin"
+ },
+ "actor": [
+  {
+   "@id": "https://dialedin.health/podcast/episode-41-healing-with-horses#guest"
+  }
+ ],
+ "about": {
+  "@id": "https://dialedin.health/podcast/episode-41-healing-with-horses#guest"
+ }
+}
+</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "VideoObject",
+ "@id": "https://dialedin.health/podcast/episode-41-healing-with-horses#video",
+ "name": "Healing With Horses: What a Horse Sees in You That You Miss",
+ "description": "What do horses pick up on that people miss? Dr. Kimberly Ammerman of Healing Hearts with Horses explains equine-assisted coaching and who it is for.",
+ "thumbnailUrl": "https://img.youtube.com/vi/E08O9wKDdTA/maxresdefault.jpg",
+ "uploadDate": "2026-10-14T13:00:00-05:00",
+ "duration": "PT33M7S",
+ "embedUrl": "https://www.youtube.com/embed/E08O9wKDdTA",
+ "contentUrl": "https://www.youtube.com/watch?v=E08O9wKDdTA",
+ "publisher": {
+  "@type": "Organization",
+  "name": "Dialed In Health",
+  "url": "https://dialedin.health"
+ },
+ "hasPart": [
+  {
+   "@type": "Clip",
+   "name": "What a horse does when an anxious person walks in",
+   "startOffset": 0,
+   "endOffset": 35,
+   "url": "https://www.youtube.com/watch?v=E08O9wKDdTA&t=0s"
+  },
+  {
+   "@type": "Clip",
+   "name": "Meet Dr. Kimberly Ammerman: pharmacist, horsewoman, healer",
+   "startOffset": 35,
+   "endOffset": 72,
+   "url": "https://www.youtube.com/watch?v=E08O9wKDdTA&t=35s"
+  },
+  {
+   "@type": "Clip",
+   "name": "Why she became a pharmacist",
+   "startOffset": 72,
+   "endOffset": 166,
+   "url": "https://www.youtube.com/watch?v=E08O9wKDdTA&t=72s"
+  },
+  {
+   "@type": "Clip",
+   "name": "The drive home from Denver that started it all",
+   "startOffset": 166,
+   "endOffset": 296,
+   "url": "https://www.youtube.com/watch?v=E08O9wKDdTA&t=166s"
+  },
+  {
+   "@type": "Clip",
+   "name": "The farrier's girlfriend becomes her first client",
+   "startOffset": 296,
+   "endOffset": 459,
+   "url": "https://www.youtube.com/watch?v=E08O9wKDdTA&t=296s"
+  },
+  {
+   "@type": "Clip",
+   "name": "Why she does not use a barn",
+   "startOffset": 459,
+   "endOffset": 492,
+   "url": "https://www.youtube.com/watch?v=E08O9wKDdTA&t=459s"
+  },
+  {
+   "@type": "Clip",
+   "name": "Growing up on horseback: Sugar and Tiny",
+   "startOffset": 492,
+   "endOffset": 615,
+   "url": "https://www.youtube.com/watch?v=E08O9wKDdTA&t=492s"
+  },
+  {
+   "@type": "Clip",
+   "name": "Training a horse without breaking its spirit",
+   "startOffset": 615,
+   "endOffset": 723,
+   "url": "https://www.youtube.com/watch?v=E08O9wKDdTA&t=615s"
+  },
+  {
+   "@type": "Clip",
+   "name": "What \"horse whisperer\" really means",
+   "startOffset": 723,
+   "endOffset": 742,
+   "url": "https://www.youtube.com/watch?v=E08O9wKDdTA&t=723s"
+  },
+  {
+   "@type": "Clip",
+   "name": "Misty and Starfellow: trading horses with her twin brother",
+   "startOffset": 742,
+   "endOffset": 867,
+   "url": "https://www.youtube.com/watch?v=E08O9wKDdTA&t=742s"
+  },
+  {
+   "@type": "Clip",
+   "name": "Working cattle and the barbed wire fence",
+   "startOffset": 867,
+   "endOffset": 995,
+   "url": "https://www.youtube.com/watch?v=E08O9wKDdTA&t=867s"
+  },
+  {
+   "@type": "Clip",
+   "name": "What do horses pick up on that people miss?",
+   "startOffset": 995,
+   "endOffset": 1079,
+   "url": "https://www.youtube.com/watch?v=E08O9wKDdTA&t=995s"
+  },
+  {
+   "@type": "Clip",
+   "name": "How a horse mirrors your energy",
+   "startOffset": 1079,
+   "endOffset": 1116,
+   "url": "https://www.youtube.com/watch?v=E08O9wKDdTA&t=1079s"
+  },
+  {
+   "@type": "Clip",
+   "name": "What happens in a session: on the ground, no riding",
+   "startOffset": 1116,
+   "endOffset": 1176,
+   "url": "https://www.youtube.com/watch?v=E08O9wKDdTA&t=1116s"
+  },
+  {
+   "@type": "Clip",
+   "name": "\"I don't think this horse likes me\"",
+   "startOffset": 1176,
+   "endOffset": 1310,
+   "url": "https://www.youtube.com/watch?v=E08O9wKDdTA&t=1176s"
+  },
+  {
+   "@type": "Clip",
+   "name": "Coach, not therapist: the man who called it stupid",
+   "startOffset": 1310,
+   "endOffset": 1457,
+   "url": "https://www.youtube.com/watch?v=E08O9wKDdTA&t=1310s"
+  },
+  {
+   "@type": "Clip",
+   "name": "Who comes to Healing Hearts with Horses?",
+   "startOffset": 1457,
+   "endOffset": 1495,
+   "url": "https://www.youtube.com/watch?v=E08O9wKDdTA&t=1457s"
+  },
+  {
+   "@type": "Clip",
+   "name": "What if you are afraid of horses?",
+   "startOffset": 1495,
+   "endOffset": 1563,
+   "url": "https://www.youtube.com/watch?v=E08O9wKDdTA&t=1495s"
+  },
+  {
+   "@type": "Clip",
+   "name": "Training others: the three-level program",
+   "startOffset": 1563,
+   "endOffset": 1709,
+   "url": "https://www.youtube.com/watch?v=E08O9wKDdTA&t=1563s"
+  },
+  {
+   "@type": "Clip",
+   "name": "Is this too woo woo?",
+   "startOffset": 1709,
+   "endOffset": 1785,
+   "url": "https://www.youtube.com/watch?v=E08O9wKDdTA&t=1709s"
+  },
+  {
+   "@type": "Clip",
+   "name": "What to wear and what a retreat is like",
+   "startOffset": 1785,
+   "endOffset": 1850,
+   "url": "https://www.youtube.com/watch?v=E08O9wKDdTA&t=1785s"
+  },
+  {
+   "@type": "Clip",
+   "name": "If you feel stuck, start here",
+   "startOffset": 1850,
+   "endOffset": 1918,
+   "url": "https://www.youtube.com/watch?v=E08O9wKDdTA&t=1850s"
+  },
+  {
+   "@type": "Clip",
+   "name": "How to find Healing Hearts with Horses",
+   "startOffset": 1918,
+   "endOffset": 1987,
+   "url": "https://www.youtube.com/watch?v=E08O9wKDdTA&t=1918s"
+  }
+ ]
+}
+</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "@id": "https://dialedin.health/podcast/episode-41-healing-with-horses#faq",
+ "mainEntity": [
+  {
+   "@type": "Question",
+   "name": "What is healing with horses?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Healing with horses is ground-based work where a person spends time with a horse and pays attention to how the horse responds. Dr. Kimberly Ammerman of Healing Hearts with Horses says horses are grounded and mirror a person's energy back to them. She coaches people through what they notice. Nobody rides."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "What do horses pick up on in people?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Dr. Kimberly Ammerman says the top thing is energy. Horses stand on four feet, eat grass and live in the sun, so they are very grounded. People are busy and scattered. In her experience an anxious person can send a horse running around the round pen, while a calm person may get walked right up to."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Do you ride the horses at Healing Hearts with Horses?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "No. Dr. Kimberly Ammerman says everything is done on the ground. A session can be as simple as grooming a horse while she asks questions, watches and gives space. She says the quiet moments are often where a person gets what she calls the aha moment. No riding skill is needed."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Is equine-assisted coaching the same as equine therapy?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "No. Dr. Kimberly Ammerman is a coach, not a therapist. Her work at Healing Hearts with Horses is equine-assisted coaching and personal development. It is not psychotherapy, counseling or medical care. She is also a practicing pharmacist and says medicine has its place. Coaching does not replace care from a licensed provider."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Do I need horse experience, and what if I am afraid of horses?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "You do not need any horse knowledge and you do not need to know how to ride. Dr. Kimberly Ammerman works with horse people and with people who are scared of horses. One woman arrived scared to death of them and left kissing a horse on the cheek. Dr. Kimberly says you just need to come and be open."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Who is this kind of work for?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Dr. Kimberly Ammerman says people of all ages come, often when they feel stuck and are ready for something to change. Some are carrying grief. Some are searching for their next step. She has seen children who felt unheard open up around a horse. It helps to be open and growth oriented."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "What should I wear to an equine coaching session or retreat?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Closed-toe shoes are the one requirement. No flip-flops. Horses are big and can step on a foot by accident, and the ranch is natural ground in the Black Hills. Dr. Kimberly Ammerman says fancy boots are not required and anybody is welcome. Cell service is limited, so plan to be off your phone."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "How do I become an equine coach?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Dr. Kimberly Ammerman teaches a three-level program. Level one builds the foundation. Level two covers how to facilitate: how to be curious, ask questions and help people. Level three is mastery. Her first class had eight people, including students from Australia and Sweden. Details are at healingheartswithhorses.com."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Where is Healing Hearts with Horses?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Healing Hearts with Horses is on 100 acres in the Black Hills near Whitewood, South Dakota, close to Deadwood. Dr. Kimberly Ammerman keeps 17 horses there and holds two, three and five day retreats plus private sessions. The work happens outdoors. She does not use a barn. Find her at healingheartswithhorses.com."
+   }
+  }
+ ]
+}
+</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "MedicalWebPage",
+ "@id": "https://dialedin.health/podcast/episode-41-healing-with-horses#medical",
+ "url": "https://dialedin.health/podcast/episode-41-healing-with-horses",
+ "name": "Healing With Horses: What a Horse Sees in You That You Miss",
+ "description": "What do horses pick up on that people miss? Dr. Kimberly Ammerman of Healing Hearts with Horses explains equine-assisted coaching and who it is for.",
+ "lastReviewed": "2026-10-14",
+ "inLanguage": "en-US",
+ "audience": {
+  "@type": "Audience",
+  "audienceType": "General public"
+ },
+ "isPartOf": {
+  "@id": "https://dialedin.health/podcast/episode-41-healing-with-horses#episode"
+ }
+}
+</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "Person",
+ "@id": "https://dialedin.health/#melissa-goodwin",
+ "name": "Melissa Goodwin",
+ "jobTitle": "Host, Dialed In Health",
+ "description": "Host of Dialed In Health and Owner of Vitality Growth Labs. Chemistry degree, master's in technology, 25 years across healthcare and tech, innovation leader at 8 US health systems, Bush Foundation Fellow.",
+ "url": "https://dialedin.health",
+ "sameAs": [
+  "https://www.youtube.com/@dialedinhealth",
+  "https://www.instagram.com/dialedin_health"
+ ]
+}
+</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "Person",
+ "@id": "https://dialedin.health/podcast/episode-41-healing-with-horses#guest",
+ "name": "Kimberly Ammerman",
+ "honorificPrefix": "Dr.",
+ "honorificSuffix": "PharmD",
+ "jobTitle": "Founder, Healing Hearts with Horses",
+ "description": "Doctor of Pharmacy, practicing pharmacist, horsewoman, coach and published author. Founder of Healing Hearts with Horses in Whitewood, South Dakota.",
+ "worksFor": {
+  "@type": "Organization",
+  "name": "Healing Hearts with Horses",
+  "url": "https://healingheartswithhorses.com",
+  "address": {
+   "@type": "PostalAddress",
+   "streetAddress": "11864 Crook City Rd",
+   "addressLocality": "Whitewood",
+   "addressRegion": "SD",
+   "postalCode": "57793",
+   "addressCountry": "US"
+  }
+ },
+ "url": "https://healingheartswithhorses.com/about-kim",
+ "sameAs": [
+  "https://healingheartswithhorses.com"
+ ]
+}
+</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "BreadcrumbList",
+ "@id": "https://dialedin.health/podcast/episode-41-healing-with-horses#breadcrumb",
+ "itemListElement": [
+  {
+   "@type": "ListItem",
+   "position": 1,
+   "name": "Dialed In Health",
+   "item": "https://dialedin.health"
+  },
+  {
+   "@type": "ListItem",
+   "position": 2,
+   "name": "Podcast",
+   "item": "https://dialedin.health/podcast"
+  },
+  {
+   "@type": "ListItem",
+   "position": 3,
+   "name": "Episode 41: Healing With Horses",
+   "item": "https://dialedin.health/podcast/episode-41-healing-with-horses"
+  }
+ ]
+}
+</script>
+<script>
+(function(){
+  var T="Healing With Horses: What a Horse Sees in You That You Miss", D="Dr. Kimberly Ammerman, pharmacist and founder of Healing Hearts with Horses, on what horses mirror back to us.", U="https://dialedin.health/podcast/episode-41-healing-with-horses", I="https://img.youtube.com/vi/E08O9wKDdTA/maxresdefault.jpg";
+  try{ document.title = T; }catch(e){}
+  function meta(sel,attr,val,content){var m=document.querySelector(sel);if(!m){m=document.createElement('meta');m.setAttribute(attr,val);document.head.appendChild(m);}m.setAttribute('content',content);}
+  meta('meta[property="og:title"]','property','og:title',T);
+  meta('meta[property="og:description"]','property','og:description',D);
+  meta('meta[property="og:url"]','property','og:url',U);
+  meta('meta[property="og:image"]','property','og:image',I);
+  meta('meta[name="twitter:title"]','name','twitter:title',T);
+  meta('meta[name="twitter:description"]','name','twitter:description',D);
+  meta('meta[name="twitter:image"]','name','twitter:image',I);
+})();
+</script>
+<section class="ephero"><div class="ephero-i">
+  <div class="htag">Dialed In Health &middot; Episode 41</div>
+  <h1 class="eph1">Healing With Horses: <em>What a Horse Sees in You That You Miss</em></h1>
+  <p class="epsub">A pharmacist with 17 horses on what they pick up on that people miss. Full transcript.</p>
+  <div class="eptags"><span class="tag">Healing With Horses</span><span class="tag">Equine Coaching</span><span class="tag">Stress</span><span class="tag">Feeling Stuck</span></div>
+  <div class="epbyline">October 14, 2026 &middot; 33 min &middot; Dr. Kimberly Ammerman, PharmD &middot; Founder, Healing Hearts with Horses</div>
+</div></section>
+<div class="body">
+<main>
+<div class="bcrumb"><a href="https://dialedin.health">Dialed In Health</a><span>/</span><a href="/podcast">Podcast</a><span>/</span>Episode 41</div>
+<div class="answer">Healing with horses is ground-based work where a horse responds to what a person is carrying and shows it back to them. <strong>Dr. Kimberly Ammerman, PharmD</strong>, a practicing pharmacist and founder of Healing Hearts with Horses in Whitewood, South Dakota, says horses are grounded and mirror our energy. She coaches people through what they notice. Nobody rides.</div>
+<div class="vwrap" id="video"><iframe src="https://www.youtube.com/embed/E08O9wKDdTA?enablejsapi=1" title="Healing With Horses: What a Horse Sees in You That You Miss" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+<div class="dih-pl"><span class="dih-pl-label">Listen &amp; subscribe</span><div class="dih-pl-btns"><a href="https://www.youtube.com/watch?v=E08O9wKDdTA" target="_blank" rel="noopener">YouTube</a><a href="https://open.spotify.com/episode/2uHqO2oyqowRxBfLhdeXuF" target="_blank" rel="noopener">Spotify</a><a href="https://podcasts.apple.com/us/podcast/dialed-in-health/id1885383990?i=1000796290056" target="_blank" rel="noopener">Apple Podcasts</a><a href="https://www.iheart.com/podcast/263-dialed-in-health-326899524" target="_blank" rel="noopener">iHeartRadio</a></div></div>
+<div class="spot"><iframe src="https://open.spotify.com/embed/episode/2uHqO2oyqowRxBfLhdeXuF?utm_source=generator" width="100%" height="152" frameborder="0" loading="lazy" title="Dialed In Health Episode 41 on Spotify" allow="clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe></div>
+<div class="sh">Episode <em>Chapters</em></div>
+<ul class="chapters">
+<li><a href="#video" data-t="0"><span class="t">0:00</span> What a horse does when an anxious person walks in</a></li>
+<li><a href="#video" data-t="35"><span class="t">0:35</span> Meet Dr. Kimberly Ammerman: pharmacist, horsewoman, healer</a></li>
+<li><a href="#video" data-t="72"><span class="t">1:12</span> Why she became a pharmacist</a></li>
+<li><a href="#video" data-t="166"><span class="t">2:46</span> The drive home from Denver that started it all</a></li>
+<li><a href="#video" data-t="296"><span class="t">4:56</span> The farrier&#x27;s girlfriend becomes her first client</a></li>
+<li><a href="#video" data-t="459"><span class="t">7:39</span> Why she does not use a barn</a></li>
+<li><a href="#video" data-t="492"><span class="t">8:12</span> Growing up on horseback: Sugar and Tiny</a></li>
+<li><a href="#video" data-t="615"><span class="t">10:15</span> Training a horse without breaking its spirit</a></li>
+<li><a href="#video" data-t="723"><span class="t">12:03</span> What &quot;horse whisperer&quot; really means</a></li>
+<li><a href="#video" data-t="742"><span class="t">12:22</span> Misty and Starfellow: trading horses with her twin brother</a></li>
+<li><a href="#video" data-t="867"><span class="t">14:27</span> Working cattle and the barbed wire fence</a></li>
+<li><a href="#video" data-t="995"><span class="t">16:35</span> What do horses pick up on that people miss?</a></li>
+<li><a href="#video" data-t="1079"><span class="t">17:59</span> How a horse mirrors your energy</a></li>
+<li><a href="#video" data-t="1116"><span class="t">18:36</span> What happens in a session: on the ground, no riding</a></li>
+<li><a href="#video" data-t="1176"><span class="t">19:36</span> &quot;I don&#x27;t think this horse likes me&quot;</a></li>
+<li><a href="#video" data-t="1310"><span class="t">21:50</span> Coach, not therapist: the man who called it stupid</a></li>
+<li><a href="#video" data-t="1457"><span class="t">24:17</span> Who comes to Healing Hearts with Horses?</a></li>
+<li><a href="#video" data-t="1495"><span class="t">24:55</span> What if you are afraid of horses?</a></li>
+<li><a href="#video" data-t="1563"><span class="t">26:03</span> Training others: the three-level program</a></li>
+<li><a href="#video" data-t="1709"><span class="t">28:29</span> Is this too woo woo?</a></li>
+<li><a href="#video" data-t="1785"><span class="t">29:45</span> What to wear and what a retreat is like</a></li>
+<li><a href="#video" data-t="1850"><span class="t">30:50</span> If you feel stuck, start here</a></li>
+<li><a href="#video" data-t="1918"><span class="t">31:58</span> How to find Healing Hearts with Horses</a></li>
+</ul>
+<div class="sh">Key <em>Takeaways</em></div>
+<ul class="klist">
+<li>Horses are grounded. Dr. Kimberly Ammerman says they mirror the energy a person brings.</li>
+<li>In her experience an anxious person can send a horse running around the pen. A calm person may get walked right up to.</li>
+<li>Everything at Healing Hearts with Horses is done on the ground. Nobody rides.</li>
+<li>Dr. Kimberly is a coach, not a therapist. She is also a practicing pharmacist and says medicine has its place.</li>
+<li>You do not need horse experience. People who are afraid of horses are welcome.</li>
+<li>She trains horses and will not &quot;break&quot; them. Her view is that breaking a horse takes away the connection.</li>
+<li>She teaches a three-level program for people who want to do this work themselves.</li>
+<li>Healing Hearts with Horses is on 100 acres near Whitewood, South Dakota, with 17 horses and two, three and five day retreats.</li>
+</ul>
+<div class="sh">Questions <em>Answered</em></div>
+<div class="qa"><h3>What is healing with horses?</h3><p>Healing with horses is ground-based work where a person spends time with a horse and pays attention to how the horse responds. Dr. Kimberly Ammerman of Healing Hearts with Horses says horses are grounded and mirror a person&#x27;s energy back to them. She coaches people through what they notice. Nobody rides.</p></div>
+<div class="qa"><h3>What do horses pick up on in people?</h3><p>Dr. Kimberly Ammerman says the top thing is energy. Horses stand on four feet, eat grass and live in the sun, so they are very grounded. People are busy and scattered. In her experience an anxious person can send a horse running around the round pen, while a calm person may get walked right up to.</p></div>
+<div class="qa"><h3>Do you ride the horses at Healing Hearts with Horses?</h3><p>No. Dr. Kimberly Ammerman says everything is done on the ground. A session can be as simple as grooming a horse while she asks questions, watches and gives space. She says the quiet moments are often where a person gets what she calls the aha moment. No riding skill is needed.</p></div>
+<div class="qa"><h3>Is equine-assisted coaching the same as equine therapy?</h3><p>No. Dr. Kimberly Ammerman is a coach, not a therapist. Her work at Healing Hearts with Horses is equine-assisted coaching and personal development. It is not psychotherapy, counseling or medical care. She is also a practicing pharmacist and says medicine has its place. Coaching does not replace care from a licensed provider.</p></div>
+<div class="qa"><h3>Do I need horse experience, and what if I am afraid of horses?</h3><p>You do not need any horse knowledge and you do not need to know how to ride. Dr. Kimberly Ammerman works with horse people and with people who are scared of horses. One woman arrived scared to death of them and left kissing a horse on the cheek. Dr. Kimberly says you just need to come and be open.</p></div>
+<div class="qa"><h3>Who is this kind of work for?</h3><p>Dr. Kimberly Ammerman says people of all ages come, often when they feel stuck and are ready for something to change. Some are carrying grief. Some are searching for their next step. She has seen children who felt unheard open up around a horse. It helps to be open and growth oriented.</p></div>
+<div class="qa"><h3>What should I wear to an equine coaching session or retreat?</h3><p>Closed-toe shoes are the one requirement. No flip-flops. Horses are big and can step on a foot by accident, and the ranch is natural ground in the Black Hills. Dr. Kimberly Ammerman says fancy boots are not required and anybody is welcome. Cell service is limited, so plan to be off your phone.</p></div>
+<div class="qa"><h3>How do I become an equine coach?</h3><p>Dr. Kimberly Ammerman teaches a three-level program. Level one builds the foundation. Level two covers how to facilitate: how to be curious, ask questions and help people. Level three is mastery. Her first class had eight people, including students from Australia and Sweden. Details are at healingheartswithhorses.com.</p></div>
+<div class="qa"><h3>Where is Healing Hearts with Horses?</h3><p>Healing Hearts with Horses is on 100 acres in the Black Hills near Whitewood, South Dakota, close to Deadwood. Dr. Kimberly Ammerman keeps 17 horses there and holds two, three and five day retreats plus private sessions. The work happens outdoors. She does not use a barn. Find her at healingheartswithhorses.com.</p></div>
+<div class="sh">About <em>This Episode</em></div>
+<div class="prose">
+<h3>What do horses pick up on that people miss?</h3><p>Dr. Kimberly Ammerman says the top thing is energy.</p><p>Horses have four feet on the ground. They eat grass. They stand in the sun. They are very grounded.</p><p>People are busy and focused on twenty things at once.</p><p>So when a person and a horse come together, the horse shows the person what is going on inside them.</p><p>In her experience, a person carrying a lot of anxiety can step into the round pen and the horse will start running around it. A calm person can step into the same pen and the same horse may walk right up.</p><h3>How did a pharmacist end up working with horses?</h3><p>Dr. Kimberly has never not had a horse. Her grandfather bought one for her and her twin brother when they were born.</p><p>She became a pharmacist because people she loved were sick and she did not understand their medicines.</p><p>She is still a practicing pharmacist. She says medicine has its place and it works.</p><p>She also saw people who were still stuck. That is when she started bringing them out to the horses.</p><p>The idea came on a drive home from Denver. She pulled over and wrote it all down.</p><p>The next day her farrier&#x27;s girlfriend, a stranger, asked if she had ever thought about using her horses to help people. She became the first client.</p><h3>What happens in a session?</h3><p>Everything is done on the ground. Nobody rides.</p><p>A session can be as simple as grooming a horse.</p><p>Dr. Kimberly asks questions, watches, listens and gives space. She says she follows her intuition and never knows when the aha moment will come.</p><p>One woman decided the horse did not like her because it kept stomping and tossing its head. It was shooing flies.</p><p>She wondered out loud how many times she had decided the same thing about people.</p><h3>What about people who think it is stupid?</h3><p>One man came only because a friend brought him. He stood in the pen and said this was stupid.</p><p>A horse named Oakley ignored him. Then the man said one thing, and Oakley walked straight to him and put his head on his chest.</p><p>The man cried. He told Dr. Kimberly he had been carrying grief over his nephew, and that he had never felt as good as he did right then.</p><h3>Is this equine therapy?</h3><p>No. Dr. Kimberly is a coach, not a therapist.</p><p>Healing Hearts with Horses offers equine-assisted coaching and personal development. It is not psychotherapy, counseling or medical care.</p><p>Her pharmacy background means she understands medicine and respects it. Coaching sits beside licensed care. It does not replace it.</p><h3>Who is healing with horses for?</h3><p>People of all ages. Horse people and people who are scared of horses.</p><p>One woman said she was scared to death and would not go near them. Dr. Kimberly told her she could stand outside the pen. By the end she was kissing the horse on the cheek.</p><p>You do not need horse knowledge. You do not need to know how to ride.</p><p>Dr. Kimberly says you just need to come, be open and be ready for change.</p><p>The one rule is closed-toe shoes.</p><h3>Can you learn to do this work?</h3><p>People from Australia, Sweden and across the United States kept asking Dr. Kimberly where to find someone like her near them.</p><p>So she started teaching. Her first class had eight people.</p><p>The program has three levels. Level one is the foundation. Level two is how to facilitate, be curious and ask questions. Level three is mastery.</p><h3>Is it too woo woo?</h3><p>Dr. Kimberly says she was once one of those people.</p><p>Now she has seen people who thought they could not move on, move on. She has seen people who could not cry, cry. She has seen children who felt unheard open up.</p><p>Her answer: &quot;Don&#x27;t knock it until you try it.&quot;</p><h3>Healing Hearts with Horses</h3>
+<p>11864 Crook City Rd, Whitewood, SD 57793<br>Website: <a href="https://healingheartswithhorses.com" target="_blank" rel="noopener">healingheartswithhorses.com</a><br>Facebook: Healing Hearts with Horses<br>Instagram: @healing.hearts.with.horses<br>Directory listing: <a href="/directory/wellness-coaching/healing-hearts-with-horses">Healing Hearts with Horses on Dialed In Health</a></p>
+<h3>Resources mentioned</h3>
+<p><a href="https://healingheartswithhorses.com/retreats" target="_blank" rel="noopener">Retreats</a><br><a href="https://healingheartswithhorses.com/certification" target="_blank" rel="noopener">Training program</a><br><a href="https://healingheartswithhorses.com/private-coaching" target="_blank" rel="noopener">Private coaching</a></p>
+<h3>Related episodes</h3>
+<p><a href="/podcast/episode-39-survival-mode-somatic-healing">Stuck in Survival Mode? How to Make Your Body Feel Safe Again</a><br><a href="/podcast/episode-34-ketamine-assisted-therapy">Ketamine Assisted Therapy (Episode 34)</a></p>
+</div>
+<div class="sh">Full <em>Transcript</em></div>
+<div class="tr">
+<p><span class="ts">[0:00]</span> Person that has a lot of anxiety or a person that is stressed out about something may step into a round pen with the horse. The horse will pick up on that energy and start running around the pen. Health and wellness is confusing. There&#x27;s a new trend every week. Everyone&#x27;s got an opinion and it&#x27;s hard to tell what&#x27;s real versus what&#x27;s good marketing.</p>
+<p><span class="ts">[0:19]</span> This is Dialed In Health and I&#x27;m your host Melissa Goodwin. Every episode we sit down with real providers doing the work and ask Ask them the questions you would ask if you were sitting in this chair. Let&#x27;s get dialed in.</p>
+<p><span class="ts">[0:35]</span> Welcome to today&#x27;s edition of Dialed In Health. We are in for a treat. We&#x27;re not just talking about healing and health today. We&#x27;re going to be talking about horses. So if you&#x27;re a horse lover, today&#x27;s episode is going to be for you. I am sitting here today with Dr. Kimberly Ammerman.</p>
+<p><span class="ts">[0:51]</span> She is a pharmacist, a horsewoman. She&#x27;s been riding since she was three. And also a healer. So we&#x27;re very excited to have you on the show here today. She&#x27;s also the founder of Healing Hearts with Horses in the Black Hills of South Dakota. Welcome, Kim.</p>
+<p><span class="ts">[1:07]</span> Welcome. Thank you. So great to have you on the show. I know you&#x27;re a pharmacist. You&#x27;ve been a pharmacist. Tell us a little bit about your journey from the science of pharmacy. So your doctorate. You have a doctorate in pharmacy, to the work that you&#x27;re doing now with Healing Hearts with Horses.</p>
+<p><span class="ts">[1:23]</span> How did that get started? There&#x27;s a lot. Yes, I bet. So the first thing my grandfather did when me and my twin brother was born was buy us a horse. Okay. So I&#x27;ve never not had a horse.</p>
+<p><span class="ts">[1:40]</span> Okay. And I I was around horses my entire life. And then when I decided to go off to college, I thought. I wanted to get into business, administration, that type of thing, and I was very drawn to medicine, and that happened because people in my life that I love, and my grandmother is one of them, she was sick and I didn&#x27;t understand her medicines, and so I thought I&#x27;m going to be a pharmacist so I can help people, and so I went to school and became a pharmacist, then I realized that there are many ways to treat many things.</p>
+<p><span class="ts">[2:17]</span> Without medicine. Okay. And I know medicine has its place. I know medicine works and I can help people with that. But I realized that there&#x27;s alternatives to that, and so that&#x27;s how I started putting all of this together. But I&#x27;m not sure. There&#x27;s so much to tell that I don&#x27;t want to go down the hole.</p>
+<p><span class="ts">[2:36]</span> Too many, yes, a lot a lot more to that story. Well, tell us a little bit of a flyby for you. When you know as a pharmacist, you&#x27;re still a practicing pharmacist. Yes. Yeah. So tell us a little bit about what was happening for you when you realized, like maybe this you&#x27;ve always loved horses, you&#x27;ve had horses for your whole life, that maybe these two worlds don&#x27;t have to be completely separate.</p>
+<p><span class="ts">[2:57]</span> What what was where was that realization for you? So it, I think it&#x27;s actually kind of funny because I was driving home from Denver, Colorado, and I was this was my thought was first of all, what is my purpose? How am I supposed to help people?</p>
+<p><span class="ts">[3:13]</span> The second thought was, &quot;How can I get my horses to pay for themselves? Because they&#x27;re not cheap. Because they&#x27;re not cheap. They have to eat. They have to drink. So it&#x27;s just water. That&#x27;s free.&quot; So when I was driving home, I sat there and I was thinking about I think the different people that have been in my lives, and I realized that I have horses that have helped me all my life, and I started thinking about what horses have done for me.</p>
+<p><span class="ts">[3:43]</span> And then I started thinking about the medicine and what people are treating and the many things, depression, frustration, addiction, all these things that people are going through, and how that can be helped with the horses. So as I&#x27;m driving, I get this divine intervention.</p>
+<p><span class="ts">[4:01]</span> I don&#x27;t know of any other way to put it, is that all of a sudden it was like you need to use your horses to help people heal. And so I had to pull over the car because it was coming so fast I couldn&#x27;t. I was afraid I&#x27;d forget.</p>
+<p><span class="ts">[4:16]</span> And so I was like, &quot;What do I need to make this work?&quot; And you know, you need land. I have that. You need horses. I have that. You know, I could have a counselor on hand. I have that. I have people I know. And I have medicine knowledge. So if somebody comes and they say, you know, this is what&#x27;s going on.</p>
+<p><span class="ts">[4:33]</span> These are the medications that I&#x27;m taking. I can guide them and help guide that. I&#x27;ve trained horses, and horses have trained me. So, you know, I mean, I thought I was teaching horses. Horses were teaching me, and then I realized that I need to do this.</p>
+<p><span class="ts">[4:51]</span> So, after I wrote all of this down, the very next day, my farrier comes out to cut the hooves on the horses. The what&#x27;s it called? The hoof, the farrier. The farrier. Okay. Yes, the farrier is the horse. you know when you get a manicure and a pedicure yeah that&#x27;s what the farrier is doing okay got it I bet there&#x27;s probably some cool of YouTube videos about farriers doing that work yeah sure sure okay but we don&#x27;t paint them yeah not yet not yet so he came out to work on the horse&#x27;s feet and he brought his girlfriend whom I had never met and so we were I was talking to the farrier and we were kind of doing our thing and I was Kind of stay in my distance from his girlfriend because I didn&#x27;t want to intimidate her or make her feel unwelcome.</p>
+<p><span class="ts">[5:40]</span> And she walks up to me and she said, &quot;Have you ever thought about using your horses to help people heal?&quot; Is this like the day after this happened? This is the exact day after I had this divine intervention, you know, epiphany, whatever you want to call it. And you had pulled over the side of the road and wrote everything down.</p>
+<p><span class="ts">[5:58]</span> And you like wrote everything all down. And then it happens the next day. That&#x27;s amazing. Okay. So then I was like, no. Way. I cannot believe someone just showed up. So then I said, &quot;Yeah, I actually am.&quot; And then my farrier&#x27;s head went up, and he goes, &quot;You are.&quot; And I go, &quot;Yeah, I want to do retreats, to help people so they can come here.&quot; And I was kind of trying to explain it to him, and so she became my first client.</p>
+<p><span class="ts">[6:24]</span> Okay. And what&#x27;s you know, she had had. four DUIs. She was, you know, in drug court. She was in, you know, it she needed help and she knew she needed something more than she was getting from the other type of therapy she was receiving.</p>
+<p><span class="ts">[6:42]</span> So at that point, I started working with her and today she is now a counselor at an addiction center. She went back to college and is getting, I think she&#x27;s just finishing up this year. And she&#x27;s going to be a counselor to help other people, so it changed her life.</p>
+<p><span class="ts">[6:58]</span> Yeah, and she was probably, you know, obviously she was my first success story because she was the first person that came to me. But I didn&#x27;t realize I had other success stories prior to that that I hadn&#x27;t picked up on yet. So there was there was her teaching me while I was teaching her.</p>
+<p><span class="ts">[7:17]</span> Oh, that&#x27;s why that worked. You know, I started getting those aha moments. So that&#x27;s how it started, and then from there, I was it was just flowing, and I was like everything was going, you know, I needed a web page, all these things I&#x27;m thinking that I need, and so I start doing them, none of which I probably did well, and then I thought I got stuck because I was like, I need a barn, and then everything stopped, and I was like, why did it stop?</p>
+<p><span class="ts">[7:45]</span> And then I got another divine intervention and another epiphany that said. What is it that you need to make this business work? And it was, I need land and I need horses and I have that. You know, the next question was, well, you have that. So why do you need the barn?</p>
+<p><span class="ts">[8:00]</span> It&#x27;s like, I don&#x27;t. So now I don&#x27;t use the barn. It&#x27;s outdoors. It&#x27;s very natural. It&#x27;s very peaceful and it&#x27;s very powerful. Yeah. What did you know about yourself when you were younger? You you&#x27;ve been around horses.</p>
+<p><span class="ts">[8:16]</span> You mentioned like your grandfather bought you horse when when you were born. Yeah, little did he know. Yeah, maybe he knew something that you didn&#x27;t, right? What did you what did you know growing up? What did what did horses do for you? And what how what kind of connection did you have with horses as a kid?</p>
+<p><span class="ts">[8:35]</span> So, my dad knew nothing about horses. Okay. And I don&#x27;t know how much my mom knew. But they would always go out and they would catch the horses and they would saddle them up and they would put them, you know, Kelly and I on the horse and we would ride.</p>
+<p><span class="ts">[8:50]</span> And the horse that my grandpa bought us, name was Sugar, had gotten pregnant. I think he bred her. You know, this was like when I was four or five years old, so it was a long time ago. And she had a colt named Tiny. You know, because as a four-year-old, that&#x27;s what you call a small horse.</p>
+<p><span class="ts">[9:05]</span> Right, right. So we named it Tiny. So then my grandpa took Tiny and Sugar to get Tiny broke. Well, when he came back. He said he was in the house with mom and dad and they were he was upset and he goes they broke the wrong horse so they broke Sugar who was already broke and so Tiny didn&#x27;t get any work done on on her and so he was just really upset so as he&#x27;s telling the story my mom looks out the kitchen window and me and Kelly are riding Tiny and mom goes I don&#x27;t think you need to worry about it so that was the journey of where it started okay and so Tiny was the first horse that I trained very badly, and tiny wouldn&#x27;t cross a bridge, wouldn&#x27;t cross the water.</p>
+<p><span class="ts">[9:51]</span> You know, I mean, there was so much tiny did not do, and it was so frustrating. So I started understanding at an early age the connection between the body language and the way the horse is talking to you and the way you&#x27;re talking to the horse, and started understanding that.</p>
+<p><span class="ts">[10:07]</span> And so, as more horses came and I started training other horses. I started getting a lot of aha moments from that. So, for people who aren&#x27;t horse people that are watching, what is the difference between how do you know how to if a horse is broken well, or how do you know like what are the rules that you learned along the way that you&#x27;re like, oh, there it is, that&#x27;s what I should be doing.</p>
+<p><span class="ts">[10:28]</span> Well, I call it training because I don&#x27;t want to break the horse&#x27;s spirit, so I don&#x27;t usually say that. But that is what a lot of people said because when I grew up around cowboys and ranchers, that&#x27;s what they did. They&#x27;d buck the horse out.</p>
+<p><span class="ts">[10:44]</span> But what I realized is that. What does that mean, buck the horse out? They would get on the horse and it would buck until they would get it to ride and I I would almost say they&#x27;d break its spirit. Okay. You know sort of and I was like oh my gosh we can&#x27;t do that because these horses have you know are are like feel I don&#x27;t want to say feelings but there&#x27;s a there&#x27;s a a connection that happens between a horse and a person that If you break their spirit, you take that away.</p>
+<p><span class="ts">[11:10]</span> And so, I started learning that at a young age. And you know, it&#x27;s kind of strange because the person that taught me was a another gal that was probably two or three years older than me, who was abused by her father. But I didn&#x27;t know that at the time. I would watch her with the horses, and I noticed how horse-like she was.</p>
+<p><span class="ts">[11:31]</span> And she would take the time and listen to them. And then I was like, well, I want to do that. And then I realized I was doing that. And so there was a lot of things that, when I was with the horse, that I was working with the horse, and the horse was respecting me, and I was respecting the horse, and that growth was occurring.</p>
+<p><span class="ts">[11:52]</span> And then when I got older, I started finding other mentors to follow, and I really started understanding the connection through. people who I&#x27;m you know they they call it the horse whisperer but it really is a whisper because you can hear what the horse is saying and the horse can hear what you&#x27;re saying and there&#x27;s no words at all yeah tell me about you you you have a story that you&#x27;ve talked about and you&#x27;ve you&#x27;ve you&#x27;re also an author so you&#x27;ve written some of these stories in a book you&#x27;ve got you you have a story about Misty and Starfellow tell us the story that you share oh about those two horses you&#x27;ve had a lot of horses in your life I&#x27;ve had a lot of horses in my life Misty was one that really stuck out for me.</p>
+<p><span class="ts">[12:32]</span> She was probably, you know, there&#x27;s certain horses that are very special to you. And yeah, so for some reason, she is gonna be one of those horses for me. And so when Misty was born and when Starfellow was born, my twin brother was the one that worked with Starfellow, and I was the one that worked with Misty.</p>
+<p><span class="ts">[12:49]</span> Now, I had earlier said that I didn&#x27;t like that this horse that I had didn&#x27;t do anything. Remember, Tiny? Yeah. So when I started working with Misty, I was like, she is gonna. Do this and she&#x27;s gonna walk across the bridge and I&#x27;m gonna teach her. I&#x27;m gonna yeah we&#x27;re gonna go and so she did and we ran everywhere and we ran so fast that there&#x27;d be times I couldn&#x27;t stop her and now my twin brother is way more relaxed than me and so his horse I would describe as Eeyore on Winnie the Pooh.</p>
+<p><span class="ts">[13:20]</span> Very laid back. He might cross the river and when he did it might lay down. You know he was very relaxed. So when I couldn&#x27;t stop my horse. And Kelly couldn&#x27;t get his horse to go. We would trade horses. So I was kind of the sensitizer, and Kelly was the desensitizer.</p>
+<p><span class="ts">[13:37]</span> Again, we didn&#x27;t know what we were doing, which is kind of fun. Yeah. Now that I look back, and I was like, that is so cool. We couldn&#x27;t have planned it better. And so I would give his horse the extra energy and understand where to go with that, and he would slow my horse down. And so it would come to a point where when I would ride her, and we always rode bareback.</p>
+<p><span class="ts">[13:58]</span> We never rode with a saddle. It was too much time, too much work, and I would ride at 8 in the morning till 8 at night, so we were out there all the time. And so when I would ride her, there was a point where everything we did was through body language. She could feel my legs.</p>
+<p><span class="ts">[14:13]</span> She could feel like when I would like when I&#x27;d tense up, when I would relax, and I was picking up on that. She could feel it, and she was picking up on me. And so it came to a point where our neighbors would call me and this neighbor girl. To work their cattle with them to, because we thought it was fun, we didn&#x27;t know we could get paid for it, and so we did all this cattle work just for fun, you know, cutting the calves and that type of thing.</p>
+<p><span class="ts">[14:40]</span> So for somebody who out there who is not familiar, what does that mean? What were you doing on your horses? So we would work cattle. We went have like we&#x27;d bring them up to maybe vaccinate them or whatever, and they would have calves, and so we would have to bring them all up, and so if a Cow or calf would cut back, the horse have to quickly cut back and bring it back to the herd, or we would have to cut calves out.</p>
+<p><span class="ts">[15:03]</span> Maybe we were, you know, it was time to take the calves away from from the cows, their moms. But probably the biggest thing for me that stuck out when I would do that was when I must have been, I don&#x27;t know, maybe nine or ten years old, and we were sent down to bring the cows up.</p>
+<p><span class="ts">[15:20]</span> I was sent down to bring the cows up by myself. For my dad and mom and I went down and the field was dirt so my dad must have like just plowed it and it had rained out so it was kind of muddy and so I was bringing these cows and calves up and one of the calves cut back and when it did the horse that I&#x27;m on Misty already knows what to do and so we&#x27;re automatically cutting back and we slid through a five-wire barbed wire fence she went under it and I went through it And I went, oh my God, oh my God.</p>
+<p><span class="ts">[15:51]</span> And so at that point, I I broke the bottom wires of the fence. How I did it, I&#x27;ll never know to this day. And I got her out, and she had like maybe a 2 inch cut on her top of her neck, and that was it. And then I looked at me, and I was like, ooh, you know, I had my arm was cut, my leg was cut, and I was like kind of hurting a little bit.</p>
+<p><span class="ts">[16:11]</span> And I was like, this didn&#x27;t go well. So I tied the reins to my legs because I was like. And walked the rest of the way home and we walked the cattle home you know I still got the cattle home and Misty stayed with me the whole time like okay how can I help you know what I mean I could have jumped back on her I&#x27;m sure but it you know I was in pain yeah yeah so I didn&#x27;t but the horse stayed with you yes what do you think that horses pick up on when you think about the healing work that that you&#x27;re doing now you you have a hundred acres in the Black Hills and you do you have all these how many horses do you have 17.</p>
+<p><span class="ts">[16:47]</span> Yeah, 17. This is what I say. To I have enough. Yeah, and then they keep coming. You keep getting them. I know. It&#x27;s just like divine. Again, it&#x27;s divine intervention. They just start showing up. My husband starts panicking. Tell me, what do you think horses pick up on that people and again you you work with counselors.</p>
+<p><span class="ts">[17:07]</span> You&#x27;re a you&#x27;re a a healer yourself and a pharmacist. So you understand that that when science is appropriate. But when do you what do you think horses pick up on that people just miss? Well, there&#x27;s a lot, so it would take me a long time to get into a lot of depth of it.</p>
+<p><span class="ts">[17:24]</span> But I think the the top thing is the energy that is with the horse and the energy that is with the person. And horses are extremely grounded. They have four feet on the ground. They&#x27;re eating grass. They&#x27;re in the sun.</p>
+<p><span class="ts">[17:39]</span> So they&#x27;re very grounded. And as us as humans, we&#x27;re very like. busy and we&#x27;re we&#x27;re focusing on 20 things at once and so we&#x27;re not grounded as much as the horse is and so when you come together with the horse, I think a lot of people what they don&#x27;t realize is that that&#x27;s being mirrored back to them what&#x27;s going through them the horse recognizes and shows it to them and they may you know a person that has a lot of anxiety or a person that Is stressed out about something may step into a round pen with the horse, and the horse will pick up on that energy and start running around the pen.</p>
+<p><span class="ts">[18:22]</span> A calm person will step into that pen, and the horse might walk that same horse might walk right up to them. And so there&#x27;s a lot of different types of energy that take place, and I think that&#x27;s why it&#x27;s so powerful. So what what do you specifically do?</p>
+<p><span class="ts">[18:38]</span> Because there&#x27;s lots of different kinds of Horse therapy. We talked about before we got started. I had asked you, &quot;Well, how do you describe it?&quot; Because there&#x27;s equine therapy, and where you know you might be riding a horse or walking with the horse in a pen. What you do is a little different.</p>
+<p><span class="ts">[18:54]</span> Can you describe what you do and what you&#x27;re sensing and how you&#x27;re kind of interpreting? Yeah, I follow a lot of my intuition and I&#x27;m intuitively guided a lot. So when I am with somebody out at the horses. And I never know when they&#x27;re going to get their aha moment.</p>
+<p><span class="ts">[19:13]</span> You know, I&#x27;m going to call it the aha moment. For so for example, everything we do is on the ground. We don&#x27;t do any riding. It&#x27;s not that riding can&#x27;t be done. We just don&#x27;t do that. It&#x27;s very powerful on the ground. And so, like one thing we might do is someone might be just combing the horse.</p>
+<p><span class="ts">[19:33]</span> And that in itself is very powerful. Do you want me to give you an example? Yeah. Okay. I had a gal that had showed up and I think she was working with addiction and but there&#x27;s addiction is a lot of times something much deeper.</p>
+<p><span class="ts">[19:50]</span> So they might be working with addiction, but what caused the addiction? And so that&#x27;s the part that we just want to walk through and I want them to discover within themselves where that&#x27;s at. So there&#x27;s a lot of Curiosity, there&#x27;s a lot of questions, there&#x27;s a lot of observing, and just listening and giving space that takes place.</p>
+<p><span class="ts">[20:11]</span> And so this gal came out and we were getting ready to maybe do some things and all she was doing was grooming the horse, she was combing it. Well, this particular day it was very, it was raining, it was in a distance, but it hadn&#x27;t reached us yet.</p>
+<p><span class="ts">[20:27]</span> And so when When it&#x27;s raining, I don&#x27;t know about here, but the flies start to come out and they bite. So a horse can feel a fly on its back. So if they&#x27;re biting, the horse gets very agitated. And so at this point, I could tell that the flies were, you know, around there.</p>
+<p><span class="ts">[20:44]</span> So I thought, well, I&#x27;ll get some fly spray and fly it on there. And I came back, and this girl said, &quot;I don&#x27;t think this horse likes me.&quot; I said, &quot;Well, why do you think that?&quot; She goes, &quot;Cause every time I go near it.&quot; It stomps its foot or it&#x27;s throwing its head back on it, you know, like biting at the side.</p>
+<p><span class="ts">[21:02]</span> She goes, &quot;I don&#x27;t think it likes me.&quot; And I said, &quot;Well, what&#x27;s interesting is that the reason the horse is doing that is because the flies are bothering it. So when it stomps its foot, it&#x27;s shooing off the fly when it&#x27;s throwing its head back.&quot; And she was like, &quot;Oh,&quot; she goes, &quot;Wonder how many times in my life I&#x27;ve thought this about people that I&#x27;m around, and I didn&#x27;t even know it.&quot; You know, putting something into when you&#x27;re with somebody, you know, they don&#x27;t like me, but maybe they do like you.</p>
+<p><span class="ts">[21:29]</span> Maybe it&#x27;s just that you are in yourself not liking yourself, and that&#x27;s what&#x27;s coming up instead. And so it was an aha moment for her. It was a very powerful one. And I didn&#x27;t do anything. The horse and her were the two that were working together. And so it&#x27;s it can be very quiet when it happens.</p>
+<p><span class="ts">[21:48]</span> Okay. But it&#x27;s very beautiful when it does. So you&#x27;re you&#x27;re not a therapist. You are a coach. Tell us a little bit about the coaching that you do. Like what that&#x27;s a great example of of one of the experiences. How do you coach different kinds of people through the process when they when they come to your place?</p>
+<p><span class="ts">[22:08]</span> Well, I had a guy come out, and he was, &quot;This isn&#x27;t gonna work. This is stupid. I&#x27;m not interested.&quot; You know, the only reason he came. Was because his friend, a girlfriend, came with him, and so he went into the pen and the horse he was with was Oakley.</p>
+<p><span class="ts">[22:25]</span> He went into the pen and he stood in the center of the pen and he was like, &quot;What am I supposed to do?&quot; You know what I mean? He was being very obstinate, and I said, &quot;You don&#x27;t have to do anything.&quot; Well, this horse is totally ignoring him because he&#x27;s ignoring what&#x27;s going on, and so I&#x27;m trying to ask questions to help him understand like what&#x27;s going on and.</p>
+<p><span class="ts">[22:46]</span> And be intuitively guided with that. And as he&#x27;s standing there, and I&#x27;m thinking, I don&#x27;t think he wants, you know, I mean, I knew he didn&#x27;t want to do it, but I was like, I don&#x27;t know how to ask him. So I&#x27;m thinking to myself, how can I help him? And in that moment, he said, &quot;Well, that&#x27;s all he said.&quot; And in that moment, Oakley&#x27;s head went up and walked straight to him, and Oakley put his head right on his chest.</p>
+<p><span class="ts">[23:13]</span> And he started crying, and I was like, wow, I wonder what just happened. Cause I I was like, this is awesome. And then I would say it was probably, you know, four or five minutes. It wasn&#x27;t really long, but the horse stepped back just a bit, and he said, &quot;I have never felt as good as I feel right now.&quot; And I said, &quot;Well, what happened?</p>
+<p><span class="ts">[23:37]</span> You know, do you want to share?&quot; And he goes, &quot;Yeah.&quot; He said, &quot;I had been holding on to the grief of my nephew&#x27;s.&quot; Suicide, that I thought it was my fault, and I was just now able to release that. And when I talk about that energy connection that happens, that everything that is coming out of him, the horse is pulling out and and transmuting it to maybe the heavens, maybe to the earth, wherever, to be purified.</p>
+<p><span class="ts">[24:04]</span> And he is now able to let that go. And whatever was blocking him at that point is now open for him to get clarity. And he can understand things, and so this is what happened for him. Yeah, so for people that maybe, what are the kinds of people that come to, Healing Hearts with Horses?</p>
+<p><span class="ts">[24:23]</span> Are they are they all horse lovers? I mean, that that gentleman obviously didn&#x27;t know a lot about horses. What is it? What is it about like that type of like is they&#x27;re stuck? They&#x27;re not sure what&#x27;s like what what is the kind of person that comes to this place? That&#x27;s where so As a pharmacist, I started realizing that medicines work to an extent.</p>
+<p><span class="ts">[24:43]</span> Yeah. And then there was a point where they were still stuck. And so then I would be a listener, or giving them space and thinking, &quot;How else can we help?&quot; And that&#x27;s when I started bringing them out to the horses. Are there people that come out that are afraid of horses?</p>
+<p><span class="ts">[24:58]</span> Yes. Are there people that come out that are horse people? Yes. People all ages are able to do this. So it isn&#x27;t confined to one thing. And I&#x27;ve had people that this particular girl that came out said I am scared to death of horses. I am not going near them.</p>
+<p><span class="ts">[25:14]</span> I said you don&#x27;t have to. You can stand outside the pen if you want. You can whatever you want to do is fine. And when she finished, she was kissing the horse on the cheek. And I was like, &quot;Are you still scared of horses?&quot; And she goes, &quot;Nope, not anymore.&quot; So it was really fun to see that transition in her.</p>
+<p><span class="ts">[25:33]</span> And so you never know what&#x27;s going to happen. But you don&#x27;t have to have any horse knowledge whatsoever. You don&#x27;t know have to know how to ride. You just need to come. You need to be open, and you need to be, I think, you know, growth oriented or maybe just ready for change or you know ready to find what it is that you&#x27;re searching for because the horses will help you find it.</p>
+<p><span class="ts">[25:57]</span> Yeah, what was interesting. So I&#x27;ve been out to your ranch before. You have you do lessons in leadership. Because you know all the different dynamics of the herd and how the herd works, you do less, you do work with folks with addiction. You also train other people how to do the work that you do.</p>
+<p><span class="ts">[26:16]</span> So tell me a little bit about that. Tell me about the courses you teach and the work that you do to train others. What started happening because I would get people from all over contacting me. I had someone from Australia, had somebody from Sweden.</p>
+<p><span class="ts">[26:33]</span> And then all across the United States, Washington State, New Mexico, Texas, California, Illinois, Connecticut, and they said, &quot;Where can I find the person to do what you do here?&quot; And I was like, &quot;Oh, I don&#x27;t know of anybody that does what I do, because I am completely on the horse growing up side, and and then I&#x27;m on the energy side, and I know the medicines.&quot; But I&#x27;m not a therapist, so I thought, but I know how to coach, and I know mindset, and I know how to help people heal.</p>
+<p><span class="ts">[27:07]</span> And so I thought, I&#x27;m going to start teaching people, so that I can say, yeah, there is somebody in your area that knows what to do, knows what to do on what I do. That was hard to say, that knows what to do. So I put together a masterclass, and I had eight people in it.</p>
+<p><span class="ts">[27:26]</span> And happened to have one from Australia and Sweden and some in the United States and when we got done they were all amazed at what they didn&#x27;t know and they were all horse people okay all there was two people that did not have no three people that did not have horses but the others were horse people and they&#x27;re like I never knew this I never realized that these things were possible And so that&#x27;s when I started teaching it.</p>
+<p><span class="ts">[27:54]</span> And so I have a level one that completely builds off of the foundation. I have a level two that is more like how to facilitate, how to be a good facilitator, how to help people, how to be curious, how to ask questions. And then I have a level three that&#x27;s kind of mastery, you know, takes it to a to the next level of where you can go and where they can go.</p>
+<p><span class="ts">[28:15]</span> And so there&#x27;s three levels to, I call it, I think it&#x27;s equine. Energy, equine and mindset or something like that I think is what I call it. So for those people out there who listen to this and they&#x27;re kind of like this sounds a little like woo woo for me.</p>
+<p><span class="ts">[28:31]</span> I don&#x27;t know. Seems a little little out there. What do you tell them? What&#x27;s funny is that I probably was once one of those people. Okay. And now I am a believer because I&#x27;ve seen the Transformations.</p>
+<p><span class="ts">[28:48]</span> I&#x27;ve seen people that thought they couldn&#x27;t move on move on. I&#x27;ve seen people who haven&#x27;t been able to cry cry. Yeah. I&#x27;ve seen people who you know children who feel like they aren&#x27;t understood or that nobody&#x27;s listening and the minute they get with that horse, I&#x27;ve seen them open up and so I&#x27;ve seen so many.</p>
+<p><span class="ts">[29:15]</span> Beautiful, powerful sessions that yeah, it could be a little woo woo, but I I don&#x27;t know of a better way to put it. Don&#x27;t knock it until you try it. Yeah. Because it&#x27;s very powerful and it helps you get your power back.</p>
+<p><span class="ts">[29:30]</span> It helps you find what it is you&#x27;re looking for and it helps you discover maybe what your purpose is. It helps you discover maybe what your next step is. Maybe it helps you learn how to let go of something that you no longer have to carry. Do you take city slickers and fancy boots or do you have to have ropers?</p>
+<p><span class="ts">[29:50]</span> I take anybody. The only requirement I have is that they have to have closed-toed shoes. Okay. I don&#x27;t want them coming out in flip-flops. Because they do have rattlesnakes out there. They do, and horses can step on feet. Yeah, and they&#x27;re big. Which would hurt, and they&#x27;re big.</p>
+<p><span class="ts">[30:05]</span> Not intentionally, but it can happen. You know, we go through a lot of safety precautions, but Mother Nature is Mother Nature. Yeah, that&#x27;s right, and it is very natural out there. That is, I think, one thing that is unique. It&#x27;s a beautiful area and just open space, and it&#x27;s it&#x27;s for for those of us that are on our phones all the time and on screens all the time, it it does feel a little disorienting, honestly, at first, because it&#x27;s multiple days.</p>
+<p><span class="ts">[30:30]</span> You do different kinds of retreats, right? Yeah, I do two-day retreats, three-day retreats, five-day retreats. And it&#x27;s kind of ironic, but when you&#x27;re out there, there&#x27;s not very good cell reception. Yes, that&#x27;s true. So you can&#x27;t be on your phones on purpose.</p>
+<p><span class="ts">[30:45]</span> So tell us, what would you want people out there to know who&#x27;ve maybe lost hope, feel like they don&#x27;t know what the next step is, or that they&#x27;re stuck in some ways, but they&#x27;re just not sure. What would you want them to know? Well, I think at any age.</p>
+<p><span class="ts">[31:02]</span> At any time in your life, there comes a time where maybe you need to take a different step. Maybe what you&#x27;ve been, you know, doing over and over and over isn&#x27;t working, and maybe there&#x27;s a reason for that. Maybe because it&#x27;s time for you to find something new.</p>
+<p><span class="ts">[31:20]</span> I have seen what beautiful work it does, and I&#x27;ve seen how it is so transformational for people that. I think it&#x27;s a beautiful way to find yourself and find what you&#x27;re looking for, and find the answers that you didn&#x27;t know were within you the whole time.</p>
+<p><span class="ts">[31:38]</span> Cause I&#x27;m not giving the answers. I&#x27;m not telling you what to say or do. I&#x27;m not telling the horse what to say or do. It&#x27;s not magical. It&#x27;s all between the energy of what you and the horse have created between you. And so, if you&#x27;re ready for something like that, then this is the place for you.</p>
+<p><span class="ts">[31:57]</span> Sounds amazing. So tell us now how how do people find you? Where can they find you at? I am on Facebook, Healing Hearts with Horses. I am located in the Black Hills in Whitewood is what they connected my land to South Dakota, but we&#x27;re very close to Deadwood.</p>
+<p><span class="ts">[32:16]</span> And I have Instagram, I have LinkedIn, I&#x27;m doing a little TikTok, some YouTube. webpage, so I&#x27;m trying to cover it all. Yeah, because I want to be there for people. I want people to be able to find what they&#x27;re looking for.</p>
+<p><span class="ts">[32:32]</span> Thank you so much for being on the show today. Look forward to seeing how Healing Hearts with Horses evolves. And again, if you&#x27;re looking for to connect with Dr. Kimberly Ammerman, click on the link below or click in the show notes. Thank you. I would love to see you there. That&#x27;s our show for today.</p>
+<p><span class="ts">[32:47]</span> If someone came to mind while you were listening. Please send it to them. You never know when a little piece of information might change someone&#x27;s life. Make sure to subscribe so you don&#x27;t miss the next one as well. I&#x27;m Melissa Goodwin. Thank you so much for listening and for now the line is open.</p>
+</div>
+<div class="crisis"><p><strong>Before you change anything about your care</strong></p>
+<p>Dr. Kimberly Ammerman is a coach, not a therapist. Healing Hearts with Horses offers equine-assisted coaching and personal development. It is not psychotherapy, counseling or medical care, and it does not replace care from a licensed provider.</p>
+<p><strong>If you are in crisis</strong>, call or text 988 in the United States. For treatment referrals, the SAMHSA national helpline is 1-800-662-4357, free and confidential, 24 hours a day.</p></div>
+<p class="disc">This episode is educational and informational only. It is not medical advice and is not a substitute for evaluation, diagnosis or treatment by a licensed provider. Healing Hearts with Horses offers equine-assisted coaching and personal-development programs. These are coaching services. They are not psychotherapy, counseling or medical care.</p>
+</main>
+<aside>
+  <div class="prov-dark">
+    <div class="prov-tag">Featured Provider</div>
+    <div class="prov-h">Healing Hearts with Horses</div>
+    <p class="prov-p">Equine-assisted coaching, retreats and practitioner training with Dr. Kimberly Ammerman, PharmD, on 100 acres in the Black Hills.</p>
+    <a class="prov-btn" href="/directory/wellness-coaching/healing-hearts-with-horses">View the listing</a>
+  </div>
+  <div class="dir-card">
+    <div class="dir-h">Find a provider like Dr. Kimberly</div>
+    <p class="dir-p">Every provider in the Dialed In Health directory has been on the show. Search by what you actually need.</p>
+    <a class="dir-btn" href="/the-directory">Search the Directory</a>
+  </div>
+  <div class="sb-card">
+    <div class="sb-eyebrow">Free Newsletter</div>
+    <div class="sb-h">Get new episodes</div>
+    <p class="sb-p">Health and wellness news, provider spotlights, and insights.</p>
+    <input type="email" class="email-in" placeholder="your@email.com">
+    <a href="https://dialedinhealth.kit.com/bc70e0bc47" target="_blank" rel="noopener" class="sb-btn">Subscribe Free</a>
+  </div>
+  <div class="sb-card">
+    <div class="sb-eyebrow">More Episodes</div>
+    <div class="sb-h">Keep listening</div>
+    <p class="sb-p">Forty-one conversations with the providers you can actually book.</p>
+    <a href="/podcast" class="sb-btn">All Episodes</a>
+  </div>
+  <div class="prov-dark">
+    <div class="prov-tag">Are you a provider?</div>
+    <div class="prov-h">One conversation. Months of people finding you.</div>
+    <p class="prov-p">Every guest gets an episode page, transcript, directory listing, and clips, built and distributed for you.</p>
+    <a href="https://dialedinhealth.kit.com/39b0bb5dc1" target="_blank" rel="noopener" class="prov-btn">Apply to Be a Guest &rarr;</a>
+  </div>
+</aside>
+</div>
+<script>
+(function(){
+  var f=document.querySelector('.vwrap iframe'); if(!f) return;
+  document.querySelectorAll('.chapters a[data-t]').forEach(function(a){
+    a.addEventListener('click',function(){
+      var t=parseInt(a.getAttribute('data-t'),10)||0;
+      try{
+        f.contentWindow.postMessage(JSON.stringify({event:'command',func:'seekTo',args:[t,true]}),'*');
+        f.contentWindow.postMessage(JSON.stringify({event:'command',func:'playVideo',args:[]}),'*');
+      }catch(err){}
+    });
+  });
+})();
+</script>
