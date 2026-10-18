@@ -138,7 +138,7 @@
       {
         "name": "Wellness Coaching",
         "slug": "wellness-coaching",
-        "count": 33,
+        "count": 34,
         "group": "Nutrition & Lifestyle"
       },
       {
@@ -6223,6 +6223,38 @@
         "feeling stuck",
         "stress",
         "grief"
+      ]
+    },
+    {
+      "name": "Evolve Consulting",
+      "slug": "evolve-consulting",
+      "master_category": "Wellness Coaching",
+      "category_slug": "wellness-coaching",
+      "blog_category": "Wellness Coaching",
+      "subcategory": "Burnout & Emotional Intelligence Coaching",
+      "market": "Sioux Falls, SD",
+      "market_label": "Sioux Falls",
+      "additional_market_labels": [],
+      "service_area": "Based in Sioux Falls, SD. Works with leaders, teams and individuals across South Dakota, Iowa, Minnesota and Nebraska.",
+      "address": "Sioux Falls, SD",
+      "phone": null,
+      "website": "https://evolveconsultingsd.com",
+      "profile_url": "https://www.dialedin.health/directory/wellness-coaching/evolve-consulting",
+      "google_rating": null,
+      "reviews": null,
+      "tier": "Listed",
+      "is_featured": false,
+      "service_tags": [
+        "burnout coaching",
+        "burnout recovery",
+        "emotional intelligence",
+        "EQ-i 2.0",
+        "leadership coaching",
+        "executive coaching",
+        "team well-being",
+        "compassion fatigue",
+        "stress",
+        "delegation"
       ]
     },
     {

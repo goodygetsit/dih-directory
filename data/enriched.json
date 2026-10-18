@@ -26504,5 +26504,60 @@
     },
     "provider": null,
     "episode": null
+  },
+  "evolve-consulting": {
+    "name": "Evolve Consulting",
+    "slug": "evolve-consulting",
+    "tier": "listed",
+    "category": "wellness-coaching",
+    "categoryName": "Wellness Coaching",
+    "location": {
+      "city": "Sioux Falls",
+      "state": "SD",
+      "zip": null,
+      "virtual": false
+    },
+    "google": {
+      "rating": null,
+      "reviewCount": null,
+      "description": "Evolve Consulting. Burnout and emotional intelligence coaching with Marla Dziedzic in Sioux Falls, SD."
+    },
+    "practice": {
+      "description": "Evolve Consulting offers burnout and emotional intelligence coaching with Marla Dziedzic for leaders, teams and individuals, based in Sioux Falls, South Dakota.",
+      "about": [
+        "Marla Dziedzic has more than 25 years in learning and development, including 15 years in healthcare, where she led well-being work for physicians and advanced practice providers.",
+        "She is certified to administer the EQ-i 2.0 emotional intelligence assessment.",
+        "She coaches individuals and builds well-being programs for organizations, from group coaching to six month programs.",
+        "She works with leaders and teams on burnout, personal resilience, communication and emotional intelligence, across South Dakota, Iowa, Minnesota and Nebraska.",
+        "Evolve Consulting offers coaching. It is not therapy, counseling or medical care."
+      ]
+    },
+    "specialtyTags": [
+      "Burnout & Emotional Intelligence Coaching",
+      "burnout coaching",
+      "emotional intelligence",
+      "EQ-i 2.0",
+      "leadership coaching",
+      "team well-being",
+      "personal resilience"
+    ],
+    "services": [
+      "Individual coaching",
+      "Group coaching",
+      "Well-being programs",
+      "EQ-i 2.0 emotional intelligence assessment",
+      "Team emotional intelligence training"
+    ],
+    "contact": {
+      "phone": null,
+      "website": "https://evolveconsultingsd.com",
+      "profileUrl": "https://www.dialedin.health/directory/wellness-coaching/evolve-consulting"
+    },
+    "profileUrl": "https://www.dialedin.health/directory/wellness-coaching/evolve-consulting",
+    "provider": {
+      "name": "Marla Dziedzic",
+      "credential": null
+    },
+    "episode": null
   }
 }
