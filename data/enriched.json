@@ -8962,68 +8962,8 @@
       "generatedAt": "2026-06-16T15:54:20.259Z"
     }
   },
-  "prime-iv-hydration": {
-    "name": "Prime IV Hydration",
-    "slug": "prime-iv-hydration",
-    "tier": "listed",
-    "category": "iv-therapy",
-    "categoryName": "IV Therapy",
-    "location": {
-      "city": "Sioux Falls",
-      "state": "SD",
-      "zip": "",
-      "virtual": false
-    },
-    "google": {
-      "rating": 4.7,
-      "reviewCount": 0,
-      "description": "Prime IV Hydration. specializing in IV Therapy. in the Functional, Integrative & Naturopathic Medicine category. located at Sioux Falls. Athletic & wellness IVs"
-    },
-    "practice": {
-      "description": "Prime IV Hydration. specializing in IV Therapy. in the Functional, Integrative & Naturopathic Medicine category. located at Sioux Falls. Athletic & wellness IVs",
-      "newPatients": true,
-      "about": [
-        "Intravenous nutrient therapy has become a cornerstone of regenerative and preventive medicine, offering rapid hydration, immune support, energy optimization, and recovery acceleration for athletes and wellness seekers alike.",
-        "Prime IV Hydration is a iv therapy & regenerative medicine provider serving the Sioux Falls, SD community.",
-        "Prime IV Hydration specializes in IV Therapy Provider, IV Therapy, Fatigue, with additional expertise in Dehydration, Immune Support, Functional, Integrative & Naturopathic Medicine. These specializations reflect a focused approach to care that allows Prime IV Hydration to deliver targeted, expert-level services to their patients. Each area of specialty represents dedicated training, clinical experience, and a commitment to staying current with the latest research and best practices in the field.",
-        "Benefits of IV therapy include rapid rehydration, immune system support, enhanced energy and mental clarity, faster recovery from illness or exercise, hangover relief, and anti-aging effects from antioxidant infusions.",
-        "NAD+ therapy has gained significant attention for its role in cellular repair, energy metabolism, cognitive function, and longevity. IV delivery ensures therapeutic levels that oral supplements cannot match.",
-        "The digestive system absorbs only 20-50% of oral nutrients, while IV delivery achieves nearly 100% bioavailability. For individuals with malabsorption issues, chronic illness, or high-performance demands, IV therapy offers a direct path to optimal nutrition.",
-        "New patients at Prime IV Hydration will find a professional, patient-centered environment designed to put you at ease from the moment you walk in. The team takes time to listen to your concerns, answer your questions, and explain recommended approaches to care. Whether this is your first visit to a iv therapy & regenerative medicine provider or you're transitioning from another practice, Prime IV Hydration is committed to making the experience as smooth and comfortable as possible.",
-        "Prime IV Hydration welcomes new patients and encourages those interested in scheduling an appointment to reach out by phone or visit their website. Insurance coverage varies by provider and plan, so contacting Prime IV Hydration directly is the best way to confirm accepted insurance, out-of-pocket costs, and scheduling availability. Many patients find that investing in quality iv therapy & regenerative medicine care delivers lasting value for their health.",
-        "As a valued member of the Sioux Falls, SD healthcare community, Prime IV Hydration contributes to the region's reputation for accessible, high-quality health and wellness services. The Sioux Falls metro area continues to attract skilled practitioners and innovative wellness businesses, creating a robust ecosystem of care that serves over 280,000 residents and the broader southeastern South Dakota region.",
-        "Finding the right iv therapy & regenerative medicine provider is a personal decision that depends on your specific health needs, preferences, and goals. Prime IV Hydration is listed in the Dialed In Health Directory as a recognized provider in the Sioux Falls area. We recommend reaching out directly to learn more about their approach, availability, and whether they accept your insurance or preferred payment method."
-      ]
-    },
-    "specialtyTags": [
-      "IV Therapy Provider",
-      "IV Therapy",
-      "Fatigue",
-      "Dehydration",
-      "Immune Support",
-      "Functional, Integrative & Naturopathic Medicine"
-    ],
-    "services": [],
-    "provider": null,
-    "episode": null,
-    "contact": {
-      "phone": null,
-      "website": "https://primeivhydration.com/locations/south-dakota/sioux-falls-57108/",
-      "profileUrl": "https://www.dialedin.health/directory/iv-therapy/prime-iv-hydration"
-    },
-    "profileUrl": "https://www.dialedin.health/directory/iv-therapy/prime-iv-hydration",
-    "_enrichment": {
-      "status": "matched",
-      "source": "vgl-enriched_providers",
-      "matchType": "slug",
-      "sourceSlug": "prime-iv-hydration",
-      "generatedAt": "2026-06-16T15:54:20.259Z",
-      "aboutSource": "vgl-provider-page",
-      "aboutSyncedAt": "2026-06-17T15:53:42.095Z"
-    }
-  },
   "prime-iv-hydration-wellness": {
-    "name": "Prime IV Hydration & Wellness",
+    "name": "Prime IV Hydration & Wellness - Sioux Falls",
     "slug": "prime-iv-hydration-wellness",
     "tier": "listed",
     "category": "iv-therapy",
@@ -9035,41 +8975,54 @@
       "virtual": false
     },
     "google": {
-      "rating": 4.9,
-      "reviewCount": 56,
-      "description": "Prime IV Hydration & Wellness. specializing in IV + NAD+ (Franchise). in the Functional, Integrative & Naturopathic Medicine category. located at 7208 S Lyncrest Pl, Sioux Falls, SD 57108. Phone: (605) 231-9263. NAD+ + massage chairs; 56 reviews"
+      "rating": 5.0,
+      "reviewCount": 76,
+      "description": "Prime IV Hydration & Wellness - Sioux Falls. IV hydration, NAD+, injections, peptides and whole body cryotherapy at 7208 S Lyncrest Pl, Sioux Falls, SD 57108. Phone: (605) 231-9263."
     },
     "practice": {
-      "description": "Prime IV Hydration & Wellness. specializing in IV + NAD+ (Franchise). in the Functional, Integrative & Naturopathic Medicine category. located at 7208 S Lyncrest Pl, Sioux Falls, SD 57108. Phone: (605) 231-9263. NAD+ + massage chairs; 56 reviews",
+      "description": "Prime IV Hydration & Wellness - Sioux Falls offers custom IV therapy, NAD+, injections, peptides, whole body cryotherapy and concierge IVs at 7208 S Lyncrest Pl in Sioux Falls. Every IV is started by a registered nurse or nurse practitioner.",
       "newPatients": true,
       "about": [
-        "Intravenous nutrient therapy has become a cornerstone of regenerative and preventive medicine, offering rapid hydration, immune support, energy optimization, and recovery acceleration for athletes and wellness seekers alike.",
-        "Prime IV Hydration & Wellness is a iv therapy & regenerative medicine provider serving the Sioux Falls, SD community. Located at 7208 S Lyncrest Pl in Sioux Falls, they offer convenient access for patients throughout the area. Patients can reach Prime IV Hydration & Wellness by phone at (605) 231-9263 to schedule appointments or learn more about available services.",
-        "Prime IV Hydration & Wellness specializes in IV Therapy Provider, IV Therapy, NAD+ Therapy, with additional expertise in Massage Therapy, Fatigue, Dehydration. These specializations reflect a focused approach to care that allows Prime IV Hydration & Wellness to deliver targeted, expert-level services to their patients. Each area of specialty represents dedicated training, clinical experience, and a commitment to staying current with the latest research and best practices in the field.",
-        "Benefits of IV therapy include rapid rehydration, immune system support, enhanced energy and mental clarity, faster recovery from illness or exercise, hangover relief, and anti-aging effects from antioxidant infusions.",
-        "NAD+ therapy has gained significant attention for its role in cellular repair, energy metabolism, cognitive function, and longevity. IV delivery ensures therapeutic levels that oral supplements cannot match.",
-        "The digestive system absorbs only 20-50% of oral nutrients, while IV delivery achieves nearly 100% bioavailability. For individuals with malabsorption issues, chronic illness, or high-performance demands, IV therapy offers a direct path to optimal nutrition.",
-        "New patients at Prime IV Hydration & Wellness will find a professional, patient-centered environment designed to put you at ease from the moment you walk in. The team takes time to listen to your concerns, answer your questions, and explain recommended approaches to care. Whether this is your first visit to a iv therapy & regenerative medicine provider or you're transitioning from another practice, Prime IV Hydration & Wellness is committed to making the experience as smooth and comfortable as possible.",
-        "Prime IV Hydration & Wellness welcomes new patients and encourages those interested in scheduling an appointment to reach out by phone or visit their website. Insurance coverage varies by provider and plan, so contacting Prime IV Hydration & Wellness directly is the best way to confirm accepted insurance, out-of-pocket costs, and scheduling availability. Many patients find that investing in quality iv therapy & regenerative medicine care delivers lasting value for their health.",
-        "Prime IV Hydration & Wellness maintains an impressive 4.9-star Google rating with 56 reviews, reflecting a dedication to quality service and positive patient outcomes. Community members consistently praise the care and attention they receive.",
-        "Located in Sioux Falls, SD, Prime IV Hydration & Wellness is part of a growing healthcare and wellness community dedicated to serving the Sioux Empire region. The greater Sioux Falls area has seen significant growth in health and wellness services, reflecting a community-wide commitment to preventive care, holistic health, and patient-centered medicine. Residents throughout Sioux Falls, Brandon, Hartford, Tea, Harrisburg, and the surrounding communities benefit from convenient access to quality providers like Prime IV Hydration & Wellness.",
-        "Finding the right iv therapy & regenerative medicine provider is a personal decision that depends on your specific health needs, preferences, and goals. Prime IV Hydration & Wellness is listed in the Dialed In Health Directory as a recognized provider in the Sioux Falls area. We recommend reaching out directly to learn more about their approach, availability, and whether they accept your insurance or preferred payment method."
+        "Prime IV Hydration & Wellness in Sioux Falls is owned by Melissa and Jody Reno. It is the only Prime IV location in South Dakota.",
+        "Every IV bag is compounded on site in a laminar flow hood and built for the person's goals, with up to three added nutrients per bag. Only registered nurses, nurse practitioners and physicians start IVs.",
+        "Services include custom IV therapy, injections, NAD+, peptides, whole body cryotherapy, massage chairs and concierge IVs at homes, meetings and events.",
+        "A health intake and vitals check come first, because some medications and supplements rule out certain nutrients. Consults are free and walk ins are welcome.",
+        "Prime IV does not bill insurance, but HSA cards can be used for single visits and memberships.",
+        "Melissa Reno was a guest on Dialed In Health Episode 43, Is IV Therapy Worth It? What's Actually in the Bag."
       ]
     },
     "specialtyTags": [
-      "IV Therapy Provider",
       "IV Therapy",
+      "IV hydration",
       "NAD+ Therapy",
-      "Massage Therapy",
-      "Fatigue",
-      "Dehydration"
+      "Vitamin infusions",
+      "Cryotherapy",
+      "Peptides",
+      "Recovery support"
     ],
-    "services": [],
-    "provider": null,
-    "episode": null,
+    "services": [
+      "IV therapy",
+      "IV hydration",
+      "NAD+",
+      "Injections",
+      "Peptides",
+      "Whole body cryotherapy",
+      "Concierge IV",
+      "Massage chairs"
+    ],
+    "provider": {
+      "name": "Melissa Reno",
+      "title": "Co-Owner",
+      "credential": ""
+    },
+    "episode": {
+      "slug": "episode-43-iv-therapy",
+      "title": "Is IV Therapy Worth It? What's Actually in the Bag",
+      "youtubeId": "-dJ59X0syH0"
+    },
     "contact": {
       "phone": "(605) 231-9263",
-      "website": null,
+      "website": "https://primeivhydration.com/locations/south-dakota/sioux-falls-57108/",
       "profileUrl": "https://www.dialedin.health/directory/iv-therapy/prime-iv-hydration-wellness"
     },
     "profileUrl": "https://www.dialedin.health/directory/iv-therapy/prime-iv-hydration-wellness",
@@ -9080,7 +9033,13 @@
       "sourceSlug": "prime-iv-hydration-wellness",
       "generatedAt": "2026-06-16T15:54:20.259Z",
       "aboutSource": "vgl-provider-page",
-      "aboutSyncedAt": "2026-06-17T15:53:42.114Z"
+      "aboutSyncedAt": "2026-06-17T15:53:42.114Z",
+      "mergedFrom": [
+        "prime-iv-hydration",
+        "prime-iv-hydration-sioux-falls"
+      ],
+      "mergedAt": "2026-10-27",
+      "nameSource": "Google Business Profile"
     }
   },
   "revive-functional-medicine": {
@@ -23620,64 +23579,6 @@
       "profileUrl": "https://www.dialedin.health/directory/hormone-therapy/gameday-mens-health-sioux-falls"
     },
     "profileUrl": "https://www.dialedin.health/directory/hormone-therapy/gameday-mens-health-sioux-falls",
-    "_enrichment": {
-      "status": "locally_generated",
-      "source": "local-provider-template",
-      "matchType": null,
-      "sourceSlug": null,
-      "generatedAt": "2026-06-16T16:34:46.114Z",
-      "note": "Generated without Google Places or Claude; replace with API-assisted enrichment when available."
-    },
-    "provider": null,
-    "episode": null
-  },
-  "prime-iv-hydration-sioux-falls": {
-    "name": "Prime IV Hydration, Sioux Falls",
-    "slug": "prime-iv-hydration-sioux-falls",
-    "tier": "listed",
-    "category": "iv-therapy",
-    "categoryName": "IV Therapy",
-    "location": {
-      "city": "Sioux Falls",
-      "state": "SD",
-      "zip": "57108",
-      "virtual": false
-    },
-    "google": {
-      "rating": null,
-      "reviewCount": null,
-      "description": "Prime IV Hydration, Sioux Falls. Specializing in IV Hydration + NAD+. Listed under IV Therapy. Located at Sioux Falls, SD 57108."
-    },
-    "practice": {
-      "description": "Prime IV Hydration, Sioux Falls is listed in the Dialed In Health directory for iv hydration + nad+ in Sioux Falls. This listing is useful for people comparing hydration, nutrient infusion, recovery, and wellness drip options. Common search matches include iV therapy, iV hydration, NAD+, and vitamin drip.",
-      "newPatients": true
-    },
-    "specialtyTags": [
-      "IV Hydration + NAD+",
-      "IV therapy",
-      "IV hydration",
-      "NAD+",
-      "vitamin drip",
-      "wellness IV",
-      "IV Hydration",
-      "Nutrient Infusions"
-    ],
-    "services": [
-      "IV therapy",
-      "IV hydration",
-      "NAD+",
-      "vitamin drip",
-      "wellness IV",
-      "IV Hydration + NAD+",
-      "Vitamin infusions",
-      "Recovery support"
-    ],
-    "contact": {
-      "phone": null,
-      "website": "https://primeivhydration.com/locations/south-dakota/sioux-falls-57108/",
-      "profileUrl": "https://www.dialedin.health/directory/iv-therapy/prime-iv-hydration-sioux-falls"
-    },
-    "profileUrl": "https://www.dialedin.health/directory/iv-therapy/prime-iv-hydration-sioux-falls",
     "_enrichment": {
       "status": "locally_generated",
       "source": "local-provider-template",

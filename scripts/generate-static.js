@@ -238,6 +238,16 @@ for (const provider of providers) {
   writeKey(providerPath(provider), html, "text/html; charset=utf-8");
 }
 
+// Merged listings: the old URL keeps working as a redirect page to the kept
+// listing, so links already shared (YouTube descriptions, emails) never 404.
+const mergedProviders = readOptionalJson(path.join(REPO_ROOT, "data", "merged-providers.json")) || {};
+for (const [oldPath, newPath] of Object.entries(mergedProviders)) {
+  if (oldPath.startsWith("_")) continue;
+  const target = `${DIRECTORY_BASE}/${newPath}`;
+  const url = abs(target);
+  writeKey(`${DIRECTORY_BASE}/${oldPath}`, `<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Moved</title><meta name="robots" content="noindex"><link rel="canonical" href="${url}"><meta http-equiv="refresh" content="0; url=${url}"><script>location.replace(${JSON.stringify(url)});</script></head><body><p>This listing has moved. <a href="${url}">Go to the listing</a>.</p></body></html>`, "text/html; charset=utf-8");
+}
+
 writeKey(`${DIRECTORY_BASE}/search-index.json`, JSON.stringify(buildSearchIndex()), "application/json; charset=utf-8");
 writeKey("/sitemap-directory.xml", renderDirectorySitemap(), "application/xml; charset=utf-8");
 writeKey("/sitemap.xml", renderSitemapIndex(), "application/xml; charset=utf-8");
@@ -1162,6 +1172,14 @@ function buildRedirectMap() {
 
   const providersBySlug = {};
   const providerPaths = {};
+  const merged = readOptionalJson(path.join(REPO_ROOT, "data", "merged-providers.json")) || {};
+  for (const [oldPath, newPath] of Object.entries(merged)) {
+    if (oldPath.startsWith("_")) continue;
+    exact[`${DIRECTORY_BASE}/${oldPath}`] = `${DIRECTORY_BASE}/${newPath}`;
+    exact[`${DIRECTORY_BASE}/${oldPath}/`] = `${DIRECTORY_BASE}/${newPath}`;
+    exact[`/providers/${oldPath}`] = `${DIRECTORY_BASE}/${newPath}`;
+    providersBySlug[oldPath.split("/").pop()] = `${DIRECTORY_BASE}/${newPath}`;
+  }
   for (const provider of providers) {
     const target = providerPath(provider);
     providersBySlug[provider.slug] = target;
