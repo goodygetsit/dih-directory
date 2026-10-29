@@ -11617,6 +11617,46 @@
       ]
     },
     {
+      "name": "John Ossipinsky, LymphMan",
+      "slug": "john-ossipinsky-lymphman",
+      "master_category": "Wellness Coaching",
+      "category_slug": "wellness-coaching",
+      "blog_category": "Wellness Coaching",
+      "subcategory": "Lymphatic Health Education + Coaching",
+      "market": "Remote",
+      "market_label": "Virtual (Nationwide)",
+      "additional_market_labels": [
+        "Virtual Services"
+      ],
+      "service_area": "Virtual nationwide coaching and online courses; based in Peoria, AZ",
+      "address": null,
+      "phone": null,
+      "website": "https://www.johnossipinsky.com",
+      "profile_url": "https://www.dialedin.health/directory/wellness-coaching/john-ossipinsky-lymphman",
+      "google_rating": null,
+      "reviews": null,
+      "tier": "Listed",
+      "is_featured": false,
+      "is_guest": true,
+      "service_tags": [
+        "lymphatic system",
+        "lymphatic health",
+        "lymph flow",
+        "lymphatic drainage",
+        "self lymphatic drainage",
+        "rebounding",
+        "swollen ankles",
+        "brain fog",
+        "lymph brain connection",
+        "online courses",
+        "coaching"
+      ],
+      "description": "John Ossipinsky, known online as LymphMan, is a certified lymphedema therapist with 30 years of hands on lymphatic work. Army medic, retired New York City firefighter, author, and host of the Lymph Brain Revolution podcast. Coaching and online courses on lymphatic health.",
+      "markets": [
+        "virtual"
+      ]
+    },
+    {
       "name": "BeeWell Functional Wellness",
       "slug": "beewell-functional-wellness",
       "master_category": "Functional Medicine",
