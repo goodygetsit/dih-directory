@@ -9049,46 +9049,43 @@
     "category": "functional-medicine",
     "categoryName": "Functional Medicine",
     "location": {
-      "city": "Sioux Falls",
-      "state": "SD",
-      "zip": "57105",
-      "virtual": false
+      "city": "Solon",
+      "state": "IA",
+      "zip": null,
+      "virtual": true
     },
     "google": {
       "rating": 5,
       "reviewCount": 0,
-      "description": "Revive Functional Medicine. specializing in Functional Medicine + IV. in the Functional, Integrative & Naturopathic Medicine category. located at 115 W 39th St, Sioux Falls, SD 57105. Husband/wife team; IV therapy add-on"
+      "description": "Revive Functional Medicine is an all virtual functional medicine practice for women, owned by family nurse practitioner Melissa Bunkers, MSN, FNP-BC. Based in Solon, Iowa."
     },
     "practice": {
-      "description": "Revive Functional Medicine. specializing in Functional Medicine + IV. in the Functional, Integrative & Naturopathic Medicine category. located at 115 W 39th St, Sioux Falls, SD 57105. Husband/wife team; IV therapy add-on",
+      "description": "Revive Functional Medicine is an all virtual functional medicine practice for women, owned by family nurse practitioner Melissa Bunkers, MSN, FNP-BC. Based in Solon, Iowa.",
       "newPatients": true,
       "about": [
-        "Unlike conventional medicine that often focuses on symptom management, functional medicine digs deeper — examining genetics, environment, lifestyle, and the complex interplay of factors that influence long-term health.",
-        "Revive Functional Medicine is a functional medicine provider serving the Sioux Falls, SD community. Located at 115 W 39th St in Sioux Falls, they offer convenient access for patients throughout the area. Patients can reach Revive Functional Medicine by phone at (605) 951-0379 to schedule appointments or learn more about available services.",
-        "Revive Functional Medicine specializes in Functional Medicine Practitioner, Functional Medicine, IV Therapy, with additional expertise in Chronic Fatigue, Autoimmune Conditions, Hormonal Imbalance. These specializations reflect a focused approach to care that allows Revive Functional Medicine to deliver targeted, expert-level services to their patients. Each area of specialty represents dedicated training, clinical experience, and a commitment to staying current with the latest research and best practices in the field.",
-        "Treatment plans in functional medicine often integrate nutrition therapy, targeted supplementation, stress management techniques, sleep optimization, movement prescriptions, and detoxification protocols tailored to each patient's biochemistry.",
-        "Conditions commonly addressed include chronic fatigue, autoimmune disorders, hormonal imbalances, digestive issues, metabolic dysfunction, and treatment-resistant conditions that haven't responded to conventional approaches.",
-        "Chronic diseases account for 90% of U.S. healthcare spending, and many are rooted in lifestyle and environmental factors. Functional medicine's root-cause approach offers hope for sustainable, long-term health improvement.",
-        "New patients at Revive Functional Medicine will find a professional, patient-centered environment designed to put you at ease from the moment you walk in. The team takes time to listen to your concerns, answer your questions, and explain recommended approaches to care. Whether this is your first visit to a functional medicine provider or you're transitioning from another practice, Revive Functional Medicine is committed to making the experience as smooth and comfortable as possible.",
-        "Revive Functional Medicine welcomes new patients and encourages those interested in scheduling an appointment to reach out by phone or visit their website. Insurance coverage varies by provider and plan, so contacting Revive Functional Medicine directly is the best way to confirm accepted insurance, out-of-pocket costs, and scheduling availability. Many patients find that investing in quality functional medicine care delivers lasting value for their health.",
-        "As a valued member of the Sioux Falls, SD healthcare community, Revive Functional Medicine contributes to the region's reputation for accessible, high-quality health and wellness services. The Sioux Falls metro area continues to attract skilled practitioners and innovative wellness businesses, creating a robust ecosystem of care that serves over 280,000 residents and the broader southeastern South Dakota region.",
-        "Finding the right functional medicine provider is a personal decision that depends on your specific health needs, preferences, and goals. Revive Functional Medicine is listed in the Dialed In Health Directory as a recognized provider in the Sioux Falls area. We recommend reaching out directly to learn more about their approach, availability, and whether they accept your insurance or preferred payment method."
+        "Revive Functional Medicine is an all virtual functional medicine practice for women, owned by Melissa Bunkers, MSN, FNP-BC, a board certified family nurse practitioner based in Solon, Iowa.",
+        "Melissa spent years as a nurse practitioner in emergency surgery and trauma. After two babies in two years and lab work that came back normal, she found her own early Hashimoto's and trained at the School of Applied Functional Medicine.",
+        "Her focus is Hashimoto's and hypothyroidism, gut health, thyroid hormones, women's hormone health and nutrient deficiencies. She uses a full thyroid panel, including TSH, free T4, free T3, reverse T3, and TPO and TG antibodies, and tests the gut rather than guessing.",
+        "Care is delivered through a five month program built around lab testing, gut healing, nutrition and support from dietitians. Visits are virtual, and Melissa can prescribe for women in Iowa, South Dakota and Minnesota.",
+        "Melissa was a guest on Dialed In Health, Episode 45: Hashimoto's: What a Normal Thyroid Test Can Miss."
       ]
     },
     "specialtyTags": [
-      "Functional Medicine Practitioner",
       "Functional Medicine",
-      "IV Therapy",
-      "Chronic Fatigue",
-      "Autoimmune Conditions",
-      "Hormonal Imbalance"
+      "Hashimoto's",
+      "Hypothyroidism",
+      "Thyroid Health",
+      "Gut Health",
+      "Hormonal Imbalance",
+      "Women's Health",
+      "Virtual Care"
     ],
     "services": [],
     "provider": null,
     "episode": null,
     "contact": {
       "phone": null,
-      "website": null,
+      "website": "https://www.melissabunkers.com",
       "profileUrl": "https://www.dialedin.health/directory/functional-medicine/revive-functional-medicine"
     },
     "profileUrl": "https://www.dialedin.health/directory/functional-medicine/revive-functional-medicine",
@@ -9098,8 +9095,8 @@
       "matchType": "slug",
       "sourceSlug": "revive-functional-medicine",
       "generatedAt": "2026-06-16T15:54:20.259Z",
-      "aboutSource": "vgl-provider-page",
-      "aboutSyncedAt": "2026-06-17T15:53:42.176Z"
+      "aboutSource": "dih-episode-45-guest-interview",
+      "aboutSyncedAt": "2026-11-02T02:30:00.000Z"
     }
   },
   "sozo-wellness": {

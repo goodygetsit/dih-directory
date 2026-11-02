@@ -4023,20 +4023,40 @@
       "master_category": "Functional Medicine",
       "category_slug": "functional-medicine",
       "blog_category": "Functional Medicine",
-      "subcategory": "Functional Medicine + IV",
-      "market": "Sioux Falls, SD",
-      "market_label": "Sioux Falls",
-      "additional_market_labels": [],
-      "service_area": null,
-      "address": "115 W 39th St, Sioux Falls, SD 57105",
+      "subcategory": "Hashimoto's, Thyroid + Women's Hormone Health",
+      "market": "Remote",
+      "market_label": "Virtual (Nationwide)",
+      "additional_market_labels": [
+        "Virtual Services"
+      ],
+      "service_area": "All virtual practice for women; prescribes in Iowa, South Dakota and Minnesota; based in Solon, IA",
+      "address": null,
       "phone": null,
-      "website": null,
-      "profile_url": "https://www.dialedin.health/providers/functional-medicine#revive-functional-medicine",
+      "website": "https://www.melissabunkers.com",
+      "profile_url": "https://www.dialedin.health/directory/functional-medicine/revive-functional-medicine",
       "google_rating": 5,
       "reviews": null,
       "tier": "Listed",
       "is_featured": false,
-      "service_tags": []
+      "service_tags": [
+        "Hashimoto's",
+        "hypothyroidism",
+        "thyroid antibodies",
+        "full thyroid panel",
+        "gut health",
+        "GI-MAP",
+        "hormone health",
+        "perimenopause",
+        "postpartum",
+        "nutrient deficiencies",
+        "virtual functional medicine",
+        "women's health"
+      ],
+      "is_guest": true,
+      "description": "Melissa Bunkers, MSN, FNP-BC, is a family nurse practitioner and the owner of Revive Functional Medicine, an all virtual practice for women. She works with women on Hashimoto's, gut health, thyroid hormones and nutrient deficiencies, and can prescribe in Iowa, South Dakota and Minnesota.",
+      "markets": [
+        "virtual"
+      ]
     },
     {
       "name": "SOZO Wellness",
