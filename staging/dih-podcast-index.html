@@ -1,0 +1,2135 @@
+<!-- ==================== BEGIN PASTE BLOCK (copy from here) ==================== -->
+<!-- ============================================================
+
+DIH HOMEPAGE | /podcast   (redesign v2026-09-24, Montserrat + teal/ink brand)
+
+Paste everything BETWEEN the two "PASTE BLOCK" markers into ONE Squarespace
+Code Block on the /podcast page.
+
+WEEKLY EPISODE UPDATE (v2026-09-24b): TWO edits, nothing else changes.
+ (a) insert ONE new card FIRST inside <div class="eplist"> (same card markup, no badge)
+ (b) insert ONE new PodcastEpisode object FIRST in the episode[] array
+Automatic from the first card: the NEW - LIVE badge, the hero "Latest Episode"
+button, and the footer "Latest episode" link (anything with data-latest).
+The PodcastSeries image is the show cover art and never changes.
+The first card in .eplist is automatically shown as the big "Newest episode".
+The homepage shows the newest + 6 more; "See all episodes" opens the rest.
+Topic tiles filter the episode list by keywords (data-k on each tile).
+
+This block hides the old site header and footer ON THIS PAGE ONLY and draws
+its own. Every other page keeps the site-wide header and footer.
+
+============================================================ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "PodcastSeries",
+  "name": "Dialed In Health",
+  "url": "https://dialedin.health/podcast",
+  "image": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts221/v4/a5/ec/04/a5ec04be-92b3-ae30-8184-d00179ae090a/mza_516597249357515673.png/600x600bb.jpg",
+  "description": "Real conversations with the providers, practitioners, and specialists you can book. New episodes weekly across Sioux Falls, the Twin Cities, and Omaha.",
+  "creator": {
+    "@type": "Person",
+    "name": "Melissa Goodwin"
+  },
+  "episode": [
+{
+ "@type": "PodcastEpisode",
+ "@id": "https://dialedin.health/podcast/episode-44-lymphatic-system#episode",
+ "url": "https://dialedin.health/podcast/episode-44-lymphatic-system",
+ "name": "What Is the Lymphatic System? How to Get It Moving at Home",
+ "episodeNumber": 44,
+ "datePublished": "2026-11-04",
+ "duration": "PT55M13S",
+ "description": "LymphMan John Ossipinsky explains what the lymphatic system does and simple ways to get lymph moving at home.",
+ "image": "https://img.youtube.com/vi/6j9c_aHWMwk/maxresdefault.jpg",
+ "associatedMedia": {
+  "@type": "VideoObject",
+  "name": "What Is the Lymphatic System? How to Get It Moving at Home",
+  "embedUrl": "https://www.youtube.com/embed/6j9c_aHWMwk",
+  "thumbnailUrl": "https://img.youtube.com/vi/6j9c_aHWMwk/maxresdefault.jpg",
+  "uploadDate": "2026-11-04"
+ }
+},
+{
+  "@type": "PodcastEpisode",
+  "@id": "https://dialedin.health/podcast/episode-43-iv-therapy#episode",
+  "url": "https://dialedin.health/podcast/episode-43-iv-therapy",
+  "name": "Is IV Therapy Worth It? What's Actually in the Bag",
+  "episodeNumber": 43,
+  "datePublished": "2026-10-28",
+  "duration": "PT41M58S",
+  "description": "Prime IV Sioux Falls co-owner Melissa Reno and her nurse on what is in an IV bag, who it is for, and what it costs.",
+  "image": "https://img.youtube.com/vi/-dJ59X0syH0/maxresdefault.jpg",
+  "associatedMedia": {"@type": "VideoObject", "name": "Is IV Therapy Worth It? What's Actually in the Bag", "embedUrl": "https://www.youtube.com/embed/-dJ59X0syH0"}
+},
+{
+  "@type": "PodcastEpisode",
+  "@id": "https://dialedin.health/podcast/episode-42-burnout-emotional-intelligence#episode",
+  "url": "https://dialedin.health/podcast/episode-42-burnout-emotional-intelligence",
+  "name": "You Can't Yoga Your Way Out of Burnout (Do This Instead)",
+  "episodeNumber": 42,
+  "datePublished": "2026-10-21",
+  "duration": "PT1H2M35S",
+  "description": "Burnout coach Marla Dziedzic on burnout vs depression, why vacation won't fix it, and how emotional intelligence helps.",
+  "image": "https://img.youtube.com/vi/knRrKVvqDoA/maxresdefault.jpg",
+  "associatedMedia": {"@type": "VideoObject", "name": "You Can't Yoga Your Way Out of Burnout (Do This Instead)", "embedUrl": "https://www.youtube.com/embed/knRrKVvqDoA"}
+},
+{
+  "@type": "PodcastEpisode",
+  "@id": "https://dialedin.health/podcast/episode-41-healing-with-horses#episode",
+  "url": "https://dialedin.health/podcast/episode-41-healing-with-horses",
+  "name": "Healing With Horses: What a Horse Sees in You That You Miss",
+  "episodeNumber": 41,
+  "datePublished": "2026-10-14",
+  "duration": "PT33M7S",
+  "description": "Dr. Kimberly Ammerman of Healing Hearts with Horses on what horses pick up on that people miss, and who equine coaching is for.",
+  "image": "https://img.youtube.com/vi/E08O9wKDdTA/maxresdefault.jpg",
+  "associatedMedia": {"@type": "VideoObject", "name": "Healing With Horses: What a Horse Sees in You That You Miss", "embedUrl": "https://www.youtube.com/embed/E08O9wKDdTA"}
+},
+{
+  "@type": "PodcastEpisode",
+  "@id": "https://dialedin.health/podcast/episode-40-tantrum-vs-meltdown#episode",
+  "url": "https://dialedin.health/podcast/episode-40-tantrum-vs-meltdown",
+  "name": "Tantrum vs Meltdown: What to Do When Your Child Loses It",
+  "episodeNumber": 40,
+  "datePublished": "2026-10-07",
+  "duration": "PT46M11S",
+  "description": "Tantrum or meltdown? Pediatric occupational therapist Kristin Wittmayer explains the difference, what to do in the moment, and when it's more than a phase.",
+  "image": "https://img.youtube.com/vi/5TurhVmEbQo/maxresdefault.jpg",
+  "associatedMedia": {"@type": "VideoObject", "name": "Tantrum vs Meltdown: What to Do When Your Child Loses It", "embedUrl": "https://www.youtube.com/embed/5TurhVmEbQo"}
+},
+{
+  "@type": "PodcastEpisode",
+  "@id": "https://dialedin.health/podcast/episode-39-survival-mode-somatic-healing#episode",
+  "url": "https://dialedin.health/podcast/episode-39-survival-mode-somatic-healing",
+  "name": "Stuck in Survival Mode? How to Make Your Body Feel Safe Again",
+  "episodeNumber": 39,
+  "datePublished": "2026-09-30",
+  "duration": "PT50M6S",
+  "description": "Stuck in survival mode? Spiritual director Jada Dobesh of Selah Space explains why your body has to feel safe first, plus a 30 second nervous system reset.",
+  "image": "https://img.youtube.com/vi/ymq68HQjDJA/maxresdefault.jpg",
+  "associatedMedia": {"@type": "VideoObject", "name": "Stuck in Survival Mode? How to Make Your Body Feel Safe Again", "embedUrl": "https://www.youtube.com/embed/ymq68HQjDJA"}
+},
+{
+  "@type": "PodcastEpisode",
+  "@id": "https://dialedin.health/podcast/episode-38-high-protein-foods#episode",
+  "url": "https://dialedin.health/podcast/episode-38-high-protein-foods",
+  "name": "Not Eating Enough? Why So Many Women Need More Food",
+  "episodeNumber": 38,
+  "datePublished": "2026-09-23",
+  "duration": "PT54M38S",
+  "description": "Is your high protein food really high protein? Nutrition coach Sydney St Clair shares a 10 second label test, plus GLP-1 eating and under eating.",
+  "image": "https://img.youtube.com/vi/KCGZgL0jDSI/maxresdefault.jpg",
+  "associatedMedia": {"@type": "VideoObject", "name": "Not Eating Enough? Why So Many Women Need More Food", "embedUrl": "https://www.youtube.com/embed/KCGZgL0jDSI"}
+},
+{
+  "@type": "PodcastEpisode",
+  "@id": "https://dialedin.health/podcast/episode-37-peripheral-neuropathy-part-ii#episode",
+  "url": "https://dialedin.health/podcast/episode-37-peripheral-neuropathy-part-ii",
+  "name": "5 Things You Can Do Today to Heal Neuropathy At Home",
+  "episodeNumber": 37,
+  "datePublished": "2026-09-16",
+  "duration": "PT48M4S",
+  "description": "Dr. Jordan Stenzel, DC names five things you can do at home for peripheral neuropathy: movement, food, TENS e-stim, PEMF, and red light therapy at the right dose.",
+  "image": "https://img.youtube.com/vi/-AdmSQF22yg/maxresdefault.jpg",
+  "associatedMedia": {"@type": "VideoObject", "name": "5 Things You Can Do Today to Heal Neuropathy At Home", "embedUrl": "https://www.youtube.com/embed/-AdmSQF22yg"}
+},
+    {
+      "@type": "PodcastEpisode",
+      "episodeNumber": 36,
+      "name": "The Most Common Pelvic Floor Fix Is Making It Worse",
+      "description": "Ember Smith, PT, DPT of Well Balanced Physical Therapy in Sioux Falls, South Dakota explains why a Kegel is not the universal answer for the pelvic floor: what a Kegel actually is, why many women perform it backwards by pushing down and out instead of narrowing and lifting, why a tight pelvic floor gets worse when you add contractions to it, the two and a half finger rule for diastasis recti and the depth measurement nobody talks about, why imaging shows a crunch narrows the gap rather than widening it, and why a weighted vest does not build bone density on its own.",
+      "url": "https://dialedin.health/podcast/episode-36-well-balanced-pt",
+      "datePublished": "2026-09-10",
+      "image": "https://img.youtube.com/vi/9bkNjH61hRY/maxresdefault.jpg",
+      "duration": "PT37M7S",
+      "author": [
+        {
+          "@type": "Person",
+          "name": "Ember Smith",
+          "affiliation": "Well Balanced Physical Therapy"
+        }
+      ]
+    },
+{
+ "@type": "PodcastEpisode",
+ "episodeNumber": 35,
+ "name": "MTHFR: Your Methylated B Vitamin Could Be Making You Worse",
+ "description": "Kristine Cassar, owner and operator of BeeWell Functional Wellness in The Woodlands, Texas, who carries two copies of the MTHFR variant herself, explains what the gene variant actually does: how it slows the methylation cycle by roughly 30 percent with one copy and up to 70 percent with two, why it does not cause disease, why taking a methylated B vitamin without guidance can push someone into over-methylation, the difference between folic acid, folate and methylfolate, and why she runs blood work before she ever orders genetic testing.",
+ "url": "https://dialedin.health/podcast/episode-35-mthfr-methylation",
+ "datePublished": "2026-09-08",
+ "image": "https://img.youtube.com/vi/4HTjZjSzLbU/maxresdefault.jpg",
+ "duration": "PT43M24S",
+ "author": [
+  {
+   "@type": "Person",
+   "name": "Kristine Cassar",
+   "affiliation": "BeeWell Functional Wellness"
+  }
+ ]
+},
+    {
+      "@type": "PodcastEpisode",
+      "episodeNumber": 34,
+      "name": "\"I Went to Hell in a Ketamine Session\" and Why That Was Good",
+      "description": "Jerry Cook, a psychedelic journey guide and integration consultant and the owner of Metanoia Journey Consulting, explains ketamine assisted therapy: why he works with ketamine rather than psilocybin or MDMA, the three levels of ketamine use from symptom management to surgical anesthesia, what the three hour session looks like minute by minute, the neuroplastic window and the 24 hour integration follow up, and why he tells clients it is not a panacea.",
+      "url": "https://dialedin.health/podcast/episode-34-ketamine-assisted-therapy",
+      "datePublished": "2026-09-01",
+      "image": "https://img.youtube.com/vi/ar5gD-9_b54/maxresdefault.jpg",
+      "duration": "PT42M3S",
+      "author": [
+        {
+          "@type": "Person",
+          "name": "Jerry Cook",
+          "affiliation": "Metanoia Journey Consulting"
+        }
+      ]
+    },
+    {
+      "@type": "PodcastEpisode",
+      "episodeNumber": 33,
+      "name": "$80 a Month, Unlimited Visits: Direct Primary Care Explained",
+      "description": "Sam Niewenhuis, a family nurse practitioner and the founder of Prairie Roots Health in Sioux Falls, explains direct primary care: $80 a month for adults and $60 for children, unlimited visits, one hour appointments, labs at wholesale, house calls, why he caps his panel at 200 to 400, and what coverage you should keep alongside a membership.",
+      "url": "https://dialedin.health/podcast/episode-33-direct-primary-care",
+      "datePublished": "2026-08-24",
+      "image": "https://img.youtube.com/vi/twuEEWr9904/maxresdefault.jpg",
+      "duration": "PT31M29S",
+      "author": [
+        {
+          "@type": "Person",
+          "name": "Sam Niewenhuis, NP",
+          "affiliation": "Prairie Roots Health"
+        }
+      ]
+    },
+    {
+      "@type": "PodcastEpisode",
+      "episodeNumber": 32,
+      "name": "Why You Can't Sleep and How to Fix It on Any Shift",
+      "description": "Dr. Jerome Puryear, MD, an obesity medicine physician and interventional radiologist who diagnosed his own obstructive sleep apnea, explains why you can't sleep, how to tell insomnia from sleep apnea, what alcohol and caffeine do to sleep quality, and how to build a sleep plan that survives night shift.",
+      "url": "https://dialedin.health/podcast/episode-32-sleep",
+      "datePublished": "2026-08-12",
+      "image": "https://img.youtube.com/vi/EdgkR-5vcFI/maxresdefault.jpg",
+      "duration": "PT56M",
+      "author": [
+        {
+          "@type": "Person",
+          "name": "Dr. Jerome Puryear, MD, Dipl. ABOM",
+          "affiliation": "Puryear Wellness Institute"
+        }
+      ]
+    },
+    {
+      "@type": "PodcastEpisode",
+      "episodeNumber": 31,
+      "name": "Can AirPods Work as Hearing Aids? An Audiologist Explains",
+      "description": "Audiologist Dr. Mandy Rounseville-Norgaard of Sioux Falls Audiology Associates explains whether AirPods work as hearing aids, the 25 decibel ceiling, the iOS 18 setup, the difference between a general boost and a prescriptive fitting, and what DNN processing does in modern hearing aids.",
+      "url": "https://dialedin.health/podcast/episode-31-airpods-hearing-aids",
+      "datePublished": "2026-08-06",
+      "image": "https://img.youtube.com/vi/-A7lhpX7Ly4/maxresdefault.jpg",
+      "duration": "PT24M",
+      "author": [
+        {
+          "@type": "Person",
+          "name": "Dr. Mandy Rounseville-Norgaard, AuD",
+          "affiliation": "Sioux Falls Audiology Associates"
+        }
+      ]
+    },
+    {
+      "@type": "PodcastEpisode",
+      "episodeNumber": 30,
+      "name": "THC Drinks Explained: What's In Your Can and How to Drink Less",
+      "description": "Hightail founder Anna Baskin decodes what is actually in a THC or functional drink: THC vs CBD vs CBG, adaptogens and nootropics in plain English, why onset differs from an edible, what clean should mean on a label, and how to drink less without losing the ritual.",
+      "url": "https://dialedin.health/podcast/episode-30-hightail",
+      "datePublished": "2026-07-30",
+      "image": "https://img.youtube.com/vi/d6FRaDMNSrU/maxresdefault.jpg",
+      "duration": "PT52M",
+      "author": [
+        {
+          "@type": "Person",
+          "name": "Anna Baskin",
+          "affiliation": "Hightail"
+        }
+      ]
+    },
+    {
+      "@type": "PodcastEpisode",
+      "episodeNumber": 29,
+      "name": "Insurance Has to Cover Your Nipple Tattoo After a Mastectomy",
+      "description": "A 3D areola tattoo is the final step of breast reconstruction, and almost no one tells women it exists or that a 1998 federal law can require insurance to cover it. Krissy Dykhouse, a nurse and paramedical tattoo artist, explains the process, the pain question, and how to get it paid for.",
+      "url": "https://dialedin.health/podcast/episode-29-areola-tattoo",
+      "datePublished": "2026-07-28",
+      "image": "https://img.youtube.com/vi/dCItXNfc2VI/maxresdefault.jpg",
+      "duration": "PT36M",
+      "author": [
+        {
+          "@type": "Person",
+          "name": "Krissy Dykhouse, RN, CPCT",
+          "affiliation": "Rise Skin Studio"
+        }
+      ]
+    },
+    {
+      "@type": "PodcastEpisode",
+      "episodeNumber": 28,
+      "name": "Your Skincare Isn't the Problem, the Order You Apply It Is",
+      "description": "Your skincare might not be the problem. The way you layer it is. Esthetician Kaila Meier explains the right order to apply your products, what medical grade really means, and why over exfoliating quietly wrecks good skin.",
+      "url": "https://dialedin.health/podcast/episode-28-skincare-routine",
+      "datePublished": "2026-07-22",
+      "image": "https://img.youtube.com/vi/YKCONJTcqbc/maxresdefault.jpg",
+      "duration": "PT34M",
+      "author": [
+        {
+          "@type": "Person",
+          "name": "Kaila Meier",
+          "affiliation": "KJ Relaxin Medical Spa"
+        }
+      ]
+    },
+    {
+      "@type": "PodcastEpisode",
+      "episodeNumber": 27,
+      "name": "Metabolic Health After 40: The 5 Numbers That Matter",
+      "description": "Metabolic health is how well your body turns food into steady energy, and it quietly shifts in midlife as estrogen falls. Jessica Morrell explains the five numbers that measure it, why belly fat shows up after 40, why insulin is the marker no one tests, and the moves that actually help.",
+      "url": "https://dialedin.health/podcast/episode-27-metabolic-health",
+      "datePublished": "2026-07-17",
+      "image": "https://img.youtube.com/vi/oVq3QjT-ZKY/maxresdefault.jpg",
+      "duration": "PT43M",
+      "author": [
+        {
+          "@type": "Person",
+          "name": "Jessica Morrell, CNP, IFMCP",
+          "affiliation": "Radiant Health and Hormone Therapy"
+        }
+      ]
+    },
+    {
+      "@type": "PodcastEpisode",
+      "episodeNumber": 26,
+      "name": "POTS Isn't Anxiety, and Salt Won't Fix It",
+      "description": "POTS is a measurable 30-plus beat rise in heart rate on standing, not anxiety, yet most patients are told it is. Dr. Cooper Dykstra explains what is really happening in the brainstem, why salt and fluids fall short, the long COVID connection, and what a 4-Day Brain Reset looks like.",
+      "url": "https://dialedin.health/podcast/episode-26-pots-dysautonomia",
+      "datePublished": "2026-07-08",
+      "image": "https://img.youtube.com/vi/o-rrtVsfpuI/maxresdefault.jpg",
+      "duration": "PT41M",
+      "author": [
+        {
+          "@type": "Person",
+          "name": "Dr. Cooper Dykstra, DC, FIBFN-FN",
+          "affiliation": "Brain Health and Chiropractic"
+        }
+      ]
+    },
+    {
+      "@type": "PodcastEpisode",
+      "episodeNumber": 25,
+      "name": "Two Pastors Reveal What Real Spiritual Health Looks Like",
+      "description": "Two pastors explain what spiritual health actually is, the signs yours is suffering, why prayer feels performative, how faith and therapy work together, and how to find a church without treating it like a restaurant.",
+      "url": "https://dialedin.health/podcast/episode-25-spiritual-health",
+      "datePublished": "2026-07-02",
+      "image": "https://img.youtube.com/vi/HVawVUStJR4/maxresdefault.jpg",
+      "duration": "PT61M",
+      "author": [
+        {
+          "@type": "Person",
+          "name": "Rev. Sara Nelson",
+          "affiliation": "First United Methodist Church + Pastor Brandon Dunham"
+        }
+      ]
+    },
+    {
+      "@type": "PodcastEpisode",
+      "episodeNumber": 24,
+      "name": "Menopause, Hearing Loss, and the Dementia Link No One Tells Women",
+      "description": "The average person waits about 20 years to get hearing tested, and almost no one connects it to menopause or dementia risk. Dr. Mandy Rounseville-Norgaard explains the estrogen and inner-ear link and the first signs to watch.",
+      "url": "https://dialedin.health/podcast/episode-24-audiology-associates",
+      "datePublished": "2026-06-25",
+      "image": "https://img.youtube.com/vi/9FoesRYDq1g/maxresdefault.jpg",
+      "duration": "PT33M",
+      "author": [
+        {
+          "@type": "Person",
+          "name": "Dr. Mandy Rounseville-Norgaard, AuD",
+          "affiliation": "Audiology Associates"
+        }
+      ]
+    },
+    {
+      "@type": "PodcastEpisode",
+      "episodeNumber": 23,
+      "name": "Everybody Wants It Until the Alarm Goes Off",
+      "description": "Around 90 percent of people who join a gym quit within 90 days. Megan and Dirk Kool break down discipline over motivation, the six-alarms trick, and how anyone can train at home with two dumbbells, a band, and a chair.",
+      "url": "https://dialedin.health/podcast/episode-23-mega-strong-fitness",
+      "datePublished": "2026-06-22",
+      "image": "https://img.youtube.com/vi/rPVBvxhgshc/maxresdefault.jpg",
+      "duration": "PT53M",
+      "author": [
+        {
+          "@type": "Person",
+          "name": "Megan & Dirk Kool",
+          "affiliation": "Mega Strong Fitness"
+        }
+      ]
+    },
+    {
+      "@type": "PodcastEpisode",
+      "episodeNumber": 22,
+      "name": "Sober 28 Years: You Don't Have to Hit Rock Bottom",
+      "description": "You do not have to hit rock bottom to get sober. Jon Sommervold runs a 30-night 12-step immersion that reaches roughly a 50 percent success rate, and shares his safer framing: choose your bottom.",
+      "url": "https://dialedin.health/podcast/episode-22-tallgrass-recovery",
+      "datePublished": "2026-06-19",
+      "image": "https://img.youtube.com/vi/9yao7aqX_ak/maxresdefault.jpg",
+      "duration": "PT57M",
+      "author": [
+        {
+          "@type": "Person",
+          "name": "Jon Sommervold",
+          "affiliation": "Tallgrass Recovery & Sober Living Homes"
+        }
+      ]
+    },
+    {
+      "@type": "PodcastEpisode",
+      "episodeNumber": 21,
+      "name": "Functional Fitness Over 40: Why You Don't Need to Sweat to Get Stronger",
+      "description": "You do not have to be sore or drenched in sweat to get stronger after 40. Will Sturgeon explains what functional fitness really is, what eight hours of sitting does to your body, and the 15 minutes a day that beat five days you cannot keep.",
+      "url": "https://dialedin.health/podcast/episode-21-functional-fitness-over-40",
+      "datePublished": "2026-06-13",
+      "image": "https://img.youtube.com/vi/y68vEuFRmnw/maxresdefault.jpg",
+      "duration": "PT40M",
+      "author": [
+        {
+          "@type": "Person",
+          "name": "Will Sturgeon",
+          "affiliation": "MB Wellness"
+        }
+      ]
+    },
+    {
+      "@type": "PodcastEpisode",
+      "episodeNumber": 20,
+      "name": "Postpartum Depression, Anxiety, and Intrusive Thoughts: A Perinatal Therapist Explains",
+      "description": "Pregnancy rewires your brain more than any time since puberty. Allison Steinwand explains how to tell postpartum conditions apart, the warning signs of perinatal psychosis, and what real help looks like.",
+      "url": "https://dialedin.health/podcast/episode-20-perinatal-mental-health",
+      "datePublished": "2026-06-09",
+      "image": "https://img.youtube.com/vi/kCv8IcykGPQ/maxresdefault.jpg",
+      "duration": "PT46M",
+      "author": [
+        {
+          "@type": "Person",
+          "name": "Allison Steinwand, MS, LPC-MH, PMH-C",
+          "affiliation": "Archway Counseling & Wellness"
+        }
+      ]
+    },
+    {
+      "@type": "PodcastEpisode",
+      "episodeNumber": 19,
+      "name": "55 Years in Supplements: The 5 We Take Daily and the Magnesium Mistake Everyone Makes",
+      "description": "After 55 years running Wayne & Mary's, Andrew and Rosanne Reinartz walk through the 5 supplements most adults need daily, why magnesium glycinate beats oxide, why D3 needs K2, and why creatine is now essential for women.",
+      "url": "https://dialedin.health/podcast/episode-19-wayne-marys-supplements",
+      "datePublished": "2026-06-02",
+      "image": "https://img.youtube.com/vi/TgCB9fAatbY/maxresdefault.jpg",
+      "duration": "PT63M",
+      "author": [
+        {
+          "@type": "Person",
+          "name": "Andrew & Rosanne Reinartz",
+          "affiliation": "Wayne & Mary's Nutrition Center"
+        }
+      ]
+    },
+    {
+      "@type": "PodcastEpisode",
+      "episodeNumber": 18,
+      "name": "When Is a Facial More Than a Facial?",
+      "description": "The HydraFacial vs oxygen facial debate, settled. Why two people can get the same treatment and walk out with different skin, the cortisol-skin barrier link, and 8 facial myths debunked.",
+      "url": "https://dialedin.health/podcast/episode-18-radiance-day-spa",
+      "datePublished": "2026-05-30",
+      "image": "https://img.youtube.com/vi/OTmsH6baDoY/maxresdefault.jpg",
+      "duration": "PT30M",
+      "author": [
+        {
+          "@type": "Person",
+          "name": "Sheri Roelfsema + Ashley Peterson + Meg Hammer",
+          "affiliation": "Radiance Day Spa"
+        }
+      ]
+    },
+    {
+      "@type": "PodcastEpisode",
+      "episodeNumber": 17,
+      "name": "Reverse Peripheral Neuropathy: 6 Things Your Nerves Need to Heal That Gabapentin Misses",
+      "description": "Peripheral neuropathy is a systemic metabolic breakdown that ends at the nerve. Dr. Jordan Stenzel on the six things a nerve needs to heal, why gabapentin just turns down the volume, and the 30-30-30 rule.",
+      "url": "https://dialedin.health/podcast/episode-17-stenzel-chiropractic",
+      "datePublished": "2026-05-27",
+      "image": "https://img.youtube.com/vi/bp_z8qcFV6M/maxresdefault.jpg",
+      "duration": "PT49M",
+      "author": [
+        {
+          "@type": "Person",
+          "name": "Dr. Jordan Stenzel, DC",
+          "affiliation": "Stenzel Chiropractic Clinic"
+        }
+      ]
+    },
+    {
+      "@type": "PodcastEpisode",
+      "episodeNumber": 16,
+      "name": "I Can Hear, but I Can't Understand: Hearing in Pregnancy, Tinnitus, and the Brain Side of Audiology",
+      "description": "Most people say I can hear, but I can't understand. It is a brain problem. Pregnancy and menopause hearing changes, why a baseline test in your 20s matters, and the LACE auditory training program.",
+      "url": "https://dialedin.health/podcast/episode-16-baker-audiology",
+      "datePublished": "2026-05-22",
+      "image": "https://img.youtube.com/vi/5JlVBCY7geg/maxresdefault.jpg",
+      "duration": "PT45M",
+      "author": [
+        {
+          "@type": "Person",
+          "name": "Melissa Baker + Dr. Libby Benson",
+          "affiliation": "Baker Audiology & Hearing Aids"
+        }
+      ]
+    },
+    {
+      "@type": "PodcastEpisode",
+      "episodeNumber": 15,
+      "name": "GLP-1s, Muscle Loss, and the Bloodwork Story Behind 'I'm Fine'",
+      "description": "The answer most women are looking for is sitting in their blood work. Jennifer Oknin on normal vs optimal labs, when GLP-1s help and when they cause muscle and bone loss, and the hormone panel every woman should have.",
+      "url": "https://dialedin.health/podcast/episode-15-midlife-modern-woman",
+      "datePublished": "2026-05-16",
+      "image": "https://img.youtube.com/vi/dfVzxYkmN7w/maxresdefault.jpg",
+      "duration": "PT62M",
+      "author": [
+        {
+          "@type": "Person",
+          "name": "Jennifer Oknin",
+          "affiliation": "Midlife Modern Woman"
+        }
+      ]
+    },
+    {
+      "@type": "PodcastEpisode",
+      "episodeNumber": 14,
+      "name": "Dry Needling and the Root Cause of Pain: Performance PT With Nathan LeMaster",
+      "description": "The side of your pain is rarely the source. Nathan LeMaster on dry needling, the twitch response, and the cash-pay performance PT model that puts a full hour with a doctorate-level clinician on every visit.",
+      "url": "https://dialedin.health/podcast/episode-14-empoweru",
+      "datePublished": "2026-05-16",
+      "image": "https://img.youtube.com/vi/vj9j21yUEuc/maxresdefault.jpg",
+      "duration": "PT27M",
+      "author": [
+        {
+          "@type": "Person",
+          "name": "Nathan LeMaster, PT, DPT, SCS, CSCS",
+          "affiliation": "EmpowerU"
+        }
+      ]
+    },
+    {
+      "@type": "PodcastEpisode",
+      "episodeNumber": 13,
+      "name": "Men's Nutrition Playbook for Midlife: How to Lose Belly Fat Without TRT or GLP-1s",
+      "description": "The foundation is the shortcut. Joe Moen on protein targets for men over 40, when TRT and peptides and GLP-1s make sense, and why exercise outperforms a peptide stack for the average midlife guy.",
+      "url": "https://dialedin.health/podcast/episode-13-origin-nutrition",
+      "datePublished": "2026-05-07",
+      "image": "https://img.youtube.com/vi/7xtdhSlX8Xo/maxresdefault.jpg",
+      "duration": "PT35M",
+      "author": [
+        {
+          "@type": "Person",
+          "name": "Dr. Joe Moen, DC, CCSP",
+          "affiliation": "Origin Health"
+        }
+      ]
+    },
+    {
+      "@type": "PodcastEpisode",
+      "episodeNumber": 12,
+      "name": "What Most People Get Wrong About Homelessness (From a Doctor on the Streets)",
+      "description": "Most healthcare waits for people to walk in the door. Midwest Street Medicine walks out to find them. Mo on harm reduction, addiction care, and the myths most people repeat without thinking.",
+      "url": "https://dialedin.health/podcast/episode-12-midwest-street-medicine",
+      "datePublished": "2026-05-06",
+      "image": "https://img.youtube.com/vi/7p-W0_dlzV8/maxresdefault.jpg",
+      "duration": "PT26M",
+      "author": [
+        {
+          "@type": "Person",
+          "name": "Dr. Melissa Mo Dittberner, PhD",
+          "affiliation": "Midwest Street Medicine"
+        }
+      ]
+    },
+    {
+      "@type": "PodcastEpisode",
+      "episodeNumber": 11,
+      "name": "Is ChatGPT Actually Therapy? What a Clinical Therapist Says AI Gets Wrong",
+      "description": "Paula Lain Smykle breaks down what really happens when you use ChatGPT as your therapist, why the validation loop makes anxiety worse, and how dog-assisted counseling reaches clients who stay shut down.",
+      "url": "https://dialedin.health/podcast/episode-11-paula-lain-counseling",
+      "datePublished": "2026-04-30",
+      "image": "https://img.youtube.com/vi/fIv7QeFaWEQ/maxresdefault.jpg",
+      "duration": "PT34M",
+      "author": [
+        {
+          "@type": "Person",
+          "name": "Paula Lain Smykle, LPC",
+          "affiliation": "Paula Lain Counseling and Co."
+        }
+      ]
+    },
+    {
+      "@type": "PodcastEpisode",
+      "episodeNumber": 10,
+      "name": "Your Couch, Perfume, and Makeup Are Sabotaging Your Hormones",
+      "description": "Jessica Morrell on endocrine disruptors and how everyday plastics, fragrances, and water can hijack hormone balance, plus the receptor problem that explains why hormone therapy sometimes stops working.",
+      "url": "https://dialedin.health/podcast/episode-10-radiant-hormones",
+      "datePublished": "2026-04-28",
+      "image": "https://img.youtube.com/vi/OVpgXncV8CE/maxresdefault.jpg",
+      "duration": "PT28M",
+      "author": [
+        {
+          "@type": "Person",
+          "name": "Jessica Morrell, NP",
+          "affiliation": "Radiant Health and Hormone Therapy"
+        }
+      ]
+    },
+    {
+      "@type": "PodcastEpisode",
+      "episodeNumber": 9,
+      "name": "Don't Wait for a Crisis: Signs Your Aging Parent Needs In-Home Care",
+      "description": "Gabrielle Hoing walks through when families should call for home care, what a caregiver does day to day, the Medicare and private-pay reality, and how to talk with a parent who refuses help.",
+      "url": "https://dialedin.health/podcast/episode-09-kore-cares-homecare",
+      "datePublished": "2026-04-23",
+      "image": "https://img.youtube.com/vi/ztsHYJTbHVY/maxresdefault.jpg",
+      "duration": "PT28M",
+      "author": [
+        {
+          "@type": "Person",
+          "name": "Gabrielle Hoing",
+          "affiliation": "Kore Cares"
+        }
+      ]
+    },
+    {
+      "@type": "PodcastEpisode",
+      "episodeNumber": 8,
+      "name": "Why Your Nervous System Is Running the Show and How to Reset It",
+      "description": "Megan and Jillian walk through halo therapy, the Bio Charger, Lucia light, Reiki, sound therapy, and breathwork, plus the honest answer on whether energy work is legitimate.",
+      "url": "https://dialedin.health/podcast/episode-08-alchemy-house",
+      "datePublished": "2026-04-17",
+      "image": "https://img.youtube.com/vi/HnoicWaCAoQ/maxresdefault.jpg",
+      "duration": "PT32M",
+      "author": [
+        {
+          "@type": "Person",
+          "name": "Megan Randall + Jillian Gunlicks",
+          "affiliation": "Alchemy House"
+        }
+      ]
+    },
+    {
+      "@type": "PodcastEpisode",
+      "episodeNumber": 7,
+      "name": "Is Tap Water Actually Safe? PFAS, Chloramines and What's In Your Water",
+      "description": "Julene Edwards breaks down what is actually in Sioux Falls tap water, the switch from chlorine to chloramines, PFAS and the wells shut down in 2016, and what whole-home filtration solves.",
+      "url": "https://dialedin.health/podcast/episode-07-kinetico",
+      "datePublished": "2026-04-14",
+      "image": "https://img.youtube.com/vi/WffbgP76HYY/maxresdefault.jpg",
+      "duration": "PT30M",
+      "author": [
+        {
+          "@type": "Person",
+          "name": "Julene Edwards",
+          "affiliation": "Kinetico Water Systems"
+        }
+      ]
+    },
+    {
+      "@type": "PodcastEpisode",
+      "episodeNumber": 6,
+      "name": "Is Cortisol Making You Gain Weight? What Your Doctor Isn't Telling You",
+      "description": "Dr. Jessica Pearson, Air Force veteran and functional medicine physician, explains how cortisol affects weight, hormones, and HRV, plus what to try before hormone replacement.",
+      "url": "https://dialedin.health/podcast/episode-06-cortisol-stress",
+      "datePublished": "2026-04-07",
+      "image": "https://img.youtube.com/vi/oxEGiZ-ivFU/maxresdefault.jpg",
+      "duration": "PT35M",
+      "author": [
+        {
+          "@type": "Person",
+          "name": "Dr. Jessica Pearson, MD",
+          "affiliation": "Prairie Roots Health"
+        }
+      ]
+    },
+    {
+      "@type": "PodcastEpisode",
+      "episodeNumber": 5,
+      "name": "The Missing Hormone Most Women Never Get Tested For",
+      "description": "Mary Jordan explains why testosterone is the first hormone women lose, how it affects everything from energy to belly fat, and why most doctors never check it.",
+      "url": "https://dialedin.health/podcast/episode-05-hormones-hrt",
+      "datePublished": "2026-04-07",
+      "image": "https://img.youtube.com/vi/FTyqFRYGyt8/maxresdefault.jpg",
+      "duration": "PT27M",
+      "author": [
+        {
+          "@type": "Person",
+          "name": "Mary Jordan, FNP-C",
+          "affiliation": "Encompass Wellness & Aesthetics"
+        }
+      ]
+    },
+    {
+      "@type": "PodcastEpisode",
+      "episodeNumber": 4,
+      "name": "Peptide Therapy Explained by an NP: Weight Loss, Stacking, and Sourcing",
+      "description": "What exactly is a peptide? Which one is best for weight loss? Ashley Wagner breaks down peptide therapy, sourcing safety, growth hormone, stacking, and what your first consult looks like.",
+      "url": "https://dialedin.health/podcast/episode-04-peptide-therapy",
+      "datePublished": "2026-03-29",
+      "image": "https://img.youtube.com/vi/PP_qCwy2Huk/maxresdefault.jpg",
+      "duration": "PT45M",
+      "author": [
+        {
+          "@type": "Person",
+          "name": "Ashley Wagner, NP",
+          "affiliation": "Vitalis Movement and Wellness"
+        }
+      ]
+    },
+    {
+      "@type": "PodcastEpisode",
+      "episodeNumber": 3,
+      "name": "What Does a Doula Do? Birth, Postpartum and End of Life Support",
+      "description": "Birth doulas, postpartum doulas, and end of life doulas. Kelsie and Renee support people at life's most vulnerable moments, from first breath to last breath, plus real client stories.",
+      "url": "https://dialedin.health/podcast/episode-03-transitions-doula",
+      "datePublished": "2026-03-29",
+      "image": "https://img.youtube.com/vi/HmZM9GK-L_A/maxresdefault.jpg",
+      "duration": "PT35M",
+      "author": [
+        {
+          "@type": "Person",
+          "name": "Kelsie Thomas + Renee Forred",
+          "affiliation": "Transitions Doula Services"
+        }
+      ]
+    },
+    {
+      "@type": "PodcastEpisode",
+      "episodeNumber": 2,
+      "name": "22 Surgeries Later, This Marine Asked for Help",
+      "description": "A Marine veteran and MMA fighter with 22 surgeries talks about the hardest fight of all: asking for help. Plus how Kore Cares matches caregivers with clients across South Dakota.",
+      "url": "https://dialedin.health/podcast/episode-02-kore-cares",
+      "datePublished": "2026-03-29",
+      "image": "https://img.youtube.com/vi/hzaISL8HXu8/maxresdefault.jpg",
+      "duration": "PT30M",
+      "author": [
+        {
+          "@type": "Person",
+          "name": "Clark Bevens + Kore Cares Team",
+          "affiliation": "Kore Cares"
+        }
+      ]
+    },
+    {
+      "@type": "PodcastEpisode",
+      "episodeNumber": 1,
+      "name": "Can HBOT Heal Herniated Discs, Anxiety and Addiction?",
+      "description": "Wound healing, TBI, sudden hearing loss, addiction recovery, chronic pain. The team at Midwest Hyperbarics breaks down the science and shares real patient outcomes.",
+      "url": "https://dialedin.health/podcast/episode-01-midwest-hyperbarics",
+      "datePublished": "2026-03-29",
+      "image": "https://img.youtube.com/vi/JCfdU-lgM7c/maxresdefault.jpg",
+      "duration": "PT22M",
+      "author": [
+        {
+          "@type": "Person",
+          "name": "Dr. Dan Todd + Team",
+          "affiliation": "Midwest Hyperbarics"
+        }
+      ]
+    }
+  ]
+}
+</script>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+
+/* page-level: this page only */
+#header{display:none!important}
+#footer-sections{display:none!important}
+body{background:#fff!important}
+#page .page-section{padding-top:0!important;padding-bottom:0!important;min-height:0!important}
+#page .page-section .content-wrapper{padding-top:0!important;padding-bottom:0!important}
+#page .page-section .section-background{background:#fff!important}
+#page .fluid-engine{display:block!important}
+#page .fluid-engine .fe-block{width:auto!important}
+
+#dihx{--ink:#102321;--ink2:#0A1816;--teal:#00BFB2;--teal-d:#008F86;--amber:#E5BD62;--mist:#F1F7F6;--line:#DCE7E5;--text:#14201F;--grey:#5E6B69;--soft:#B8CFCC;--wrap:1200px;
+  position:relative;width:100vw;font-family:Montserrat,Arial,sans-serif;color:var(--text);background:#fff;-webkit-font-smoothing:antialiased;text-align:left;line-height:1.4}
+#dihx *{box-sizing:border-box;margin:0;padding:0}
+#dihx h1,#dihx h2,#dihx h3,#dihx h4,#dihx h5,#dihx h6,#dihx p,#dihx a,#dihx span,#dihx div,#dihx b,#dihx small{font-family:Montserrat,Arial,sans-serif!important}
+#dihx a{color:inherit;text-decoration:none}
+#dihx img{display:block;max-width:100%}
+#dihx .wrap{max-width:var(--wrap);margin:0 auto;padding:0 32px}
+#dihx .eyebrow{font-size:12px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--teal)}
+#dihx .eyebrow.dark{color:var(--teal-d)}
+#dihx .rule{display:flex;gap:14px;align-items:stretch}
+#dihx .rule:before{content:"";width:6px;background:var(--teal);flex:none}
+#dihx .btn,#dihx .btn-lime,#dihx .btn-ghost{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-weight:700;font-size:14px;letter-spacing:.06em;text-transform:uppercase;padding:16px 26px;border-radius:4px;white-space:nowrap;line-height:1.2;transition:transform .15s,opacity .15s}
+#dihx .btn:hover,#dihx .btn-lime:hover,#dihx .btn-ghost:hover{transform:translateY(-1px);opacity:.92}
+#dihx .btn-lime,#dihx .btn.teal{background:var(--teal);color:var(--ink)}
+#dihx .btn-ghost{border:2px solid rgba(255,255,255,.85);color:#fff}
+#dihx .btn.ghost-dark{border:2px solid var(--ink);color:var(--ink)}
+#dihx .btn.ink{background:var(--ink);color:#fff}
+#dihx .sec{padding:96px 0}
+#dihx .sec-head{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:36px;gap:24px}
+#dihx .h2{color:var(--text);font-size:38px;font-weight:800;line-height:1.1;text-transform:uppercase;letter-spacing:-.01em;margin-top:10px}
+#dihx .h2 em{font-style:normal;color:var(--teal)}
+#dihx .more{font-weight:700;font-size:14px;letter-spacing:.06em;text-transform:uppercase;color:var(--teal-d);white-space:nowrap;cursor:pointer}
+#dihx svg.i{width:26px;height:26px;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+
+/* header */
+#dihx .dx-head{background:var(--ink)}
+#dihx .dx-head .wrap{display:flex;align-items:center;height:84px;gap:40px}
+#dihx .dx-wm{display:block;background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAi4AAADnAQMAAAAD/E/JAAAABlBMVEUAAAD///+l2Z/dAAAAAXRSTlMAQObYZgAABK5JREFUeNrtW0ty4zYQfQBZEXfi0otUmTcZ7nKN3MQ4Qo6QozA38BHoXZZ0ahZIFc3OghJFkfg0hLbKTqlXNod6eP3QP0AevBCNAAD8oAkADkQ9ABBZAFA0W1cQ0YDFCqIOR6IeOJDVBihOOFDYmz7/UAI4XnBKoEEN1EB1eqvoV5+rELCj5/m82K/XD2s/Tr99UK1gCnDtKcQGHYsKgF+2D8o1TOMg6jRlQmye2F61TgC9psaxJsRGx96LaKxdLoe4bf9NXdFouU7p4NPGq6Fz9ZUZL7gO4ZjQJ+qbd/wKpgqvFoPVEAkczZIxCquBD2XCqr4rpVQL4K30qagB4E8ukw8Tiqa/t5/2ytzt079eYEa2EK8hNhM39GD3e1otn6IbwsW14VcYUyCvRk/K6/3TkFJTMAu7hEoRcKpnVcqTii4EzXo1mil6S6CCTas26gIzINPc0cYvYqMHpo5GonH87mAT9LDbB9KFjd34UaVWUQ1uyNwgMd9oXtgB03dSbEp+ozJumEiK9u4g42hzJKKO6dRlj7s+RfgO1QIzMprCp274SaxsmHlbHTOYOaY08UGKjZaBCbDh75d1wmhQuBi7a3y2U6OUxHBMWWXitH2qoprX72NVVHvgb9rwclvM+RWZxCRuVjDW79b7aZ4NRKrOFhio9zB1pIk3+8Ypo03nbiUHEsjwJrmJ95CuN1XGwDW42LTx/DH8nSozJU43e4GpnT0+g42JkDTu5El3ivxsmgx/pis2HevorILatAmvT5+z4bNWRCNARMAPIhSnq0taLjOL8xXmgajHYbn6PBD1eCYLEJHVHhc8TbxyVEezOpsxi0wdkjjpusR6YZ7WKamUqpPugLozzO/7bWxnFel67cJ4ClMJFDFdjgTgr9+A59FXRfV1d6q2rY817l9g7CbzErJsuCmKuxCbgX3kNSGYntvGyVlF9ZbqlHoSv2JjkqrUrorqa6rxDRpDbKbtilV4Kt/y09s1YlPSa4iNZfZeT9icYV5TRnJHCGjXGuQvQR+hDSezrBU5vvwMnRn+Yfv0R4hNzW08vitabVadgc45apZAstM6Ej7KdWD0GGC9m/ewhz3sYQ972MMe9jA5owGAOv/x0nwlMF5OmctA9nJ++Dy/Mw9zLxYATrcCgdM787D4ud8zyMI0Umzq/582bRbM6qBY3QbzrpRSwc++KdWQUjrBKfOlJEZffh02in1w0zJsI68NEmy01E4ZIW2UCIyVYFMKaUNiOWUkYEYJNpWQNpOYNm0+TM2mc5fqN3L77z3YNOwwvos2ljtSaJEWHnXKfCFtBm56agGPAGgcl1nZZbG2eZi/oduyOe6+TMp2SqHnlvU7TaK9UNzobBjNv5e+kzaDEBvFhHlX21n5MgnEs+FfpZRyT+mVvDY2H6Yidpp/p2MZe8AJwdQTuz0IORWsSoXICNnwj/Tfa8MFYFr+LcX3ccpIsqmyYd6UUuaLaKMSjnhRNl2+U/0XihudsFD0pT7fqU7CqVI0NZUIzJDPxkg4VYlqw+IUhbG5bGoSdaq9AeZIvnNRQXT6T9a3sBlznWomUW0aCZgpl00rFMWjqDa1BAwlsKF4WemCyfsf7KhEadxa8zgAAAAASUVORK5CYII=) no-repeat 0 0/contain;width:112px;height:46px}
+#dihx .dx-foot .dx-wm{width:126px;height:52px}
+#dihx .dx-nav{display:flex;gap:30px;font-weight:600;font-size:15px;color:#fff;flex:1}
+#dihx .dx-nav a:hover,#dihx .dx-nav a.on{color:var(--teal)}
+#dihx .dx-social{display:flex;gap:18px;color:#fff;align-items:center}
+#dihx .dx-social svg{width:20px;height:20px;fill:currentColor}
+#dihx .dx-head .btn{padding:12px 20px;font-size:13px;border:2px solid var(--teal);color:var(--teal)}
+#dihx .dx-burger{display:none;background:none;border:0;cursor:pointer;width:30px;height:22px;position:relative;margin-left:auto}
+#dihx .dx-burger span,#dihx .dx-burger:before,#dihx .dx-burger:after{content:"";position:absolute;left:0;right:0;height:2.5px;background:#fff}
+#dihx .dx-burger:before{top:0}#dihx .dx-burger span{top:9.5px}#dihx .dx-burger:after{bottom:0}
+#dihx .dx-menu{display:none;background:var(--ink);border-top:1px solid rgba(255,255,255,.12);padding:12px 20px 28px}
+#dihx .dx-menu a{display:block;color:#fff;font-weight:600;font-size:18px;padding:14px 0;border-bottom:1px solid rgba(255,255,255,.08)}
+#dihx .dx-menu .btn{margin-top:20px;width:100%;border:2px solid var(--teal);color:var(--teal);font-size:14px;border-bottom:2px solid var(--teal)}
+#dihx.menu-open .dx-menu{display:block}
+
+/* hero */
+#dihx .dx-hero{background:var(--ink);color:#fff;overflow:hidden}
+#dihx .dx-hero .grid{display:grid;grid-template-columns:1.08fr .92fr;min-height:640px}
+#dihx .dx-hero .copy{padding:92px 56px 84px max(32px,calc((100vw - var(--wrap))/2 + 32px));display:flex;flex-direction:column;justify-content:center}
+#dihx .dx-hero h1{font-family:Montserrat,Arial,sans-serif;font-size:68px;line-height:1.02;font-weight:800;text-transform:uppercase;letter-spacing:-.015em;margin:22px 0 26px;color:#fff}
+#dihx .dx-hero h1 span{color:var(--teal)}
+#dihx .dx-hero .deck{font-size:19px;line-height:1.55;color:var(--soft);max-width:520px;font-weight:500}
+#dihx .dx-hero .ctas{display:flex;gap:14px;margin:36px 0 44px;flex-wrap:wrap}
+#dihx .host{border-top:1px solid rgba(255,255,255,.14);padding-top:26px;max-width:560px}
+#dihx .host b{display:block;font-size:15px;font-weight:700;letter-spacing:.02em}
+#dihx .host small{display:block;font-size:13px;color:var(--soft);margin-top:4px;line-height:1.5}
+#dihx .dx-hero .photo{position:relative}
+#dihx .dx-hero .photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:52% 30%}
+
+/* directory band */
+#dihx .dx-dir{background:var(--teal);color:var(--ink);padding:72px 0}
+#dihx .dx-dir .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:center}
+#dihx .dx-dir .eyebrow{color:var(--ink)}
+#dihx .dx-dir h2{font-size:44px;font-weight:800;line-height:1.05;text-transform:uppercase;margin:12px 0 14px;color:var(--ink)}
+#dihx .dx-dir p{font-size:17px;line-height:1.55;font-weight:500;max-width:460px}
+#dihx .ask{display:flex;align-items:center;background:#fff;border-radius:6px;padding:8px 8px 8px 22px;box-shadow:0 18px 40px rgba(16,35,33,.18);font-size:18px;font-weight:500;color:#8A9795}
+#dihx .ask span{flex:1}
+#dihx .ask .btn{padding:14px 26px}
+#dihx .chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+#dihx .chips a{font-size:13px;font-weight:600;padding:8px 14px;border-radius:99px;background:rgba(16,35,33,.1);color:var(--ink)}
+#dihx .chips a:hover{background:rgba(16,35,33,.18)}
+#dihx .dx-dir .note{display:inline-block;font-size:13px;font-weight:700;margin-top:16px;opacity:.8}
+
+/* episodes: restyles the existing .eplist card markup */
+#dihx .dx-eps{padding:96px 0 90px}
+#dihx .dx-filter{display:none;align-items:center;gap:14px;margin:-12px 0 28px;font-weight:600;font-size:15px}
+#dihx .dx-filter.on{display:flex}
+#dihx .dx-filter b{color:var(--teal-d)}
+#dihx .dx-filter a{font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;border:2px solid var(--ink);padding:6px 12px;border-radius:4px;cursor:pointer}
+#dihx .eplist{display:grid;grid-template-columns:repeat(3,1fr);gap:40px 28px}
+#dihx .epc{position:relative;display:grid;grid-template-columns:auto 1fr;align-content:start;column-gap:10px;background:none;border:0;border-radius:0;box-shadow:none;transform:none;color:var(--text)}
+#dihx .epc .fthumb,#dihx .epc .epbody,#dihx .epc .fmeta{display:contents}
+#dihx .epc img{grid-column:1/-1;grid-row:1;width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:6px;margin-bottom:16px;background:var(--ink);transition:transform .2s}
+#dihx .epc:hover img{transform:translateY(-2px)}
+#dihx .epc .foverlay,#dihx .epc .ftag,#dihx .epc .epdesc,#dihx .epc .epfoot,#dihx .epc .epdur{display:none}
+#dihx .epc .epnum{grid-column:1;grid-row:2;align-self:center;font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--teal-d);white-space:nowrap}
+#dihx .epc .epmeta{grid-column:2;grid-row:2;display:flex;gap:10px;align-items:center;min-width:0}
+#dihx .epc .tag{font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--teal-d);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background:none;padding:0;border:0}
+#dihx .epc .epdate{display:none}
+#dihx .epc .ftitle{grid-column:1/-1;grid-row:3;font-size:19px;font-weight:700;line-height:1.3;margin-top:8px;color:var(--text)}
+#dihx .epc .ftitle em{font-style:normal}
+#dihx .epc .epguest{grid-column:1/-1;grid-row:4;font-size:14px;color:var(--grey);font-weight:500;margin-top:8px;line-height:1.45}
+#dihx .epc .badge{position:absolute;top:14px;left:14px;background:var(--amber);color:var(--ink);font-size:11px;font-weight:800;letter-spacing:.12em;padding:6px 9px;border-radius:3px;z-index:2}
+#dihx .epc:not(:first-child) .badge{display:none}
+/* newest episode = first card, shown large */
+#dihx .eplist .epc:first-child{grid-column:1/-1;grid-template-columns:1.25fr .75fr;column-gap:52px;align-items:center;padding-bottom:40px;margin-bottom:8px;border-bottom:1px solid var(--line)}
+#dihx .eplist .epc:first-child img{grid-column:1;grid-row:1/9;margin:0;border-radius:8px}
+#dihx .eplist .epc:first-child .epnum,#dihx .eplist .epc:first-child .epmeta,#dihx .eplist .epc:first-child .ftitle,#dihx .eplist .epc:first-child .epguest,#dihx .eplist .epc:first-child .epdesc,#dihx .eplist .epc:first-child .epfoot{grid-column:2}
+#dihx .eplist .epc:first-child .epnum{grid-row:2;align-self:end;font-size:12px;letter-spacing:.22em}
+#dihx .eplist .epc:first-child .epnum:before{content:"Newest episode \00B7  "}
+#dihx .eplist .epc:first-child .epmeta{grid-row:3;margin-top:8px}
+#dihx .eplist .epc:first-child .epdate{display:inline;font-size:13px;font-weight:600;color:var(--grey);letter-spacing:.04em}
+#dihx .eplist .epc:first-child .ftitle{grid-row:4;font-size:34px;font-weight:800;line-height:1.14;margin-top:12px}
+#dihx .eplist .epc:first-child .epguest{grid-row:5;font-size:15px;font-weight:600;color:var(--text)}
+#dihx .eplist .epc:first-child .epdesc{grid-row:6;display:block;font-size:16px;line-height:1.6;color:#33413F;margin-top:14px}
+#dihx .eplist .epc:first-child .epfoot{grid-row:7;display:flex;margin-top:24px;align-self:start}
+#dihx .eplist .epc:first-child .epgo{display:inline-flex;background:var(--teal);color:var(--ink);font-weight:700;font-size:14px;letter-spacing:.06em;text-transform:uppercase;padding:16px 26px;border-radius:4px}
+#dihx .eplist .epc:first-child .epgo:before{content:"\25B6\00a0\00a0Watch now";}
+#dihx .eplist .epc:first-child .epgo{font-size:0}
+#dihx .eplist .epc:first-child .epgo:before{font-size:14px}
+#dihx .eplist.collapsed .epc:nth-child(n+8){display:none}
+#dihx .eplist .epc.dx-hide{display:none!important}
+#dihx .dx-all{display:flex;justify-content:center;margin-top:48px}
+
+/* topics */
+#dihx .dx-topics{background:var(--mist)}
+#dihx .tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+#dihx .tile{background:#fff;border:1px solid var(--line);border-radius:8px;padding:26px 24px;display:flex;flex-direction:column;gap:18px;min-height:168px;cursor:pointer;transition:border-color .15s,transform .15s}
+#dihx .tile:hover{border-color:var(--teal);transform:translateY(-2px)}
+#dihx .tile .ic{width:52px;height:52px;border-radius:50%;background:rgba(0,191,178,.12);display:grid;place-items:center;color:var(--teal-d)}
+#dihx .tile b{font-size:17px;font-weight:700;line-height:1.3}
+#dihx .tile small{font-size:13px;color:var(--grey);font-weight:500;margin-top:auto}
+
+/* experts */
+#dihx .dx-experts{background:var(--ink);color:#fff}
+#dihx .dx-experts .h2{color:#fff}
+#dihx .dx-experts .sub{color:var(--soft);font-size:17px;font-weight:500;margin-top:14px;max-width:560px;line-height:1.55}
+#dihx .people{display:grid;grid-template-columns:repeat(6,1fr);gap:18px}
+#dihx .person{border-radius:6px;overflow:hidden;background:var(--ink2);display:flex;flex-direction:column}
+#dihx .person .face{aspect-ratio:4/5;background-repeat:no-repeat;background-color:var(--ink2)}
+#dihx .person .bar{background:var(--teal);color:var(--ink);padding:12px 12px 14px;flex:1}
+#dihx .person .bar b{display:block;font-size:13.5px;font-weight:800;line-height:1.25}
+#dihx .person .bar small{display:block;font-size:12px;font-weight:600;margin-top:4px;opacity:.85}
+
+/* featured providers */
+#dihx .feat-list{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+#dihx .prov{border:1px solid var(--line);border-top:5px solid var(--teal);border-radius:6px;padding:24px;display:flex;flex-direction:column;gap:8px;min-height:150px;transition:transform .15s}
+#dihx .prov:hover{transform:translateY(-2px)}
+#dihx .prov .pb{align-self:flex-start;font-size:10.5px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;background:var(--amber);color:var(--ink);padding:5px 8px;border-radius:3px}
+#dihx .prov b{font-size:19px;font-weight:800;line-height:1.25;margin-top:6px}
+#dihx .prov small{font-size:13.5px;color:var(--grey);font-weight:500}
+#dihx .prov .go{margin-top:auto;font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--teal-d)}
+
+/* listen */
+#dihx .dx-listen{background:var(--mist);padding:70px 0;text-align:center}
+#dihx .badges{display:flex;justify-content:center;gap:16px;flex-wrap:wrap;margin-top:26px}
+#dihx .bdg{display:flex;align-items:center;gap:12px;background:#000;color:#fff;border-radius:10px;padding:10px 20px 10px 16px;min-width:210px}
+#dihx .bdg svg{width:30px;height:30px;flex:none}
+#dihx .bdg span{display:flex;flex-direction:column;text-align:left;font-size:11px;font-weight:500;line-height:1.2}
+#dihx .bdg span b{font-size:18px;font-weight:700}
+
+/* newsletter */
+#dihx .dx-news{background:var(--ink);color:#fff;padding:84px 0}
+#dihx .dx-news .wrap{display:grid;grid-template-columns:1fr auto;gap:56px;align-items:center}
+#dihx .dx-news h2{font-size:40px;font-weight:800;line-height:1.08;text-transform:uppercase;margin:12px 0 16px;color:#fff}
+#dihx .dx-news h2 span{color:var(--teal)}
+#dihx .dx-news p{color:var(--soft);font-size:17px;line-height:1.55;font-weight:500;max-width:560px}
+#dihx .dx-news .side{display:flex;flex-direction:column;gap:12px;align-items:flex-start}
+#dihx .dx-news .side small{color:var(--soft);font-size:13px;font-weight:500}
+
+/* guest band */
+#dihx .dx-guest{background:var(--teal);color:var(--ink);padding:64px 0}
+#dihx .dx-guest .wrap{display:flex;justify-content:space-between;align-items:center;gap:40px}
+#dihx .dx-guest h2{font-size:36px;font-weight:800;line-height:1.1;text-transform:uppercase;color:var(--ink)}
+#dihx .dx-guest p{font-size:17px;font-weight:500;margin-top:12px;max-width:640px;line-height:1.5}
+
+/* footer */
+#dihx .dx-foot{background:var(--ink2);color:#fff;padding:70px 0 34px}
+#dihx .dx-foot .top{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:40px}
+#dihx .dx-foot .mission{color:#DDE8E6;font-size:15px;font-weight:500;line-height:1.5;margin-top:18px;max-width:280px}
+#dihx .dx-foot .sign{color:var(--teal);font-weight:700;margin-top:12px;font-size:15px}
+#dihx .dx-foot h5{font-family:Montserrat,Arial,sans-serif;font-size:12px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--teal);margin-bottom:16px}
+#dihx .dx-foot .col a{display:block;font-size:15px;font-weight:500;color:#DDE8E6;margin-bottom:11px}
+#dihx .dx-foot .col a:hover{color:var(--teal)}
+#dihx .dx-foot .bottom{display:flex;justify-content:space-between;align-items:center;border-top:1px solid rgba(255,255,255,.12);margin-top:50px;padding-top:24px;font-size:13px;color:var(--soft)}
+
+/* phones */
+@media (max-width:760px){
+  #dihx .wrap{padding:0 20px}
+  #dihx .dx-head .wrap{height:68px;gap:12px}
+  #dihx .dx-logo .dx-wm{width:88px;height:36px}
+  #dihx .dx-nav,#dihx .dx-head .dx-social,#dihx .dx-head .wrap>.btn{display:none}
+  #dihx .dx-burger{display:block}
+  #dihx .dx-hero .grid{grid-template-columns:1fr;min-height:0}
+  #dihx .dx-hero .photo{order:-1;height:400px;border-left:0}
+  #dihx .dx-hero .copy{padding:40px 20px 44px}
+  #dihx .dx-hero h1{font-size:38px;margin:18px 0}
+  #dihx .dx-hero .deck{font-size:16px}
+  #dihx .dx-hero .ctas{margin:28px 0 32px}
+  #dihx .dx-hero .ctas a{flex:1;padding:15px 12px;font-size:13px}
+  #dihx .sec,#dihx .dx-eps{padding:64px 0}
+  #dihx .h2{font-size:28px}
+  #dihx .sec-head{flex-direction:column;align-items:flex-start;gap:12px}
+  #dihx .dx-dir{padding:56px 0}
+  #dihx .dx-dir .wrap,#dihx .dx-news .wrap{grid-template-columns:1fr;gap:28px}
+  #dihx .dx-dir h2{font-size:32px}
+  #dihx .ask{font-size:15px;padding:8px 8px 8px 14px}
+  #dihx .ask .btn{padding:12px 16px}
+  #dihx .eplist{grid-template-columns:1fr;gap:34px}
+  #dihx .eplist .epc:first-child{grid-template-columns:auto 1fr;column-gap:10px;padding-bottom:34px}
+  #dihx .eplist .epc:first-child img{grid-column:1/-1;grid-row:1;margin-bottom:18px}
+  #dihx .eplist .epc:first-child .epnum{grid-column:1/-1;grid-row:2}
+  #dihx .eplist .epc:first-child .epmeta{grid-column:1/-1;grid-row:3}#dihx .eplist .epc:first-child .ftitle{grid-column:1/-1;grid-row:4}#dihx .eplist .epc:first-child .epguest{grid-column:1/-1;grid-row:5}#dihx .eplist .epc:first-child .epdesc{grid-column:1/-1;grid-row:6}#dihx .eplist .epc:first-child .epfoot{grid-column:1/-1;grid-row:7}
+  #dihx .eplist .epc:first-child .ftitle{font-size:26px}
+  #dihx .eplist.collapsed .epc:nth-child(n+5){display:none}
+  #dihx .tiles{grid-template-columns:1fr 1fr;gap:12px}
+  #dihx .tile{padding:18px 16px;min-height:140px;gap:12px}
+  #dihx .tile b{font-size:15px}
+  #dihx .people{grid-template-columns:1fr 1fr;gap:12px}
+  #dihx .feat-list{grid-template-columns:1fr}
+  #dihx .bdg{min-width:0;width:calc(50% - 8px);padding:10px 12px}
+  #dihx .bdg span b{font-size:15px}
+  #dihx .badges{gap:12px}
+  #dihx .dx-news h2{font-size:30px}
+  #dihx .dx-guest .wrap{flex-direction:column;align-items:flex-start;gap:24px}
+  #dihx .dx-guest h2{font-size:28px}
+  #dihx .dx-foot .top{grid-template-columns:1fr 1fr;gap:32px}
+  #dihx .dx-foot .top>div:first-child{grid-column:1/-1}
+  #dihx .dx-foot .bottom{flex-direction:column;gap:10px;align-items:flex-start}
+}
+</style>
+<div id="dihx">
+
+<header class="dx-head">
+  <div class="wrap">
+    <a class="dx-logo" href="/podcast" aria-label="Dialed In Health home"><span class="dx-wm" role="img" aria-label="Dialed In Health"></span></a>
+    <nav class="dx-nav" aria-label="Main">
+      <a class="on" href="/podcast">Podcast</a><a href="/the-directory">Directory</a><a href="#dx-topics">Topics</a><a href="/guides">Guides</a><a href="/newsletter">Newsletter</a><a href="/advertise">Advertise</a>
+    </nav>
+    <div class="dx-social">
+      <a href="https://www.youtube.com/@dialedinhealth" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24"><path d="M23 7.2a3 3 0 0 0-2.1-2.1C19 4.6 12 4.6 12 4.6s-7 0-8.9.5A3 3 0 0 0 1 7.2 31 31 0 0 0 .5 12a31 31 0 0 0 .5 4.8 3 3 0 0 0 2.1 2.1c1.9.5 8.9.5 8.9.5s7 0 8.9-.5a3 3 0 0 0 2.1-2.1c.4-1.6.5-3.2.5-4.8s-.1-3.2-.5-4.8zM9.7 15.1V8.9l5.8 3.1-5.8 3.1z"/></svg></a>
+      <a href="https://www.instagram.com/dialedin_health" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" style="width:20px;height:20px;fill:none;stroke:#fff;stroke-width:2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.2" style="fill:#fff;stroke:none"/></svg></a>
+    </div>
+    <a class="btn" href="https://dialedinhealth.kit.com/39b0bb5dc1" target="_blank" rel="noopener">Be a Guest</a>
+    <button class="dx-burger" type="button" aria-label="Menu"><span></span></button>
+  </div>
+  <div class="dx-menu">
+    <a href="/podcast">Podcast</a><a href="/the-directory">Directory</a><a href="#dx-topics">Topics</a><a href="/guides">Guides</a><a href="/newsletter">Newsletter</a><a href="/advertise">Advertise</a><a href="/melissa-goodwin">Meet the Host</a>
+    <a class="btn" href="https://dialedinhealth.kit.com/39b0bb5dc1" target="_blank" rel="noopener">Be a Guest</a>
+  </div>
+</header>
+
+<section class="dx-hero">
+  <div class="grid">
+    <div class="copy">
+      <div class="rule"><span class="eyebrow">Let's get Dialed In</span></div>
+      <h1>What you ask ChatGPT at midnight.<br><span>Answered by experts.</span></h1>
+      <p class="deck">Health and wellness, simplified for everyone. Straight from the people who do the work.</p>
+      <div class="ctas">
+        <a href="/podcast/episode-38-high-protein-foods" class="btn-lime" data-latest>&#9654;&nbsp; Latest Episode</a>
+        <a class="btn-ghost" href="/the-directory">Search the Directory</a>
+      </div>
+      <div class="host">
+        <b>Hosted by Melissa Goodwin</b>
+        <small>Chemist. 25 years leading innovation at 6 US health systems. 140+ launches. 10K+ ideas analyzed. Bush Foundation Fellow.</small>
+      </div>
+    </div>
+    <div class="photo">
+      <img src="https://images.squarespace-cdn.com/content/696d8d066d0e096316e6356c/ba46aedb-d9a9-4eef-860e-fbb05f3efa1f/1769181201870.jpeg" alt="Melissa Goodwin, host of Dialed In Health" fetchpriority="high">
+    </div>
+  </div>
+</section>
+
+<section class="dx-dir">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">The Directory</span>
+      <h2>Find a provider.<br>Just ask.</h2>
+      <p>Independent health and wellness providers across 35 categories. Tell it what you need in plain words.</p>
+    </div>
+    <div>
+      <a class="ask" href="/the-directory"><span>Tell me what you're looking for...</span><span class="btn ink" style="flex:none">Ask</span></a>
+      <div class="chips"><a href="/the-directory">Neuropathy</a><a href="/the-directory">Hormone therapy</a><a href="/the-directory">Chronic fatigue</a><a href="/the-directory">Therapist for anxiety</a><a href="/the-directory">Back pain</a></div>
+      <a class="note" href="/the-directory">Or browse all categories &rarr;</a>
+    </div>
+  </div>
+</section>
+
+<section class="dx-eps" id="dx-episodes">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><span class="eyebrow dark">The Podcast</span><h2 class="h2">Real answers. <em>Real providers.</em></h2></div>
+      <a class="more" data-dx="all">All episodes &rarr;</a>
+    </div>
+    <div class="dx-filter"><span>Showing <b class="dx-fname"></b> episodes</span><a data-dx="clear">Show all</a></div>
+<div class="eplist">
+<a href="/podcast/episode-44-lymphatic-system" class="epc feat">
+  <div class="fthumb">
+    <img src="https://img.youtube.com/vi/6j9c_aHWMwk/maxresdefault.jpg" alt="John Ossipinsky, LymphMan, certified lymphedema therapist, on the lymphatic system, Dialed In Health Episode 44" decoding="async" loading="lazy">
+    <div class="foverlay"></div><span class="epnum">EP 44</span>
+    <div class="fmeta"><div class="ftag">Lymphatic System · Swelling · Brain Fog · Rebounding</div><div class="ftitle">What Is the Lymphatic System? <em>How to Get It Moving at Home</em></div></div>
+  </div>
+  <div class="epbody">
+    <div class="epmeta"><span class="tag">LONGEVITY</span><span class="epdate">November 2026 · 55 min</span></div>
+    <div class="epguest">John Ossipinsky · LymphMan, Certified Lymphedema Therapist · Virtual (Nationwide)</div>
+    <p class="epdesc">Your lymphatic system has no pump, so you have to move it. LymphMan John Ossipinsky shows simple ways to ease swelling and support healthy aging at home, starting with his 30 second Shoulder Shuffle and a few deep breaths.</p>
+    <div class="epfoot"><span class="epdur">▶ Watch · Listen · Read transcript</span><span class="epgo">Full episode →</span></div>
+  </div>
+</a>
+<a href="/podcast/episode-43-iv-therapy" class="epc feat">
+  <div class="fthumb">
+    <img src="https://img.youtube.com/vi/-dJ59X0syH0/maxresdefault.jpg" alt="Melissa Reno, co-owner of Prime IV Hydration &amp; Wellness, on IV therapy, Dialed In Health Episode 43" decoding="async" loading="lazy">
+    <div class="foverlay"></div><span class="epnum">EP 43</span>
+    <div class="fmeta"><div class="ftag">IV Therapy · Cryotherapy · NAD+ · IV Drip Cost</div><div class="ftitle">Is IV Therapy Worth It? <em>What's Actually in the Bag</em></div></div>
+  </div>
+  <div class="epbody">
+    <div class="epmeta"><span class="tag">Longevity</span><span class="epdate">October 2026 · 42 min</span></div>
+    <div class="epguest">Melissa Reno · Co-Owner, Prime IV Hydration &amp; Wellness · Sioux Falls, SD</div>
+    <p class="epdesc">An IV clinic owner and her nurse on what goes in the bag, why it absorbs better than a pill, cryotherapy, NAD+ and peptides, and what a visit really costs.</p>
+    <div class="epfoot"><span class="epdur">▶ Watch · Listen · Read transcript</span><span class="epgo">Full episode →</span></div>
+  </div>
+</a>
+<a href="/podcast/episode-42-burnout-emotional-intelligence" class="epc feat">
+  <div class="fthumb">
+    <img src="https://img.youtube.com/vi/knRrKVvqDoA/maxresdefault.jpg" alt="Marla Dziedzic, burnout and emotional intelligence coach at Evolve Consulting, on burnout and EQ, Dialed In Health Episode 42" decoding="async" loading="lazy">
+    <div class="foverlay"></div><span class="epnum">EP 42</span>
+    <div class="fmeta"><div class="ftag">Burnout · Burnout vs Depression · Compassion Fatigue · Emotional Intelligence</div><div class="ftitle">You Can't Yoga Your Way Out <em>of Burnout (Do This Instead)</em></div></div>
+  </div>
+  <div class="epbody">
+    <div class="epmeta"><span class="tag">Mental Health</span><span class="epdate">October 2026 · 62 min</span></div>
+    <div class="epguest">Marla Dziedzic · Burnout and Emotional Intelligence Coach, Evolve Consulting · Sioux Falls, SD</div>
+    <p class="epdesc">Burnout coach Marla Dziedzic explains how burnout differs from depression, the signs people around you notice first, why a vacation won't fix it, and how emotional intelligence helps leaders and teams recover.</p>
+    <div class="epfoot"><span class="epdur">▶ Watch · Listen · Read transcript</span><span class="epgo">Full episode →</span></div>
+  </div>
+</a>
+<a href="/podcast/episode-41-healing-with-horses" class="epc feat">
+  <div class="fthumb">
+    <img src="https://img.youtube.com/vi/E08O9wKDdTA/maxresdefault.jpg" alt="Dr. Kimberly Ammerman, PharmD, of Healing Hearts with Horses, on healing with horses, Dialed In Health Episode 41" decoding="async" loading="lazy">
+    <div class="foverlay"></div><span class="epnum">EP 41</span>
+    <div class="fmeta"><div class="ftag">Healing With Horses · Equine Coaching · Stress · Feeling Stuck</div><div class="ftitle">Healing With Horses: <em>What a Horse Sees in You That You Miss</em></div></div>
+  </div>
+  <div class="epbody">
+    <div class="epmeta"><span class="tag">Mental Health</span><span class="epdate">October 2026 · 33 min</span></div>
+    <div class="epguest">Dr. Kimberly Ammerman · PharmD, Healing Hearts with Horses · Whitewood, SD</div>
+    <p class="epdesc">A horse can tell what you are carrying before you say a word. Dr. Kimberly Ammerman, a pharmacist with 17 horses in the Black Hills, on stress, mindset, feeling stuck, and why nobody rides in her sessions.</p>
+    <div class="epfoot"><span class="epdur">▶ Watch · Listen · Read transcript</span><span class="epgo">Full episode →</span></div>
+  </div>
+</a>
+<a href="/podcast/episode-40-tantrum-vs-meltdown" class="epc feat">
+  <div class="fthumb">
+    <img src="https://img.youtube.com/vi/5TurhVmEbQo/maxresdefault.jpg" alt="Kristin Wittmayer, MS, OTR/L of Move U, on tantrum vs meltdown, Dialed In Health Episode 40" decoding="async" loading="lazy">
+    <div class="foverlay"></div><span class="epnum">EP 40</span>
+    <div class="fmeta"><div class="ftag">Tantrum vs Meltdown · Sensory Processing · DIR Floortime · Pediatric OT</div><div class="ftitle">Tantrum vs Meltdown: <em>What to Do When Your Child Loses It</em></div></div>
+  </div>
+  <div class="epbody">
+    <div class="epmeta"><span class="tag">Mental Health</span><span class="epdate">October 2026 · 46 min</span></div>
+    <div class="epguest">Kristin Wittmayer · MS, OTR/L, Move U · Sioux Falls, SD</div>
+    <p class="epdesc">A pediatric occupational therapist explains tantrum vs meltdown, what to do when a child's nervous system is overwhelmed, and how to tell a phase from a sensory processing challenge. Plus DIR Floortime, in plain words.</p>
+    <div class="epfoot"><span class="epdur">▶ Watch · Listen · Read transcript</span><span class="epgo">Full episode →</span></div>
+  </div>
+</a>
+<a href="/podcast/episode-39-survival-mode-somatic-healing" class="epc feat">
+  <div class="fthumb">
+    <img src="https://img.youtube.com/vi/ymq68HQjDJA/maxresdefault.jpg" alt="Jada Dobesh, certified spiritual director and owner of Selah Space, on survival mode and making your body feel safe, Dialed In Health Episode 39" decoding="async" loading="lazy">
+    <div class="foverlay"></div><span class="epnum">EP 39</span>
+    <div class="fmeta"><div class="ftag">Survival Mode · Somatic Healing · Nervous System · Spiritual Direction</div><div class="ftitle">Stuck in Survival Mode? <em>How to Make Your Body Feel Safe Again</em></div></div>
+  </div>
+  <div class="epbody">
+    <div class="epmeta"><span class="tag">Mental Health</span><span class="epdate">September 2026 · 50 min</span></div>
+    <div class="epguest">Jada Dobesh · Certified Spiritual Director, Selah Space · Sioux Falls, SD</div>
+    <p class="epdesc">A spiritual director on why so many women live in survival mode, where unfelt emotions land in the body, and a 30 second nervous system reset you can do anywhere.</p>
+    <div class="epfoot"><span class="epdur">▶ Watch · Listen · Read transcript</span><span class="epgo">Full episode →</span></div>
+  </div>
+</a>
+<a href="/podcast/episode-38-high-protein-foods" class="epc feat">
+  <div class="fthumb">
+    <img src="https://img.youtube.com/vi/KCGZgL0jDSI/maxresdefault.jpg" alt="Sydney St Clair, certified nutrition coach and owner of Let's Reach New Heights Nutrition, on why so many women need to eat more, Dialed In Health Episode 38" decoding="async" loading="lazy">
+    <div class="foverlay"></div><span class="epnum">EP 38</span>
+    <div class="fmeta"><div class="ftag">Under Eating · High Protein · GLP-1 Nutrition · Food Noise</div><div class="ftitle">Not Eating Enough? <em>Why So Many Women Need More Food</em></div></div>
+  </div>
+  <div class="epbody">
+    <div class="epmeta"><span class="tag">Nutrition</span><span class="epdate">September 2026 · 55 min</span></div>
+    <div class="epguest">Sydney St Clair · Certified Nutrition Coach, Let's Reach New Heights Nutrition · Wagner, SD + Virtual</div>
+    <p class="epdesc">A certified nutrition coach on why a little under half of the women she coaches need to eat more, the 10 second label test for high protein foods, what to eat on a GLP-1, and a live snack test from the host's pantry.</p>
+    <div class="epfoot"><span class="epdur">▶ Watch · Listen · Read transcript</span><span class="epgo">Full episode →</span></div>
+  </div>
+</a>
+<a href="/podcast/episode-37-peripheral-neuropathy-part-ii" class="epc feat">
+  <div class="fthumb">
+    <img src="https://img.youtube.com/vi/-AdmSQF22yg/maxresdefault.jpg" alt="Dr. Jordan Stenzel, DC of Stenzel Chiropractic Clinic names five things you can do at home for peripheral neuropathy, Dialed In Health Episode 37" decoding="async" loading="lazy">
+    <div class="foverlay"></div><span class="epnum">EP 37</span>
+    <div class="fmeta"><div class="ftag">Peripheral Neuropathy · Red Light Therapy · Chiropractic · Mankato MN</div><div class="ftitle">5 Things You Can Do Today to <em>Heal Neuropathy At Home</em></div></div>
+  </div>
+  <div class="epbody">
+    <div class="epmeta"><span class="tag">Peripheral Neuropathy</span><span class="epdate">September 2026 · 48 min</span></div>
+    <div class="epguest">Dr. Jordan Stenzel · DC, Stenzel Chiropractic Clinic · Mapleton + Mankato, MN</div>
+    <p class="epdesc">The five at home interventions a neuropathy clinic actually uses, the red light wavelength and energy numbers that separate a real device from a toy, what gabapentin does and does not do, and why NAD plus in a bottle never reaches the cell.</p>
+    <div class="epfoot"><span class="epdur">▶ Watch · Listen · Read transcript</span><span class="epgo">Full episode →</span></div>
+  </div>
+</a>
+<a href="/podcast/episode-36-well-balanced-pt" class="epc feat">
+  <div class="fthumb">
+    <img src="https://img.youtube.com/vi/9bkNjH61hRY/maxresdefault.jpg" alt="Ember Smith, PT, DPT of Well Balanced Physical Therapy explains why Kegels are not the answer for most pelvic floor problems, Dialed In Health Episode 36" decoding="async" loading="lazy">
+    <div class="foverlay"></div><span class="epnum">EP 36</span>
+    <div class="fmeta"><div class="ftag">Pelvic Floor · Kegels · Diastasis Recti · Physical Therapy</div><div class="ftitle">The Most Common Pelvic Floor Fix <em>Is Making It Worse</em></div></div>
+  </div>
+  <div class="epbody">
+    <div class="epmeta"><span class="tag">Pelvic Floor</span><span class="epdate">September 2026 · 37 min</span></div>
+    <div class="epguest">Ember Smith · PT, DPT, Well Balanced Physical Therapy · Sioux Falls, SD</div>
+    <p class="epdesc">A pelvic floor physical therapist on why Kegels are not the answer, how most women perform them backwards, the two and a half finger rule for diastasis recti, and why a tight pelvic floor gets worse when you add contractions.</p>
+    <div class="epfoot"><span class="epdur">▶ Watch · Listen · Read transcript</span><span class="epgo">Full episode →</span></div>
+  </div>
+</a>
+<a href="/podcast/episode-35-mthfr-methylation" class="epc feat">
+  <div class="fthumb">
+    <img src="https://img.youtube.com/vi/4HTjZjSzLbU/maxresdefault.jpg" alt="Kristine Cassar of BeeWell Functional Wellness explains what the MTHFR gene variant actually does, Dialed In Health Episode 35" decoding="async" loading="lazy">
+    <div class="foverlay"></div><span class="epnum">EP 35</span>
+    <div class="fmeta"><div class="ftag">MTHFR &middot; Methylation &middot; Methylfolate &middot; Functional Medicine</div><div class="ftitle">MTHFR Is Not a Disease: <em>What the Gene Variant Actually Does</em></div></div>
+  </div>
+  <div class="epbody">
+    <div class="epmeta"><span class="tag">MTHFR</span><span class="epdate">September 2026 &middot; 43 min</span></div>
+    <div class="epguest">Kristine Cassar &middot; Owner and Operator, BeeWell Functional Wellness &middot; The Woodlands, TX</div>
+    <p class="epdesc">A functional wellness practitioner who carries two copies of the variant on what MTHFR actually does to folate and B12, why grabbing a methylated B vitamin off the shelf can backfire, whether you should be tested at all, and the two things to look for on a supplement label.</p>
+    <div class="epfoot"><span class="epdur">&#9654; Watch &middot; Listen &middot; Read transcript</span><span class="epgo">Full episode &rarr;</span></div>
+  </div>
+</a>
+
+<a href="/podcast/episode-34-ketamine-assisted-therapy" class="epc feat">
+  <div class="fthumb">
+    <img src="https://img.youtube.com/vi/ar5gD-9_b54/maxresdefault.jpg" alt="Jerry Cook of Metanoia Journey Consulting on what a ketamine assisted therapy session actually feels like, Dialed In Health Episode 34" decoding="async" loading="lazy">
+    <div class="foverlay"></div><span class="epnum">EP 34</span>
+    <div class="fmeta"><div class="ftag">Ketamine · Psychedelic Therapy · Trauma · Integration</div><div class="ftitle">What a Ketamine Session Actually Feels Like: <em>A Psychedelic Guide Explains</em></div></div>
+  </div>
+  <div class="epbody">
+    <div class="epmeta"><span class="tag">Ketamine Therapy</span><span class="epdate">September 2026 · 42 min</span></div>
+    <div class="epguest">Jerry Cook · Psychedelic Journey Guide, Metanoia Journey Consulting</div>
+    <p class="epdesc">A psychedelic journey guide on why ketamine is the one he works with, what actually happens inside a three hour session, why the integration matters as much as the medicine, and the limits he is honest about.</p>
+    <div class="epfoot"><span class="epdur">▶ Watch · Listen · Read transcript</span><span class="epgo">Full episode →</span></div>
+  </div>
+</a>
+
+<a href="/podcast/episode-33-direct-primary-care" class="epc feat">
+  <div class="fthumb">
+    <img src="https://img.youtube.com/vi/twuEEWr9904/maxresdefault.jpg" alt="" decoding="async" loading="lazy" onerror="this.setAttribute('data-failed','');this.style.display='none'">
+    <div class="foverlay"></div><span class="epnum">EP 33</span>
+    <div class="fmeta"><div class="ftag">Direct Primary Care &middot; Healthcare Costs &middot; Access &middot; Membership Medicine</div><div class="ftitle">$80 a Month, Unlimited Visits: <em>Direct Primary Care Explained</em></div></div>
+  </div>
+  <div class="epbody">
+    <div class="epmeta"><span class="tag">Direct Primary Care</span><span class="epdate">August 2026 &middot; 31 min</span></div>
+    <div class="epguest">Sam Niewenhuis, NP &middot; Prairie Roots Health &middot; Sioux Falls, SD</div>
+    <p class="epdesc">A family nurse practitioner who caps his panel at 200 to 400 explains what a flat monthly fee actually buys. $80 a month for adults and $60 for children, unlimited visits, a full hour when you are new, same day slots he holds every day, labs at wholesale, and house calls. Also the honest part: what a membership does not cover, and what you should still carry alongside it.</p>
+    <div class="epfoot"><span class="epdur">&#9654; Watch &middot; Listen &middot; Read transcript</span><span class="epgo">Full episode &rarr;</span></div>
+  </div>
+</a>
+<a href="/podcast/episode-32-sleep" class="epc feat">
+
+  <div class="fthumb">
+
+    <img src="https://img.youtube.com/vi/EdgkR-5vcFI/maxresdefault.jpg" alt="" decoding="async" loading="lazy" onerror="this.setAttribute('data-failed','');this.style.display='none'">
+
+    <div class="foverlay"></div><span class="epnum">EP 32</span>
+
+    <div class="fmeta"><div class="ftag">Sleep &middot; Insomnia &middot; Sleep Apnea &middot; Shift Work</div><div class="ftitle">Why You Can't Sleep, <em>and How to Fix It on Any Shift</em></div></div>
+
+  </div>
+
+  <div class="epbody">
+
+    <div class="epmeta"><span class="tag">Sleep</span><span class="epdate">August 2026 &middot; 56 min</span></div>
+
+    <div class="epguest">Dr. Jerome Puryear, MD, Dipl. ABOM · Puryear Wellness Institute · Cincinnati, OH</div>
+
+    <p class="epdesc">An obesity medicine physician who diagnosed his own sleep apnea explains what is actually going wrong at night. The difference between insomnia and sleep apnea, what alcohol and caffeine really do to sleep quality, whether sleep trackers are worth it, straight answers on melatonin, CBD and THC, and how to build a sleep plan that survives night shift.</p>
+
+    <div class="epfoot"><span class="epdur">&#9654; Watch &middot; Listen &middot; Read transcript</span><span class="epgo">Full episode &rarr;</span></div>
+
+  </div>
+</a>
+<a href="/podcast/episode-31-airpods-hearing-aids" class="epc feat">
+
+  <div class="fthumb">
+
+    <img src="https://img.youtube.com/vi/-A7lhpX7Ly4/maxresdefault.jpg" alt="" decoding="async" loading="lazy" onerror="this.setAttribute('data-failed','');this.style.display='none'">
+
+    <div class="foverlay"></div><span class="epnum">EP 31</span>
+
+    <div class="fmeta"><div class="ftag">Hearing Loss &middot; Hearing Aids &middot; AirPods &middot; AI</div><div class="ftitle">Can AirPods Work as Hearing Aids? <em>An Audiologist Explains</em></div></div>
+
+  </div>
+
+  <div class="epbody">
+
+    <div class="epmeta"><span class="tag">Hearing Loss</span><span class="epdate">August 2026 &middot; 24 min</span></div>
+
+    <div class="epguest">Dr. Mandy Rounseville-Norgaard, AuD · Sioux Falls Audiology Associates · Sioux Falls, SD</div>
+
+    <p class="epdesc">Only barely, and only at the very beginning of hearing loss. An audiologist who wears hearing aids herself explains the 25 decibel ceiling, what you need before the feature will even work, why a general boost is not the same as a prescriptive fitting, the three earliest signs of hearing loss, and what AI is actually doing inside modern hearing aids.</p>
+
+    <div class="epfoot"><span class="epdur">&#9654; Watch &middot; Listen &middot; Read transcript</span><span class="epgo">Full episode &rarr;</span></div>
+
+  </div>
+</a>
+<a href="/podcast/episode-30-hightail" class="epc feat">
+
+  <div class="fthumb">
+
+    <img src="https://img.youtube.com/vi/d6FRaDMNSrU/maxresdefault.jpg" alt="" decoding="async" loading="lazy" onerror="this.setAttribute('data-failed','');this.style.display='none'">
+
+    <div class="foverlay"></div><span class="epnum">EP 30</span>
+
+    <div class="fmeta"><div class="ftag">THC Drinks &middot; Functional Beverages &middot; Mindful Drinking</div><div class="ftitle">What's In Your THC Drink? <em>THC, CBD, CBG, Decoded</em></div></div>
+
+  </div>
+
+  <div class="epbody">
+
+    <div class="epmeta"><span class="tag">THC Drinks</span><span class="epdate">July 2026 &middot; 52 min</span></div>
+
+    <div class="epguest">Anna Baskin · Founder, Hightail · Chicago, IL</div>
+
+    <p class="epdesc">The beverage aisle looks like a science experiment and almost nobody tells you what is in the can. Hightail founder Anna Baskin decodes THC, CBD, CBG, adaptogens and nootropics, explains why a drink hits differently than an edible, what clean should actually mean on a label, and how to drink less without giving up the ritual.</p>
+
+    <div class="epfoot"><span class="epdur">&#9654; Watch &middot; Listen &middot; Read transcript</span><span class="epgo">Full episode &rarr;</span></div>
+
+  </div>
+</a>
+
+  
+<a href="/podcast/episode-29-areola-tattoo" class="epc feat">
+
+  <div class="fthumb">
+
+    <img src="https://img.youtube.com/vi/dCItXNfc2VI/maxresdefault.jpg" alt="" decoding="async" loading="lazy" onerror="this.setAttribute('data-failed','');this.style.display='none'">
+
+    <div class="foverlay"></div><span class="epnum">EP 29</span>
+
+    <div class="fmeta"><div class="ftag">Areola Tattoo &middot; Breast Reconstruction &middot; Mastectomy</div><div class="ftitle">Insurance Has to Cover Your Nipple Tattoo <em>After a Mastectomy</em></div></div>
+
+  </div>
+
+  <div class="epbody">
+
+    <div class="epmeta"><span class="tag">Areola Tattoo</span><span class="epdate">July 2026 &middot; 36 min</span></div>
+
+    <div class="epguest">Krissy Dykhouse, RN, CPCT · Rise Skin Studio · Brandon, SD</div>
+
+    <p class="epdesc">A 3D areola tattoo is the final step of breast reconstruction, and almost no one tells women it exists or that a 1998 federal law can require insurance to cover it. Krissy Dykhouse, a nurse and paramedical tattoo artist, explains the process, the pain question, and how to get it paid for.</p>
+
+    <div class="epfoot"><span class="epdur">&#9654; Watch &middot; Listen &middot; Read transcript</span><span class="epgo">Full episode &rarr;</span></div>
+
+  </div>
+</a>
+<a href="/podcast/episode-28-skincare-routine" class="epc feat">
+
+  <div class="fthumb">
+
+    <img src="https://img.youtube.com/vi/YKCONJTcqbc/maxresdefault.jpg" alt="" decoding="async" loading="lazy" onerror="this.setAttribute('data-failed','');this.style.display='none'">
+
+    <div class="foverlay"></div><span class="epnum">EP 28</span>
+
+    <div class="fmeta"><div class="ftag">Skincare Routine &middot; Medical Grade &middot; Over Exfoliating</div><div class="ftitle">Your Skincare Isn't the Problem, <em>the Order You Apply It Is</em></div></div>
+
+  </div>
+
+  <div class="epbody">
+
+    <div class="epmeta"><span class="tag">Skincare</span><span class="epdate">July 2026 &middot; 34 min</span></div>
+
+    <div class="epguest">Kaila Meier · KJ Relaxin Medical Spa · Sioux Falls, SD</div>
+
+    <p class="epdesc">Your skincare might not be the problem. The way you layer it is. Esthetician Kaila Meier explains the right order to apply your products, what medical grade really means, and why over exfoliating quietly wrecks good skin.</p>
+
+    <div class="epfoot"><span class="epdur">&#9654; Watch &middot; Listen &middot; Read transcript</span><span class="epgo">Full episode &rarr;</span></div>
+
+  </div>
+</a>
+<a href="/podcast/episode-27-metabolic-health" class="epc feat">
+
+  <div class="fthumb">
+
+    <img src="https://img.youtube.com/vi/oVq3QjT-ZKY/maxresdefault.jpg" alt="" decoding="async" loading="lazy" onerror="this.setAttribute('data-failed','');this.style.display='none'">
+
+    <div class="foverlay"></div><span class="epnum">EP 27</span>
+
+    <div class="fmeta"><div class="ftag">Metabolic Health &middot; Menopause &middot; Insulin Resistance</div><div class="ftitle">Metabolic Health After 40: <em>The 5 Numbers That Matter</em></div></div>
+
+  </div>
+
+  <div class="epbody">
+
+    <div class="epmeta"><span class="tag">Metabolic Health</span><span class="epdate">July 2026 &middot; 43 min</span></div>
+
+    <div class="epguest">Jessica Morrell, CNP, IFMCP · Radiant Health and Hormone Therapy · Sioux Falls, SD</div>
+
+    <p class="epdesc">Metabolic health is how well your body turns food into steady energy, and it quietly shifts in midlife as estrogen falls. Jessica Morrell explains the five numbers that measure it, why belly fat shows up after 40, why insulin is the marker no one tests, and the moves that actually help.</p>
+
+    <div class="epfoot"><span class="epdur">&#9654; Watch &middot; Listen &middot; Read transcript</span><span class="epgo">Full episode &rarr;</span></div>
+
+  </div>
+</a>
+<a href="/podcast/episode-26-pots-dysautonomia" class="epc feat">
+
+  <div class="fthumb">
+
+    <img src="https://img.youtube.com/vi/o-rrtVsfpuI/maxresdefault.jpg" alt="" decoding="async" loading="lazy" onerror="this.setAttribute('data-failed','');this.style.display='none'">
+
+    <div class="foverlay"></div><span class="epnum">EP 26</span>
+
+    <div class="fmeta"><div class="ftag">POTS &middot; Dysautonomia &middot; Long COVID</div><div class="ftitle">POTS Isn't Anxiety, <em>and Salt Won't Fix It</em></div></div>
+
+  </div>
+
+  <div class="epbody">
+
+    <div class="epmeta"><span class="tag">POTS</span><span class="epdate">July 2026 &middot; 41 min</span></div>
+
+    <div class="epguest">Dr. Cooper Dykstra, DC, FIBFN-FN · Brain Health and Chiropractic · Sioux Falls, SD</div>
+
+    <p class="epdesc">POTS is a measurable 30-plus beat rise in heart rate on standing, not anxiety, yet most patients are told it is. Dr. Cooper Dykstra explains what is really happening in the brainstem, why salt and fluids fall short, the long COVID connection, and what a 4-Day Brain Reset looks like.</p>
+
+    <div class="epfoot"><span class="epdur">&#9654; Watch &middot; Listen &middot; Read transcript</span><span class="epgo">Full episode &rarr;</span></div>
+
+  </div>
+</a>
+<a href="/podcast/episode-25-spiritual-health" class="epc feat">
+
+  <div class="fthumb">
+
+    <img src="https://img.youtube.com/vi/HVawVUStJR4/maxresdefault.jpg" alt="" decoding="async" loading="lazy" onerror="this.setAttribute('data-failed','');this.style.display='none'">
+
+    <div class="foverlay"></div><span class="epnum">EP 25</span>
+
+    <div class="fmeta"><div class="ftag">Spiritual Health &middot; Faith &amp; Mental Health &middot; Prayer</div><div class="ftitle">Two Pastors Reveal <em>What Real Spiritual Health Looks Like</em></div></div>
+
+  </div>
+
+  <div class="epbody">
+
+    <div class="epmeta"><span class="tag">Spiritual Health</span><span class="epdate">July 2026 &middot; 61 min</span></div>
+
+    <div class="epguest">Rev. Sara Nelson · First United Methodist Church + Pastor Brandon Dunham · Harrisburg UMC</div>
+
+    <p class="epdesc">Two pastors explain what spiritual health actually is, the signs yours is suffering, why prayer feels performative, how faith and therapy work together, and how to find a church without treating it like a restaurant.</p>
+
+    <div class="epfoot"><span class="epdur">&#9654; Watch &middot; Listen &middot; Read transcript</span><span class="epgo">Full episode &rarr;</span></div>
+
+  </div>
+</a>
+<a href="/podcast/episode-24-audiology-associates" class="epc feat">
+
+  <div class="fthumb">
+
+    <img src="https://img.youtube.com/vi/9FoesRYDq1g/maxresdefault.jpg" alt="" decoding="async" loading="lazy" onerror="this.setAttribute('data-failed','');this.style.display='none'">
+
+    <div class="foverlay"></div><span class="epnum">EP 24</span>
+
+    <div class="fmeta"><div class="ftag">Menopause &amp; Hearing &middot; Estrogen &middot; Hearing &amp; Dementia</div><div class="ftitle">Menopause, Hearing Loss, <em>and the Dementia Link No One Tells Women</em></div></div>
+
+  </div>
+
+  <div class="epbody">
+
+    <div class="epmeta"><span class="tag">Menopause &amp; Hearing</span><span class="epdate">June 2026 &middot; 33 min</span></div>
+
+    <div class="epguest">Dr. Mandy Rounseville-Norgaard, AuD · Audiology Associates · Sioux Falls, SD</div>
+
+    <p class="epdesc">The average person waits about 20 years to get hearing tested, and almost no one connects it to menopause or dementia risk. Dr. Mandy Rounseville-Norgaard explains the estrogen and inner-ear link and the first signs to watch.</p>
+
+    <div class="epfoot"><span class="epdur">&#9654; Watch &middot; Listen &middot; Read transcript</span><span class="epgo">Full episode &rarr;</span></div>
+
+  </div>
+</a>
+<a href="/podcast/episode-23-mega-strong-fitness" class="epc feat">
+
+  <div class="fthumb">
+
+    <img src="https://img.youtube.com/vi/rPVBvxhgshc/maxresdefault.jpg" alt="" decoding="async" loading="lazy" onerror="this.setAttribute('data-failed','');this.style.display='none'">
+
+    <div class="foverlay"></div><span class="epnum">EP 23</span>
+
+    <div class="fmeta"><div class="ftag">Workout Motivation &middot; Discipline &middot; Building the Habit</div><div class="ftitle">Everybody Wants It <em>Until the Alarm Goes Off</em></div></div>
+
+  </div>
+
+  <div class="epbody">
+
+    <div class="epmeta"><span class="tag">Workout Motivation</span><span class="epdate">June 2026 &middot; 53 min</span></div>
+
+    <div class="epguest">Megan &amp; Dirk Kool · Mega Strong Fitness · Sioux Falls, SD</div>
+
+    <p class="epdesc">Around 90 percent of people who join a gym quit within 90 days. Megan and Dirk Kool break down discipline over motivation, the six-alarms trick, and how anyone can train at home with two dumbbells, a band, and a chair.</p>
+
+    <div class="epfoot"><span class="epdur">&#9654; Watch &middot; Listen &middot; Read transcript</span><span class="epgo">Full episode &rarr;</span></div>
+
+  </div>
+</a>
+<a href="/podcast/episode-22-tallgrass-recovery" class="epc feat">
+
+  <div class="fthumb">
+
+    <img src="https://img.youtube.com/vi/9yao7aqX_ak/maxresdefault.jpg" alt="" decoding="async" loading="lazy" onerror="this.setAttribute('data-failed','');this.style.display='none'">
+
+    <div class="foverlay"></div><span class="epnum">EP 22</span>
+
+    <div class="fmeta"><div class="ftag">Addiction Recovery &middot; 12 Steps &middot; Sober Living</div><div class="ftitle">Sober 28 Years: <em>You Don't Have to Hit Rock Bottom</em></div></div>
+
+  </div>
+
+  <div class="epbody">
+
+    <div class="epmeta"><span class="tag">Addiction Recovery</span><span class="epdate">June 2026 &middot; 57 min</span></div>
+
+    <div class="epguest">Jon Sommervold · Tallgrass Recovery &amp; Sober Living Homes · Sioux Falls, SD</div>
+
+    <p class="epdesc">You do not have to hit rock bottom to get sober. Jon Sommervold runs a 30-night 12-step immersion that reaches roughly a 50 percent success rate, and shares his safer framing: choose your bottom.</p>
+
+    <div class="epfoot"><span class="epdur">&#9654; Watch &middot; Listen &middot; Read transcript</span><span class="epgo">Full episode &rarr;</span></div>
+
+  </div>
+</a>
+<a href="/podcast/episode-21-functional-fitness-over-40" class="epc feat">
+
+  <div class="fthumb">
+
+    <img src="https://img.youtube.com/vi/y68vEuFRmnw/maxresdefault.jpg" alt="" decoding="async" loading="lazy" onerror="this.setAttribute('data-failed','');this.style.display='none'">
+
+    <div class="foverlay"></div><span class="epnum">EP 21</span>
+
+    <div class="fmeta"><div class="ftag">Functional Fitness &middot; Over 40 &middot; Build Muscle</div><div class="ftitle">Functional Fitness Over 40: <em>Why You Don't Need to Sweat to Get Stronger</em></div></div>
+
+  </div>
+
+  <div class="epbody">
+
+    <div class="epmeta"><span class="tag">Functional Fitness</span><span class="epdate">June 2026 &middot; 40 min</span></div>
+
+    <div class="epguest">Will Sturgeon · MB Wellness · Sioux Falls, SD</div>
+
+    <p class="epdesc">You do not have to be sore or drenched in sweat to get stronger after 40. Will Sturgeon explains what functional fitness really is, what eight hours of sitting does to your body, and the 15 minutes a day that beat five days you cannot keep.</p>
+
+    <div class="epfoot"><span class="epdur">&#9654; Watch &middot; Listen &middot; Read transcript</span><span class="epgo">Full episode &rarr;</span></div>
+
+  </div>
+</a>
+<a href="/podcast/episode-20-perinatal-mental-health" class="epc feat">
+
+  <div class="fthumb">
+
+    <img src="https://img.youtube.com/vi/kCv8IcykGPQ/maxresdefault.jpg" alt="" decoding="async" loading="lazy" onerror="this.setAttribute('data-failed','');this.style.display='none'">
+
+    <div class="foverlay"></div><span class="epnum">EP 20</span>
+
+    <div class="fmeta"><div class="ftag">Postpartum Depression &middot; Anxiety &middot; Intrusive Thoughts</div><div class="ftitle">Postpartum Depression, Anxiety, and Intrusive Thoughts: <em>A Perinatal Therapist Explains</em></div></div>
+
+  </div>
+
+  <div class="epbody">
+
+    <div class="epmeta"><span class="tag">Postpartum Depression</span><span class="epdate">June 2026 &middot; 46 min</span></div>
+
+    <div class="epguest">Allison Steinwand, MS, LPC-MH, PMH-C · Archway Counseling &amp; Wellness · Sioux Falls, SD</div>
+
+    <p class="epdesc">Pregnancy rewires your brain more than any time since puberty. Allison Steinwand explains how to tell postpartum conditions apart, the warning signs of perinatal psychosis, and what real help looks like.</p>
+
+    <div class="epfoot"><span class="epdur">&#9654; Watch &middot; Listen &middot; Read transcript</span><span class="epgo">Full episode &rarr;</span></div>
+
+  </div>
+</a>
+<a href="/podcast/episode-19-wayne-marys-supplements" class="epc feat">
+
+  <div class="fthumb">
+
+    <img src="https://img.youtube.com/vi/TgCB9fAatbY/maxresdefault.jpg" alt="" decoding="async" loading="lazy" onerror="this.setAttribute('data-failed','');this.style.display='none'">
+
+    <div class="foverlay"></div><span class="epnum">EP 19</span>
+
+    <div class="fmeta"><div class="ftag">Supplements &middot; Magnesium &middot; D3 + K2</div><div class="ftitle">55 Years in Supplements: <em>The 5 We Take Daily and the Magnesium Mistake Everyone Makes</em></div></div>
+
+  </div>
+
+  <div class="epbody">
+
+    <div class="epmeta"><span class="tag">Supplements</span><span class="epdate">June 2026 &middot; 63 min</span></div>
+
+    <div class="epguest">Andrew &amp; Rosanne Reinartz · Wayne &amp; Mary's Nutrition Center · Sioux Falls, SD</div>
+
+    <p class="epdesc">After 55 years running Wayne &amp; Mary's, Andrew and Rosanne Reinartz walk through the 5 supplements most adults need daily, why magnesium glycinate beats oxide, why D3 needs K2, and why creatine is now essential for women.</p>
+
+    <div class="epfoot"><span class="epdur">&#9654; Watch &middot; Listen &middot; Read transcript</span><span class="epgo">Full episode &rarr;</span></div>
+
+  </div>
+</a>
+<a href="/podcast/episode-18-radiance-day-spa" class="epc feat">
+
+  <div class="fthumb">
+
+    <img src="https://img.youtube.com/vi/OTmsH6baDoY/maxresdefault.jpg" alt="" decoding="async" loading="lazy" onerror="this.setAttribute('data-failed','');this.style.display='none'">
+
+    <div class="foverlay"></div><span class="epnum">EP 18</span>
+
+    <div class="fmeta"><div class="ftag">HydraFacial &middot; Oxygen Facial &middot; Nervous System Skin</div><div class="ftitle">When Is a Facial <em>More Than a Facial?</em></div></div>
+
+  </div>
+
+  <div class="epbody">
+
+    <div class="epmeta"><span class="tag">HydraFacial</span><span class="epdate">May 2026 &middot; 30 min</span></div>
+
+    <div class="epguest">Sheri Roelfsema + Ashley Peterson + Meg Hammer · Radiance Day Spa · Sioux Falls, SD</div>
+
+    <p class="epdesc">The HydraFacial vs oxygen facial debate, settled. Why two people can get the same treatment and walk out with different skin, the cortisol-skin barrier link, and 8 facial myths debunked.</p>
+
+    <div class="epfoot"><span class="epdur">&#9654; Watch &middot; Listen &middot; Read transcript</span><span class="epgo">Full episode &rarr;</span></div>
+
+  </div>
+</a>
+<a href="/podcast/episode-17-stenzel-chiropractic" class="epc feat">
+
+  <div class="fthumb">
+
+    <img src="https://img.youtube.com/vi/bp_z8qcFV6M/maxresdefault.jpg" alt="" decoding="async" loading="lazy" onerror="this.setAttribute('data-failed','');this.style.display='none'">
+
+    <div class="foverlay"></div><span class="epnum">EP 17</span>
+
+    <div class="fmeta"><div class="ftag">Neuropathy &middot; NAD+ &middot; Mitochondrial Health</div><div class="ftitle">Reverse Peripheral Neuropathy: <em>6 Things Your Nerves Need to Heal That Gabapentin Misses</em></div></div>
+
+  </div>
+
+  <div class="epbody">
+
+    <div class="epmeta"><span class="tag">Neuropathy</span><span class="epdate">May 2026 &middot; 49 min</span></div>
+
+    <div class="epguest">Dr. Jordan Stenzel, DC · Stenzel Chiropractic Clinic · Mapleton + Mankato, MN</div>
+
+    <p class="epdesc">Peripheral neuropathy is a systemic metabolic breakdown that ends at the nerve. Dr. Jordan Stenzel on the six things a nerve needs to heal, why gabapentin just turns down the volume, and the 30-30-30 rule.</p>
+
+    <div class="epfoot"><span class="epdur">&#9654; Watch &middot; Listen &middot; Read transcript</span><span class="epgo">Full episode &rarr;</span></div>
+
+  </div>
+</a>
+<a href="/podcast/episode-16-baker-audiology" class="epc feat">
+
+  <div class="fthumb">
+
+    <img src="https://img.youtube.com/vi/5JlVBCY7geg/maxresdefault.jpg" alt="" decoding="async" loading="lazy" onerror="this.setAttribute('data-failed','');this.style.display='none'">
+
+    <div class="foverlay"></div><span class="epnum">EP 16</span>
+
+    <div class="fmeta"><div class="ftag">Audiology &middot; Hearing Loss &middot; Tinnitus</div><div class="ftitle">I Can Hear, but I Can't Understand: <em>Hearing in Pregnancy, Tinnitus, and the Brain Side of Audiology</em></div></div>
+
+  </div>
+
+  <div class="epbody">
+
+    <div class="epmeta"><span class="tag">Audiology</span><span class="epdate">May 2026 &middot; 45 min</span></div>
+
+    <div class="epguest">Melissa Baker + Dr. Libby Benson · Baker Audiology &amp; Hearing Aids · Sioux Falls, SD</div>
+
+    <p class="epdesc">Most people say I can hear, but I can't understand. It is a brain problem. Pregnancy and menopause hearing changes, why a baseline test in your 20s matters, and the LACE auditory training program.</p>
+
+    <div class="epfoot"><span class="epdur">&#9654; Watch &middot; Listen &middot; Read transcript</span><span class="epgo">Full episode &rarr;</span></div>
+
+  </div>
+</a>
+<a href="/podcast/episode-15-midlife-modern-woman" class="epc feat">
+
+  <div class="fthumb">
+
+    <img src="https://img.youtube.com/vi/dfVzxYkmN7w/maxresdefault.jpg" alt="" decoding="async" loading="lazy" onerror="this.setAttribute('data-failed','');this.style.display='none'">
+
+    <div class="foverlay"></div><span class="epnum">EP 15</span>
+
+    <div class="fmeta"><div class="ftag">GLP-1 &middot; Women's Hormones &middot; Genomics</div><div class="ftitle">GLP-1s, Muscle Loss, and the Bloodwork Story Behind <em>'I'm Fine'</em></div></div>
+
+  </div>
+
+  <div class="epbody">
+
+    <div class="epmeta"><span class="tag">GLP-1</span><span class="epdate">May 2026 &middot; 62 min</span></div>
+
+    <div class="epguest">Jennifer Oknin · Midlife Modern Woman · Virtual practice</div>
+
+    <p class="epdesc">The answer most women are looking for is sitting in their blood work. Jennifer Oknin on normal vs optimal labs, when GLP-1s help and when they cause muscle and bone loss, and the hormone panel every woman should have.</p>
+
+    <div class="epfoot"><span class="epdur">&#9654; Watch &middot; Listen &middot; Read transcript</span><span class="epgo">Full episode &rarr;</span></div>
+
+  </div>
+</a>
+<a href="/podcast/episode-14-empoweru" class="epc feat">
+
+  <div class="fthumb">
+
+    <img src="https://img.youtube.com/vi/vj9j21yUEuc/maxresdefault.jpg" alt="" decoding="async" loading="lazy" onerror="this.setAttribute('data-failed','');this.style.display='none'">
+
+    <div class="foverlay"></div><span class="epnum">EP 14</span>
+
+    <div class="fmeta"><div class="ftag">Dry Needling &middot; Performance PT &middot; Trigger Points</div><div class="ftitle">Dry Needling and the Root Cause of Pain: <em>Performance PT With Nathan LeMaster</em></div></div>
+
+  </div>
+
+  <div class="epbody">
+
+    <div class="epmeta"><span class="tag">Dry Needling</span><span class="epdate">May 2026 &middot; 27 min</span></div>
+
+    <div class="epguest">Nathan LeMaster, PT, DPT, SCS, CSCS · EmpowerU · Sioux Falls, Omaha, Austin</div>
+
+    <p class="epdesc">The side of your pain is rarely the source. Nathan LeMaster on dry needling, the twitch response, and the cash-pay performance PT model that puts a full hour with a doctorate-level clinician on every visit.</p>
+
+    <div class="epfoot"><span class="epdur">&#9654; Watch &middot; Listen &middot; Read transcript</span><span class="epgo">Full episode &rarr;</span></div>
+
+  </div>
+</a>
+<a href="/podcast/episode-13-origin-nutrition" class="epc feat">
+
+  <div class="fthumb">
+
+    <img src="https://img.youtube.com/vi/7xtdhSlX8Xo/maxresdefault.jpg" alt="" decoding="async" loading="lazy" onerror="this.setAttribute('data-failed','');this.style.display='none'">
+
+    <div class="foverlay"></div><span class="epnum">EP 13</span>
+
+    <div class="fmeta"><div class="ftag">Men's Nutrition &middot; TRT &middot; GLP-1</div><div class="ftitle">Men's Nutrition Playbook for Midlife: <em>How to Lose Belly Fat Without TRT or GLP-1s</em></div></div>
+
+  </div>
+
+  <div class="epbody">
+
+    <div class="epmeta"><span class="tag">Men's Nutrition</span><span class="epdate">May 2026 &middot; 35 min</span></div>
+
+    <div class="epguest">Dr. Joe Moen, DC, CCSP · Origin Health · Sioux Falls, SD</div>
+
+    <p class="epdesc">The foundation is the shortcut. Joe Moen on protein targets for men over 40, when TRT and peptides and GLP-1s make sense, and why exercise outperforms a peptide stack for the average midlife guy.</p>
+
+    <div class="epfoot"><span class="epdur">&#9654; Watch &middot; Listen &middot; Read transcript</span><span class="epgo">Full episode &rarr;</span></div>
+
+  </div>
+</a>
+<a href="/podcast/episode-12-midwest-street-medicine" class="epc feat">
+
+  <div class="fthumb">
+
+    <img src="https://img.youtube.com/vi/7p-W0_dlzV8/maxresdefault.jpg" alt="" decoding="async" loading="lazy" onerror="this.setAttribute('data-failed','');this.style.display='none'">
+
+    <div class="foverlay"></div><span class="epnum">EP 12</span>
+
+    <div class="fmeta"><div class="ftag">Street Medicine &middot; Harm Reduction &middot; Public Health</div><div class="ftitle">What Most People Get Wrong About Homelessness <em>(From a Doctor on the Streets)</em></div></div>
+
+  </div>
+
+  <div class="epbody">
+
+    <div class="epmeta"><span class="tag">Street Medicine</span><span class="epdate">May 2026 &middot; 26 min</span></div>
+
+    <div class="epguest">Dr. Melissa Mo Dittberner, PhD · Midwest Street Medicine · Sioux Falls, SD</div>
+
+    <p class="epdesc">Most healthcare waits for people to walk in the door. Midwest Street Medicine walks out to find them. Mo on harm reduction, addiction care, and the myths most people repeat without thinking.</p>
+
+    <div class="epfoot"><span class="epdur">&#9654; Watch &middot; Listen &middot; Read transcript</span><span class="epgo">Full episode &rarr;</span></div>
+
+  </div>
+</a>
+<a href="/podcast/episode-11-paula-lain-counseling" class="epc feat">
+
+  <div class="fthumb">
+
+    <img src="https://img.youtube.com/vi/fIv7QeFaWEQ/maxresdefault.jpg" alt="" decoding="async" loading="lazy" onerror="this.setAttribute('data-failed','');this.style.display='none'">
+
+    <div class="foverlay"></div><span class="epnum">EP 11</span>
+
+    <div class="fmeta"><div class="ftag">AI Therapy &middot; ChatGPT &middot; Mental Health</div><div class="ftitle">Is ChatGPT Actually Therapy? <em>What a Clinical Therapist Says AI Gets Wrong</em></div></div>
+
+  </div>
+
+  <div class="epbody">
+
+    <div class="epmeta"><span class="tag">AI Therapy</span><span class="epdate">April 2026 &middot; 34 min</span></div>
+
+    <div class="epguest">Paula Lain Smykle, LPC · Paula Lain Counseling and Co. · Sioux Falls, SD</div>
+
+    <p class="epdesc">Paula Lain Smykle breaks down what really happens when you use ChatGPT as your therapist, why the validation loop makes anxiety worse, and how dog-assisted counseling reaches clients who stay shut down.</p>
+
+    <div class="epfoot"><span class="epdur">&#9654; Watch &middot; Listen &middot; Read transcript</span><span class="epgo">Full episode &rarr;</span></div>
+
+  </div>
+</a>
+<a href="/podcast/episode-10-radiant-hormones" class="epc feat">
+
+  <div class="fthumb">
+
+    <img src="https://img.youtube.com/vi/OVpgXncV8CE/maxresdefault.jpg" alt="" decoding="async" loading="lazy" onerror="this.setAttribute('data-failed','');this.style.display='none'">
+
+    <div class="foverlay"></div><span class="epnum">EP 10</span>
+
+    <div class="fmeta"><div class="ftag">Endocrine Disruptors &middot; Hormones &middot; Functional Medicine</div><div class="ftitle">Your Couch, Perfume, and Makeup <em>Are Sabotaging Your Hormones</em></div></div>
+
+  </div>
+
+  <div class="epbody">
+
+    <div class="epmeta"><span class="tag">Endocrine Disruptors</span><span class="epdate">April 2026 &middot; 28 min</span></div>
+
+    <div class="epguest">Jessica Morrell, NP · Radiant Health and Hormone Therapy · Sioux Falls, SD</div>
+
+    <p class="epdesc">Jessica Morrell on endocrine disruptors and how everyday plastics, fragrances, and water can hijack hormone balance, plus the receptor problem that explains why hormone therapy sometimes stops working.</p>
+
+    <div class="epfoot"><span class="epdur">&#9654; Watch &middot; Listen &middot; Read transcript</span><span class="epgo">Full episode &rarr;</span></div>
+
+  </div>
+</a>
+<a href="/podcast/episode-09-kore-cares-homecare" class="epc feat">
+
+  <div class="fthumb">
+
+    <img src="https://img.youtube.com/vi/ztsHYJTbHVY/maxresdefault.jpg" alt="" decoding="async" loading="lazy" onerror="this.setAttribute('data-failed','');this.style.display='none'">
+
+    <div class="foverlay"></div><span class="epnum">EP 09</span>
+
+    <div class="fmeta"><div class="ftag">Home Care &middot; Aging Parents &middot; Medicare</div><div class="ftitle">Don't Wait for a Crisis: <em>Signs Your Aging Parent Needs In-Home Care</em></div></div>
+
+  </div>
+
+  <div class="epbody">
+
+    <div class="epmeta"><span class="tag">Home Care</span><span class="epdate">April 2026 &middot; 28 min</span></div>
+
+    <div class="epguest">Gabrielle Hoing · Kore Cares · Eastern South Dakota</div>
+
+    <p class="epdesc">Gabrielle Hoing walks through when families should call for home care, what a caregiver does day to day, the Medicare and private-pay reality, and how to talk with a parent who refuses help.</p>
+
+    <div class="epfoot"><span class="epdur">&#9654; Watch &middot; Listen &middot; Read transcript</span><span class="epgo">Full episode &rarr;</span></div>
+
+  </div>
+</a>
+<a href="/podcast/episode-08-alchemy-house" class="epc feat">
+
+  <div class="fthumb">
+
+    <img src="https://img.youtube.com/vi/HnoicWaCAoQ/maxresdefault.jpg" alt="" decoding="async" loading="lazy" onerror="this.setAttribute('data-failed','');this.style.display='none'">
+
+    <div class="foverlay"></div><span class="epnum">EP 08</span>
+
+    <div class="fmeta"><div class="ftag">Nervous System Reset &middot; Energetic Wellness &middot; Halo Therapy</div><div class="ftitle">Why Your Nervous System Is Running the Show <em>and How to Reset It</em></div></div>
+
+  </div>
+
+  <div class="epbody">
+
+    <div class="epmeta"><span class="tag">Nervous System Reset</span><span class="epdate">April 2026 &middot; 32 min</span></div>
+
+    <div class="epguest">Megan Randall + Jillian Gunlicks · Alchemy House · Sioux Falls, SD</div>
+
+    <p class="epdesc">Megan and Jillian walk through halo therapy, the Bio Charger, Lucia light, Reiki, sound therapy, and breathwork, plus the honest answer on whether energy work is legitimate.</p>
+
+    <div class="epfoot"><span class="epdur">&#9654; Watch &middot; Listen &middot; Read transcript</span><span class="epgo">Full episode &rarr;</span></div>
+
+  </div>
+</a>
+<a href="/podcast/episode-07-kinetico" class="epc feat">
+
+  <div class="fthumb">
+
+    <img src="https://img.youtube.com/vi/WffbgP76HYY/maxresdefault.jpg" alt="" decoding="async" loading="lazy" onerror="this.setAttribute('data-failed','');this.style.display='none'">
+
+    <div class="foverlay"></div><span class="epnum">EP 07</span>
+
+    <div class="fmeta"><div class="ftag">Water Quality &middot; PFAS &middot; Chloramines</div><div class="ftitle">Is Tap Water Actually Safe? <em>PFAS, Chloramines and What's In Your Water</em></div></div>
+
+  </div>
+
+  <div class="epbody">
+
+    <div class="epmeta"><span class="tag">Water Quality</span><span class="epdate">April 2026 &middot; 30 min</span></div>
+
+    <div class="epguest">Julene Edwards · Kinetico Water Systems · Sioux Falls, SD</div>
+
+    <p class="epdesc">Julene Edwards breaks down what is actually in Sioux Falls tap water, the switch from chlorine to chloramines, PFAS and the wells shut down in 2016, and what whole-home filtration solves.</p>
+
+    <div class="epfoot"><span class="epdur">&#9654; Watch &middot; Listen &middot; Read transcript</span><span class="epgo">Full episode &rarr;</span></div>
+
+  </div>
+</a>
+<a href="/podcast/episode-06-cortisol-stress" class="epc feat">
+
+  <div class="fthumb">
+
+    <img src="https://img.youtube.com/vi/oxEGiZ-ivFU/maxresdefault.jpg" alt="" decoding="async" loading="lazy" onerror="this.setAttribute('data-failed','');this.style.display='none'">
+
+    <div class="foverlay"></div><span class="epnum">EP 06</span>
+
+    <div class="fmeta"><div class="ftag">Cortisol &middot; Functional Medicine &middot; HRV</div><div class="ftitle">Is Cortisol Making You Gain Weight? <em>What Your Doctor Isn't Telling You</em></div></div>
+
+  </div>
+
+  <div class="epbody">
+
+    <div class="epmeta"><span class="tag">Cortisol</span><span class="epdate">April 2026 &middot; 35 min</span></div>
+
+    <div class="epguest">Dr. Jessica Pearson, MD · Prairie Roots Health · Sioux Falls, SD</div>
+
+    <p class="epdesc">Dr. Jessica Pearson, Air Force veteran and functional medicine physician, explains how cortisol affects weight, hormones, and HRV, plus what to try before hormone replacement.</p>
+
+    <div class="epfoot"><span class="epdur">&#9654; Watch &middot; Listen &middot; Read transcript</span><span class="epgo">Full episode &rarr;</span></div>
+
+  </div>
+</a>
+<a href="/podcast/episode-05-hormones-hrt" class="epc feat">
+
+  <div class="fthumb">
+
+    <img src="https://img.youtube.com/vi/FTyqFRYGyt8/maxresdefault.jpg" alt="" decoding="async" loading="lazy" onerror="this.setAttribute('data-failed','');this.style.display='none'">
+
+    <div class="foverlay"></div><span class="epnum">EP 05</span>
+
+    <div class="fmeta"><div class="ftag">Testosterone &middot; Hormone Replacement &middot; Bioidentical</div><div class="ftitle">The Missing Hormone <em>Most Women Never Get Tested For</em></div></div>
+
+  </div>
+
+  <div class="epbody">
+
+    <div class="epmeta"><span class="tag">Testosterone</span><span class="epdate">April 2026 &middot; 27 min</span></div>
+
+    <div class="epguest">Mary Jordan, FNP-C · Encompass Wellness &amp; Aesthetics · Sioux Falls, SD</div>
+
+    <p class="epdesc">Mary Jordan explains why testosterone is the first hormone women lose, how it affects everything from energy to belly fat, and why most doctors never check it.</p>
+
+    <div class="epfoot"><span class="epdur">&#9654; Watch &middot; Listen &middot; Read transcript</span><span class="epgo">Full episode &rarr;</span></div>
+
+  </div>
+</a>
+<a href="/podcast/episode-04-peptide-therapy" class="epc feat">
+
+  <div class="fthumb">
+
+    <img src="https://img.youtube.com/vi/PP_qCwy2Huk/maxresdefault.jpg" alt="" decoding="async" loading="lazy" onerror="this.setAttribute('data-failed','');this.style.display='none'">
+
+    <div class="foverlay"></div><span class="epnum">EP 04</span>
+
+    <div class="fmeta"><div class="ftag">Peptides &middot; Weight Loss &middot; Functional Medicine</div><div class="ftitle">Peptide Therapy Explained by an NP: <em>Weight Loss, Stacking, and Sourcing</em></div></div>
+
+  </div>
+
+  <div class="epbody">
+
+    <div class="epmeta"><span class="tag">Peptides</span><span class="epdate">March 2026 &middot; 45 min</span></div>
+
+    <div class="epguest">Ashley Wagner, NP · Vitalis Movement and Wellness · Harrisburg, SD</div>
+
+    <p class="epdesc">What exactly is a peptide? Which one is best for weight loss? Ashley Wagner breaks down peptide therapy, sourcing safety, growth hormone, stacking, and what your first consult looks like.</p>
+
+    <div class="epfoot"><span class="epdur">&#9654; Watch &middot; Listen &middot; Read transcript</span><span class="epgo">Full episode &rarr;</span></div>
+
+  </div>
+</a>
+<a href="/podcast/episode-03-transitions-doula" class="epc feat">
+
+  <div class="fthumb">
+
+    <img src="https://img.youtube.com/vi/HmZM9GK-L_A/maxresdefault.jpg" alt="" decoding="async" loading="lazy" onerror="this.setAttribute('data-failed','');this.style.display='none'">
+
+    <div class="foverlay"></div><span class="epnum">EP 03</span>
+
+    <div class="fmeta"><div class="ftag">Birth Doula &middot; Postpartum &middot; End of Life</div><div class="ftitle">What Does a Doula Do? <em>Birth, Postpartum and End of Life Support</em></div></div>
+
+  </div>
+
+  <div class="epbody">
+
+    <div class="epmeta"><span class="tag">Birth Doula</span><span class="epdate">March 2026 &middot; 35 min</span></div>
+
+    <div class="epguest">Kelsie Thomas + Renee Forred · Transitions Doula Services · Sioux Falls, SD</div>
+
+    <p class="epdesc">Birth doulas, postpartum doulas, and end of life doulas. Kelsie and Renee support people at life's most vulnerable moments, from first breath to last breath, plus real client stories.</p>
+
+    <div class="epfoot"><span class="epdur">&#9654; Watch &middot; Listen &middot; Read transcript</span><span class="epgo">Full episode &rarr;</span></div>
+
+  </div>
+</a>
+<a href="/podcast/episode-02-kore-cares" class="epc feat">
+
+  <div class="fthumb">
+
+    <img src="https://img.youtube.com/vi/hzaISL8HXu8/maxresdefault.jpg" alt="" decoding="async" loading="lazy" onerror="this.setAttribute('data-failed','');this.style.display='none'">
+
+    <div class="foverlay"></div><span class="epnum">EP 02</span>
+
+    <div class="fmeta"><div class="ftag">In-Home Care &middot; Veterans &middot; Caregiving</div><div class="ftitle">22 Surgeries Later, <em>This Marine Asked for Help</em></div></div>
+
+  </div>
+
+  <div class="epbody">
+
+    <div class="epmeta"><span class="tag">In-Home Care</span><span class="epdate">March 2026 &middot; 30 min</span></div>
+
+    <div class="epguest">Clark Bevens + Kore Cares Team · Sioux Falls + 38 Counties, SD</div>
+
+    <p class="epdesc">A Marine veteran and MMA fighter with 22 surgeries talks about the hardest fight of all: asking for help. Plus how Kore Cares matches caregivers with clients across South Dakota.</p>
+
+    <div class="epfoot"><span class="epdur">&#9654; Watch &middot; Listen &middot; Read transcript</span><span class="epgo">Full episode &rarr;</span></div>
+
+  </div>
+</a>
+<a href="/podcast/episode-01-midwest-hyperbarics" class="epc feat">
+
+  <div class="fthumb">
+
+    <img src="https://img.youtube.com/vi/JCfdU-lgM7c/maxresdefault.jpg" alt="" decoding="async" loading="lazy" onerror="this.setAttribute('data-failed','');this.style.display='none'">
+
+    <div class="foverlay"></div><span class="epnum">EP 01</span>
+
+    <div class="fmeta"><div class="ftag">HBOT &middot; Wound Healing &middot; Recovery</div><div class="ftitle">Can HBOT Heal Herniated Discs, <em>Anxiety and Addiction?</em></div></div>
+
+  </div>
+
+  <div class="epbody">
+
+    <div class="epmeta"><span class="tag">HBOT</span><span class="epdate">March 2026 &middot; 22 min</span></div>
+
+    <div class="epguest">Dr. Dan Todd + Team · Midwest Hyperbarics · Sioux Falls, SD</div>
+
+    <p class="epdesc">Wound healing, TBI, sudden hearing loss, addiction recovery, chronic pain. The team at Midwest Hyperbarics breaks down the science and shares real patient outcomes.</p>
+
+    <div class="epfoot"><span class="epdur">&#9654; Watch &middot; Listen &middot; Read transcript</span><span class="epgo">Full episode &rarr;</span></div>
+
+  </div>
+</a>
+</div>
+    <div class="dx-all"><a class="btn ghost-dark" data-dx="all">See all episodes</a></div>
+  </div>
+</section>
+
+<section class="sec dx-topics" id="dx-topics">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><span class="eyebrow dark">Browse by Topic</span><h2 class="h2">Start with <em>what you need.</em></h2></div>
+    </div>
+    <div class="tiles">
+      <a class="tile" data-k="neuropath|nerve" data-n="Neuropathy"><span class="ic"><svg class="i" viewBox="0 0 24 24"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg></span><b>Neuropathy and Nerve Health</b><small>Episodes</small></a>
+      <a class="tile" data-k="hormone|testosterone|menopause|cortisol|endocrine|estrogen|HRT" data-n="Hormones"><span class="ic"><svg class="i" viewBox="0 0 24 24"><circle cx="6" cy="7" r="2.5"/><circle cx="18" cy="7" r="2.5"/><circle cx="12" cy="17" r="2.5"/><path d="M8.2 8.4 10.8 15M15.8 8.4 13.2 15M8.5 7h7"/></svg></span><b>Hormones</b><small>Episodes</small></a>
+      <a class="tile" data-k="sleep|insomnia|apnea" data-n="Sleep"><span class="ic"><svg class="i" viewBox="0 0 24 24"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg></span><b>Sleep</b><small>Episodes</small></a>
+      <a class="tile" data-k="nutrition|protein|supplement|eating|GLP-1|metabolic|belly fat|food" data-n="Nutrition"><span class="ic"><svg class="i" viewBox="0 0 24 24"><path d="M5 19c0-8 6-14 15-14 0 9-6 15-14 15"/><path d="M5 19 13 11"/></svg></span><b>Nutrition</b><small>Episodes</small></a>
+      <a class="tile" data-k="hearing|audiolog|tinnitus" data-n="Hearing"><span class="ic"><svg class="i" viewBox="0 0 24 24"><path d="M4 12h2M8.5 8v8M12 5v14M15.5 8v8M20 12h-2"/></svg></span><b>Hearing</b><small>Episodes</small></a>
+      <a class="tile" data-k="mental health|anxiety|depression|therapist|counsel|addiction|recovery|trauma|spiritual|nervous system" data-n="Mental Health"><span class="ic"><svg class="i" viewBox="0 0 24 24"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20.5l1.4-4.8A8 8 0 1 1 21 12z"/></svg></span><b>Mental Health and Mindset</b><small>Episodes</small></a>
+      <a class="tile" data-k="pelvic|postpartum|pregnan|women|menopause|breast|doula|mastectomy" data-n="Women's Health"><span class="ic"><svg class="i" viewBox="0 0 24 24"><path d="M12 20s-7.5-4.6-7.5-10A4.3 4.3 0 0 1 12 7.4 4.3 4.3 0 0 1 19.5 10c0 5.4-7.5 10-7.5 10z"/></svg></span><b>Women's Health and Pelvic Floor</b><small>Episodes</small></a>
+      <a class="tile" data-k="peptide|longevity|NAD|HBOT|hyperbaric|aging|fitness|over 40" data-n="Longevity"><span class="ic"><svg class="i" viewBox="0 0 24 24"><path d="M7 3c0 6 10 6 10 12s-10 0-10 6M17 3c0 6-10 6-10 12M17 21c0-2-1-3-2.5-4"/><path d="M8.5 6h7M8.5 18h7"/></svg></span><b>Peptides, Fitness and Longevity</b><small>Episodes</small></a>
+    </div>
+  </div>
+</section>
+
+<section class="sec dx-experts">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><span class="eyebrow">The Experts</span><h2 class="h2">Straight answers from<br><em>the people who do this work.</em></h2><p class="sub">Physicians, therapists, practitioners and specialists you can book.</p></div>
+      <a class="more" style="color:var(--teal)" href="/the-directory">Find a provider &rarr;</a>
+    </div>
+    <div class="people">
+      <a class="person" href="/podcast/episode-32-sleep"><div class="face" style="background-image:url(https://img.youtube.com/vi/EdgkR-5vcFI/maxresdefault.jpg);background-size:295.6% auto;background-position:95.3% 2.2%"></div><div class="bar"><b>Dr. Jerome Puryear, MD</b><small>Obesity Medicine + Sleep</small></div></a>
+      <a class="person" href="/podcast/episode-31-airpods-hearing-aids"><div class="face" style="background-image:url(https://img.youtube.com/vi/-A7lhpX7Ly4/maxresdefault.jpg);background-size:347.8% auto;background-position:100% 15.8%"></div><div class="bar"><b>Dr. Mandy Rounseville-Norgaard, AuD</b><small>Audiology</small></div></a>
+      <a class="person" href="/podcast/episode-36-well-balanced-pt"><div class="face" style="background-image:url(https://img.youtube.com/vi/9bkNjH61hRY/maxresdefault.jpg);background-size:247.6% auto;background-position:77.5% 0%"></div><div class="bar"><b>Ember Smith, PT, DPT</b><small>Pelvic Floor PT</small></div></a>
+      <a class="person" href="/podcast/episode-33-direct-primary-care"><div class="face" style="background-image:url(https://img.youtube.com/vi/twuEEWr9904/maxresdefault.jpg);background-size:286.4% auto;background-position:96% 24.1%"></div><div class="bar"><b>Sam Niewenhuis, NP</b><small>Direct Primary Care</small></div></a>
+      <a class="person" href="/podcast/episode-37-peripheral-neuropathy-part-ii"><div class="face" style="background-image:url(https://img.youtube.com/vi/-AdmSQF22yg/maxresdefault.jpg);background-size:222.2% auto;background-position:100% 0%"></div><div class="bar"><b>Dr. Jordan Stenzel, DC</b><small>Neuropathy</small></div></a>
+      <a class="person" href="/podcast/episode-27-metabolic-health"><div class="face" style="background-image:url(https://img.youtube.com/vi/oVq3QjT-ZKY/maxresdefault.jpg);background-size:352.6% auto;background-position:85.4% 14.6%"></div><div class="bar"><b>Jessica Morrell, CNP, IFMCP</b><small>Hormones + Metabolic Health</small></div></a>
+    </div>
+  </div>
+</section>
+
+<section class="sec dx-feat" id="dx-featured">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><span class="eyebrow dark">Featured Providers</span><h2 class="h2">Heard them on the show? <em>Book them.</em></h2></div>
+      <a class="more" href="/the-directory">Search the directory &rarr;</a>
+    </div>
+    <div class="feat-list">
+      <a class="prov" href="/directory/functional-medicine/prairie-roots-health"><span class="pb">Featured</span><b>Prairie Roots Health</b><small>Functional Medicine &middot; Sioux Falls + Virtual</small><span class="go">View profile &rarr;</span></a>
+      <a class="prov" href="/directory/functional-medicine/radiant-health-and-hormone-therapy"><span class="pb">Featured</span><b>Radiant Health and Hormone Therapy</b><small>Functional Medicine &middot; Sioux Falls + Virtual</small><span class="go">View profile &rarr;</span></a>
+      <a class="prov" href="/directory/chiropractic-care/stenzel-chiropractic-clinic"><span class="pb">Featured</span><b>Stenzel Chiropractic Clinic</b><small>Chiropractic Care &middot; Mapleton + Mankato, MN</small><span class="go">View profile &rarr;</span></a>
+      <a class="prov" href="/directory/hyperbaric-therapy/midwest-hyperbarics"><span class="pb">Featured</span><b>Midwest Hyperbarics</b><small>Hyperbaric Therapy &middot; Sioux Falls</small><span class="go">View profile &rarr;</span></a>
+      <a class="prov" href="/directory/home-health-caregiving/kore-cares"><span class="pb">Featured</span><b>Kore Cares</b><small>Home Health and Caregiving &middot; Sioux Falls</small><span class="go">View profile &rarr;</span></a>
+      <a class="prov" href="/directory/herbal-apothecary/moonfarma"><span class="pb">Featured</span><b>MoonFarma Herbal Apothecary</b><small>Herbal and Apothecary &middot; Sioux Falls + Nationwide</small><span class="go">View profile &rarr;</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="dx-listen">
+  <div class="wrap">
+    <span class="eyebrow dark">Listen and Watch Everywhere</span>
+    <div class="badges">
+      <a class="bdg" href="https://www.youtube.com/@dialedinhealth" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="#fff"><path d="M23 7.2a3 3 0 0 0-2.1-2.1C19 4.6 12 4.6 12 4.6s-7 0-8.9.5A3 3 0 0 0 1 7.2 31 31 0 0 0 .5 12a31 31 0 0 0 .5 4.8 3 3 0 0 0 2.1 2.1c1.9.5 8.9.5 8.9.5s7 0 8.9-.5a3 3 0 0 0 2.1-2.1c.4-1.6.5-3.2.5-4.8s-.1-3.2-.5-4.8zM9.7 15.1V8.9l5.8 3.1-5.8 3.1z"/></svg><span>Watch on<b>YouTube</b></span></a>
+      <a class="bdg" href="https://open.spotify.com/show/2AIQu4k8DINEq06vl3LITn" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="11" fill="#1DB954"/><path d="M6.5 9.3c3.6-1 7.6-.7 11 1M7.2 12.4c3-.8 6.1-.5 8.9.9M7.8 15.3c2.3-.6 4.6-.4 6.7.7" stroke="#000" stroke-width="1.7" fill="none" stroke-linecap="round"/></svg><span>Listen on<b>Spotify</b></span></a>
+      <a class="bdg" href="https://podcasts.apple.com/us/podcast/dialed-in-health/id1885383990" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.7" stroke-linecap="round"><circle cx="12" cy="10" r="2.6"/><path d="M12 13.5v7.5M7.2 15.5a7 7 0 1 1 9.6 0M4.6 18a10 10 0 1 1 14.8 0"/></svg><span>Listen on<b>Apple Podcasts</b></span></a>
+      <a class="bdg" href="https://www.iheart.com/podcast/263-dialed-in-health-326899524" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.7" stroke-linecap="round"><path d="M3 12h3l2-6 3 12 3-9 2 5 2-2h3"/></svg><span>Listen on<b>iHeartRadio</b></span></a>
+    </div>
+  </div>
+</section>
+
+<section class="dx-news">
+  <div class="wrap">
+    <div>
+      <div class="rule"><span class="eyebrow">The Newsletter</span></div>
+      <h2>Get the next episode <span>before anyone else.</span></h2>
+      <p>New episodes, provider spotlights, and the questions people are actually asking. Once a week.</p>
+    </div>
+    <div class="side">
+      <a class="btn teal" href="https://dialedinhealth.kit.com/bc70e0bc47" target="_blank" rel="noopener">Subscribe Free</a>
+      <small>Know someone who needs this? Send it to them.</small>
+    </div>
+  </div>
+</section>
+
+<section class="dx-guest">
+  <div class="wrap">
+    <div>
+      <h2>Are you a provider?<br>I want you on the show.</h2>
+      <p>Every guest gets an episode page, a full transcript, a directory listing, and clips built for search and AI.</p>
+    </div>
+    <a class="btn ink" href="https://dialedinhealth.kit.com/39b0bb5dc1" target="_blank" rel="noopener">Apply to Be a Guest &rarr;</a>
+  </div>
+</section>
+
+<footer class="dx-foot">
+  <div class="wrap">
+    <div class="top">
+      <div><span class="dx-wm" role="img" aria-label="Dialed In Health"></span><div class="mission">Making health and wellness accessible to everyone.</div><div class="sign">The line is open.</div></div>
+      <div class="col"><h5>Podcast</h5><a href="/podcast/episode-38-high-protein-foods" data-latest>Latest episode</a><a href="#dx-episodes" data-dx="all">All episodes</a><a href="#dx-topics">Topics</a><a href="/guides">Guides</a></div>
+      <div class="col"><h5>Directory</h5><a href="/the-directory">Search the directory</a><a href="#dx-featured">Featured Providers</a></div>
+      <div class="col"><h5>About</h5><a href="/melissa-goodwin">Meet the host</a><a href="/about">About</a><a href="https://dialedinhealth.kit.com/39b0bb5dc1" target="_blank" rel="noopener">Be a guest</a><a href="/newsletter">Newsletter</a><a href="/advertise">Advertise with us</a></div>
+    </div>
+    <div class="bottom">
+      <span>&copy; 2026 Dialed In Health. Produced by <a href="https://www.vitalitygrowthlabs.com" target="_blank" rel="noopener">Vitality Growth Labs</a>.</span>
+      <div class="dx-social" style="display:flex;gap:18px">
+        <a href="https://www.youtube.com/@dialedinhealth" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24" style="width:20px;height:20px;fill:#fff"><path d="M23 7.2a3 3 0 0 0-2.1-2.1C19 4.6 12 4.6 12 4.6s-7 0-8.9.5A3 3 0 0 0 1 7.2 31 31 0 0 0 .5 12a31 31 0 0 0 .5 4.8 3 3 0 0 0 2.1 2.1c1.9.5 8.9.5 8.9.5s7 0 8.9-.5a3 3 0 0 0 2.1-2.1c.4-1.6.5-3.2.5-4.8s-.1-3.2-.5-4.8zM9.7 15.1V8.9l5.8 3.1-5.8 3.1z"/></svg></a>
+        <a href="https://www.instagram.com/dialedin_health" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" style="width:20px;height:20px;fill:none;stroke:#fff;stroke-width:2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.2" style="fill:#fff;stroke:none"/></svg></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</div>
+
+<script>
+(function(){
+  var root=document.getElementById('dihx'); if(!root) return;
+  /* full width: break out of the Squarespace column */
+  function fit(){ root.style.left='0px'; var r=root.getBoundingClientRect(); var w=document.documentElement.clientWidth; root.style.width=w+'px'; root.style.left=(-r.left)+'px'; }
+  fit(); window.addEventListener('resize',fit); window.addEventListener('load',fit); setTimeout(fit,300); setTimeout(fit,1200);
+  /* phone menu */
+  var bg=root.querySelector('.dx-burger'); if(bg) bg.addEventListener('click',function(){ root.classList.toggle('menu-open'); });
+  root.querySelectorAll('.dx-menu a').forEach(function(a){ a.addEventListener('click',function(){ root.classList.remove('menu-open'); }); });
+  /* episodes: newest + 6, then See all */
+  var list=root.querySelector('.eplist'); if(!list) return;
+  /* newest episode = first card: badge, Latest Episode button, footer link */
+  var first=list.querySelector('.epc');
+  if(first){
+    var nh=first.getAttribute('href');
+    root.querySelectorAll('[data-latest]').forEach(function(a){ a.setAttribute('href',nh); });
+    list.querySelectorAll('.badge').forEach(function(b){ if(!first.contains(b)) b.parentNode.removeChild(b); });
+    if(!first.querySelector('.badge')){ var en=first.querySelector('.epnum'); if(en) en.insertAdjacentHTML('afterend','<span class="badge">NEW - LIVE</span>'); }
+  }
+  var cards=[].slice.call(list.querySelectorAll('.epc'));
+  list.classList.add('collapsed');
+  var allWrap=root.querySelector('.dx-all'), allBtn=allWrap&&allWrap.querySelector('a');
+  if(allBtn) allBtn.textContent='See all '+cards.length+' episodes';
+  var filterBar=root.querySelector('.dx-filter'), fname=root.querySelector('.dx-fname');
+  function showAll(){ cards.forEach(function(c){c.classList.remove('dx-hide');}); list.classList.remove('collapsed'); if(allWrap) allWrap.style.display='none'; filterBar.classList.remove('on'); }
+  function reset(){ cards.forEach(function(c){c.classList.remove('dx-hide');}); list.classList.add('collapsed'); if(allWrap) allWrap.style.display=''; filterBar.classList.remove('on'); }
+  root.querySelectorAll('[data-dx="all"]').forEach(function(a){ a.addEventListener('click',function(e){ e.preventDefault(); showAll(); document.getElementById('dx-episodes').scrollIntoView({behavior:'smooth'}); }); });
+  root.querySelectorAll('[data-dx="clear"]').forEach(function(a){ a.addEventListener('click',function(e){ e.preventDefault(); reset(); }); });
+  /* topic tiles filter the episode list */
+  root.querySelectorAll('.tile[data-k]').forEach(function(t){
+    var re=new RegExp(t.getAttribute('data-k'),'i');
+    var n=cards.filter(function(c){ return re.test(c.textContent); }).length;
+    var sm=t.querySelector('small'); if(sm) sm.textContent=n+' episode'+(n===1?'':'s');
+    t.addEventListener('click',function(e){
+      e.preventDefault();
+      cards.forEach(function(c){ c.classList.toggle('dx-hide',!re.test(c.textContent)); });
+      list.classList.remove('collapsed'); if(allWrap) allWrap.style.display='none';
+      fname.textContent=t.getAttribute('data-n'); filterBar.classList.add('on');
+      document.getElementById('dx-episodes').scrollIntoView({behavior:'smooth'});
+    });
+  });
+  /* thumbnail fallback */
+  cards.forEach(function(c){ var im=c.querySelector('img'); if(!im) return; im.addEventListener('error',function(){ if(im.src.indexOf('maxresdefault')>-1){ im.style.display=''; im.removeAttribute('data-failed'); im.src=im.src.replace('maxresdefault','hqdefault'); } }); });
+})();
+</script>
+<!-- ==================== END PASTE BLOCK (copy to here) ==================== -->
