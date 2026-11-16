@@ -56,6 +56,20 @@
 #dihgg .nlb .btn:hover{background:#fff;color:var(--ink);border-color:#fff;}
 #dihgg .fine{max-width:1100px;margin:0 auto;padding:0 48px 56px;font-size:12px;color:var(--dim);line-height:1.7;}
 @media(max-width:900px){#dihgg .feat{grid-template-columns:1fr;}#dihgg .mini{grid-template-columns:repeat(2,1fr);}#dihgg .grid{grid-template-columns:1fr;}#dihgg .hero,#dihgg section,#dihgg .nl,#dihgg .fine,#dihgg .disc{padding-left:22px;padding-right:22px;}}
+#dihgg .cat{padding:56px 0 8px;border-top:1px solid var(--bd);}
+#dihgg .cat.alt{background:#fff;}
+#dihgg .cath{max-width:1100px;margin:0 auto;padding:0 48px;display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:16px;margin-bottom:24px;}
+#dihgg .cath h2{font-size:clamp(34px,4vw,48px);margin:0;}
+#dihgg .cath p{color:var(--mut);font-size:15px;margin-top:6px;}
+#dihgg .tiles{max-width:1100px;margin:0 auto;padding:0 48px 48px;display:grid;grid-template-columns:repeat(4,1fr);gap:14px;}
+#dihgg .t{background:#fff;border:1px solid var(--bd);border-top:3px solid var(--teal);border-radius:12px;padding:18px 18px 16px;display:flex;flex-direction:column;gap:6px;min-height:150px;}
+#dihgg .cat.alt .t{background:var(--bg);}
+#dihgg .t:hover{border-color:var(--teal);transform:translateY(-2px);transition:.15s;}
+#dihgg .t .b{font-family:'DM Mono',monospace;font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--teal);}
+#dihgg .t .n{font-family:'Playfair Display',serif;font-size:18px;line-height:1.2;}
+#dihgg .t .w{font-size:13px;color:var(--mut);line-height:1.5;}
+#dihgg .t .go{margin-top:auto;font-size:12.5px;font-weight:700;padding-top:8px;}
+@media(max-width:900px){#dihgg .tiles{grid-template-columns:repeat(2,1fr);padding-left:22px;padding-right:22px;}#dihgg .cath{padding-left:22px;padding-right:22px;}}
 </style>
 
 <div id="dihgg">
@@ -63,16 +77,16 @@
 <header class="hero"><div class="wrap">
 <div class="tag">Dialed In Health · Holiday Gift Guide 2026</div>
 <h1>Wellness Gifts <em>Worth Giving</em></h1>
-<p class="lede">The things I actually use.<br>The picks my guests swear by.<br>Sorted by who you're shopping for.<br>Chosen by a chemist, not an algorithm.</p>
+<p class="lede">The things I actually use.<br>The picks my guests swear by.<br>Sorted by area: skin, sleep, movement, home and more.<br>Chosen by a chemist, not an algorithm.</p>
 <nav class="jump" aria-label="Jump to">
 <a href="#ltt">Lone Tree Tallow</a>
-<a href="#red-light">Red Light</a>
+<a href="#skin">Skin + Red Light</a>
 <a href="#sleep">Sleep</a>
 <a href="#move">Movement</a>
-<a href="#home">Home</a>
-<a href="#ritual">Tea + Ritual</a>
-<a href="#stocking">Stocking Stuffers</a>
-<a href="#reader">The Reader</a>
+<a href="#home">Clean Home</a>
+<a href="#ritual">Daily Rituals</a>
+<a href="#care">Clean Personal Care</a>
+<a href="#supps">Supplements</a>
 </nav>
 </div></header>
 
@@ -125,105 +139,14 @@
 </div>
 </section>
 
-<section id="gifts">
-<div class="tag">My Amazon picks</div>
-<h2>Gifts by <em>who you're shopping for</em></h2>
-<p class="sub">Every pick lives on my Amazon storefront.<br>Tap a list to see all of it.</p>
-<div class="grid">
-
-<div class="gc" id="red-light">
-<h3>For the red light curious</h3>
-<p class="who">Face, neck and full body, at home.</p>
-<ol>
-<li><div><a href="https://www.amazon.com/shop/melissagoo0d6/list/1IPQ7PLEUS8B4" target="_blank" rel="sponsored noopener">CurrentBody LED Face Mask</a><span>The easy first mask</span></div></li>
-<li><div><a href="https://www.amazon.com/shop/melissagoo0d6/list/1IPQ7PLEUS8B4" target="_blank" rel="sponsored noopener">Omnilux Contour Face</a><span>Flexible fit, a favorite</span></div></li>
-<li><div><a href="https://www.amazon.com/shop/melissagoo0d6/list/1IPQ7PLEUS8B4" target="_blank" rel="sponsored noopener">Mito Red Light MitoMAX 2.0</a><span>For the full body setup</span></div></li>
-</ol>
-<a class="btn ghost" href="https://www.amazon.com/shop/melissagoo0d6/list/1IPQ7PLEUS8B4" target="_blank" rel="sponsored noopener">See the red light list</a>
-</div>
-
-<div class="gc" id="sleep">
-<h3>For the one who can't sleep</h3>
-<p class="who">My sleep setup, plus picks inspired by my guests.</p>
-<ol>
-<li><div><a href="https://www.amazon.com/shop/melissagoo0d6/list/1J5B147S0OXLJ" target="_blank" rel="sponsored noopener">Manta Sleep Mask</a><span>Real blackout, no pressure on the eyes</span></div></li>
-<li><div><a href="https://www.amazon.com/shop/melissagoo0d6/list/1J5B147S0OXLJ" target="_blank" rel="sponsored noopener">Hatch Restore 3</a><span>Sunrise alarm and wind down sounds</span></div></li>
-<li><div><a href="https://www.amazon.com/shop/melissagoo0d6/list/1J5B147S0OXLJ" target="_blank" rel="sponsored noopener">Buckwheat Pillow</a><span>Cool, supportive, adjustable</span></div></li>
-<li><div><a href="https://www.amazon.com/shop/melissagoo0d6/list/1J5B147S0OXLJ" target="_blank" rel="sponsored noopener">Yogasleep Dohm</a><span>The original white noise machine</span></div></li>
-</ol>
-<a class="btn ghost" href="https://www.amazon.com/shop/melissagoo0d6/list/1J5B147S0OXLJ" target="_blank" rel="sponsored noopener">See the sleep list</a>
-</div>
-
-<div class="gc" id="move">
-<h3>For the one moving more in 2027</h3>
-<p class="who">Rebounding, strength and walking, at home.</p>
-<ol>
-<li><div><a href="https://www.amazon.com/shop/melissagoo0d6/list/1GYNEGFM7OLS5" target="_blank" rel="sponsored noopener">UREVO Walking Pad</a><span>Fits under a desk</span></div></li>
-<li><div><a href="https://www.amazon.com/shop/melissagoo0d6/list/1GYNEGFM7OLS5" target="_blank" rel="sponsored noopener">Bala Bangles</a><span>Wrist and ankle weights that look good</span></div></li>
-<li><div><a href="https://www.amazon.com/shop/melissagoo0d6/list/1GYNEGFM7OLS5" target="_blank" rel="sponsored noopener">JadeYoga Harmony Mat</a><span>Grippy and built to last</span></div></li>
-<li><div><a href="https://www.amazon.com/shop/melissagoo0d6/list/1GYNEGFM7OLS5" target="_blank" rel="sponsored noopener">321 STRONG Massage Roller</a><span>For sore legs after</span></div></li>
-</ol>
-<a class="btn ghost" href="https://www.amazon.com/shop/melissagoo0d6/list/1GYNEGFM7OLS5" target="_blank" rel="sponsored noopener">See the movement list</a>
-</div>
-
-<div class="gc" id="home">
-<h3>For the home that needs a reset</h3>
-<p class="who">Cleaner water, air and kitchen.</p>
-<ol>
-<li><div><a href="https://www.amazon.com/shop/melissagoo0d6/list/1UJ91S64R89X6" target="_blank" rel="sponsored noopener">AquaTru Countertop Filter</a><span>No install, no plumber</span></div></li>
-<li><div><a href="https://www.amazon.com/shop/melissagoo0d6/list/1UJ91S64R89X6" target="_blank" rel="sponsored noopener">Staub Cast Iron Cocotte</a><span>The heirloom gift</span></div></li>
-<li><div><a href="https://www.amazon.com/shop/melissagoo0d6/list/1UJ91S64R89X6" target="_blank" rel="sponsored noopener">Coway Air Purifier</a><span>Big room coverage</span></div></li>
-<li><div><a href="https://www.amazon.com/shop/melissagoo0d6/list/1UJ91S64R89X6" target="_blank" rel="sponsored noopener">Aquabliss Shower Filter</a><span>A two minute install</span></div></li>
-</ol>
-<a class="btn ghost" href="https://www.amazon.com/shop/melissagoo0d6/list/1UJ91S64R89X6" target="_blank" rel="sponsored noopener">See the home list</a>
-</div>
-
-<div class="gc" id="ritual">
-<h3>For the daily ritual person</h3>
-<p class="who">Morning cup to afternoon pick me up.</p>
-<ol>
-<li><div><a href="https://www.amazon.com/shop/melissagoo0d6/list/2ZWONBVND7O7G" target="_blank" rel="sponsored noopener">Jade Leaf Ceremonial Matcha</a><span>Smooth, bright green, no bitterness</span></div></li>
-<li><div><a href="https://www.amazon.com/shop/melissagoo0d6/list/2ZWONBVND7O7G" target="_blank" rel="sponsored noopener">Blume Blue Lavender Latte</a><span>Caffeine free and pretty in the cup</span></div></li>
-<li><div><a href="https://www.amazon.com/shop/melissagoo0d6/list/2ZWONBVND7O7G" target="_blank" rel="sponsored noopener">Everyday Dose Mushroom Coffee</a><span>For the coffee lover cutting back</span></div></li>
-<li><div><a href="https://www.amazon.com/shop/melissagoo0d6/list/2ZWONBVND7O7G" target="_blank" rel="sponsored noopener">LMNT Sparkling</a><span>For the 3pm crash that is really thirst</span></div></li>
-</ol>
-<a class="btn ghost" href="https://www.amazon.com/shop/melissagoo0d6/list/2ZWONBVND7O7G" target="_blank" rel="sponsored noopener">See the ritual list</a>
-</div>
-
-<div class="gc" id="stocking">
-<h3>Stocking stuffers under $40</h3>
-<p class="who">Small swaps they'll use every day.</p>
-<ol>
-<li><div><a href="https://www.amazon.com/shop/melissagoo0d6/list/8IDPMHJ3MN1K" target="_blank" rel="sponsored noopener">Boka Toothpaste</a><span>Nano hydroxyapatite, fluoride free</span></div></li>
-<li><div><a href="https://www.amazon.com/shop/melissagoo0d6/list/8IDPMHJ3MN1K" target="_blank" rel="sponsored noopener">Cocofloss</a><span>The floss people actually like</span></div></li>
-<li><div><a href="https://www.amazon.com/shop/melissagoo0d6/list/8IDPMHJ3MN1K" target="_blank" rel="sponsored noopener">Aleppo Soap Bar</a><span>Laurel and olive oil, handmade</span></div></li>
-<li><div><a href="https://www.amazon.com/shop/melissagoo0d6/list/8IDPMHJ3MN1K" target="_blank" rel="sponsored noopener">Dr. Tung's Smart Floss</a><span>Expanding, naturally waxed</span></div></li>
-</ol>
-<a class="btn ghost" href="https://www.amazon.com/shop/melissagoo0d6/list/8IDPMHJ3MN1K" target="_blank" rel="sponsored noopener">See the personal care list</a>
-</div>
-
-<div class="gc" id="reader">
-<h3>For the wellness reader</h3>
-<p class="who">From a Dialed In Health guest.</p>
-<ol>
-<li><div><a href="https://www.amazon.com/shop/melissagoo0d6/list/4DLP2NVH966R" target="_blank" rel="sponsored noopener">Healing the Hidden Nerves</a><span>By Dr. Jordan Stenzel, DC</span></div></li>
-</ol>
-<a class="btn ghost" href="https://www.amazon.com/shop/melissagoo0d6/list/4DLP2NVH966R" target="_blank" rel="sponsored noopener">See the supplements list</a>
-</div>
-
-<div class="gc">
-<h3>Shop everything</h3>
-<p class="who">All seven lists, one storefront.</p>
-<ol>
-<li><div><a href="https://www.amazon.com/shop/melissagoo0d6/list/4DLP2NVH966R" target="_blank" rel="sponsored noopener">Supplements</a><span>What my guests and I actually use</span></div></li>
-<li><div><a href="https://www.amazon.com/shop/melissagoo0d6/list/1UJ91S64R89X6" target="_blank" rel="sponsored noopener">Non-Toxic Home</a><span>Water, air, kitchen and laundry</span></div></li>
-</ol>
-<a class="btn" href="https://www.amazon.com/shop/melissagoo0d6" target="_blank" rel="sponsored noopener">Visit my Amazon storefront</a>
-</div>
-
-</div>
-</section>
-
+<div class="cat alt" id="skin"><div class="cath"><div><div class="tag">My Amazon picks</div><h2>Skin + Red Light</h2><p>Face, neck and full body red light, at home.</p></div><a class="btn ghost" href="https://www.amazon.com/shop/melissagoo0d6/list/1IPQ7PLEUS8B4" target="_blank" rel="sponsored noopener">See the full skin + red light list</a></div><div class="tiles"><a class="t" href="https://www.amazon.com/dp/B0DHRW819R?tag=melissagoo0d6-20" target="_blank" rel="sponsored noopener"><span class="b">CurrentBody</span><span class="n">LED Face Mask</span><span class="w">The easy first mask</span><span class="go">Shop on Amazon &rarr;</span></a><a class="t" href="https://www.amazon.com/dp/B08NCGWVPY?tag=melissagoo0d6-20" target="_blank" rel="sponsored noopener"><span class="b">Omnilux</span><span class="n">Contour Face</span><span class="w">Flexible fit, a favorite</span><span class="go">Shop on Amazon &rarr;</span></a><a class="t" href="https://www.amazon.com/dp/B09WB6PWCC?tag=melissagoo0d6-20" target="_blank" rel="sponsored noopener"><span class="b">HigherDOSE</span><span class="n">Red Light Face Mask</span><span class="w">Light and comfortable</span><span class="go">Shop on Amazon &rarr;</span></a><a class="t" href="https://www.amazon.com/dp/B08NCRHNW9?tag=melissagoo0d6-20" target="_blank" rel="sponsored noopener"><span class="b">Dr. Dennis Gross</span><span class="n">SpectraLite FaceWare Pro</span><span class="w">The classic, hands free</span><span class="go">Shop on Amazon &rarr;</span></a><a class="t" href="https://www.amazon.com/dp/B0CL5JRKTC?tag=melissagoo0d6-20" target="_blank" rel="sponsored noopener"><span class="b">Mito Red Light</span><span class="n">MitoMAX 2.0 Panel</span><span class="w">For the full body setup</span><span class="go">Shop on Amazon &rarr;</span></a><a class="t" href="https://www.amazon.com/dp/B0DPMHQSC1?tag=melissagoo0d6-20" target="_blank" rel="sponsored noopener"><span class="b">BONTANNY</span><span class="n">Red Light Panel</span><span class="w">More wavelengths, smaller price</span><span class="go">Shop on Amazon &rarr;</span></a></div></div>
+<div class="cat" id="sleep"><div class="cath"><div><div class="tag">My Amazon picks</div><h2>Sleep</h2><p>My sleep setup, plus picks inspired by my guests.</p></div><a class="btn ghost" href="https://www.amazon.com/shop/melissagoo0d6/list/1J5B147S0OXLJ" target="_blank" rel="sponsored noopener">See the full sleep list</a></div><div class="tiles"><a class="t" href="https://www.amazon.com/dp/B07PRG2CQY?tag=melissagoo0d6-20" target="_blank" rel="sponsored noopener"><span class="b">Manta Sleep</span><span class="n">Sleep Mask</span><span class="w">Real blackout, no pressure on the eyes</span><span class="go">Shop on Amazon &rarr;</span></a><a class="t" href="https://www.amazon.com/dp/B0DLLSCVZW?tag=melissagoo0d6-20" target="_blank" rel="sponsored noopener"><span class="b">Hatch</span><span class="n">Restore 3</span><span class="w">Sunrise alarm and wind down sounds</span><span class="go">Shop on Amazon &rarr;</span></a><a class="t" href="https://www.amazon.com/dp/B00HD0ELFK?tag=melissagoo0d6-20" target="_blank" rel="sponsored noopener"><span class="b">Yogasleep</span><span class="n">Dohm Classic</span><span class="w">The original white noise machine</span><span class="go">Shop on Amazon &rarr;</span></a><a class="t" href="https://www.amazon.com/dp/B0FLJCJ441?tag=melissagoo0d6-20" target="_blank" rel="sponsored noopener"><span class="b">ZENURAH</span><span class="n">Buckwheat Pillow</span><span class="w">Cool, supportive, adjustable</span><span class="go">Shop on Amazon &rarr;</span></a><a class="t" href="https://www.amazon.com/dp/B0CT41FDDD?tag=melissagoo0d6-20" target="_blank" rel="sponsored noopener"><span class="b">Naturepedic</span><span class="n">Organic Latex Side Sleeper Pillow</span><span class="w">For the side sleeper</span><span class="go">Shop on Amazon &rarr;</span></a><a class="t" href="https://www.amazon.com/dp/B0F22JR4S8?tag=melissagoo0d6-20" target="_blank" rel="sponsored noopener"><span class="b">Cozy Earth</span><span class="n">Bamboo Sheet Set</span><span class="w">The splurge sheets</span><span class="go">Shop on Amazon &rarr;</span></a><a class="t" href="https://www.amazon.com/dp/B0DJWVD539?tag=melissagoo0d6-20" target="_blank" rel="sponsored noopener"><span class="b">Woolino</span><span class="n">Merino Wool Mattress Topper</span><span class="w">Sleeps cooler and drier</span><span class="go">Shop on Amazon &rarr;</span></a><a class="t" href="https://www.amazon.com/dp/B07YKCZHGK?tag=melissagoo0d6-20" target="_blank" rel="sponsored noopener"><span class="b">Bedsure</span><span class="n">Bamboo Rayon Sheets</span><span class="w">The soft sheets, for less</span><span class="go">Shop on Amazon &rarr;</span></a></div></div>
+<div class="cat alt" id="move"><div class="cath"><div><div class="tag">My Amazon picks</div><h2>Movement</h2><p>Rebounding, strength and walking, at home.</p></div><a class="btn ghost" href="https://www.amazon.com/shop/melissagoo0d6/list/1GYNEGFM7OLS5" target="_blank" rel="sponsored noopener">See the full movement list</a></div><div class="tiles"><a class="t" href="https://www.amazon.com/dp/B097BKS6Z9?tag=melissagoo0d6-20" target="_blank" rel="sponsored noopener"><span class="b">UREVO</span><span class="n">Walking Pad</span><span class="w">Fits under a desk</span><span class="go">Shop on Amazon &rarr;</span></a><a class="t" href="https://www.amazon.com/dp/B07F5BNBQF?tag=melissagoo0d6-20" target="_blank" rel="sponsored noopener"><span class="b">Leaps and Rebounds</span><span class="n">Fitness Trampoline</span><span class="w">Rebounding in the living room</span><span class="go">Shop on Amazon &rarr;</span></a><a class="t" href="https://www.amazon.com/dp/B00AR02OKM?tag=melissagoo0d6-20" target="_blank" rel="sponsored noopener"><span class="b">JumpSport</span><span class="n">350 PRO Trampoline</span><span class="w">The rebounder that lasts</span><span class="go">Shop on Amazon &rarr;</span></a><a class="t" href="https://www.amazon.com/dp/B0BQCJZC63?tag=melissagoo0d6-20" target="_blank" rel="sponsored noopener"><span class="b">Bala</span><span class="n">Bangles</span><span class="w">Wrist and ankle weights that look good</span><span class="go">Shop on Amazon &rarr;</span></a><a class="t" href="https://www.amazon.com/dp/B000EC7KW0?tag=melissagoo0d6-20" target="_blank" rel="sponsored noopener"><span class="b">JadeYoga</span><span class="n">Harmony Mat</span><span class="w">Grippy and built to last</span><span class="go">Shop on Amazon &rarr;</span></a><a class="t" href="https://www.amazon.com/dp/B07FY5P24Q?tag=melissagoo0d6-20" target="_blank" rel="sponsored noopener"><span class="b">321 STRONG</span><span class="n">Massage Roller</span><span class="w">For sore legs after</span><span class="go">Shop on Amazon &rarr;</span></a><a class="t" href="https://www.amazon.com/dp/B0D1XVJRZD?tag=melissagoo0d6-20" target="_blank" rel="sponsored noopener"><span class="b">YOTTOY</span><span class="n">Soft Kettlebell</span><span class="w">Floor friendly strength</span><span class="go">Shop on Amazon &rarr;</span></a><a class="t" href="https://www.amazon.com/dp/B0CGR9P7KH?tag=melissagoo0d6-20" target="_blank" rel="sponsored noopener"><span class="b">LEEKEY</span><span class="n">Resistance Bands</span><span class="w">Strength that fits in a drawer</span><span class="go">Shop on Amazon &rarr;</span></a></div></div>
+<div class="cat" id="home"><div class="cath"><div><div class="tag">My Amazon picks</div><h2>Clean Home</h2><p>Cleaner water, air and kitchen.</p></div><a class="btn ghost" href="https://www.amazon.com/shop/melissagoo0d6/list/1UJ91S64R89X6" target="_blank" rel="sponsored noopener">See the full clean home list</a></div><div class="tiles"><a class="t" href="https://www.amazon.com/dp/B07XVMJX1D?tag=melissagoo0d6-20" target="_blank" rel="sponsored noopener"><span class="b">AquaTru</span><span class="n">Countertop Water Filter</span><span class="w">No install, no plumber</span><span class="go">Shop on Amazon &rarr;</span></a><a class="t" href="https://www.amazon.com/dp/B0DFC22BHT?tag=melissagoo0d6-20" target="_blank" rel="sponsored noopener"><span class="b">Clearly Filtered</span><span class="n">Water Pitcher</span><span class="w">The easy filtered water start</span><span class="go">Shop on Amazon &rarr;</span></a><a class="t" href="https://www.amazon.com/dp/B01MUBU0YC?tag=melissagoo0d6-20" target="_blank" rel="sponsored noopener"><span class="b">Aquabliss</span><span class="n">Shower Filter</span><span class="w">A two minute install</span><span class="go">Shop on Amazon &rarr;</span></a><a class="t" href="https://www.amazon.com/dp/B01728NLRG?tag=melissagoo0d6-20" target="_blank" rel="sponsored noopener"><span class="b">Coway</span><span class="n">Air Purifier</span><span class="w">Big room coverage</span><span class="go">Shop on Amazon &rarr;</span></a><a class="t" href="https://www.amazon.com/dp/B000KLZ0FE?tag=melissagoo0d6-20" target="_blank" rel="sponsored noopener"><span class="b">Staub</span><span class="n">Cast Iron Cocotte</span><span class="w">The heirloom gift</span><span class="go">Shop on Amazon &rarr;</span></a><a class="t" href="https://www.amazon.com/dp/B00U1OCPWQ?tag=melissagoo0d6-20" target="_blank" rel="sponsored noopener"><span class="b">Lodge</span><span class="n">Enamel Dutch Oven</span><span class="w">The everyday pot, for less</span><span class="go">Shop on Amazon &rarr;</span></a><a class="t" href="https://www.amazon.com/dp/B0157G34AY?tag=melissagoo0d6-20" target="_blank" rel="sponsored noopener"><span class="b">Pyrex</span><span class="n">Glass Storage Set</span><span class="w">Swap out the plastic</span><span class="go">Shop on Amazon &rarr;</span></a><a class="t" href="https://www.amazon.com/dp/B00GA9P5P0?tag=melissagoo0d6-20" target="_blank" rel="sponsored noopener"><span class="b">Smart Sheep</span><span class="n">Wool Dryer Balls</span><span class="w">Skip the dryer sheets</span><span class="go">Shop on Amazon &rarr;</span></a></div></div>
+<div class="cat alt" id="ritual"><div class="cath"><div><div class="tag">My Amazon picks</div><h2>Daily Rituals</h2><p>Morning cup to afternoon pick me up.</p></div><a class="btn ghost" href="https://www.amazon.com/shop/melissagoo0d6/list/2ZWONBVND7O7G" target="_blank" rel="sponsored noopener">See the full daily rituals list</a></div><div class="tiles"><a class="t" href="https://www.amazon.com/shop/melissagoo0d6/list/2ZWONBVND7O7G" target="_blank" rel="sponsored noopener"><span class="b">Jade Leaf</span><span class="n">Ceremonial Matcha</span><span class="w">Smooth, bright green, no bitterness</span><span class="go">Shop on Amazon &rarr;</span></a><a class="t" href="https://www.amazon.com/shop/melissagoo0d6/list/2ZWONBVND7O7G" target="_blank" rel="sponsored noopener"><span class="b">Blume</span><span class="n">Blue Lavender Latte</span><span class="w">Caffeine free and pretty in the cup</span><span class="go">Shop on Amazon &rarr;</span></a><a class="t" href="https://www.amazon.com/dp/B0B53Y7Z7D?tag=melissagoo0d6-20" target="_blank" rel="sponsored noopener"><span class="b">Everyday Dose</span><span class="n">Mushroom Coffee</span><span class="w">For the coffee lover cutting back</span><span class="go">Shop on Amazon &rarr;</span></a><a class="t" href="https://www.amazon.com/shop/melissagoo0d6/list/2ZWONBVND7O7G" target="_blank" rel="sponsored noopener"><span class="b">LMNT</span><span class="n">Sparkling</span><span class="w">For the 3pm crash that is really thirst</span><span class="go">Shop on Amazon &rarr;</span></a><a class="t" href="https://www.amazon.com/shop/melissagoo0d6/list/2ZWONBVND7O7G" target="_blank" rel="sponsored noopener"><span class="b">Playadito</span><span class="n">Yerba Mate</span><span class="w">The loose leaf classic</span><span class="go">Shop on Amazon &rarr;</span></a><a class="t" href="https://www.amazon.com/shop/melissagoo0d6/list/2ZWONBVND7O7G" target="_blank" rel="sponsored noopener"><span class="b">Traditional Medicinals</span><span class="n">Roasted Dandelion Root Tea</span><span class="w">The coffee like evening cup</span><span class="go">Shop on Amazon &rarr;</span></a></div></div>
+<div class="cat" id="care"><div class="cath"><div><div class="tag">My Amazon picks</div><h2>Clean Personal Care</h2><p>Small daily swaps. Great stocking stuffers.</p></div><a class="btn ghost" href="https://www.amazon.com/shop/melissagoo0d6/list/8IDPMHJ3MN1K" target="_blank" rel="sponsored noopener">See the full clean personal care list</a></div><div class="tiles"><a class="t" href="https://www.amazon.com/dp/B083JHCCV2?tag=melissagoo0d6-20" target="_blank" rel="sponsored noopener"><span class="b">Boka</span><span class="n">Toothpaste</span><span class="w">Nano hydroxyapatite, fluoride free</span><span class="go">Shop on Amazon &rarr;</span></a><a class="t" href="https://www.amazon.com/dp/B0108T9C2E?tag=melissagoo0d6-20" target="_blank" rel="sponsored noopener"><span class="b">Cocofloss</span><span class="n">Woven Floss</span><span class="w">The floss people actually like</span><span class="go">Shop on Amazon &rarr;</span></a><a class="t" href="https://www.amazon.com/dp/B01678Y3DS?tag=melissagoo0d6-20" target="_blank" rel="sponsored noopener"><span class="b">Dr. Tung's</span><span class="n">Smart Floss</span><span class="w">Expanding, naturally waxed</span><span class="go">Shop on Amazon &rarr;</span></a><a class="t" href="https://www.amazon.com/dp/B0G7LQ33HL?tag=melissagoo0d6-20" target="_blank" rel="sponsored noopener"><span class="b">Aleppo</span><span class="n">Soap Bar</span><span class="w">Laurel and olive oil, handmade</span><span class="go">Shop on Amazon &rarr;</span></a><a class="t" href="https://www.amazon.com/dp/B09WMTK82J?tag=melissagoo0d6-20" target="_blank" rel="sponsored noopener"><span class="b">Swanwick</span><span class="n">Blue Light Glasses</span><span class="w">For screens after dark</span><span class="go">Shop on Amazon &rarr;</span></a><a class="t" href="https://www.amazon.com/dp/B0C3JJQ9TN?tag=melissagoo0d6-20" target="_blank" rel="sponsored noopener"><span class="b">Withings</span><span class="n">Body Smart Scale</span><span class="w">Body composition, not just weight</span><span class="go">Shop on Amazon &rarr;</span></a><a class="t" href="https://www.amazon.com/dp/B09VPL2LJ2?tag=melissagoo0d6-20" target="_blank" rel="sponsored noopener"><span class="b">RENPHO</span><span class="n">Smart Scale</span><span class="w">The smart scale, for less</span><span class="go">Shop on Amazon &rarr;</span></a></div></div>
+<div class="cat alt" id="supps"><div class="cath"><div><div class="tag">My Amazon picks</div><h2>Supplements</h2><p>What my guests and I actually use.</p></div><a class="btn ghost" href="https://www.amazon.com/shop/melissagoo0d6/list/4DLP2NVH966R" target="_blank" rel="sponsored noopener">See the full supplements list</a></div><div class="tiles"><a class="t" href="https://www.amazon.com/dp/B0GFXSHGZL?tag=melissagoo0d6-20" target="_blank" rel="sponsored noopener"><span class="b">Dr. Jordan Stenzel, DC</span><span class="n">Healing the Hidden Nerves</span><span class="w">The book from a Dialed In Health guest</span><span class="go">Shop on Amazon &rarr;</span></a><a class="t" href="https://www.amazon.com/dp/B0CMJR4XGR?tag=melissagoo0d6-20" target="_blank" rel="sponsored noopener"><span class="b">Seed</span><span class="n">DS-01 Daily Synbiotic</span><span class="w">A gift subscription they will notice</span><span class="go">Shop on Amazon &rarr;</span></a><a class="t" href="https://www.amazon.com/dp/B0797HBLL3?tag=melissagoo0d6-20" target="_blank" rel="sponsored noopener"><span class="b">Thorne</span><span class="n">Magnesium Bisglycinate</span><span class="w">The evening powder</span><span class="go">Shop on Amazon &rarr;</span></a><a class="t" href="https://www.amazon.com/dp/B085Z9P87K?tag=melissagoo0d6-20" target="_blank" rel="sponsored noopener"><span class="b">Momentous</span><span class="n">Creatine</span><span class="w">Clean, third party tested</span><span class="go">Shop on Amazon &rarr;</span></a><a class="t" href="https://www.amazon.com/dp/B0038NF8MG?tag=melissagoo0d6-20" target="_blank" rel="sponsored noopener"><span class="b">Thorne</span><span class="n">Vitamin D + K2 Liquid</span><span class="w">Easy drops for winter</span><span class="go">Shop on Amazon &rarr;</span></a><a class="t" href="https://www.amazon.com/dp/B06XPPP4M2?tag=melissagoo0d6-20" target="_blank" rel="sponsored noopener"><span class="b">Nordic Naturals</span><span class="n">Ultimate Omega 2X</span><span class="w">A favorite fish oil</span><span class="go">Shop on Amazon &rarr;</span></a><a class="t" href="https://www.amazon.com/dp/B00FOTMGTU?tag=melissagoo0d6-20" target="_blank" rel="sponsored noopener"><span class="b">Thorne</span><span class="n">Basic Nutrients 2/Day</span><span class="w">A simple daily multi</span><span class="go">Shop on Amazon &rarr;</span></a><a class="t" href="https://www.amazon.com/dp/B07978VPPH?tag=melissagoo0d6-20" target="_blank" rel="sponsored noopener"><span class="b">Thorne</span><span class="n">Creatine</span><span class="w">The other creatine I trust</span><span class="go">Shop on Amazon &rarr;</span></a></div></div>
+<div class="nl" style="margin-top:0;padding-top:40px"><div class="nlb" style="background:var(--bg);border:1px solid var(--bd)"><div><h2 style="color:var(--ink)">Shop all my picks</h2><p style="color:var(--mut)">Every list, one storefront.</p></div><a class="btn" style="background:var(--ink);border-color:var(--ink)" href="https://www.amazon.com/shop/melissagoo0d6" target="_blank" rel="sponsored noopener">Visit my Amazon storefront</a></div></div>
 <div class="nl"><div class="nlb">
 <div><h2>Get the next guide first</h2><p>One email a week. New episodes, real picks, no spam.</p></div>
 <a class="btn" href="https://dialedinhealth.kit.com/bc70e0bc47" target="_blank" rel="noopener">Join the newsletter</a>
