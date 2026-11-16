@@ -1,0 +1,824 @@
+<!-- DIH EPISODE 46 | /podcast/episode-46-integrative-oncology | built from CANONICAL TEMPLATE v2026-09-02
+PRE-PUBLISH BUILD. Show-level Spotify/Apple links so nothing renders broken before audio is live.
+AT PUBLISH (weekly launch task): swap the Spotify embed /embed/show/2AIQu4k8DINEq06vl3LITn to /embed/episode/{{SPOTIFY_EPISODE_ID}},
+the Spotify button to /episode/{{SPOTIFY_EPISODE_ID}}, the Apple button to ...id1885383990?i={{APPLE_EPISODE_ID}},
+and add "audio" + "associatedMedia" AudioObject ({{LIBSYN_MP3_URL}}, audio/mpeg, PT37M56S) to the PodcastEpisode block. -->
+<style>
+:root{--forest:#222222;--forest-dk:#1a1a1a;--forest-lt:rgba(0,191,178,.08);--forest-bd:rgba(0,191,178,.4);--lime:#00bfb2;--white:#fff;--bg:#f6f3ee;--border:#ddd7cd;--text:#1a1612;--muted:#6b6054;--dim:#a89880;}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}body{background:var(--bg);font-family:'DM Sans',sans-serif;color:var(--text);}a{text-decoration:none;color:inherit;}
+.ephero{background:var(--forest-dk);padding:60px 48px 52px;}
+.ephero-i{max-width:1100px;margin:0 auto;}
+.htag{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.24em;text-transform:uppercase;color:var(--lime);margin-bottom:18px;display:flex;align-items:center;gap:10px;}
+.htag::before{content:'';width:28px;height:1px;background:var(--lime);}
+.eph1{font-family:'Playfair Display',serif;font-size:clamp(28px,3.4vw,44px);color:#fff;line-height:1.1;margin-bottom:16px;letter-spacing:-.02em;}
+.eph1 em{font-style:italic;color:#a3d4bc;}
+.epsub{font-size:14px;color:rgba(255,255,255,.52);line-height:1.7;max-width:640px;margin-bottom:18px;}
+.eptags{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px;}
+.tag{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:#fff;background:var(--forest);padding:3px 9px;border-radius:3px;border:1px solid rgba(255,255,255,.18);}
+.epbyline{font-size:12px;color:rgba(255,255,255,.5);}
+.dih-pl{background:#fff;border-top:1px solid #ddd7cd;border-bottom:1px solid #ddd7cd;padding:22px 18px;display:flex;flex-wrap:wrap;gap:14px 20px;align-items:center;justify-content:center;}
+.dih-pl-label{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:#6b6054;font-weight:600;}
+.dih-pl-btns{display:flex;flex-wrap:wrap;gap:10px 12px;justify-content:center;}
+.dih-pl a{color:#1a1612;font-size:14px;font-weight:600;padding:9px 18px;border:1px solid #1a1612;border-radius:999px;}
+.dih-pl a:hover{background:#00bfb2;border-color:#00bfb2;color:#fff;}
+.body{max-width:1100px;margin:0 auto;padding:52px 48px 80px;display:grid;grid-template-columns:1fr 280px;gap:48px;align-items:start;}
+.sh{font-family:'Playfair Display',serif;font-size:22px;color:var(--text);margin:34px 0 18px;}.sh em{font-style:italic;color:var(--forest);}
+.sh:first-child{margin-top:0;}
+.answer{background:var(--forest-lt);border-left:3px solid var(--lime);border-radius:0 8px 8px 0;padding:20px 22px;font-size:15px;line-height:1.75;color:var(--text);margin-bottom:30px;}
+.vwrap{position:relative;aspect-ratio:16/9;border-radius:12px;overflow:hidden;background:var(--forest-dk);margin-bottom:22px;}
+.vwrap iframe{position:absolute;inset:0;width:100%;height:100%;border:0;}
+.spot{border-radius:12px;overflow:hidden;margin-bottom:8px;}
+.chapters{list-style:none;display:grid;gap:2px;}
+.chapters li a{display:flex;gap:12px;padding:8px 10px;border-radius:6px;font-size:13.5px;color:var(--text);line-height:1.5;}
+.chapters li a:hover{background:var(--forest-lt);}
+.chapters .t{font-family:'DM Mono',monospace;font-size:11.5px;color:var(--forest);min-width:48px;font-weight:700;}
+.klist{list-style:none;display:grid;gap:10px;}
+.klist li{position:relative;padding-left:22px;font-size:14px;line-height:1.7;color:var(--text);}
+.klist li::before{content:'';position:absolute;left:0;top:9px;width:8px;height:8px;border-radius:2px;background:var(--lime);}
+.qa{background:var(--white);border:1.5px solid var(--border);border-radius:10px;padding:20px 22px;margin-bottom:12px;}
+.qa h3{font-family:'Playfair Display',serif;font-size:17px;color:var(--text);margin-bottom:8px;line-height:1.35;}
+.qa p{font-size:14px;color:var(--muted);line-height:1.72;}
+.myth{background:var(--white);border:1.5px solid var(--border);border-left:3px solid var(--lime);border-radius:0 10px 10px 0;padding:16px 20px;margin-bottom:10px;}
+.myth-q{font-size:13px;font-weight:700;color:var(--forest);margin-bottom:5px;}
+.myth-a{font-size:14px;color:var(--muted);line-height:1.7;}
+.prose p{font-size:14.5px;line-height:1.8;color:var(--text);margin-bottom:16px;}
+.prose h3{font-family:'Playfair Display',serif;font-size:18px;color:var(--text);margin:26px 0 10px;line-height:1.35;}
+.tr{background:var(--white);border:1.5px solid var(--border);border-radius:10px;padding:24px;max-height:620px;overflow-y:auto;}
+.tr p{font-size:13.5px;line-height:1.78;color:var(--muted);margin-bottom:14px;}
+.tr .ts{font-family:'DM Mono',monospace;font-size:11px;color:var(--forest);font-weight:700;margin-right:6px;}
+.crisis{background:var(--forest-lt);border:1.5px solid var(--forest-bd);border-radius:10px;padding:20px 22px;margin-top:26px;}
+.crisis p{font-size:13.5px;line-height:1.7;color:var(--text);margin-bottom:8px;}
+.disc{font-size:12px;color:var(--dim);line-height:1.7;margin-top:26px;font-style:italic;}
+.sb-card{background:var(--white);border:1.5px solid var(--border);border-radius:12px;padding:24px;margin-bottom:20px;}
+.sb-eyebrow{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:var(--dim);margin-bottom:8px;}
+.sb-h{font-family:'Playfair Display',serif;font-size:17px;color:var(--text);margin-bottom:8px;line-height:1.3;}
+.sb-p{font-size:12px;color:var(--muted);line-height:1.65;margin-bottom:14px;}
+.sb-btn{display:block;width:100%;padding:12px;background:var(--forest);color:#fff;border-radius:4px;text-align:center;font-size:12px;font-weight:700;}
+.email-in{width:100%;padding:10px 13px;border:1.5px solid var(--border);border-radius:4px;font-size:13px;background:var(--bg);margin-bottom:8px;display:block;}
+.prov-dark{background:var(--forest-dk);border:1.5px solid var(--forest);border-radius:12px;padding:24px;margin-bottom:20px;}
+.prov-tag{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:var(--lime);margin-bottom:10px;}
+.prov-h{font-family:'Playfair Display',serif;font-size:18px;color:#fff;margin-bottom:8px;}
+.prov-p{font-size:12px;color:rgba(255,255,255,.45);line-height:1.65;margin-bottom:16px;}
+.prov-btn{display:block;width:100%;padding:12px;background:var(--lime);color:var(--forest-dk);border-radius:4px;text-align:center;font-size:11.5px;font-weight:800;}
+.dir-card{background:var(--forest-lt);border:1.5px solid var(--forest-bd);border-radius:12px;padding:22px;margin-bottom:20px;}
+.dir-h{font-family:'Playfair Display',serif;font-size:17px;color:var(--forest);margin-bottom:6px;}
+.dir-p{font-size:12px;color:var(--muted);line-height:1.6;margin-bottom:14px;}
+.dir-btn{display:block;width:100%;padding:11px;background:var(--forest);color:#fff;border-radius:4px;text-align:center;font-size:11.5px;font-weight:700;}
+@media(max-width:860px){.body{grid-template-columns:1fr!important;padding:32px 20px 56px!important;}.ephero{padding:36px 20px!important;}.tr{max-height:none;}}
+html,body{overflow-x:hidden;}
+.bcrumb{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:20px;}
+.bcrumb a{color:var(--forest);font-weight:700;}
+.bcrumb span{color:var(--dim);margin:0 6px;}
+</style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "PodcastEpisode",
+ "@id": "https://dialedin.health/podcast/episode-46-integrative-oncology#episode",
+ "url": "https://dialedin.health/podcast/episode-46-integrative-oncology",
+ "name": "The Greek Test for Cancer: What It Shows and What It Costs",
+ "episodeNumber": 46,
+ "description": "What is the Greek (RGCC) test for cancer? Dr. Trisha Wimbs explains what it shows, its limits, and how integrative care works alongside chemo.",
+ "datePublished": "2026-11-18",
+ "duration": "PT37M56S",
+ "inLanguage": "en-US",
+ "image": "https://img.youtube.com/vi/-bwdDCpBOgo/maxresdefault.jpg",
+ "thumbnailUrl": "https://img.youtube.com/vi/-bwdDCpBOgo/maxresdefault.jpg",
+ "author": {
+  "@id": "https://dialedin.health/#melissa-goodwin"
+ },
+ "actor": [
+  {
+   "@id": "https://dialedin.health/#trisha-wimbs"
+  }
+ ],
+ "partOfSeries": {
+  "@type": "PodcastSeries",
+  "name": "Dialed In Health",
+  "url": "https://dialedin.health/podcast",
+  "author": {
+   "@id": "https://dialedin.health/#melissa-goodwin"
+  }
+ },
+ "about": [
+  {
+   "@type": "Thing",
+   "name": "Integrative oncology"
+  },
+  {
+   "@type": "Thing",
+   "name": "RGCC liquid biopsy (Greek test)"
+  },
+  {
+   "@type": "Thing",
+   "name": "Supplements during chemotherapy"
+  }
+ ]
+}
+</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "VideoObject",
+ "@id": "https://dialedin.health/podcast/episode-46-integrative-oncology#video",
+ "name": "The Greek Test for Cancer: What It Shows and What It Costs",
+ "description": "What is the Greek (RGCC) test for cancer? Dr. Trisha Wimbs explains what it shows, its limits, and how integrative care works alongside chemo.",
+ "thumbnailUrl": "https://img.youtube.com/vi/-bwdDCpBOgo/maxresdefault.jpg",
+ "uploadDate": "2026-11-18",
+ "duration": "PT37M56S",
+ "contentUrl": "https://www.youtube.com/watch?v=-bwdDCpBOgo",
+ "embedUrl": "https://www.youtube.com/embed/-bwdDCpBOgo",
+ "publisher": {
+  "@type": "Organization",
+  "name": "Dialed In Health",
+  "url": "https://dialedin.health"
+ },
+ "hasPart": [
+  {
+   "@type": "Clip",
+   "name": "Choosing your own path",
+   "startOffset": 0,
+   "url": "https://www.youtube.com/watch?v=-bwdDCpBOgo&t=0s",
+   "endOffset": 15
+  },
+  {
+   "@type": "Clip",
+   "name": "Just heard the word cancer? Start here",
+   "startOffset": 15,
+   "url": "https://www.youtube.com/watch?v=-bwdDCpBOgo&t=15s",
+   "endOffset": 87
+  },
+  {
+   "@type": "Clip",
+   "name": "Why a California chiropractor moved to the Midwest",
+   "startOffset": 87,
+   "url": "https://www.youtube.com/watch?v=-bwdDCpBOgo&t=87s",
+   "endOffset": 244
+  },
+  {
+   "@type": "Clip",
+   "name": "What Divinity Wellness Center offers",
+   "startOffset": 244,
+   "url": "https://www.youtube.com/watch?v=-bwdDCpBOgo&t=244s",
+   "endOffset": 337
+  },
+  {
+   "@type": "Clip",
+   "name": "What is the Greek test for cancer?",
+   "startOffset": 337,
+   "url": "https://www.youtube.com/watch?v=-bwdDCpBOgo&t=337s",
+   "endOffset": 391
+  },
+  {
+   "@type": "Clip",
+   "name": "What the Greek test shows that a biopsy does not",
+   "startOffset": 391,
+   "url": "https://www.youtube.com/watch?v=-bwdDCpBOgo&t=391s",
+   "endOffset": 519
+  },
+  {
+   "@type": "Clip",
+   "name": "What the RGCC report says about chemo options",
+   "startOffset": 519,
+   "url": "https://www.youtube.com/watch?v=-bwdDCpBOgo&t=519s",
+   "endOffset": 558
+  },
+  {
+   "@type": "Clip",
+   "name": "Advocating for yourself on chemo choices",
+   "startOffset": 558,
+   "url": "https://www.youtube.com/watch?v=-bwdDCpBOgo&t=558s",
+   "endOffset": 646
+  },
+  {
+   "@type": "Clip",
+   "name": "Who orders the test and who prescribes",
+   "startOffset": 646,
+   "url": "https://www.youtube.com/watch?v=-bwdDCpBOgo&t=646s",
+   "endOffset": 662
+  },
+  {
+   "@type": "Clip",
+   "name": "Immune restoration during chemo",
+   "startOffset": 662,
+   "url": "https://www.youtube.com/watch?v=-bwdDCpBOgo&t=662s",
+   "endOffset": 730
+  },
+  {
+   "@type": "Clip",
+   "name": "Four ways people get cancer, in her view",
+   "startOffset": 730,
+   "url": "https://www.youtube.com/watch?v=-bwdDCpBOgo&t=730s",
+   "endOffset": 807
+  },
+  {
+   "@type": "Clip",
+   "name": "Parasites: real concern or hype?",
+   "startOffset": 807,
+   "url": "https://www.youtube.com/watch?v=-bwdDCpBOgo&t=807s",
+   "endOffset": 847
+  },
+  {
+   "@type": "Clip",
+   "name": "The big five before any supplement",
+   "startOffset": 847,
+   "url": "https://www.youtube.com/watch?v=-bwdDCpBOgo&t=847s",
+   "endOffset": 929
+  },
+  {
+   "@type": "Clip",
+   "name": "How integrative care works with oncologists",
+   "startOffset": 929,
+   "url": "https://www.youtube.com/watch?v=-bwdDCpBOgo&t=929s",
+   "endOffset": 1036
+  },
+  {
+   "@type": "Clip",
+   "name": "Chiropractic training vs MD training",
+   "startOffset": 1036,
+   "url": "https://www.youtube.com/watch?v=-bwdDCpBOgo&t=1036s",
+   "endOffset": 1132
+  },
+  {
+   "@type": "Clip",
+   "name": "In active chemo? How to start adding support",
+   "startOffset": 1132,
+   "url": "https://www.youtube.com/watch?v=-bwdDCpBOgo&t=1132s",
+   "endOffset": 1185
+  },
+  {
+   "@type": "Clip",
+   "name": "Should you tell your oncologist?",
+   "startOffset": 1185,
+   "url": "https://www.youtube.com/watch?v=-bwdDCpBOgo&t=1185s",
+   "endOffset": 1362
+  },
+  {
+   "@type": "Clip",
+   "name": "What an integrative protocol looks like",
+   "startOffset": 1362,
+   "url": "https://www.youtube.com/watch?v=-bwdDCpBOgo&t=1362s",
+   "endOffset": 1477
+  },
+  {
+   "@type": "Clip",
+   "name": "How many providers offer this in the US",
+   "startOffset": 1477,
+   "url": "https://www.youtube.com/watch?v=-bwdDCpBOgo&t=1477s",
+   "endOffset": 1494
+  },
+  {
+   "@type": "Clip",
+   "name": "Why is cancer rising in Iowa?",
+   "startOffset": 1494,
+   "url": "https://www.youtube.com/watch?v=-bwdDCpBOgo&t=1494s",
+   "endOffset": 1578
+  },
+  {
+   "@type": "Clip",
+   "name": "No false promises: where the line is",
+   "startOffset": 1578,
+   "url": "https://www.youtube.com/watch?v=-bwdDCpBOgo&t=1578s",
+   "endOffset": 1639
+  },
+  {
+   "@type": "Clip",
+   "name": "What integrative cancer care costs",
+   "startOffset": 1639,
+   "url": "https://www.youtube.com/watch?v=-bwdDCpBOgo&t=1639s",
+   "endOffset": 1696
+  },
+  {
+   "@type": "Clip",
+   "name": "Myth: sugar feeds cancer",
+   "startOffset": 1696,
+   "url": "https://www.youtube.com/watch?v=-bwdDCpBOgo&t=1696s",
+   "endOffset": 1762
+  },
+  {
+   "@type": "Clip",
+   "name": "Myth: do not tell your oncologist",
+   "startOffset": 1762,
+   "url": "https://www.youtube.com/watch?v=-bwdDCpBOgo&t=1762s",
+   "endOffset": 1792
+  },
+  {
+   "@type": "Clip",
+   "name": "Myth: antioxidants during chemo are safe",
+   "startOffset": 1792,
+   "url": "https://www.youtube.com/watch?v=-bwdDCpBOgo&t=1792s",
+   "endOffset": 1885
+  },
+  {
+   "@type": "Clip",
+   "name": "Myth: integrative and oncology cannot work together",
+   "startOffset": 1885,
+   "url": "https://www.youtube.com/watch?v=-bwdDCpBOgo&t=1885s",
+   "endOffset": 1909
+  },
+  {
+   "@type": "Clip",
+   "name": "Myth: integrative oncology means skipping chemo",
+   "startOffset": 1909,
+   "url": "https://www.youtube.com/watch?v=-bwdDCpBOgo&t=1909s",
+   "endOffset": 1978
+  },
+  {
+   "@type": "Clip",
+   "name": "Myth: one supplement boosts your immune system",
+   "startOffset": 1978,
+   "url": "https://www.youtube.com/watch?v=-bwdDCpBOgo&t=1978s",
+   "endOffset": 1999
+  },
+  {
+   "@type": "Clip",
+   "name": "Researching cancer online at 2 a.m.",
+   "startOffset": 1999,
+   "url": "https://www.youtube.com/watch?v=-bwdDCpBOgo&t=1999s",
+   "endOffset": 2178
+  },
+  {
+   "@type": "Clip",
+   "name": "Telehealth and how to reach Divinity Wellness Center",
+   "startOffset": 2178,
+   "url": "https://www.youtube.com/watch?v=-bwdDCpBOgo&t=2178s"
+  }
+ ]
+}
+</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "@id": "https://dialedin.health/podcast/episode-46-integrative-oncology#faq",
+ "mainEntity": [
+  {
+   "@type": "Question",
+   "name": "What is the Greek test for cancer?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "The Greek test is a liquid biopsy from RGCC, a lab in Greece. A blood sample is shipped overseas, and the lab reports how the cancer cells responded to chemotherapy drugs and natural substances, and which genes in the cancer DNA are active. Dr. Trisha Wimbs uses it to guide integrative care."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Is the RGCC test covered by insurance, and what does it cost?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "No. Dr. Wimbs says the test is about $3,500, and the first three months of integrative care run about $5,000 to $8,000 if a person does everything recommended. She notes some Christian health share plans may cover integrative care for people who join before a diagnosis."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Can I do integrative cancer care alongside chemo?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Dr. Wimbs says yes, and that integrative oncology does not mean skipping chemo. Her team reviews what a person has already been through, then adds support such as vitamin C and ozone infusions timed 48 hours or more before chemo. Tell your oncologist about anything you add."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Are antioxidants safe during chemotherapy?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Not always. Dr. Wimbs tells people in cancer treatment to avoid glutathione, its precursors and NAC, because cancer cells can use glutathione to protect themselves from treatment. A large SWOG study also linked antioxidant supplements during chemo with worse outcomes in breast cancer."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Should I tell my oncologist I am doing integrative treatment?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Yes. Dr. Wimbs reminds people that their doctors work for them and that they make the final call. Some oncologists will not endorse outside therapies, but sharing what you take is how a team catches interactions between supplements and cancer drugs."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Who orders the Greek test and who prescribes from it?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "At Divinity Wellness Center, Dr. Wimbs, a chiropractor, can recommend supplements but cannot prescribe medication. Dr. Erin Greer, MD, reviews every case and writes any prescriptions. Treatment plans run three months, then the team checks in."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Does sugar feed cancer?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Dr. Wimbs points out that PET scans use a sugar tracer because many cancers take up glucose quickly, and she encourages people to cut back on sugar without adding stress. Every cell in the body uses glucose, and cutting dietary sugar has not been shown to shrink tumors. Ask your care team about diet."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Where can I find integrative oncology support in Iowa, South Dakota or Minnesota?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Dr. Trisha Wimbs, DC, owns Divinity Wellness Center and works with clients across Iowa, South Dakota, Minnesota, Nebraska and North Dakota, with free 15 minute consults in person or by telehealth. Many of her oncology clients drive in from Iowa. More providers are in the Dialed In Health directory at dialedin.health/the-directory."
+   }
+  }
+ ]
+}
+</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "MedicalWebPage",
+ "@id": "https://dialedin.health/podcast/episode-46-integrative-oncology#medical",
+ "url": "https://dialedin.health/podcast/episode-46-integrative-oncology",
+ "name": "The Greek Test for Cancer: What It Shows and What It Costs",
+ "description": "What is the Greek (RGCC) test for cancer? Dr. Trisha Wimbs explains what it shows, its limits, and how integrative care works alongside chemo.",
+ "lastReviewed": "2026-11-18",
+ "inLanguage": "en-US",
+ "specialty": {
+  "@type": "MedicalSpecialty",
+  "name": "Integrative oncology"
+ },
+ "audience": {
+  "@type": "Audience",
+  "audienceType": "People with cancer and their families"
+ },
+ "isPartOf": {
+  "@id": "https://dialedin.health/podcast/episode-46-integrative-oncology#episode"
+ }
+}
+</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "Person",
+ "@id": "https://dialedin.health/#melissa-goodwin",
+ "name": "Melissa Goodwin",
+ "jobTitle": "Host, Dialed In Health",
+ "url": "https://dialedin.health",
+ "sameAs": [
+  "https://www.youtube.com/@dialedinhealth"
+ ]
+}
+</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "Person",
+ "@id": "https://dialedin.health/#trisha-wimbs",
+ "name": "Trisha Wimbs",
+ "honorificSuffix": "DC",
+ "jobTitle": "Doctor of Chiropractic, Owner of Divinity Wellness Center",
+ "url": "https://www.divinitywellnesscenter.com",
+ "sameAs": [
+  "https://www.divinitywellnesscenter.com",
+  "https://www.instagram.com/divinitywellnesscenter/"
+ ],
+ "worksFor": {
+  "@type": "MedicalClinic",
+  "name": "Divinity Wellness Center",
+  "url": "https://www.divinitywellnesscenter.com",
+  "telephone": "+16059063078",
+  "address": {
+   "@type": "PostalAddress",
+   "streetAddress": "6709 S Minnesota Ave, Suite 203",
+   "addressLocality": "Sioux Falls",
+   "addressRegion": "SD",
+   "postalCode": "57108",
+   "addressCountry": "US"
+  },
+  "areaServed": [
+   "Iowa",
+   "South Dakota",
+   "Minnesota",
+   "Nebraska",
+   "North Dakota"
+  ]
+ }
+}
+</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "BreadcrumbList",
+ "@id": "https://dialedin.health/podcast/episode-46-integrative-oncology#breadcrumb",
+ "itemListElement": [
+  {
+   "@type": "ListItem",
+   "position": 1,
+   "name": "Dialed In Health",
+   "item": "https://dialedin.health"
+  },
+  {
+   "@type": "ListItem",
+   "position": 2,
+   "name": "Podcast",
+   "item": "https://dialedin.health/podcast"
+  },
+  {
+   "@type": "ListItem",
+   "position": 3,
+   "name": "Episode 46: The Greek Test and Integrative Oncology",
+   "item": "https://dialedin.health/podcast/episode-46-integrative-oncology"
+  }
+ ]
+}
+</script>
+<script>
+(function(){
+  var T="The Greek Test for Cancer: What It Shows and What It Costs", D="What is the Greek (RGCC) test for cancer? Dr. Trisha Wimbs explains what it shows, its limits, and how integrative care works alongside chemo.", U="https://dialedin.health/podcast/episode-46-integrative-oncology", I="https://img.youtube.com/vi/-bwdDCpBOgo/maxresdefault.jpg";
+  try{ document.title = T; }catch(e){}
+  function meta(sel,attr,val,content){var m=document.querySelector(sel);if(!m){m=document.createElement('meta');m.setAttribute(attr,val);document.head.appendChild(m);}m.setAttribute('content',content);}
+  meta('meta[property="og:title"]','property','og:title',T);
+  meta('meta[property="og:description"]','property','og:description',D);
+  meta('meta[property="og:url"]','property','og:url',U);
+  meta('meta[property="og:image"]','property','og:image',I);
+  meta('meta[name="twitter:title"]','name','twitter:title',T);
+  meta('meta[name="twitter:description"]','name','twitter:description',D);
+  meta('meta[name="twitter:image"]','name','twitter:image',I);
+})();
+</script>
+<section class="ephero"><div class="ephero-i">
+  <div class="htag">Dialed In Health &middot; Episode 46</div>
+  <h1 class="eph1">The Greek Test for Cancer: <em>What It Shows and What It Costs</em></h1>
+  <p class="epsub">A chiropractor who works alongside oncology on what the Greek test shows, what it costs, what to skip during chemo, and how to add support without going around your oncologist. Full transcript.</p>
+  <div class="eptags"><span class="tag">Integrative Oncology</span><span class="tag">Greek Test</span><span class="tag">Chemo Support</span><span class="tag">Cancer Care</span></div>
+  <div class="epbyline">November 18, 2026 &middot; 38 min &middot; Dr. Trisha Wimbs &middot; DC, Divinity Wellness Center</div>
+</div></section>
+<div class="body">
+<main>
+<div class="bcrumb"><a href="https://dialedin.health">Dialed In Health</a><span>/</span><a href="/podcast">Podcast</a><span>/</span>Episode 46</div>
+<div class="answer">The Greek test is a liquid biopsy from RGCC, a lab in Greece. A blood sample is shipped overseas, and the report shows how cancer cells responded to chemotherapy agents and natural substances in the lab, and which genes in the cancer DNA are active. <strong>Dr. Trisha Wimbs, DC</strong>, owner of Divinity Wellness Center, uses it to guide integrative care alongside oncology for clients across Iowa, South Dakota, Minnesota, Nebraska and North Dakota. She is a chiropractor and does not prescribe; Dr. Erin Greer, MD, reviews every case and writes any prescriptions. The test costs about $3,500, is not FDA cleared, and is not covered by major insurers.</div>
+<div class="vwrap" id="video"><iframe src="https://www.youtube.com/embed/-bwdDCpBOgo?enablejsapi=1" title="The Greek Test for Cancer: What It Shows and What It Costs" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+<div class="dih-pl"><span class="dih-pl-label">Listen &amp; subscribe</span><div class="dih-pl-btns"><a href="https://www.youtube.com/watch?v=-bwdDCpBOgo" target="_blank" rel="noopener">YouTube</a><a href="https://open.spotify.com/show/2AIQu4k8DINEq06vl3LITn" target="_blank" rel="noopener">Spotify</a><a href="https://podcasts.apple.com/us/podcast/dialed-in-health/id1885383990" target="_blank" rel="noopener">Apple Podcasts</a><a href="https://www.iheart.com/podcast/263-dialed-in-health-326899524" target="_blank" rel="noopener">iHeartRadio</a></div></div>
+<div class="spot"><iframe src="https://open.spotify.com/embed/show/2AIQu4k8DINEq06vl3LITn?utm_source=generator" width="100%" height="152" frameborder="0" loading="lazy" title="Dialed In Health Episode 46 on Spotify" allow="clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe></div>
+<div class="sh">Episode <em>Chapters</em></div>
+<ul class="chapters">
+<li><a href="#video" data-t="0"><span class="t">0:00</span> Choosing your own path</a></li>
+<li><a href="#video" data-t="15"><span class="t">0:15</span> Just heard the word cancer? Start here</a></li>
+<li><a href="#video" data-t="87"><span class="t">1:27</span> Why a California chiropractor moved to the Midwest</a></li>
+<li><a href="#video" data-t="244"><span class="t">4:04</span> What Divinity Wellness Center offers</a></li>
+<li><a href="#video" data-t="337"><span class="t">5:37</span> What is the Greek test for cancer?</a></li>
+<li><a href="#video" data-t="391"><span class="t">6:31</span> What the Greek test shows that a biopsy does not</a></li>
+<li><a href="#video" data-t="519"><span class="t">8:39</span> What the RGCC report says about chemo options</a></li>
+<li><a href="#video" data-t="558"><span class="t">9:18</span> Advocating for yourself on chemo choices</a></li>
+<li><a href="#video" data-t="646"><span class="t">10:46</span> Who orders the test and who prescribes</a></li>
+<li><a href="#video" data-t="662"><span class="t">11:02</span> Immune restoration during chemo</a></li>
+<li><a href="#video" data-t="730"><span class="t">12:10</span> Four ways people get cancer, in her view</a></li>
+<li><a href="#video" data-t="807"><span class="t">13:27</span> Parasites: real concern or hype?</a></li>
+<li><a href="#video" data-t="847"><span class="t">14:07</span> The big five before any supplement</a></li>
+<li><a href="#video" data-t="929"><span class="t">15:29</span> How integrative care works with oncologists</a></li>
+<li><a href="#video" data-t="1036"><span class="t">17:16</span> Chiropractic training vs MD training</a></li>
+<li><a href="#video" data-t="1132"><span class="t">18:52</span> In active chemo? How to start adding support</a></li>
+<li><a href="#video" data-t="1185"><span class="t">19:45</span> Should you tell your oncologist?</a></li>
+<li><a href="#video" data-t="1362"><span class="t">22:42</span> What an integrative protocol looks like</a></li>
+<li><a href="#video" data-t="1477"><span class="t">24:37</span> How many providers offer this in the US</a></li>
+<li><a href="#video" data-t="1494"><span class="t">24:54</span> Why is cancer rising in Iowa?</a></li>
+<li><a href="#video" data-t="1578"><span class="t">26:18</span> No false promises: where the line is</a></li>
+<li><a href="#video" data-t="1639"><span class="t">27:19</span> What integrative cancer care costs</a></li>
+<li><a href="#video" data-t="1696"><span class="t">28:16</span> Myth: sugar feeds cancer</a></li>
+<li><a href="#video" data-t="1762"><span class="t">29:22</span> Myth: do not tell your oncologist</a></li>
+<li><a href="#video" data-t="1792"><span class="t">29:52</span> Myth: antioxidants during chemo are safe</a></li>
+<li><a href="#video" data-t="1885"><span class="t">31:25</span> Myth: integrative and oncology cannot work together</a></li>
+<li><a href="#video" data-t="1909"><span class="t">31:49</span> Myth: integrative oncology means skipping chemo</a></li>
+<li><a href="#video" data-t="1978"><span class="t">32:58</span> Myth: one supplement boosts your immune system</a></li>
+<li><a href="#video" data-t="1999"><span class="t">33:19</span> Researching cancer online at 2 a.m.</a></li>
+<li><a href="#video" data-t="2178"><span class="t">36:18</span> Telehealth and how to reach Divinity Wellness Center</a></li>
+</ul>
+<div class="sh">Key <em>Takeaways</em></div>
+<ul class="klist">
+<li>The Greek test is a liquid biopsy run by RGCC, a lab in Greece. One blood sample is shipped overseas.</li>
+<li>A tissue biopsy says what kind of cancer it is. Dr. Wimbs uses the RGCC report to see how the cells responded to drugs and natural substances in the lab.</li>
+<li>ASCO&#x27;s guideline says chemo sensitivity assays should not be used to choose chemotherapy outside a clinical trial. Treat the report as one input for your oncologist.</li>
+<li>Dr. Wimbs is a chiropractor and does not prescribe. Dr. Erin Greer, MD, reviews every case and writes any prescriptions.</li>
+<li>Integrative oncology works alongside chemo. It does not mean skipping it.</li>
+<li>Before any supplement, she starts with the big five: sleep, hydration, toxic exposure, the nervous system and stress.</li>
+<li>Skip glutathione, its precursors and NAC during cancer treatment. Cancer cells can use glutathione to protect themselves.</li>
+<li>Vitamin C and ozone infusions are timed 48 hours or more before a chemo session.</li>
+<li>Tell your oncologist about everything you add. Your doctors work for you, and you make the final call.</li>
+<li>The test is about $3,500. The first three months of care run about $5,000 to $8,000. Insurance does not cover the test.</li>
+<li>Many of her oncology clients drive in from Iowa, where she sees a lot of colorectal, prostate and pancreatic cancer.</li>
+<li>No single supplement boosts your immune system. Lifestyle comes first.</li>
+</ul>
+<div class="sh">Questions <em>Answered</em></div>
+<div class="qa"><h3>What is the Greek test for cancer?</h3><p>The Greek test is a liquid biopsy from RGCC, a lab in Greece. A blood sample is shipped overseas, and the lab reports how the cancer cells responded to chemotherapy drugs and natural substances, and which genes in the cancer DNA are active. Dr. Trisha Wimbs uses it to guide integrative care.</p></div>
+<div class="qa"><h3>Is the RGCC test covered by insurance, and what does it cost?</h3><p>No. Dr. Wimbs says the test is about $3,500, and the first three months of integrative care run about $5,000 to $8,000 if a person does everything recommended. She notes some Christian health share plans may cover integrative care for people who join before a diagnosis.</p></div>
+<div class="qa"><h3>Can I do integrative cancer care alongside chemo?</h3><p>Dr. Wimbs says yes, and that integrative oncology does not mean skipping chemo. Her team reviews what a person has already been through, then adds support such as vitamin C and ozone infusions timed 48 hours or more before chemo. Tell your oncologist about anything you add.</p></div>
+<div class="qa"><h3>Are antioxidants safe during chemotherapy?</h3><p>Not always. Dr. Wimbs tells people in cancer treatment to avoid glutathione, its precursors and NAC, because cancer cells can use glutathione to protect themselves from treatment. A large SWOG study also linked antioxidant supplements during chemo with worse outcomes in breast cancer.</p></div>
+<div class="qa"><h3>Should I tell my oncologist I am doing integrative treatment?</h3><p>Yes. Dr. Wimbs reminds people that their doctors work for them and that they make the final call. Some oncologists will not endorse outside therapies, but sharing what you take is how a team catches interactions between supplements and cancer drugs.</p></div>
+<div class="qa"><h3>Who orders the Greek test and who prescribes from it?</h3><p>At Divinity Wellness Center, Dr. Wimbs, a chiropractor, can recommend supplements but cannot prescribe medication. Dr. Erin Greer, MD, reviews every case and writes any prescriptions. Treatment plans run three months, then the team checks in.</p></div>
+<div class="qa"><h3>Does sugar feed cancer?</h3><p>Dr. Wimbs points out that PET scans use a sugar tracer because many cancers take up glucose quickly, and she encourages people to cut back on sugar without adding stress. Every cell in the body uses glucose, and cutting dietary sugar has not been shown to shrink tumors. Ask your care team about diet.</p></div>
+<div class="qa"><h3>Where can I find integrative oncology support in Iowa, South Dakota or Minnesota?</h3><p>Dr. Trisha Wimbs, DC, owns Divinity Wellness Center and works with clients across Iowa, South Dakota, Minnesota, Nebraska and North Dakota, with free 15 minute consults in person or by telehealth. Many of her oncology clients drive in from Iowa. More providers are in the Dialed In Health directory at dialedin.health/the-directory.</p></div>
+<div class="sh">Myth <em>Busters</em></div>
+<div class="myth"><div class="myth-q">Myth: Sugar feeds cancer, so starve the sugar and you starve the tumor.</div><div class="myth-a">Dr. Wimbs: largely true in her view, which is why PET scans use sugar. Cut it as much as you can, but stay balanced and do not let it become a source of stress. Team note: every cell uses glucose, and cutting dietary sugar has not been shown to shrink tumors.</div></div>
+<div class="myth"><div class="myth-q">Myth: If you are doing natural therapies, do not tell your oncologist.</div><div class="myth-a">Dr. Wimbs: she would not say that. If you feel comfortable being open, tell them. You are the one who decides.</div></div>
+<div class="myth"><div class="myth-q">Myth: Antioxidants during chemo are safe because they only protect healthy cells.</div><div class="myth-a">Dr. Wimbs: false. Cancer can often use glutathione to protect itself, so she says no glutathione, no precursors and no NAC during treatment.</div></div>
+<div class="myth"><div class="myth-q">Myth: Integrative medicine and oncology cannot work together.</div><div class="myth-a">Dr. Wimbs: she totally disagrees. Her team works with oncologists, including some at Mayo, through a shared portal.</div></div>
+<div class="myth"><div class="myth-q">Myth: Integrative oncology means skipping chemo.</div><div class="myth-a">Dr. Wimbs: totally false. Sometimes it means a lower dose, sometimes a full dose with support on the back end. Every case is different.</div></div>
+<div class="myth"><div class="myth-q">Myth: Boosting your immune system is as easy as a supplement.</div><div class="myth-a">Dr. Wimbs: definitely not. The big five lifestyle pieces have to be part of it.</div></div>
+<div class="sh">About <em>This Episode</em></div>
+<div class="prose">
+<p>Dr. Trisha Wimbs, DC, is a chiropractor and the owner of Divinity Wellness Center. She left a full life in California to build an integrative practice in the Midwest, focused on integrative oncology and immune restoration.</p>
+<p>Her team works alongside cancer care, not instead of it. Dr. Erin Greer, MD, reviews every case and writes any prescriptions, and plans run three months before the team checks in. The center offers integrative oncology support, hyperbaric oxygen, ozone, IV therapy and chiropractic.</p>
+<p>She works with clients across Iowa, South Dakota, Minnesota, Nebraska and North Dakota, with free 15 minute consults in person or by telehealth, and her team offers telehealth coaching nationwide. Many of her oncology clients drive in from Iowa.</p>
+<h3>Divinity Wellness Center</h3>
+<p>Phone: <a href="tel:+16059063078">(605) 906-3078</a><br>Website: <a href="https://www.divinitywellnesscenter.com" target="_blank" rel="noopener">divinitywellnesscenter.com</a><br>Instagram: <a href="https://www.instagram.com/divinitywellnesscenter/" target="_blank" rel="noopener">@divinitywellnesscenter</a><br>Directory listing: <a href="https://dialedin.health/directory/integrative-naturopathic/divinity-wellness-center">Divinity Wellness Center on Dialed In Health</a></p>
+<p><strong>Free Integrative Oncology Cheat Sheet:</strong> the big five to get right first, what to ask about the Greek test, and what it costs, on one page. <a href="https://dialedinhealth.kit.com/728ae5ef46" target="_blank" rel="noopener">Get it free</a></p>
+</div>
+<div class="sh">Full <em>Transcript</em></div>
+<div class="tr">
+<p><span class="ts">[0:00]</span> Most people who have chosen to go the natural route only, even if they&#x27;ve been advised they need traditional, are accepting their fate if they don&#x27;t make it. That&#x27;s kind of powerful, like being able to be okay with whatever the outcome is, knowing that you chose what was best for you.</p>
+<p><span class="ts">[0:15]</span> Just heard the word cancer. It&#x27;s 2 in the morning, and you might be searching the internet, sales pages, forums, videos with discount codes, trying to find a straight answer, trying to find. Solutions trying to find anything. Doctor Trisha Wimbs gives straight answers.</p>
+<p><span class="ts">[0:32]</span> She left a full life in California to build a clinic right here in Sioux Falls. Today she owns Divinity Wellness Center focused on integrative oncology and immune restoration. She works alongside cancer care, not instead of it. So today what you&#x27;re going to learn, we&#x27;re going</p>
+<p><span class="ts">[0:48]</span> to talk a little bit about a blood test from Greece, what that shows. And we&#x27;re going to talk about immune restoration and what that looks like from day to day. We&#x27;re also going to cover how to add support without going around your oncologist. Let&#x27;s get dialed in.</p>
+<p><span class="ts">[1:04]</span> Health and wellness is confusing. There&#x27;s a new trend every week. Everyone&#x27;s got an opinion, and it&#x27;s hard to tell what&#x27;s real versus what&#x27;s good marketing. This is dialed in health and I&#x27;m your host, Melissa Goodwin. Every episode, we sit down with real providers</p>
+<p><span class="ts">[1:17]</span> doing the work and ask them the questions you would ask if you were sitting in this chair. Let&#x27;s get dialed in. Tricia, welcome to the show. Oh, thank you so much for having me. I&#x27;m so glad to have you on. I&#x27;ve heard about the work that you&#x27;ve done. I&#x27;ve heard like whispers periodically</p>
+<p><span class="ts">[1:36]</span> from people, and I&#x27;m so curious. So I was so excited when you said you would do the show and and kind of fill us in on your work here. Yeah, we&#x27;re excited to talk about it. Yeah, so let&#x27;s get in. Tell me, tell me a little bit about. How you got started in this work?</p>
+<p><span class="ts">[1:51]</span> I know you came, you originally started in California and then moved here. Tell me about your practice in California, what you got started in there, and and how you got going into this work. Yeah, so my practice in California had some integrative things. We had a naturopathic doctor, which they don&#x27;t</p>
+<p><span class="ts">[2:05]</span> allow those in South Dakota, but we had one out there, and so we didn&#x27;t do cancer protocol development, but we did a lot of cancer treatment. So people who already had protocols would come to us for. The IV therapy and for those kind of things, so we had a good amount of experience with that piece.</p>
+<p><span class="ts">[2:21]</span> And then after I opened Divinity, a patient came to us and said, &quot;Hey, look, I&#x27;m flying all the way to Nevada to get this testing. Would you be able to just do it here so that I don&#x27;t have to fly?&quot; And I&#x27;m like, &quot;Well, let me see what what it all entails.&quot; And as soon as I like went through</p>
+<p><span class="ts">[2:36]</span> their onboarding process to get certified, I was like, &quot;This is incredible. Like we have to offer this.&quot; And I really felt God lead me to that. So you you started in California. What made you pick everything up and come to the the middle of the United States? So we we call it flyover country.</p>
+<p><span class="ts">[2:53]</span> Yeah. What made you come here? Oh God, I mean that&#x27;s the only answer I could give you. I felt really spiritually pulled in about 2019 that I was supposed to move somewhere and I didn&#x27;t know where. And then in 2021, we came on a trip to Minnesota to see my grandparents and.</p>
+<p><span class="ts">[3:11]</span> I was just on a hike in the woods by myself, and I felt God be like, &quot;It&#x27;s time. You need to figure out where you&#x27;re going.&quot; So I started researching states, and I started flying and visiting them. And when I came here, it was very clear that this is where I was supposed to be.</p>
+<p><span class="ts">[3:25]</span> Tell us what your first impressions were. Oh, just like going back to 1980. I don&#x27;t know. It was like stepping back in just a sweet little time, like you know quilt shops and all these things that don&#x27;t exist where I came from. It just Such sweet people, so kind.</p>
+<p><span class="ts">[3:43]</span> The youth especially impressed me so much, like their willingness to work hard. And I mean, people don&#x27;t even get their driver&#x27;s license till they&#x27;re like 20 where I was at. So it was just really cool to see such a a good work ethic in the Midwest. And obviously also how</p>
+<p><span class="ts">[3:59]</span> spiritually connected people are here. I feel like it was a really cool vibration. That&#x27;s awesome. So tell me a little bit about all the things that you offer here at. Divinity. What you obviously we&#x27;re going to talk a little bit about the integrative oncology work that you do.</p>
+<p><span class="ts">[4:13]</span> But I was when we walked in, I was like, &quot;Wait, you do this? And what is this? What is this machine?&quot; Yeah. So tell us about all this all the machines and all the stuff that you do. Oh my goodness, there&#x27;s so many. Well, we&#x27;ll start at the top. We have hyperbaric chambers.</p>
+<p><span class="ts">[4:25]</span> We use those for several different things: anti-aging, healing. We have colon hydrotherapy, which is basically like irrigating your gut. We offer. EBU or EBO2, which is blood dialysis, so purifying out molds, microplastics, viruses, cholesterol, things like that.</p>
+<p><span class="ts">[4:44]</span> We have extensive IV therapy options, including metal chelations and detox IV therapy, as well as the integrative oncology piece, which is, you know, targeting different things that we see in people&#x27;s tests that will be effective. And then we got Dr. Greer over there doing, you know, holistic medicine.</p>
+<p><span class="ts">[5:02]</span> Which is amazing. She&#x27;s really into de-prescribing and getting people right nutritionally. We have chiropractic because that&#x27;s obviously my bread and butter, and we do a lot of ozone therapy, which is very popular in Europe, but it is not super mainstream here yet.</p>
+<p><span class="ts">[5:17]</span> So we&#x27;re excited to bring that out. Yeah. So tell me, how would I know I might need something like any of the therapies that you mentioned? Yeah. So we have a little. Chatbot on our website that can help with that, but I also do like 15-minute free consults where people can just pick my brain and say,</p>
+<p><span class="ts">[5:33]</span> &quot;Hey, I&#x27;ve got all these things,&quot; and then we can kind of direct if we think we can help someone or not. Say I was diagnosed on Tuesday. Let&#x27;s talk a little bit about the Greek test. Sure. I don&#x27;t know, like I don&#x27;t know anything about this test. So tell me what the Greek test is.</p>
+<p><span class="ts">[5:45]</span> Like let&#x27;s say I just found out that I have cancer. Sure. What is the test? What&#x27;s it measuring? Yeah. So the Greek test is ran by a company called RGCC. See, they&#x27;ve been around for about 20 years in Greece. If you live in Europe or Asia, you are getting this test.</p>
+<p><span class="ts">[6:00]</span> Like Japan just adopted this. The whole country of India uses it. It is a very comprehensive liquid biopsy. So it&#x27;s a a blood sample that we send over there, and we get so much information. We can see what chemos will work and you know what natural things we can use.</p>
+<p><span class="ts">[6:17]</span> We can also see the glitches in the immune system that are allowing it to. To function without the immune system seeing it, so we can work to repair that, and we can also see what genetics of the cancer DNA are upregulated that are making it harder to treat. So, you you said it&#x27;s a blood draw.</p>
+<p><span class="ts">[6:33]</span> Yeah. Can you send it to Europe? We send it overseas. Yes. So what does that lab see that, like a typical biopsy wouldn&#x27;t see? So a biopsy is really only telling you what it is, and sometimes they can check and see if. Immunotherapies would respond and that kind of thing, but</p>
+<p><span class="ts">[6:49]</span> this is super great because they&#x27;re actually taking your cancer cells and dividing them out, putting them in front of these drugs, which ones are working, and they do it multiple times so that they know that the effectiveness is going to last for at least a full</p>
+<p><span class="ts">[7:03]</span> treatment schedule. And then you know being able to see the genetics of the cancer DNA a lot a lot of times in traditional oncology they&#x27;re testing the patient&#x27;s genetics. But not the cancer&#x27;s genetics, and so it&#x27;s really able, really cool to be able to see that in real time.</p>
+<p><span class="ts">[7:18]</span> So why is that test not done, you know, more more widespread here in the US? Well, the closest answer I can give you is that in Europe and Asia, they&#x27;re government funded medicine, so they want healthy citizens, which means they want better results. Here we&#x27;re a for-profit medical system,</p>
+<p><span class="ts">[7:34]</span> and it doesn&#x27;t make sense for them to cure it. I mean, if you look at like I was just talking to an amazing cardiologist about this last week that. If you look how heart surgery has advanced, you can put a stent in now with someone awake with no anesthesia. You don&#x27;t have to cut their chest open.</p>
+<p><span class="ts">[7:50]</span> You could just put it in. We haven&#x27;t changed like breast cancer treatment in like 50 years. So it&#x27;s like how is certain medicine advancing so rapidly and cancer&#x27;s just sitting really stagnant, but it&#x27;s also one of the biggest money generators. So well that&#x27;s depressing.</p>
+<p><span class="ts">[8:06]</span> It&#x27;s a little depressing. Yeah. Yeah. So when you get the results back from the Greek test, and I mean that&#x27;s part of why why we have the show too is because there is a lot of incredible good things that does happen in mainstream medicine, but there&#x27;s absolutely a world of opportunity as well</p>
+<p><span class="ts">[8:22]</span> that just isn&#x27;t you know where people aren&#x27;t being served. So that&#x27;s part of why we&#x27;re doing this show is because there&#x27;s just there&#x27;s just a lot of things that you know you&#x27;re sent home. They&#x27;ll see you in a few few months, right? And that just doesn&#x27;t work when you&#x27;ve got something</p>
+<p><span class="ts">[8:34]</span> that&#x27;s really pressing and you want to get well. So when your results come back, what what do you see? What are you holding in your hand? Yeah, so we&#x27;re holding this comprehensive handbook of how to help this patient through their treatment. And what&#x27;s exceptional about it is it doesn&#x27;t</p>
+<p><span class="ts">[8:48]</span> just apply to the natural side of medicine. We can use it to help them make more informed decisions about their oncology treatment. If if they&#x27;re being offered chemo, we will know by that test if it&#x27;s going to work for them or not, so that they&#x27;re not poisoning their body for no reason.</p>
+<p><span class="ts">[9:01]</span> We&#x27;ll also be able to see if radiation is going to work. Hyperthermia treatment and so it&#x27;s really helpful not only to know what treatment would be best but also how best to aid their immune system in restoration so that it doesn&#x27;t continue to come back. So I&#x27;m curious when you say you know you&#x27;ll know what kind</p>
+<p><span class="ts">[9:20]</span> of chemotherapies or if radiation will be effective. How often do patients advocate for themselves on what kind of chemotherapy they&#x27;re going to use? Is it something that they&#x27;re often offered? In this situation, oh absolutely not. I mean, the good thing is there are some oncologists who</p>
+<p><span class="ts">[9:36]</span> are open to looking at those tests and utilizing them. But yeah, this is why chemo doesn&#x27;t work for everyone because everyone&#x27;s DNA is different. We often have people with the same exact diagnosis that have completely different, you know, chemos that work for them.</p>
+<p><span class="ts">[9:51]</span> So, you know, it is important to advocate for yourself, and I think it&#x27;s important for every patient to remember the doctors work for them. So. You know they might dismiss you, but yeah, that&#x27;s a risk, you know. So when you when you have when you get this test in your hand, you kind of walk through.</p>
+<p><span class="ts">[10:06]</span> Tell me what through how you walk through a patient through the results and kind of guide them. Yeah, so we go page by page explaining exactly what we found and how each thing applies to their treatment, and all of their treatment is absolutely targeted to those results.</p>
+<p><span class="ts">[10:20]</span> So any supplements that we have in there are meant to target different gene expressions that are upregulated that are helping the cancer grow. Or evade the immune system, and then we also have a lot of immune boosting things in there to wake their immune system up to those</p>
+<p><span class="ts">[10:34]</span> atypical cells and help fight it better. Okay, when the prescriptions that come out of that test, would that be something that you write, or do you work with alongside the doctors to kind of figure out like, here&#x27;s what I can do, here&#x27;s what you do. Yeah, so this is where Dr.</p>
+<p><span class="ts">[10:47]</span> Greer and I shine in collaboration because since I&#x27;m a chiropractor by trade, I&#x27;m not allowed to prescribe medicine. I can obviously prescribe supplements, but. If we need medications, she reviews every single case with me and then prescribes accordingly. Now the immune restoration part.</p>
+<p><span class="ts">[11:02]</span> So if you&#x27;re, you know, you&#x27;re in you&#x27;re taking chemo, you&#x27;re in a in a in a treatment protocol where you&#x27;re you&#x27;re you&#x27;ve got a round of chemo. A lot of times your immune system is compromised. So tell me a little bit about the immune restoration that you do.</p>
+<p><span class="ts">[11:17]</span> Yeah, so in chemo it&#x27;s difficult because you&#x27;re damaging. Cancer DNA, but you&#x27;re also damaging good DNA. So, ensuring that we are protecting people&#x27;s cells is so important. So often we&#x27;ll do high dose vitamin C and ozone infusions 48 hours or more before chemo.</p>
+<p><span class="ts">[11:32]</span> And what that does is it&#x27;s pro-oxidative. It helps make the chemo more effective, but then as it reduces in the system, it becomes anti-oxidative, and also helps you know rid the body of those poisonous toxins. So, so do you have to be careful if you&#x27;re Pro-oxidative, like what kinds of supplements or</p>
+<p><span class="ts">[11:51]</span> things that you&#x27;re taking during that time that you&#x27;re in the taking those treatments? No, everything plays really well together, which is nice. Okay. Yeah. So you mentioned that you know oncology treats what&#x27;s there, but a lot of people aren&#x27;t you know necessarily sequencing the cancer itself</p>
+<p><span class="ts">[12:08]</span> or figuring out how it came to be there. Sure. Tell me more about that. Yeah. So I think there&#x27;s four major ways. People get cancer. One is genetics, and when I say genetics, I don&#x27;t mean like my mom smoked and I not that kind of thing. I mean like Lynch syndrome or a TP53 mutation, something</p>
+<p><span class="ts">[12:25]</span> that makes your body less inclined to fight cancer cells. That would be a genetic issue. Number two would be environmental, so that&#x27;s going to be pesticides. What are you eating? Are you a smoker? You know, anything environmental. Have you been around? You know, radiation or any other kind of toxins.</p>
+<p><span class="ts">[12:41]</span> The third one is going to be: Do you have parasites? I mean, that&#x27;s a huge issue. If you have parasites and your body&#x27;s constantly dealing with those, it&#x27;s not dealing with fighting cancer. And the fourth one is viral overload. And this is probably the one that goes the most</p>
+<p><span class="ts">[12:55]</span> under diagnosed is that often people have underlying viruses that they don&#x27;t know that are you know active in their body and that can be a real issue. If your body&#x27;s trying to fight off five or six of these things, it&#x27;s not going to be fighting cancer. So how would you know if you have</p>
+<p><span class="ts">[13:12]</span> viral overload or parasites? Yeah, so we do testing for all of these things. I mean, we can look at heavy metals, we can look at mold, we can look at do we have Lyme disease or CMV or EBV or any of those, you know, viruses underlying there, and then, you know, formulate a plan to deal</p>
+<p><span class="ts">[13:27]</span> with that. Yeah, I see. So I&#x27;m in a lot of the crunchy mom groups just because of the work that I do. I see a lot of parasite cleanses out there. What is the actual? I mean, how many people do you think? percentage-wise, like is the parasites are a real thing?</p>
+<p><span class="ts">[13:40]</span> Is it it&#x27;s everybody really yeah I mean not in abundance where you&#x27;re like not everyone&#x27;s gonna poop out a worm every day right but right it&#x27;s in our food it&#x27;s I mean it&#x27;s it&#x27;s inevitable right it&#x27;s in our produce even a lot of times microscopically so sure we&#x27;ve all got parasites</p>
+<p><span class="ts">[13:55]</span> it&#x27;s good to clean out at least once a year okay good to know so when you think about boosting your immune system you know I&#x27;ve you walk into any You know, GNC type store, right? And it&#x27;s like all over the place. What&#x27;s real? What&#x27;s doesn&#x27;t work? You know, what do you say?</p>
+<p><span class="ts">[14:13]</span> What do you think of when you see all of those signs in a supplement store? Yeah, well, I always think of the big major five before we even talk about any supplements, like adequate sleep, huge. You have to sleep if you want to heal. That&#x27;s where all our healing takes place.</p>
+<p><span class="ts">[14:27]</span> Having good hydration, also important. We&#x27;re made up of. A lot of water molecules, so we need to be flushing our organs out regularly, and it needs to be a good water source. Reducing toxic exposure, also super important. Making sure we&#x27;re buying good, healthy</p>
+<p><span class="ts">[14:41]</span> foods and that we&#x27;re not ingesting or doing things that are toxic to our systems. Maintaining good neurology, I think, is important. Like making sure our nervous system is in a good place and decreasing stress. I would say, of all things, stress is the most unhealthy.</p>
+<p><span class="ts">[14:57]</span> Doesn&#x27;t matter if you have perfect everything else. If you&#x27;re really high in stress, that&#x27;s a problem. So addressing those five things first, and then working into some of where the deficits would be. And we do a lot of testing to know so that we&#x27;re not making recommendations that are just</p>
+<p><span class="ts">[15:10]</span> wasting people&#x27;s money or that they&#x27;re just going to pee out in the toilet, you know. Yeah. Yeah. I mean, I would I would bet if if any if there&#x27;s other people out there like me, you you&#x27;re like, oh, I need this. So you go through the store and it&#x27;s it&#x27;s not necessarily</p>
+<p><span class="ts">[15:23]</span> Compensating for a lack of sleep or high stress or things like that, you&#x27;re just adding to the mix of the cocktail of things. Yes, exactly. Yeah. So tell me specifically on oncology, you know, you you work with oncologists. Tell me what does that look like? What does that partnership look like?</p>
+<p><span class="ts">[15:42]</span> Well, it&#x27;s not an easy one. Not because I don&#x27;t want it to be. A lot of times they just won&#x27;t talk to us, so we might. Call them. We might leave messages. We don&#x27;t hear anything. But we do have a few that are really open-minded and lovely and willing to work with us, which has been</p>
+<p><span class="ts">[15:58]</span> such a blessing to a lot of our patients locally here. You know, we when you think about probably their bound by protocol and the the systems that they&#x27;re in, do you think that that it is hesitation around the science or do you think it&#x27;s more just the the the way that they&#x27;re</p>
+<p><span class="ts">[16:15]</span> they are institutionalized yeah I think institution you know the institution has a lot to do with I mean Doctor Greer even told me you know in school what they were taught and how it was like chiropractors are the devil and you know and now she&#x27;s like I can&#x27;t believe how much</p>
+<p><span class="ts">[16:30]</span> you guys know that we don&#x27;t know and like you know there&#x27;s a different perspective once you like really get to know someone but I do think it&#x27;s protocol I do think it&#x27;s it&#x27;s what they&#x27;ve been taught but Every physician is responsible for doing research, and a lot of these</p>
+<p><span class="ts">[16:44]</span> things that I hear oncologists tell patients are not effective have gallons of research readily available that show that they are, and so that&#x27;s hard for me because I feel like we do owe it to our patients to do our due diligence, and I do think it is hard for them</p>
+<p><span class="ts">[16:59]</span> being bound by these major medical systems. We find the independent oncologists are way more open-minded because they don&#x27;t have. This system like breathing over their decisions, so they have to be careful. And for that, I understand, you know. So you said something that&#x27;s interesting.</p>
+<p><span class="ts">[17:14]</span> You said, &quot;I can&#x27;t believe.&quot; And and Dr. Greer is a functional medicine provider. No, she&#x27;s an MD. MD. Yeah. Okay. So tell me what is tell me more about that. What do what do chiropractors know that maybe MDs don&#x27;t know or they&#x27;re not trained in? Well, MDs are trained very much to treat the symptom, so</p>
+<p><span class="ts">[17:32]</span> they get a They have symptoms and then they have their book of medicine treatments to fix it, right? Where chiropractic is very much a holistic practice, so we are trying to find the cause of issues way before we&#x27;re ever looking at a treatment. And it&#x27;s just a it&#x27;s a completely</p>
+<p><span class="ts">[17:48]</span> different medical opinion. So like when we first started collaborating, she&#x27;d be like, &quot;Well, what do you do if you have a patient with strep?&quot; And I&#x27;d be like, &quot;Oh, oregano oil gargling with warm salt water.&quot; And she&#x27;s just like, Like what? Like you don&#x27;t do penicillin, you know?</p>
+<p><span class="ts">[18:01]</span> And and and she just started to see that those natural things work because God gave us all the medicine we need in our our plants, you know? Now I&#x27;m not saying traditional medicine isn&#x27;t necessary, it absolutely is, and there&#x27;s a total place for it. But I feel like it should be more</p>
+<p><span class="ts">[18:15]</span> of a last resort, not a first. Yeah. You know. So where where do you think the bad the bad rep comes from for chiropractic? I think it&#x27;s just like anything else when you&#x27;re doing something different and you&#x27;re going against The grain of what society thinks. It&#x27;s never popular.</p>
+<p><span class="ts">[18:30]</span> I mean, you see this with with anything. We love a heroine in a movie. We love like Neo in the Matrix, but we don&#x27;t love it in real life. And I think that&#x27;s really interesting. If someone is in active chemo right now, and wants to, like, say they&#x27;ve been, you know, they&#x27;re maybe</p>
+<p><span class="ts">[18:45]</span> partway through their through their protocol, and they want to add something like what you&#x27;re doing in. How would you how would you advise them to to start? What would they do first? Yeah, I mean, letting us see what they&#x27;ve been through is important because a lot of times if</p>
+<p><span class="ts">[19:01]</span> if the chemo&#x27;s beat them down, you know, so far, it&#x27;s a different path than someone who&#x27;s coming in who&#x27;s maybe early in it and hasn&#x27;t done it yet. But just letting us take a look at at their situation. I mean, there is always assistance for every person. I feel like especially when you&#x27;re in chemo,</p>
+<p><span class="ts">[19:19]</span> there&#x27;s so much you can do to make it work better. And also protect your cells so that your side effects are so much less. Yeah, is there a certain kind of cancer that you&#x27;ve had better luck with than others? I feel like across the board it&#x27;s been pretty good.</p>
+<p><span class="ts">[19:33]</span> I mean, I feel like we see the most breast and prostate. And I feel like we do really well with that colorectal. I mean, we&#x27;ve got some got some weird ones too that that are very atypical, but it&#x27;s been really fun. So if someone is working with you, do you have them tell their oncologist?</p>
+<p><span class="ts">[19:50]</span> How do you? Yeah, I mean, honestly, that is completely up to them, and and we don&#x27;t advise them either way. You know, we just tell them that, like, look, if you do tell your oncologist, they&#x27;re going to advise you don&#x27;t do these things, and that&#x27;s their job. Don&#x27;t get upset about it.</p>
+<p><span class="ts">[20:06]</span> Like, it just they can&#x27;t tell you that this is okay, because then it&#x27;s a liability for them, you know, which is sad. But did you start out working with oncology when you were started your practice in California? What was the evolution where you were like, I think I want to.</p>
+<p><span class="ts">[20:19]</span> Really specialize in this area. Yeah, so my first year in, I was just a straight chiropractor adjusting, fixing bodies, and then slowly my patients started coming to me with other things, and they&#x27;re like, &quot;Look, I&#x27;ve already been to the doctor three times, and no one&#x27;s helping</p>
+<p><span class="ts">[20:33]</span> me.&quot; And I&#x27;d be like, &quot;Okay, well, let me like run some labs.&quot; And I just saw the, I mean, I found cancer multiple times. I found tons of autoimmune diseases. I was just seeing all these things, and so I really felt inclined to start moving more in a functional direction and helping.</p>
+<p><span class="ts">[20:49]</span> Solve the original issue rather than you know the symptom and then it just kept morphing from there honestly yeah so is there a story that has stuck with you how many years have you been doing this now this like in South Dakota just the work in oncology well that&#x27;s been probably about eight and then here in</p>
+<p><span class="ts">[21:09]</span> Sioux Falls we&#x27;ve been here for three okay is there a story that has stuck with you throughout all these years I&#x27;m sure many oh there is so many I mean we&#x27;ve had miracle Miracles happen is what I would say, and we give God all the credit. Like, while we are facilitating treatment,</p>
+<p><span class="ts">[21:24]</span> some of these things, to me, have to be anointed by Him to work as well as they have. But yeah, we do have some really cool stories. And we&#x27;ve had people who&#x27;ve been in treatment for a decade and couldn&#x27;t get in remission who are entering remission because we&#x27;re working more</p>
+<p><span class="ts">[21:38]</span> on the immune system and those kind of things. But one story that I will tell you because this is just really recent, we had a patient diagnosed with an adrenal tumor about. 18 months ago and she was given three months to live. They&#x27;re like, you&#x27;re basically a goner.</p>
+<p><span class="ts">[21:53]</span> We can give you palliative chemo and you know, and and that&#x27;ll give you another like three months. And she was just like, no, I&#x27;m not gonna spend my last three months on this earth doing that. And she had cancer in like several places in her body and we just got her most recent scans and all</p>
+<p><span class="ts">[22:09]</span> she&#x27;s done is treatment here and she has no lesions anywhere except A little tiny dot on her adrenal gland and the funniest thing is her oncologist was like, she still maintains that relationship, you know, even though she&#x27;s not doing anything over there. But they were like, well, what are you doing?</p>
+<p><span class="ts">[22:27]</span> And she&#x27;s like, well, you should call. They would love to talk to you, you know. And but it was really cool, like just cool to see, you know, that her faith too has been so trusting of the path that she chose, you know. Yeah, you&#x27;ve talked about nutrition. You&#x27;ve talked about sleep.</p>
+<p><span class="ts">[22:44]</span> You&#x27;ve got these. So, what is like a typical? You&#x27;ve got ozone therapy. You said vitamin C. If I come in, like what might what I what might a a treatment protocol with you? Just give me like a. I know none of them are the same because you have none of them are the same.</p>
+<p><span class="ts">[22:58]</span> Yeah. Like give me a picture. Like paint a picture for me. What might. Okay, let&#x27;s just say you came in with breast cancer because that&#x27;s like a common one. Sure. So typically for that, if we got your results back and it showed heat sensitivity and we&#x27;ve got all your supplements.</p>
+<p><span class="ts">[23:11]</span> Usually our standard protocol would include hyperbaric therapy a few times a week, hyperthermia treatment once a week, ozone and vitamin C once a week, infusion, and then you would have a list of daily medications and supplements that are targeting the genetics and stem</p>
+<p><span class="ts">[23:25]</span> cell replication, and then another rotation of supplements to kill and inhibit based on what your test results looked like. And I would do that for how long? So every treatment plan is three months, and then we do a check-in and. RGCC does offer some more extensive therapies.</p>
+<p><span class="ts">[23:41]</span> They have gene silencing therapies and NK cells and even like a cancer vaccine. I don&#x27;t like the word vaccine, but it&#x27;s made out of your DNA. And so we can do those kind of things as well if we need to hit something a little bit harder. Okay. And so it all just depends what</p>
+<p><span class="ts">[23:56]</span> what we see in those results. So RGCC is what? Oh my gosh, people ask me this all the time and I like forget it and it&#x27;s so simple. I just heard you say it, so I was like, &quot;Well, what is that? I don&#x27;t know what that is. Cancer Center and the R is research. I don&#x27;t know what the G is.</p>
+<p><span class="ts">[24:11]</span> There&#x27;s something in the G. Got it. But it&#x27;s a it&#x27;s not the place you get the Greek test. It&#x27;s a different. No, it is. Oh, it is. Yeah, so they do the testing and make therapies as well. Oh, and they don&#x27;t just make them for cancer. So they make them for Lyme disease</p>
+<p><span class="ts">[24:23]</span> and HIV and HPV and all the virals. They do gene silencing for all those virals as well. So it&#x27;s it&#x27;s a really cool company. So how many company how many people like you do this kind of work across the U.S. So the last time we went to a conference there was probably about 110 of us there.</p>
+<p><span class="ts">[24:42]</span> I think this year there&#x27;s probably like 140. Yeah. So it&#x27;s not a ton. Not enough. No. So you you service kind of a whole area because there isn&#x27;t a lot of providers. Yeah. So tell me Iowa you&#x27;d mentioned when I talked with you that you have a lot of clients that come from Iowa.</p>
+<p><span class="ts">[25:01]</span> So I&#x27;ve got some theories. I&#x27;m curious. What what are you seeing? Well, you know, I did a deep dive on this because I was like, what&#x27;s happening in Iowa? And what&#x27;s really crazy? Because I was thinking like, well, if it&#x27;s really about agriculture, why is Nebraska and South Dakota</p>
+<p><span class="ts">[25:14]</span> not also having similar issues? Yeah. But when I did the deep dive, Iowa is using about 2 billion pounds of fertilizer per year and 54 million. Pounds of pesticides on their crops, and the issue is we get our water from deep down, like aquifers here in South Dakota, but they drink surface</p>
+<p><span class="ts">[25:37]</span> level water in Iowa, so it&#x27;s coming out of the streams where all this stuff has just leached into it. They also are one of the biggest hog suppliers in the nation, and hogs have the most high parasitic abundance, and that&#x27;s the fertilizer that&#x27;s being put into the.</p>
+<p><span class="ts">[25:53]</span> Into the water supply as well, so it has very high nitrate concentration, and I think that is a huge reason why they&#x27;re having such a bad problem out there. Are you seeing a lot of the same types of cancers from Iowa? Yeah, Iowa specifically, we have so much colorectal.</p>
+<p><span class="ts">[26:08]</span> I mean, so much colorectal, a lot of prostate, a lot, a lot of prostate around the farmers, and then a lot of pancreatic too. That is is super interesting because I I I immediately would have thought. Agriculture as well, but yeah, that makes sense because we this whole region is agriculture.</p>
+<p><span class="ts">[26:23]</span> Exactly. You do say like you don&#x27;t give up until it&#x27;s not you don&#x27;t give up until it&#x27;t over and no false promises. So tell me about those lines. Yeah, well, since I&#x27;m a Christian, I believe that life is just as important at conception as it is all the way until someone has taken their last breath.</p>
+<p><span class="ts">[26:40]</span> So, if someone wants to fight, I want to fight with them. I feel like every day that someone is on this earth, it&#x27;s a chance to glorify God in some way. So. That&#x27;s really important, but I also want people to know that cancer is so unique in every single person.</p>
+<p><span class="ts">[26:54]</span> There is a plethora of different things that are going to decipher if someone&#x27;s outcome is going to be good or not. So we cannot promise anything, and I think that&#x27;s important that no provider can make any promise like that. So for for people who&#x27;ve maybe lost hope and they</p>
+<p><span class="ts">[27:10]</span> feel like you know there&#x27;s there&#x27;s not much I can do anymore, what would you want them to know? I would want them to know that I&#x27;ve seen miracles and that there&#x27;s always hope. There&#x27;s always hope. It just you got to get people that are behind you that are willing to have that hope with you.</p>
+<p><span class="ts">[27:24]</span> So this particular treatment not covered in my insurance, right? No. So tell me what is the if you&#x27;re comfortable, tell me like what is the regular course cost? How do you you know how do you walk people through that? What do they need to understand? Yeah, sure.</p>
+<p><span class="ts">[27:37]</span> So note for the young people, if you&#x27;ve got Christian HealthShares or or if you don&#x27;t have one, you should get one because they do cover this stuff and it&#x27;s Really nice for those families. The test is 3,500, so it&#x27;s not cheap. And then typical treatment, if you did every single thing</p>
+<p><span class="ts">[27:53]</span> we recommended with supplements and all the different things, you&#x27;re probably looking at between five and eight thousand for that first three months of treatment. So why did you say no for the young people on the Christian Health Insurance? Because I feel like, you know, when</p>
+<p><span class="ts">[28:06]</span> if you already have a diagnosis, you can&#x27;t really switch. They&#x27;re not going to cover anything pre-existing. But if you&#x27;re a young, healthy person, now is the time to get on. A plan that&#x27;s going to cover some of these integrative things. If you&#x27;re into that, you know, yeah.</p>
+<p><span class="ts">[28:18]</span> So I&#x27;m going to read a few statements and I&#x27;m going to let you kind of respond to them because these are things that are very common that you see on the internet. And I&#x27;m curious how what your thoughts are. Sure. All right. Sugar feeds cancer and if you if you</p>
+<p><span class="ts">[28:30]</span> starve sugar, you starve the tumor. It&#x27;s super true. I mean, this is why PET scans are an infusion of sugar and then they watch where it goes because the cancer immediately sucks it up. So yes, in 99% of cases, cancer is a sugar monster. So the more you can starve it, the better it is.</p>
+<p><span class="ts">[28:49]</span> So does that mean we should not be eating sugar? I mean, in general, we should try and chill out, but we also have to have a good time. Remember, I talked about stress. If not eating the cake once in a while causes you immense stress, you have to like balance it, you know?</p>
+<p><span class="ts">[29:02]</span> Yeah, yeah. Well, that&#x27;s easier said than done. You know, Jesus liked to feast, though. I always think about this guy. He&#x27;s like, &quot;Let&#x27;s have a feast.&quot; They had the wine. He was in it, you know, but he also fasted. So that&#x27;s true. He was very balanced. Yeah. Yeah.</p>
+<p><span class="ts">[29:17]</span> That&#x27;s good to, and I don&#x27;t think about that enough. The balancing. So we don&#x27;t want the sugar. We don&#x27;t want it. Cut it out as much as possible. All right. If you&#x27;re doing natural therapies, don&#x27;t tell your oncologist. I would not say that. I would say if you feel comfortable being open</p>
+<p><span class="ts">[29:32]</span> and you think they&#x27;re cool with it, then yes. But ultimately, you&#x27;re the patient and you get to decide. Yeah. Do you find that a lot of oncologists are just flat out resistant or they just sort of say, I don&#x27;t know that at least in this area they are which you know I wish it wasn&#x27;t like that.</p>
+<p><span class="ts">[29:46]</span> I would love to just hang out and you know let them know like hey we&#x27;re not we support what you do too. We just want to help the person. Yeah, exactly. You know, all right. Antioxidants during chemo are safe because they only protect healthy cells. False. So every test we do checks to see if</p>
+<p><span class="ts">[30:06]</span> cancer can use glutathione, one of the most powerful antioxidants, to protect itself. And often cancer can use glutathione to protect itself from damage. So when we have people, we tell them no glutathione, no precursors, no NAC, nothing that helps you make glutathione when you&#x27;re in cancer treatment.</p>
+<p><span class="ts">[30:25]</span> So no NAC, no NMN, none of that stuff. No, that&#x27;s interesting. I know because early on in my My career, we were giving cancer patients high doses of glutathione intravenously. But the more that comes out about it, and you know, they actually do this in Greece.</p>
+<p><span class="ts">[30:43]</span> They put the cells in a petri dish with a little bump of glutathione and with you know an agent that will kill the cells and way less cells die when the glutathione is in the mix. Oh wow. So they know. Well, and the funny thing is, is especially with longevity</p>
+<p><span class="ts">[30:57]</span> medicine right now, everybody&#x27;s doing NAD and NMN. And all that NM, whatever it is, pretty precursors and injections and I know. So how do you know if that&#x27;s a good idea or not? Well, what I can tell you is that when you&#x27;re a healthy person and you don&#x27;t have atypical cells, it&#x27;s going to be good for you.</p>
+<p><span class="ts">[31:17]</span> But you know, you got you probably should do your due diligence and make sure before getting crazy on that stuff. Yeah, right. I hadn&#x27;t thought about that, but yeah, that makes sense. All right. Integrative medicine and oncology can&#x27;t work together. I totally disagree.</p>
+<p><span class="ts">[31:33]</span> You know, we&#x27;ve we&#x27;ve proven that we can because we have such rad oncologists. Even Mayo is really cool. Like a lot of the oncologists at Mayo are willing to like collab and we have a direct portal with them so we can see everything that&#x27;s going on and they could see what we&#x27;re doing and it&#x27;s just so cool.</p>
+<p><span class="ts">[31:49]</span> Yeah. What about this one? Integrative oncology means skipping chemo. That is totally false. It really depends on what you&#x27;re doing. Sometimes it means, you know, maybe we&#x27;re doing a low dose or maybe we&#x27;re doing a full dose, but supporting you on the back end.</p>
+<p><span class="ts">[32:05]</span> Every case is different, and if there&#x27;s enough red flags in the report, you know, you don&#x27;t have to do it. But a lot of times we&#x27;re like, hey, this is necessary if you want to have a good chance at this. And we have it go both ways. We have some people who are really bad off</p>
+<p><span class="ts">[32:21]</span> that are like, nope, I&#x27;m not doing that. Even if you know we Coach them through that part. So what about you know someone says I want to do everything natural. You know I want to do as much as natural as as I can. I&#x27;m not interested in chemo. Is that safe? It&#x27;s safe because it&#x27;s what they want to do.</p>
+<p><span class="ts">[32:37]</span> This is their life. You know you get to choose what you want for your medical treatment and most people who have chosen to go the natural route only even if they&#x27;ve been advised they need traditional are accepting their fate if they don&#x27;t make it you know and That&#x27;s kind</p>
+<p><span class="ts">[32:52]</span> of powerful, like being able to be okay with whatever the outcome is, knowing that you chose what was best for you. What about this last one? Boosting your immune system is as easy as a supplement. Definitely not. Like I said, the big five, we got to have our lifestyle</p>
+<p><span class="ts">[33:07]</span> choices mixed in there for sure. So, you know, when people, if if someone is out there right now searching for treatments, you know, and I I think you know a natural inclination would be like. All right, pull up ChatGPT or Claude. Give me all the NIH studies. Tell me everything there is to know.</p>
+<p><span class="ts">[33:25]</span> What would you tell those folks who are like just starved for information that then that&#x27;s the first place they go? What would you want them to know? Yeah, I mean, that could be a helpful tool in some regard, but you also have to know who&#x27;s paying for the research that you&#x27;re reading, so you have</p>
+<p><span class="ts">[33:40]</span> to be a little bit careful what you select, you know? And I do think now with Instagram and with all these different methods of being able to. See information. It is so overwhelming for people. So often, I I think that compartmentalizing and and really looking within and saying, okay, what is important to me?</p>
+<p><span class="ts">[33:58]</span> Is fighting cancer the most aggressive way possible and getting it out of my body and just being done with it priority number one, or and not so much worrying about recurrence, right? Or, no, I want to protect my body. Like really listen to your intuition. Your intuition matters so much,</p>
+<p><span class="ts">[34:14]</span> and I believe prayer and reflection. On your choices is one of the most powerful things to know which direction you need to go. We don&#x27;t ever tell people what direction to go. We just show them the data and say, &quot;Hey, look, this is to help you make informed decisions on your own.&quot;</p>
+<p><span class="ts">[34:28]</span> You know, well, and I I don&#x27;t know that many of us don&#x27;t think about like how do I protect my body during cancer. Your first inclination is get rid of it, right? Whatever you whatever it takes, right? Exactly. And so so tell me about what you What you mean by protect my body?</p>
+<p><span class="ts">[34:44]</span> What&#x27;s the importance there for some folks or some people who like maybe want a more natural approach? What are we? What are they thinking about that many of us just have no idea that&#x27;s even a possibility? Yeah, I mean, I think people who either already have an introduction to holistic health or</p>
+<p><span class="ts">[35:00]</span> they&#x27;ve maybe got friends that are pushing them in. You know, we have people all the time that come here having no idea about this, but like their cousin is like, you gotta go here, you know. And it&#x27;s really just educating that. There are so many things that can be done</p>
+<p><span class="ts">[35:13]</span> to like one again make the treatment more effective. Yeah. If you&#x27;re gonna put it in we want it to be effective. Yeah. Making sure it will work and then two as soon as it&#x27;s done doing its job how do we get it out so that it&#x27;s not poisoning the rest of the system and those are</p>
+<p><span class="ts">[35:28]</span> all options you know it seems so practical and I&#x27;m like why is that not talked about more that seems crazy to me and why are only a hundred Plus clinics doing. I mean, it&#x27;s starting to. I mean, it&#x27;s gonna keep blowing up. That&#x27;s just what&#x27;s gonna happen. I mean, I&#x27;ve even had several doctors</p>
+<p><span class="ts">[35:44]</span> and other chiropractors bring like their family members here and they&#x27;re like, &quot;Oh my gosh, now I want to start doing this.&quot; And I&#x27;m like, &quot;Yeah, do it. We need more.&quot; Yeah. You know, so it&#x27;ll it&#x27;ll keep happening and it comes with results. Now that we&#x27;re getting into the place where we&#x27;ve</p>
+<p><span class="ts">[35:57]</span> been doing this long enough that remission is happening, you know, on a weekly basis for people, as soon as someone hits that point or surprises their oncologist with being cured of this without doing any chemo or whatever it is, then they just talk about it a lot and then it spreads and then</p>
+<p><span class="ts">[36:14]</span> more people want it and and so it will it will continue evolving. Yeah, you know, that&#x27;s amazing. So do you do work remotely at all? Are you able to do that remotely? Yeah, so one cool thing is Dr. Greer is licensed not only in the state of South Dakota and a couple other states in the U.S.,</p>
+<p><span class="ts">[36:29]</span> but she&#x27;s licensed through the First Nation tribe. So she can do telehealth in all 50. Oh amazing. So we do do what we would call like health coaching for those patients. We&#x27;re not providing their treatment, but we&#x27;ll find them a place locally to do their infusions and we just develop their protocol.</p>
+<p><span class="ts">[36:45]</span> Oh that&#x27;s amazing. So for for those that are watching the show, whether here locally or if you&#x27;re watching it, we have a lot of subscribers that are all over the U.S. how do they get in touch with you? Yeah, I mean they can call. Go to our website, call us, it&#x27;s</p>
+<p><span class="ts">[36:59]</span> divinitywellnesscenter.com, and we&#x27;re happy to help wherever you&#x27;re at. Yeah, 2026, go to the website. I don&#x27;t know if anybody that doesn&#x27;t have a website. Yeah, if you don&#x27;t, I mean, more power to you. That&#x27;s pretty hardcore. Yeah, you&#x27;re Amish. I like it. All right, well, thank you so much.</p>
+<p><span class="ts">[37:16]</span> If you are watching on YouTube, we&#x27;ll put all of that information. We&#x27;ll put Trisha, yeah, I&#x27;m assuming you&#x27;re on Instagram and all the socials and all the things. We&#x27;ll make sure to put all those links in the Description. So go ahead and click on the description</p>
+<p><span class="ts">[37:28]</span> to connect with, Doctor Trisha Wimbs and her clinic and Doctor Greer as well. Yes. So thank you so much for being on the show. This was amazing. I didn&#x27;t know that this was offered here locally and that you know about the work that you do, but it was one of those like, cousin friend sort</p>
+<p><span class="ts">[37:44]</span> of network that someone said you got to talk to Trisha. She&#x27;s amazing. Oh, thank you. I&#x27;m so glad that we got to do this. I&#x27;m so glad to have you on the show and share more about the work that you&#x27;re doing. Thank you. All right. All right.</p>
+</div>
+<div class="crisis"><p><strong>Before you change anything about your care</strong></p>
+<p>Dr. Trisha Wimbs is a chiropractor. She can recommend supplements but does not prescribe; Dr. Erin Greer, MD, reviews every case and writes any prescriptions. The RGCC test is run by a CLIA certified, CAP accredited lab. It is not FDA cleared and is not covered by Medicare or major insurers, and ASCO&#x27;s guideline says chemo sensitivity assays should not be used to choose chemotherapy outside a clinical trial. Dr. Wimbs is clear that no provider can promise an outcome. Talk with your oncologist before you add, stop or change anything during treatment.</p>
+<p><strong>If you are in crisis</strong>, call or text 988 in the United States. For treatment referrals, the SAMHSA national helpline is 1-800-662-4357, free and confidential, 24 hours a day.</p></div>
+<p class="disc">This episode is educational and informational only. It is not medical advice and it is not a substitute for evaluation, diagnosis, or treatment by a licensed provider. Views shared are the guest&#x27;s own.</p>
+</main>
+<aside>
+  <div class="prov-dark">
+    <div class="prov-tag">Featured Provider</div>
+    <div class="prov-h">Divinity Wellness Center</div>
+    <p class="prov-p">Integrative oncology support, hyperbaric oxygen, ozone, IV therapy and chiropractic. Serving Iowa, South Dakota, Minnesota, Nebraska and North Dakota, in person or by telehealth.</p>
+    <a class="prov-btn" href="https://dialedin.health/directory/integrative-naturopathic/divinity-wellness-center">View the listing</a>
+  </div>
+  <div class="dir-card">
+    <div class="dir-h">Find a provider like Dr. Wimbs</div>
+    <p class="dir-p">Every provider in the Dialed In Health directory has been on the show. Search by what you actually need.</p>
+    <a class="dir-btn" href="/the-directory">Search the Directory</a>
+  </div>
+  <div class="sb-card">
+    <div class="sb-eyebrow">Free Newsletter</div>
+    <div class="sb-h">Get new episodes</div>
+    <p class="sb-p">Health and wellness news, provider spotlights, and insights.</p>
+    <input type="email" class="email-in" placeholder="your@email.com">
+    <a href="https://dialedinhealth.kit.com/bc70e0bc47" target="_blank" rel="noopener" class="sb-btn">Subscribe Free</a>
+  </div>
+  <div class="sb-card">
+    <div class="sb-eyebrow">More Episodes</div>
+    <div class="sb-h">Keep listening</div>
+    <p class="sb-p">Forty-six conversations with the providers you can actually book.</p>
+    <a href="/podcast" class="sb-btn">All Episodes</a>
+  </div>
+  <div class="prov-dark">
+    <div class="prov-tag">Are you a provider?</div>
+    <div class="prov-h">One conversation. Months of people finding you.</div>
+    <p class="prov-p">Every guest gets an episode page, transcript, directory listing, and clips, built and distributed for you.</p>
+    <a href="https://dialedinhealth.kit.com/39b0bb5dc1" target="_blank" rel="noopener" class="prov-btn">Apply to Be a Guest &rarr;</a>
+  </div>
+</aside>
+</div>
+<script>
+(function(){
+  var f=document.querySelector('.vwrap iframe'); if(!f) return;
+  document.querySelectorAll('.chapters a[data-t]').forEach(function(a){
+    a.addEventListener('click',function(){
+      var t=parseInt(a.getAttribute('data-t'),10)||0;
+      try{
+        f.contentWindow.postMessage(JSON.stringify({event:'command',func:'seekTo',args:[t,true]}),'*');
+        f.contentWindow.postMessage(JSON.stringify({event:'command',func:'playVideo',args:[]}),'*');
+      }catch(err){}
+    });
+  });
+})();
+</script>
