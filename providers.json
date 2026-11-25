@@ -11759,6 +11759,47 @@
       ]
     },
     {
+      "name": "RoOTed",
+      "slug": "rooted",
+      "master_category": "Physical Therapy & Rehabilitation",
+      "category_slug": "physical-therapy",
+      "blog_category": "Physical Therapy & Rehab",
+      "subcategory": "Occupational Therapy + John F. Barnes Myofascial Release",
+      "market": "Sioux Falls, SD",
+      "market_label": "Sioux Falls",
+      "additional_market_labels": [],
+      "service_area": "Sioux Falls metro. Infants, children and adults.",
+      "address": "2500 W. 49th St. Suite 101, Sioux Falls, SD",
+      "phone": "(605) 667-4449",
+      "website": "https://therootedot.com",
+      "profile_url": "https://www.dialedin.health/directory/physical-therapy/rooted",
+      "google_rating": null,
+      "reviews": null,
+      "tier": "Listed",
+      "is_featured": false,
+      "is_guest": true,
+      "service_tags": [
+        "myofascial release",
+        "John F. Barnes myofascial release",
+        "fascia",
+        "occupational therapy",
+        "chronic pain",
+        "headaches",
+        "jaw tension",
+        "nervous system regulation",
+        "pregnancy",
+        "C-section scars",
+        "babies",
+        "tongue tie",
+        "pediatric occupational therapy",
+        "teen athletes"
+      ],
+      "description": "Shauna Fox-Hamilton, MOTR/L, is an occupational therapist with almost 17 years of experience and the owner of RoOTed in Sioux Falls. She uses the John F. Barnes approach to myofascial release: hands only, gentle sustained pressure. She works with babies, kids, teens and adults, from chronic pain, headaches and jaw tension to nervous system regulation, pregnancy and scar tissue after surgery.",
+      "markets": [
+        "sioux-falls"
+      ]
+    },
+    {
       "name": "Let's Reach New Heights Nutrition",
       "slug": "lrnh-nutrition",
       "master_category": "Nutrition",
